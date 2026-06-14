@@ -1,0 +1,28 @@
+:root{
+    --dark: #000E14;
+    --secondary-dark: #00111A;
+    --light: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--dark);
+    color: var(--light);
+}
+a{
+    text-decoration: none;
+    color: var(--light);
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.secondary-bg{
+    background-color: var(--secondary-dark);
+}
