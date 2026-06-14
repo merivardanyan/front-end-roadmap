@@ -11,6 +11,13 @@
 </head>
 
 <body>
+    <svg style="display:none;">
+        <symbol id="arrow-down" viewBox="0 0 24 24">
+            <path
+                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                fill="currentColor" />
+        </symbol>
+    </svg>
     <header>
         <div class="grid grid-cols-2 gap-4 container mx-auto items-center py-4">
             <div class="logo">MV</div>
@@ -18,7 +25,7 @@
                 <ul class="flex gap-4">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Progress</a></li>
+                    <li><a href="#progress">Progress</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,42 +35,67 @@
             <div class="container mx-auto text-center">
                 <h1 class="text-4xl font-bold mb-4">Front End Roadmap</h1>
                 <p class="text-lg text-gray-700">Your guide to becoming a front-end developer</p>
+                <div class="progress flex w-5/6 justify-center items-center mt-8 mx-auto">
+                    <div class="progress-bar w-5/6 rounded-full h-4 mt-4 relative">
+                        <div class="done"></div>
+                    </div>
+                    <div class="progress-text ml-4 w-1/6"> <span class="font-bold progress-percent">0</span> % Complete
+                    </div>
+                </div>
             </div>
         </section>
         <section id="roadmap">
-            <div class="chapter grid grid-cols-3 gap-4 container mx-auto py-12">
-                <div class="left-side justify-self-start">
-                    <ul>
-                        <li>Core Web Foundations</li>
-                        <li>HTML</li>
-                        <li>CSS Architecture & Styling Tools</li>
-                        <li>JavaScript Fundamentals</li>
-                        <li>Advanced JavaScript & Runtime</li>
-                        <li>TypeScript</li>
-                        <li>React (primary framework)</li>
+            <div class="chapter grid grid-cols-1 xl:grid-cols-3 gap-4 container mx-auto py-12">
+                <div class="left-side justify-self-start w-full">
+                    <ul class="chapter-list">
                     </ul>
                 </div>
-                <div class="center justify-self-center">
-                    <ul>
-                        <li>Meta-Frameworks & Rendering</li>
-                        <li>State Management</li>
-                        <li>Data, APIs & Auth</li>
-                        <li>Tooling & Build</li>
-                        <li>Testing</li>
-                        <li>Version Control Systems</li>
-                        <li>Package Managers</li>
-                        <li>Build Tools</li>
-                        <li>Testing & Debugging</li>
-                        <li>Performance Optimization</li>
-                        <li>Accessibility (a11y)</li>
-                        <li>Progressive Web Apps (PWAs)</li>
+                <div class="center justify-self-center w-full">
+                    <ul class="chapter-list">
                     </ul>
                 </div>
-                <div class="right-side justify-self-end"></div>
+                <div class="right-side justify-self-end w-full">
+                    <ul class="chapter-list">
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
     <footer></footer>
+
+    <script>
+        fetch('json/chapters.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                show_chapters(data.chapters);
+            });
+        function show_chapters(arr) {
+            arr.forEach((chapter,ind) => {
+                const col = Math.floor(ind / arr.length * 3);
+                console.log(ind % 6);
+                const li = document.createElement('li');
+                li.className = 'font-bold';
+                li.innerHTML = `
+                    <div class="lesson-info flex items-center gap-2">
+
+                        <input class="lesson-checkbox-input" type="checkbox" id="${chapter.slug}"
+                            name="${chapter.slug}" />
+                        <label for="${chapter.slug}" class="checkbox">
+                        </label>
+                        <a class="lesson-title" href="chapter.html?chapter=${chapter.slug}">${chapter.title}</a>
+                        <div class="lesson">Chapter ${chapter.order}</div>
+                    </div>
+                    <div class="flex justify-center py-2">
+                    <svg class="w-6 h-6">
+                        <use href="#arrow-down"></use>
+                    </svg>
+                </div>
+            `;
+                document.querySelectorAll('.chapter-list')[col].appendChild(li);
+            });
+        }
+    </script>
 </body>
 
 </html>

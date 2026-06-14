@@ -1,0 +1,136 @@
+{
+  "chapters": [
+    {
+      "id": "core-web-foundations",
+      "title": "Core Web Foundations",
+      "order": 1,
+      "slug": "core-web-foundations"
+    },
+    {
+      "id": "html",
+      "title": "HTML",
+      "order": 2,
+      "slug": "html"
+    },
+    {
+      "id": "css-architecture-and-styling-tools",
+      "title": "CSS Architecture & Styling Tools",
+      "order": 3,
+      "slug": "css-architecture-and-styling-tools"
+    },
+    {
+      "id": "javascript-fundamentals",
+      "title": "JavaScript Fundamentals",
+      "order": 4,
+      "slug": "javascript-fundamentals"
+    },
+    {
+      "id": "advanced-javascript-and-runtime",
+      "title": "Advanced JavaScript & Runtime",
+      "order": 5,
+      "slug": "advanced-javascript-and-runtime"
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "order": 6,
+      "slug": "typescript"
+    },
+    {
+      "id": "react-primary-framework",
+      "title": "React (Primary Framework)",
+      "order": 7,
+      "slug": "react-primary-framework"
+    },
+    {
+      "id": "meta-frameworks-and-rendering",
+      "title": "Meta-Frameworks & Rendering",
+      "order": 8,
+      "slug": "meta-frameworks-and-rendering"
+    },
+    {
+      "id": "state-management",
+      "title": "State Management",
+      "order": 9,
+      "slug": "state-management"
+    },
+    {
+      "id": "data-apis-and-auth",
+      "title": "Data, APIs & Auth",
+      "order": 10,
+      "slug": "data-apis-and-auth"
+    },
+    {
+      "id": "tooling-and-build",
+      "title": "Tooling & Build",
+      "order": 11,
+      "slug": "tooling-and-build"
+    },
+    {
+      "id": "testing-and-debugging",
+      "title": "Testing & Debugging",
+      "order": 12,
+      "slug": "testing-and-debugging"
+    },
+    {
+      "id": "performance",
+      "title": "Performance",
+      "order": 13,
+      "slug": "performance"
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility (a11y)",
+      "order": 14,
+      "slug": "accessibility"
+    },
+    {
+      "id": "browser-and-web-platform",
+      "title": "Browser & Web Platform",
+      "order": 15,
+      "slug": "browser-and-web-platform"
+    },
+    {
+      "id": "architecture-and-patterns",
+      "title": "Architecture & Patterns",
+      "order": 16,
+      "slug": "architecture-and-patterns"
+    },
+    {
+      "id": "workflow-and-professional-skills",
+      "title": "Workflow & Professional Skills",
+      "order": 17,
+      "slug": "workflow-and-professional-skills"
+    },
+    {
+      "id": "ai-assisted-development",
+      "title": "AI-Assisted Development (2026)",
+      "order": 18,
+      "slug": "ai-assisted-development"
+    },
+    {
+      "id": "hosting-cloud-and-aws",
+      "title": "Hosting, Cloud & AWS",
+      "order": 19,
+      "slug": "hosting-cloud-and-aws"
+    },
+    {
+      "id": "version-control-systems",
+      "title": "Version Control Systems",
+      "order": 20,
+      "slug": "version-control-systems"
+    },
+    {
+      "id": "package-managers",
+      "title": "Package Managers",
+      "order": 21,
+      "slug": "package-managers"
+    },
+    {
+      "id": "progressive-web-apps",
+      "title": "Progressive Web Apps (PWAs)",
+      "order": 22,
+      "slug": "progressive-web-apps"
+    }
+  ]
+}
