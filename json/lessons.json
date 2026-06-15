@@ -1,0 +1,329 @@
+{
+  "chapters": {
+    "core-web-foundations": {
+      "title": "Core Web Foundations",
+      "order": 1,
+      "lessons": [
+        { "id": "how-the-web-works", "title": "How the Web Works", "order": 1 },
+        { "id": "client-vs-server", "title": "Client vs Server", "order": 2 },
+        { "id": "http-https", "title": "HTTP & HTTPS", "order": 3 },
+        { "id": "dns-explained", "title": "DNS Explained", "order": 4 },
+        { "id": "browsers-and-rendering", "title": "Browsers & Rendering", "order": 5 },
+        { "id": "urls-and-domain-names", "title": "URLs & Domain Names", "order": 6 },
+        { "id": "request-response-cycle", "title": "Request–Response Cycle", "order": 7 }
+      ]
+    },
+    "html": {
+      "title": "HTML",
+      "order": 2,
+      "lessons": [
+        { "id": "html-document-structure", "title": "HTML Document Structure", "order": 1 },
+        { "id": "semantic-elements", "title": "Semantic Elements", "order": 2 },
+        { "id": "headings-paragraphs-text", "title": "Headings, Paragraphs & Text", "order": 3 },
+        { "id": "links-and-anchors", "title": "Links & Anchors", "order": 4 },
+        { "id": "images-and-media", "title": "Images & Media", "order": 5 },
+        { "id": "lists", "title": "Lists (ul, ol, dl)", "order": 6 },
+        { "id": "tables", "title": "Tables", "order": 7 },
+        { "id": "forms-and-inputs", "title": "Forms & Inputs", "order": 8 },
+        { "id": "html-attributes", "title": "HTML Attributes", "order": 9 },
+        { "id": "meta-tags-and-head", "title": "Meta Tags & the Head", "order": 10 },
+        { "id": "accessibility-in-html", "title": "Accessibility in HTML", "order": 11 },
+        { "id": "html5-apis", "title": "HTML5 APIs (canvas, video, audio)", "order": 12 }
+      ]
+    },
+    "css-architecture-and-styling-tools": {
+      "title": "CSS Architecture & Styling Tools",
+      "order": 3,
+      "lessons": [
+        { "id": "css-selectors", "title": "CSS Selectors", "order": 1 },
+        { "id": "box-model", "title": "The Box Model", "order": 2 },
+        { "id": "specificity-and-cascade", "title": "Specificity & Cascade", "order": 3 },
+        { "id": "flexbox", "title": "Flexbox", "order": 4 },
+        { "id": "css-grid", "title": "CSS Grid", "order": 5 },
+        { "id": "responsive-design", "title": "Responsive Design & Media Queries", "order": 6 },
+        { "id": "css-variables", "title": "CSS Custom Properties (Variables)", "order": 7 },
+        { "id": "animations-and-transitions", "title": "Animations & Transitions", "order": 8 },
+        { "id": "sass-scss", "title": "Sass / SCSS", "order": 9 },
+        { "id": "tailwind-css", "title": "Tailwind CSS", "order": 10 },
+        { "id": "css-modules", "title": "CSS Modules", "order": 11 },
+        { "id": "styled-components", "title": "Styled Components / CSS-in-JS", "order": 12 },
+        { "id": "bem-methodology", "title": "BEM Methodology", "order": 13 }
+      ]
+    },
+    "javascript-fundamentals": {
+      "title": "JavaScript Fundamentals",
+      "order": 4,
+      "lessons": [
+        { "id": "variables-and-data-types", "title": "Variables & Data Types", "order": 1 },
+        { "id": "operators", "title": "Operators", "order": 2 },
+        { "id": "control-flow", "title": "Control Flow (if, switch, loops)", "order": 3 },
+        { "id": "functions", "title": "Functions", "order": 4 },
+        { "id": "scope-and-closures", "title": "Scope & Closures", "order": 5 },
+        { "id": "arrays", "title": "Arrays & Array Methods", "order": 6 },
+        { "id": "objects", "title": "Objects", "order": 7 },
+        { "id": "dom-manipulation", "title": "DOM Manipulation", "order": 8 },
+        { "id": "events", "title": "Events & Event Listeners", "order": 9 },
+        { "id": "error-handling", "title": "Error Handling (try/catch)", "order": 10 },
+        { "id": "es6-features", "title": "ES6+ Features", "order": 11 },
+        { "id": "modules-import-export", "title": "Modules (import/export)", "order": 12 },
+        { "id": "json", "title": "JSON", "order": 13 }
+      ]
+    },
+    "advanced-javascript-and-runtime": {
+      "title": "Advanced JavaScript & Runtime",
+      "order": 5,
+      "lessons": [
+        { "id": "promises", "title": "Promises", "order": 1 },
+        { "id": "async-await", "title": "Async / Await", "order": 2 },
+        { "id": "event-loop", "title": "The Event Loop", "order": 3 },
+        { "id": "callbacks", "title": "Callbacks", "order": 4 },
+        { "id": "prototype-chain", "title": "Prototype Chain & Inheritance", "order": 5 },
+        { "id": "this-keyword", "title": "The `this` Keyword", "order": 6 },
+        { "id": "generators-iterators", "title": "Generators & Iterators", "order": 7 },
+        { "id": "web-workers", "title": "Web Workers", "order": 8 },
+        { "id": "memory-management", "title": "Memory Management & Garbage Collection", "order": 9 },
+        { "id": "nodejs-basics", "title": "Node.js Basics", "order": 10 }
+      ]
+    },
+    "typescript": {
+      "title": "TypeScript",
+      "order": 6,
+      "lessons": [
+        { "id": "why-typescript", "title": "Why TypeScript?", "order": 1 },
+        { "id": "basic-types", "title": "Basic Types", "order": 2 },
+        { "id": "interfaces-and-types", "title": "Interfaces & Type Aliases", "order": 3 },
+        { "id": "generics", "title": "Generics", "order": 4 },
+        { "id": "enums", "title": "Enums", "order": 5 },
+        { "id": "type-narrowing", "title": "Type Narrowing & Guards", "order": 6 },
+        { "id": "utility-types", "title": "Utility Types", "order": 7 },
+        { "id": "decorators", "title": "Decorators", "order": 8 },
+        { "id": "tsconfig", "title": "tsconfig.json", "order": 9 },
+        { "id": "typescript-with-react", "title": "TypeScript with React", "order": 10 }
+      ]
+    },
+    "react-primary-framework": {
+      "title": "React (Primary Framework)",
+      "order": 7,
+      "lessons": [
+        { "id": "what-is-react", "title": "What is React?", "order": 1 },
+        { "id": "jsx", "title": "JSX", "order": 2 },
+        { "id": "components", "title": "Components", "order": 3 },
+        { "id": "props", "title": "Props", "order": 4 },
+        { "id": "state-usestate", "title": "State & useState", "order": 5 },
+        { "id": "useeffect", "title": "useEffect", "order": 6 },
+        { "id": "event-handling-react", "title": "Event Handling in React", "order": 7 },
+        { "id": "conditional-rendering", "title": "Conditional Rendering", "order": 8 },
+        { "id": "lists-and-keys", "title": "Lists & Keys", "order": 9 },
+        { "id": "forms-in-react", "title": "Forms in React", "order": 10 },
+        { "id": "context-api", "title": "Context API", "order": 11 },
+        { "id": "custom-hooks", "title": "Custom Hooks", "order": 12 },
+        { "id": "react-router", "title": "React Router", "order": 13 },
+        { "id": "react-performance", "title": "React Performance (memo, useMemo, useCallback)", "order": 14 },
+        { "id": "error-boundaries", "title": "Error Boundaries", "order": 15 }
+      ]
+    },
+    "meta-frameworks-and-rendering": {
+      "title": "Meta-Frameworks & Rendering",
+      "order": 8,
+      "lessons": [
+        { "id": "what-is-nextjs", "title": "What is Next.js?", "order": 1 },
+        { "id": "ssr-vs-ssg-vs-csr", "title": "SSR vs SSG vs CSR", "order": 2 },
+        { "id": "app-router", "title": "App Router (Next.js 13+)", "order": 3 },
+        { "id": "server-components", "title": "React Server Components", "order": 4 },
+        { "id": "file-based-routing", "title": "File-Based Routing", "order": 5 },
+        { "id": "api-routes", "title": "API Routes", "order": 6 },
+        { "id": "data-fetching-nextjs", "title": "Data Fetching in Next.js", "order": 7 },
+        { "id": "remix-basics", "title": "Remix Basics", "order": 8 },
+        { "id": "astro-basics", "title": "Astro Basics", "order": 9 }
+      ]
+    },
+    "state-management": {
+      "title": "State Management",
+      "order": 9,
+      "lessons": [
+        { "id": "what-is-state", "title": "What is State?", "order": 1 },
+        { "id": "lifting-state-up", "title": "Lifting State Up", "order": 2 },
+        { "id": "context-vs-redux", "title": "Context vs Redux", "order": 3 },
+        { "id": "redux-toolkit", "title": "Redux Toolkit", "order": 4 },
+        { "id": "zustand", "title": "Zustand", "order": 5 },
+        { "id": "jotai-recoil", "title": "Jotai & Recoil (Atomic State)", "order": 6 },
+        { "id": "server-state-react-query", "title": "Server State & React Query", "order": 7 },
+        { "id": "optimistic-updates", "title": "Optimistic Updates", "order": 8 }
+      ]
+    },
+    "data-apis-and-auth": {
+      "title": "Data, APIs & Auth",
+      "order": 10,
+      "lessons": [
+        { "id": "fetch-api", "title": "Fetch API", "order": 1 },
+        { "id": "axios", "title": "Axios", "order": 2 },
+        { "id": "rest-apis", "title": "REST APIs", "order": 3 },
+        { "id": "graphql-basics", "title": "GraphQL Basics", "order": 4 },
+        { "id": "websockets", "title": "WebSockets", "order": 5 },
+        { "id": "authentication", "title": "Authentication (JWT, OAuth, Sessions)", "order": 6 },
+        { "id": "cors", "title": "CORS", "order": 7 },
+        { "id": "api-error-handling", "title": "API Error Handling", "order": 8 },
+        { "id": "environment-variables", "title": "Environment Variables", "order": 9 }
+      ]
+    },
+    "tooling-and-build": {
+      "title": "Tooling & Build",
+      "order": 11,
+      "lessons": [
+        { "id": "what-is-a-bundler", "title": "What is a Bundler?", "order": 1 },
+        { "id": "vite", "title": "Vite", "order": 2 },
+        { "id": "webpack-basics", "title": "Webpack Basics", "order": 3 },
+        { "id": "babel", "title": "Babel", "order": 4 },
+        { "id": "eslint", "title": "ESLint", "order": 5 },
+        { "id": "prettier", "title": "Prettier", "order": 6 },
+        { "id": "husky-lint-staged", "title": "Husky & lint-staged", "order": 7 },
+        { "id": "env-files", "title": ".env Files & Secrets", "order": 8 }
+      ]
+    },
+    "testing-and-debugging": {
+      "title": "Testing & Debugging",
+      "order": 12,
+      "lessons": [
+        { "id": "why-test", "title": "Why Test?", "order": 1 },
+        { "id": "unit-testing", "title": "Unit Testing", "order": 2 },
+        { "id": "integration-testing", "title": "Integration Testing", "order": 3 },
+        { "id": "e2e-testing", "title": "End-to-End Testing", "order": 4 },
+        { "id": "jest", "title": "Jest", "order": 5 },
+        { "id": "react-testing-library", "title": "React Testing Library", "order": 6 },
+        { "id": "playwright-cypress", "title": "Playwright & Cypress", "order": 7 },
+        { "id": "debugging-devtools", "title": "Debugging with DevTools", "order": 8 },
+        { "id": "console-methods", "title": "Console Methods", "order": 9 }
+      ]
+    },
+    "performance": {
+      "title": "Performance",
+      "order": 13,
+      "lessons": [
+        { "id": "core-web-vitals", "title": "Core Web Vitals", "order": 1 },
+        { "id": "lazy-loading", "title": "Lazy Loading", "order": 2 },
+        { "id": "code-splitting", "title": "Code Splitting", "order": 3 },
+        { "id": "image-optimization", "title": "Image Optimization", "order": 4 },
+        { "id": "caching-strategies", "title": "Caching Strategies", "order": 5 },
+        { "id": "debounce-throttle", "title": "Debounce & Throttle", "order": 6 },
+        { "id": "virtual-dom", "title": "Virtual DOM & Reconciliation", "order": 7 },
+        { "id": "lighthouse", "title": "Lighthouse & Performance Auditing", "order": 8 }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility (a11y)",
+      "order": 14,
+      "lessons": [
+        { "id": "what-is-a11y", "title": "What is Accessibility?", "order": 1 },
+        { "id": "aria-roles", "title": "ARIA Roles & Attributes", "order": 2 },
+        { "id": "keyboard-navigation", "title": "Keyboard Navigation", "order": 3 },
+        { "id": "focus-management", "title": "Focus Management", "order": 4 },
+        { "id": "color-contrast", "title": "Color Contrast", "order": 5 },
+        { "id": "screen-readers", "title": "Screen Readers", "order": 6 },
+        { "id": "wcag-guidelines", "title": "WCAG Guidelines", "order": 7 },
+        { "id": "a11y-testing-tools", "title": "Accessibility Testing Tools", "order": 8 }
+      ]
+    },
+    "browser-and-web-platform": {
+      "title": "Browser & Web Platform",
+      "order": 15,
+      "lessons": [
+        { "id": "browser-storage", "title": "Browser Storage (localStorage, sessionStorage, cookies)", "order": 1 },
+        { "id": "service-workers", "title": "Service Workers", "order": 2 },
+        { "id": "web-apis", "title": "Web APIs (Geolocation, Clipboard, Notifications)", "order": 3 },
+        { "id": "browser-rendering-pipeline", "title": "Browser Rendering Pipeline", "order": 4 },
+        { "id": "cross-browser-compatibility", "title": "Cross-Browser Compatibility", "order": 5 },
+        { "id": "security-basics", "title": "Web Security Basics (XSS, CSRF, CSP)", "order": 6 }
+      ]
+    },
+    "architecture-and-patterns": {
+      "title": "Architecture & Patterns",
+      "order": 16,
+      "lessons": [
+        { "id": "component-patterns", "title": "Component Patterns", "order": 1 },
+        { "id": "design-patterns", "title": "Design Patterns (Observer, Factory, Singleton)", "order": 2 },
+        { "id": "solid-principles", "title": "SOLID Principles", "order": 3 },
+        { "id": "mvc-mvvm", "title": "MVC & MVVM", "order": 4 },
+        { "id": "micro-frontends", "title": "Micro-Frontends", "order": 5 },
+        { "id": "monorepos", "title": "Monorepos", "order": 6 },
+        { "id": "feature-flags", "title": "Feature Flags", "order": 7 }
+      ]
+    },
+    "workflow-and-professional-skills": {
+      "title": "Workflow & Professional Skills",
+      "order": 17,
+      "lessons": [
+        { "id": "agile-scrum", "title": "Agile & Scrum", "order": 1 },
+        { "id": "code-review", "title": "Code Review Best Practices", "order": 2 },
+        { "id": "documentation", "title": "Writing Documentation", "order": 3 },
+        { "id": "ci-cd", "title": "CI/CD Pipelines", "order": 4 },
+        { "id": "ticketing-systems", "title": "Ticketing Systems (Jira, Linear)", "order": 5 },
+        { "id": "communication-in-teams", "title": "Communication in Dev Teams", "order": 6 },
+        { "id": "estimating-tasks", "title": "Estimating & Breaking Down Tasks", "order": 7 }
+      ]
+    },
+    "ai-assisted-development": {
+      "title": "AI-Assisted Development (2026)",
+      "order": 18,
+      "lessons": [
+        { "id": "ai-tools-overview", "title": "AI Tools Overview (Copilot, Claude, Cursor)", "order": 1 },
+        { "id": "prompt-engineering-for-devs", "title": "Prompt Engineering for Developers", "order": 2 },
+        { "id": "ai-code-review", "title": "Using AI for Code Review", "order": 3 },
+        { "id": "ai-debugging", "title": "AI-Assisted Debugging", "order": 4 },
+        { "id": "building-with-ai-apis", "title": "Building with AI APIs", "order": 5 },
+        { "id": "ai-limitations", "title": "AI Limitations & When Not to Use It", "order": 6 }
+      ]
+    },
+    "hosting-cloud-and-aws": {
+      "title": "Hosting, Cloud & AWS",
+      "order": 19,
+      "lessons": [
+        { "id": "hosting-options", "title": "Hosting Options (Vercel, Netlify, AWS)", "order": 1 },
+        { "id": "static-vs-dynamic-hosting", "title": "Static vs Dynamic Hosting", "order": 2 },
+        { "id": "aws-s3-cloudfront", "title": "AWS S3 & CloudFront", "order": 3 },
+        { "id": "aws-lambda", "title": "AWS Lambda", "order": 4 },
+        { "id": "environment-configuration", "title": "Environment Configuration", "order": 5 },
+        { "id": "domain-and-ssl", "title": "Domains & SSL Certificates", "order": 6 },
+        { "id": "cdn-explained", "title": "CDNs Explained", "order": 7 }
+      ]
+    },
+    "version-control-systems": {
+      "title": "Version Control Systems",
+      "order": 20,
+      "lessons": [
+        { "id": "what-is-git", "title": "What is Git?", "order": 1 },
+        { "id": "git-basics", "title": "Git Basics (init, add, commit)", "order": 2 },
+        { "id": "branching-and-merging", "title": "Branching & Merging", "order": 3 },
+        { "id": "git-rebase", "title": "Git Rebase", "order": 4 },
+        { "id": "pull-requests", "title": "Pull Requests", "order": 5 },
+        { "id": "resolving-conflicts", "title": "Resolving Merge Conflicts", "order": 6 },
+        { "id": "github-gitlab", "title": "GitHub & GitLab", "order": 7 },
+        { "id": "git-workflows", "title": "Git Workflows (Gitflow, trunk-based)", "order": 8 }
+      ]
+    },
+    "package-managers": {
+      "title": "Package Managers",
+      "order": 21,
+      "lessons": [
+        { "id": "what-is-npm", "title": "What is npm?", "order": 1 },
+        { "id": "package-json", "title": "package.json Explained", "order": 2 },
+        { "id": "npm-vs-yarn-vs-pnpm", "title": "npm vs Yarn vs pnpm", "order": 3 },
+        { "id": "installing-packages", "title": "Installing & Removing Packages", "order": 4 },
+        { "id": "semantic-versioning", "title": "Semantic Versioning (semver)", "order": 5 },
+        { "id": "lockfiles", "title": "Lockfiles", "order": 6 },
+        { "id": "publishing-packages", "title": "Publishing Your Own Package", "order": 7 }
+      ]
+    },
+    "progressive-web-apps": {
+      "title": "Progressive Web Apps (PWAs)",
+      "order": 22,
+      "lessons": [
+        { "id": "what-is-a-pwa", "title": "What is a PWA?", "order": 1 },
+        { "id": "web-app-manifest", "title": "Web App Manifest", "order": 2 },
+        { "id": "service-workers-pwa", "title": "Service Workers in PWAs", "order": 3 },
+        { "id": "offline-first", "title": "Offline-First Strategy", "order": 4 },
+        { "id": "push-notifications", "title": "Push Notifications", "order": 5 },
+        { "id": "installable-apps", "title": "Making Your App Installable", "order": 6 }
+      ]
+    }
+  }
+}
