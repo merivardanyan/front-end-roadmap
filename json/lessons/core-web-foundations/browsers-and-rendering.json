@@ -1,0 +1,107 @@
+{
+  "id": "browsers-and-rendering",
+  "chapterId": "core-web-foundations",
+  "title": "Browsers & Rendering",
+  "order": 5,
+  "emoji": "🖥️",
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Your web browser is one of the most amazing pieces of software ever made. It takes a bunch of code (text files with HTML, CSS, and JavaScript) and turns it into the colorful, interactive pages you see every day. This process is called rendering — and understanding it makes you a much better web developer!"
+    },
+    {
+      "type": "explanation",
+      "title": "What is a Browser? 🌍",
+      "text": "A browser is an app that knows how to read web code and turn it into something visual. The most popular browsers are Chrome (by Google), Firefox (by Mozilla), Safari (by Apple), and Edge (by Microsoft). They all do the same basic job, but they each have their own rendering engine — the part that actually draws the page."
+    },
+    {
+      "type": "explanation",
+      "title": "Rendering Engines 🔧",
+      "text": "The rendering engine is like the brain of the browser — it reads your HTML and CSS and figures out what to draw where. Chrome and Edge use an engine called Blink. Safari uses WebKit. Firefox uses Gecko. This is why sometimes a website looks slightly different in different browsers — they have different brains!"
+    },
+    {
+      "type": "steps",
+      "title": "How a Browser Renders a Page — Step by Step",
+      "items": [
+        "Browser downloads the HTML file from the server.",
+        "It reads the HTML and builds a tree of all the elements — this is called the DOM (Document Object Model).",
+        "It finds any linked CSS files and downloads them, then builds the CSSOM (CSS Object Model) — a tree of all the styles.",
+        "It combines the DOM and CSSOM into a 'Render Tree' — only the things that will actually be visible.",
+        "Layout: it figures out exactly where everything goes on the screen (size, position).",
+        "Paint: it actually draws the pixels on screen — colors, borders, shadows, text.",
+        "Composite: layers are combined and the final page appears!"
+      ]
+    },
+    {
+      "type": "explanation",
+      "title": "What is the DOM? 🌳",
+      "text": "The DOM (Document Object Model) is a tree-like representation of your HTML page that the browser creates in memory. Every element (like a paragraph, a button, or an image) becomes a 'node' in the tree. JavaScript can then reach into this tree and change things — that's how web pages become interactive!"
+    },
+    {
+      "type": "analogy",
+      "title": "Think of it like Building with LEGO 🧱",
+      "text": "HTML gives you the LEGO bricks. CSS paints them and arranges them. JavaScript lets you move them around and add new ones while you're playing. The browser is the table you build on — it figures out exactly where each brick goes and makes sure everything looks right."
+    },
+    {
+      "type": "fun-fact",
+      "text": "⚡ Fun Fact: Your browser can make thousands of tiny decisions in less than a second to render a single page. A complex page might have thousands of elements, and the browser has to figure out where every single pixel goes!"
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        { "word": "Browser", "definition": "An app (Chrome, Firefox, Safari) that reads web code and displays it visually." },
+        { "word": "Rendering", "definition": "The process of turning HTML/CSS code into the visual page you see." },
+        { "word": "Rendering Engine", "definition": "The part of the browser that does the rendering work (Blink, WebKit, Gecko)." },
+        { "word": "DOM", "definition": "Document Object Model — a tree of all the elements on a web page, created by the browser." },
+        { "word": "Layout", "definition": "The step where the browser figures out the exact size and position of everything." },
+        { "word": "Paint", "definition": "The step where the browser actually draws the pixels on screen." }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does 'rendering' mean in web development?",
+      "options": [
+        "Sending code to the server",
+        "Turning HTML/CSS code into the visual page you see",
+        "Writing JavaScript code",
+        "Deleting old web pages"
+      ],
+      "answer": 1,
+      "explanation": "Rendering is the process of taking code (HTML, CSS, JavaScript) and turning it into the visual, interactive page you actually see on screen. Your browser does this every time you load a page!"
+    },
+    {
+      "id": "q2",
+      "text": "What is the DOM?",
+      "options": [
+        "A type of browser",
+        "A file format for images",
+        "A tree-like representation of all the elements on a page",
+        "A server-side technology"
+      ],
+      "answer": 2,
+      "explanation": "The DOM (Document Object Model) is a tree that the browser builds from your HTML. Every element is a 'node' in the tree, and JavaScript can use the DOM to change the page dynamically!"
+    },
+    {
+      "id": "q3",
+      "text": "Which rendering engine does Google Chrome use?",
+      "options": ["Gecko", "WebKit", "Blink", "Trident"],
+      "answer": 2,
+      "explanation": "Chrome uses the Blink rendering engine. Firefox uses Gecko, and Safari uses WebKit. These different engines are why the same website can sometimes look slightly different across browsers."
+    },
+    {
+      "id": "q4",
+      "text": "What is the correct ORDER of how a browser renders a page?",
+      "options": [
+        "Paint → Download HTML → Build DOM → Layout",
+        "Download HTML → Build DOM → Layout → Paint",
+        "Layout → Build DOM → Download HTML → Paint",
+        "Build DOM → Paint → Download HTML → Layout"
+      ],
+      "answer": 1,
+      "explanation": "The correct order is: Download HTML → Build DOM (+ CSSOM from CSS) → Create Render Tree → Layout (positioning) → Paint (drawing pixels). This is called the Critical Rendering Path!"
+    }
+  ]
+}

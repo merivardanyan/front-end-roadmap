@@ -1,0 +1,79 @@
+{
+  "id": "how-the-web-works",
+  "chapterId": "core-web-foundations",
+  "title": "How the Web Works",
+  "order": 1,
+  "emoji": "🌐",
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Imagine you want to send a letter to your friend who lives far away. You write the letter, put it in an envelope, write their address on it, and drop it in a mailbox. A postman picks it up, carries it across the country, and delivers it to your friend's door. The web works almost exactly like this — except instead of letters, we send web pages, and instead of postmen, we have computers!"
+    },
+    {
+      "type": "explanation",
+      "title": "The Big Picture",
+      "text": "The web is a huge collection of pages — like a gigantic library — stored on special computers called servers all around the world. When you want to see a page, your computer (the client) asks the server for it, and the server sends it back. This all happens in less than a second!"
+    },
+    {
+      "type": "analogy",
+      "title": "Think of it like a Pizza Shop 🍕",
+      "text": "You (the client) call a pizza shop (the server) and say 'I want a pepperoni pizza!' (a request). The pizza shop makes your pizza and delivers it to your house (a response). The web works the same way — you ask for a page, the server sends it to you."
+    },
+    {
+      "type": "steps",
+      "title": "What happens when you type google.com?",
+      "items": [
+        "You type 'google.com' in your browser and press Enter.",
+        "Your computer looks up where Google lives (like looking up a phone number in a book). This is called DNS.",
+        "Your computer connects to Google's server and says 'Can I have your homepage please?'",
+        "Google's server sends back all the code for the homepage.",
+        "Your browser reads that code and draws the page on your screen."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "🤯 Fun Fact: The very first website ever made was by Tim Berners-Lee in 1991. It was just plain text — no pictures, no colors, no videos. You can still visit it today!"
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        { "word": "Client", "definition": "Your computer or phone — the thing asking for web pages." },
+        { "word": "Server", "definition": "A special computer that stores websites and sends them to you." },
+        { "word": "Request", "definition": "When your computer asks for a web page." },
+        { "word": "Response", "definition": "When the server sends the web page back to you." },
+        { "word": "Browser", "definition": "The app you use to view web pages, like Chrome or Firefox." }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do we call the computer that stores websites and sends them to you?",
+      "options": ["Client", "Browser", "Server", "Router"],
+      "answer": 2,
+      "explanation": "A server is a special computer that stores websites. When you ask for a page, the server sends it to you — just like a pizza shop sends you your pizza!"
+    },
+    {
+      "id": "q2",
+      "text": "What is YOUR computer called when it asks for a web page?",
+      "options": ["A server", "A client", "A router", "A domain"],
+      "answer": 1,
+      "explanation": "Your computer is the client — it makes requests to servers. Think of yourself as the customer at a pizza shop!"
+    },
+    {
+      "id": "q3",
+      "text": "When you type a website address and press Enter, what is your computer sending to the server?",
+      "options": ["A response", "A cookie", "A request", "A password"],
+      "answer": 2,
+      "explanation": "Your computer sends a request — it's asking the server 'Hey, can you send me this web page please?'"
+    },
+    {
+      "id": "q4",
+      "text": "Which app do you use to view websites?",
+      "options": ["A server", "A browser", "A compiler", "A terminal"],
+      "answer": 1,
+      "explanation": "A browser (like Chrome, Firefox, or Safari) is the app that reads the code sent by the server and shows it as a beautiful web page on your screen."
+    }
+  ]
+}

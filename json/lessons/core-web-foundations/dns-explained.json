@@ -1,0 +1,106 @@
+{
+  "id": "dns-explained",
+  "chapterId": "core-web-foundations",
+  "title": "DNS Explained",
+  "order": 4,
+  "emoji": "📖",
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Computers don't think in words — they think in numbers. Every single computer on the internet has a unique number called an IP address, like 142.250.80.46. But nobody wants to memorize numbers like that just to visit Google! That's where DNS comes in — it's like a giant phone book that turns 'google.com' into the right number automatically."
+    },
+    {
+      "type": "explanation",
+      "title": "What is DNS? 📞",
+      "text": "DNS stands for Domain Name System. It's a system of special servers around the world whose only job is to answer one question: 'What is the IP address for this domain name?' When you type 'youtube.com', your computer asks a DNS server, which looks it up and says 'That's 142.250.80.14!' Then your computer connects to that number."
+    },
+    {
+      "type": "analogy",
+      "title": "The Phone Book Analogy ☎️",
+      "text": "In 2010, people used phone books. Instead of memorizing your friend's phone number, you'd look up their name and find the number next to it. DNS is exactly this — you look up 'netflix.com' and DNS finds the phone number (IP address) for Netflix's servers. You get connected without ever knowing the number!"
+    },
+    {
+      "type": "steps",
+      "title": "What Happens When You Type a URL",
+      "items": [
+        "You type 'wikipedia.org' in your browser.",
+        "Your computer first checks its own memory (cache) — 'Have I looked this up before?'",
+        "If not found, it asks your Internet Service Provider's DNS server.",
+        "If that server doesn't know, it asks a Root DNS server — the biggest phone book of all.",
+        "The Root server points to the right place, the IP address is found.",
+        "Your computer connects to that IP address and loads the page!"
+      ]
+    },
+    {
+      "type": "explanation",
+      "title": "What is an IP Address? 🏠",
+      "text": "An IP address is like a home address for a computer on the internet. Every device has one — your laptop, your phone, the servers hosting websites. They look like four numbers separated by dots: 192.168.1.1. The internet uses these numbers to know exactly where to send data."
+    },
+    {
+      "type": "explanation",
+      "title": "What is a Domain Name?",
+      "text": "A domain name is the human-friendly name for a website, like 'google.com' or 'minecraft.net'. Domain names are split into parts separated by dots. The last part (.com, .org, .net) is called the Top Level Domain (TLD). The part before it (google, minecraft) is the actual domain name you register and own."
+    },
+    {
+      "type": "fun-fact",
+      "text": "⚡ Fun Fact: DNS lookups happen in milliseconds — so fast you never even notice them! There are 13 groups of Root DNS servers around the world that handle billions of lookups every single day."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        { "word": "DNS", "definition": "Domain Name System — the internet's phone book that converts names to IP addresses." },
+        { "word": "IP Address", "definition": "A unique number (like 142.250.80.46) that identifies a computer on the internet." },
+        { "word": "Domain Name", "definition": "The human-friendly website name like 'google.com' or 'youtube.com'." },
+        { "word": "TLD", "definition": "Top Level Domain — the last part of a domain name like .com, .org, or .net." },
+        { "word": "DNS Server", "definition": "A special computer whose job is to look up IP addresses for domain names." },
+        { "word": "Cache", "definition": "A saved copy of something so you don't have to look it up again — like remembering a phone number." }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does DNS stand for?",
+      "options": [
+        "Digital Network System",
+        "Domain Name System",
+        "Data Navigation Service",
+        "Direct Node Server"
+      ],
+      "answer": 1,
+      "explanation": "DNS stands for Domain Name System. It's the internet's phone book — it converts human-readable domain names into IP addresses that computers understand."
+    },
+    {
+      "id": "q2",
+      "text": "What is an IP address?",
+      "options": [
+        "The name of a website like google.com",
+        "A type of web browser",
+        "A unique number that identifies a computer on the internet",
+        "The password to a server"
+      ],
+      "answer": 2,
+      "explanation": "An IP address is a unique number (like 142.250.80.46) assigned to every device on the internet. It's like a home address — it tells the internet where to deliver data."
+    },
+    {
+      "id": "q3",
+      "text": "In 'youtube.com', what is '.com' called?",
+      "options": ["IP Address", "Domain prefix", "Top Level Domain (TLD)", "DNS record"],
+      "answer": 2,
+      "explanation": "'.com' is the Top Level Domain (TLD) — the last part of a domain name. Other TLDs include .org, .net, .gov, and country codes like .uk or .jp."
+    },
+    {
+      "id": "q4",
+      "text": "Why do we need DNS at all? Why not just use IP addresses?",
+      "options": [
+        "We don't — IP addresses work fine",
+        "Because domain names are easier for humans to remember than number sequences",
+        "Because servers don't understand IP addresses",
+        "DNS makes websites load faster"
+      ],
+      "answer": 1,
+      "explanation": "Domain names like 'google.com' are so much easier to remember than '142.250.80.46'! DNS lets us use friendly names while computers handle the numbers behind the scenes."
+    }
+  ]
+}

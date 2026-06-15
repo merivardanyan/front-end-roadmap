@@ -1,0 +1,135 @@
+{
+  "id": "request-response-cycle",
+  "chapterId": "core-web-foundations",
+  "title": "Request–Response Cycle",
+  "order": 7,
+  "emoji": "🔄",
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Now that you know about clients, servers, HTTP, DNS, and URLs — let's put it ALL together! The Request-Response Cycle is the full journey that happens every single time you click a link or load a web page. Understanding this cycle is one of the most important things a web developer can know — it's the heartbeat of the entire internet."
+    },
+    {
+      "type": "explanation",
+      "title": "The Full Journey 🚀",
+      "text": "Every interaction on the web follows the same pattern: the client (you) sends a REQUEST to a server, the server does some work, and then sends back a RESPONSE. This happens even when you click a 'like' button, submit a form, or search for something. It's always request → response."
+    },
+    {
+      "type": "steps",
+      "title": "The Complete Request-Response Cycle",
+      "items": [
+        "You type 'twitter.com' and press Enter (or click a link).",
+        "Your browser checks its DNS cache for twitter.com's IP address. If not found, it asks a DNS server.",
+        "DNS returns the IP address: 104.244.42.1 (for example).",
+        "Your browser opens a connection to that IP address using TCP (a reliable way to send data).",
+        "For HTTPS, a TLS handshake happens — browser and server agree on encryption keys.",
+        "Your browser sends an HTTP GET request: 'GET / HTTP/1.1 Host: twitter.com'",
+        "Twitter's server receives the request and decides what to do with it.",
+        "The server might query a database, run some code, and build an HTML page.",
+        "The server sends back an HTTP response with a status code (200 OK) and the HTML content.",
+        "Your browser receives the HTML and starts rendering the page.",
+        "While rendering, it finds more files needed (CSS, JavaScript, images) and sends MORE requests for each one.",
+        "Finally, all files are loaded and the full page appears!"
+      ]
+    },
+    {
+      "type": "explanation",
+      "title": "What's in an HTTP Request? 📤",
+      "text": "An HTTP request has three parts: the Request Line (method + URL + HTTP version, like 'GET /page HTTP/1.1'), Headers (extra info about the request, like what browser you're using and what languages you speak), and optionally a Body (for POST requests — this is where form data or JSON goes)."
+    },
+    {
+      "type": "explanation",
+      "title": "What's in an HTTP Response? 📥",
+      "text": "An HTTP response also has three parts: the Status Line (the version + status code + message, like 'HTTP/1.1 200 OK'), Headers (info about the response, like what type of content it is and how big it is), and the Body (the actual content — the HTML, the image file, the JSON data, etc.)."
+    },
+    {
+      "type": "analogy",
+      "title": "The Restaurant Full Story 🍽️",
+      "text": "You walk into a restaurant (open a browser). You look at the menu (DNS lookup). You call the waiter over (TCP connection). You order your food (HTTP request). The waiter takes your order to the kitchen (server routing). The kitchen makes your food (server processing). The waiter brings your food (HTTP response). You eat it (browser renders the page). If you want dessert, you make a new request!"
+    },
+    {
+      "type": "explanation",
+      "title": "Stateless — Every Request is Fresh",
+      "text": "Here's something important: HTTP is stateless. This means every request is completely independent — the server has no memory of your previous requests. That's why websites use things like cookies and sessions to remember who you are. Without them, you'd have to log in again on every single page!"
+    },
+    {
+      "type": "fun-fact",
+      "text": "⚡ Fun Fact: A single modern web page can trigger hundreds of HTTP requests — one for the HTML, then more for CSS files, JavaScript files, images, fonts, ads, analytics scripts, and API calls. Your browser makes them all happen almost simultaneously!"
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        { "word": "Request-Response Cycle", "definition": "The complete process of a client sending a request and a server sending back a response." },
+        { "word": "TCP", "definition": "Transmission Control Protocol — a reliable way to send data between computers over the internet." },
+        { "word": "TLS Handshake", "definition": "The secure process where browser and server agree on how to encrypt their communication (for HTTPS)." },
+        { "word": "Request Headers", "definition": "Extra info sent with a request, like browser type, language preferences, or auth tokens." },
+        { "word": "Response Headers", "definition": "Extra info sent with a response, like content type, content length, or caching rules." },
+        { "word": "Stateless", "definition": "Each HTTP request is independent — the server doesn't remember previous requests." },
+        { "word": "Cookie", "definition": "A small piece of data saved on your browser to help the server remember you between requests." }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the correct order of the request-response cycle?",
+      "options": [
+        "Response → DNS Lookup → Request → Render",
+        "DNS Lookup → TCP Connection → HTTP Request → HTTP Response → Render",
+        "Render → HTTP Request → DNS Lookup → Response",
+        "TCP Connection → Render → DNS Lookup → Request"
+      ],
+      "answer": 1,
+      "explanation": "The correct order is: DNS Lookup (find the IP) → TCP Connection (open connection) → HTTP Request (ask for page) → HTTP Response (server sends page back) → Render (browser draws the page)."
+    },
+    {
+      "id": "q2",
+      "text": "HTTP is 'stateless'. What does this mean?",
+      "options": [
+        "HTTP is very slow",
+        "The server remembers everything about you",
+        "Each request is independent — the server has no memory of previous requests",
+        "You can only make one request per day"
+      ],
+      "answer": 2,
+      "explanation": "Stateless means each HTTP request stands alone — the server doesn't remember your previous requests. This is why we need cookies and sessions to keep you logged in as you navigate a site!"
+    },
+    {
+      "id": "q3",
+      "text": "What are HTTP headers?",
+      "options": [
+        "The visual title at the top of a web page",
+        "Extra information sent alongside a request or response",
+        "The HTML <h1> tags on a page",
+        "The server's IP address"
+      ],
+      "answer": 1,
+      "explanation": "HTTP headers are extra pieces of metadata sent with requests and responses. Request headers might say 'I'm Chrome browser' or 'I accept English content'. Response headers might say 'this content is HTML' or 'cache this for 1 hour'."
+    },
+    {
+      "id": "q4",
+      "text": "Why might a single web page trigger HUNDREDS of HTTP requests?",
+      "options": [
+        "It's a bug — web pages should only make one request",
+        "Because each CSS file, JS file, image, and font needs its own separate request",
+        "Because the server is slow",
+        "Because the user's internet is bad"
+      ],
+      "answer": 1,
+      "explanation": "A web page is made of many files — HTML, CSS files, JavaScript files, images, fonts, and more. Each file requires its own HTTP request! A complex site like Amazon might make 200+ requests just to load the homepage."
+    },
+    {
+      "id": "q5",
+      "text": "What is the purpose of a TLS handshake?",
+      "options": [
+        "To find the IP address of a domain",
+        "To send form data to a server",
+        "To agree on encryption keys so communication is secure (HTTPS)",
+        "To speed up page loading"
+      ],
+      "answer": 2,
+      "explanation": "The TLS handshake is where your browser and the server agree on encryption — they swap keys so all future communication is scrambled and secure. This is what makes HTTPS secure!"
+    }
+  ]
+}

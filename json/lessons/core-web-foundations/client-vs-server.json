@@ -1,0 +1,94 @@
+{
+  "id": "client-vs-server",
+  "chapterId": "core-web-foundations",
+  "title": "Client vs Server",
+  "order": 2,
+  "emoji": "🤝",
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You've heard the words 'client' and 'server' — but what exactly makes them different? Think of it like a restaurant: there are customers (clients) who order food, and there's a kitchen (server) that makes and sends the food. They're both needed, but they do very different jobs!"
+    },
+    {
+      "type": "explanation",
+      "title": "The Client — That's You! 👦",
+      "text": "The client is whatever you use to browse the web — your laptop, your phone, your tablet. It runs a browser (like Chrome), and its job is to ask for things and show them to you. The client runs code called HTML, CSS, and JavaScript right on your device. This is called 'client-side' code."
+    },
+    {
+      "type": "explanation",
+      "title": "The Server — The Kitchen 🍳",
+      "text": "A server is a powerful computer sitting somewhere in a big building (called a data center), running 24 hours a day, 7 days a week. Its job is to wait for requests, do work (like looking up your profile in a database), and send back the right response. You never see a server directly — you only see what it sends you."
+    },
+    {
+      "type": "comparison",
+      "title": "Side by Side",
+      "items": [
+        { "client": "Runs on your device", "server": "Runs in a data center far away" },
+        { "client": "You can see and touch it", "server": "You never see it directly" },
+        { "client": "Asks for things (requests)", "server": "Provides things (responses)" },
+        { "client": "Runs HTML, CSS, JavaScript", "server": "Runs Node.js, Python, PHP, etc." },
+        { "client": "One person uses it", "server": "Millions of people use it at once" }
+      ]
+    },
+    {
+      "type": "analogy",
+      "title": "The Library Analogy 📚",
+      "text": "Imagine you go to a library. You are the client — you walk up to the librarian (the server) and say 'I want the Harry Potter book.' The librarian goes to the shelves (the database), finds the book, and hands it to you. You then read the book at your table (your browser). The librarian never comes to your house — you always go to them!"
+    },
+    {
+      "type": "explanation",
+      "title": "Why Does This Matter?",
+      "text": "When you write frontend code (HTML, CSS, JavaScript), that code runs on the CLIENT — inside the user's browser. When you write backend code, it runs on the SERVER. As a frontend developer, you mostly write client-side code, but you'll often talk to servers to get data like user profiles, photos, or messages."
+    },
+    {
+      "type": "fun-fact",
+      "text": "🤯 Fun Fact: Google has over 1 million servers around the world. When you search for something, dozens of those servers work together in milliseconds to give you your answer!"
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        { "word": "Client", "definition": "Your device (laptop, phone) running a browser. It makes requests." },
+        { "word": "Server", "definition": "A powerful computer in a data center that responds to requests." },
+        { "word": "Client-side", "definition": "Code that runs in the user's browser (HTML, CSS, JavaScript)." },
+        { "word": "Server-side", "definition": "Code that runs on the server (Node.js, Python, etc.)." },
+        { "word": "Data center", "definition": "A big building full of servers, kept cool and running 24/7." }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Which of these is an example of a CLIENT?",
+      "options": ["A data center", "Your laptop running Chrome", "Google's main computer", "A database"],
+      "answer": 1,
+      "explanation": "Your laptop running a browser is the client! It's the device YOU use to request and view web pages."
+    },
+    {
+      "id": "q2",
+      "text": "HTML, CSS and JavaScript run on the...",
+      "options": ["Server", "Database", "Client (browser)", "Data center"],
+      "answer": 2,
+      "explanation": "HTML, CSS, and JavaScript are client-side languages — they run right inside your browser on your own device!"
+    },
+    {
+      "id": "q3",
+      "text": "How many people can use one server at the same time?",
+      "options": ["Just one person", "Only 2 people", "Up to 10 people", "Millions of people"],
+      "answer": 3,
+      "explanation": "Servers are built to handle millions of requests at once! That's why one Google server can answer searches for people all around the world simultaneously."
+    },
+    {
+      "id": "q4",
+      "text": "What does a server do when it receives a request?",
+      "options": [
+        "It ignores it",
+        "It asks the client for help",
+        "It does work and sends back a response",
+        "It shuts down"
+      ],
+      "answer": 2,
+      "explanation": "When a server gets a request, it does the necessary work (like finding data) and then sends back a response — just like a librarian finding and handing you the book you asked for."
+    }
+  ]
+}
