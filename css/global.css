@@ -93,3 +93,9 @@ input.lesson-checkbox-input:checked + .checkbox::after{
 body{
     padding: 0 15px;
 }
+.explanation_container {
+    background: #070a0c8e;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
