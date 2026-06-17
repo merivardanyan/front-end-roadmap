@@ -63,39 +63,7 @@
     </main>
     <footer></footer>
 
-    <script>
-        fetch('json/chapters.json')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                show_chapters(data.chapters);
-            });
-        function show_chapters(arr) {
-            arr.forEach((chapter,ind) => {
-                const col = Math.floor(ind / arr.length * 3);
-                console.log(ind % 6);
-                const li = document.createElement('li');
-                li.className = 'font-bold';
-                li.innerHTML = `
-                    <div class="lesson-info flex items-center gap-2">
-
-                        <input class="lesson-checkbox-input" type="checkbox" id="${chapter.slug}"
-                            name="${chapter.slug}" />
-                        <label for="${chapter.slug}" class="checkbox">
-                        </label>
-                        <a class="lesson-title" href="chapter.html?chapter=${chapter.slug}">${chapter.title}</a>
-                        <div class="lesson">Chapter ${chapter.order}</div>
-                    </div>
-                    <div class="flex justify-center py-2">
-                    <svg class="w-6 h-6">
-                        <use href="#arrow-down"></use>
-                    </svg>
-                </div>
-            `;
-                document.querySelectorAll('.chapter-list')[col].appendChild(li);
-            });
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
