@@ -1,38 +1,6 @@
 
-async function getChapterLessons(chapter) {
-    if (!chapter) {
-        return;
-    }
-    try {
-        const data = await fetchWithCache(`json/lessons.json`);
-        if (!data?.chapters?.[chapter]) {
-            return;
-        }
-        showChapters(data.chapters[chapter].lessons, chapter);
-        return data.chapters[chapter];
-    }
-    catch (error) {
-        console.error('Error fetching chapters data:', error);
-        return;
-    }
 
-}
-async function fetchWithCache(url) {
-    try {
-        const cache = await caches.open('lessons-v1');
-        const cached = await cache.match(url);
-        if (cached && cached.ok) return cached.json();
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        cache.put(url, response.clone());
-        return response.json();
-    } catch (error) {
-        console.error('Fetch error:', error);
-        throw error;
-    }
-}
+
 function chapterNotFound() {
     // document.querySelector('.chapter-title').textContent = `Unknown Chapter`;
     document.querySelector('.chapter-list').textContent = 'Sorry, we couldn\'t find the chapter you\'re looking for. Please check the URL and try again.';
@@ -61,16 +29,12 @@ function showLesson(lesson) {
         })
     }
 }
-function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str ?? '';
-    return div.innerHTML;
-}
+
 function showChapters(arr, chapter) {
     const chapter_list = document.querySelector('.chapter-list');
     chapter_list.replaceChildren();
     const divfrag = document.createDocumentFragment();
-    arr.forEach(lesson => {
+    (arr || []).forEach(lesson => {
         const li = document.createElement('li');
         li.className = 'font-bold';
         li.innerHTML = `
@@ -103,9 +67,13 @@ function showChapters(arr, chapter) {
 async function init() {
     const chapter = new URLSearchParams(window.location.search).get('chapter') || '';
     const result = await getChapterLessons(chapter);
+    console.log(result);
     if (!result) {
         chapterNotFound();
+        return;
     }
+    showChapters(result?.lessons, chapter);
+
 }
 
 function lessonKeyTerms(section) {
@@ -134,19 +102,37 @@ function lessonQuestions(question) {
         <div class="grid grid-cols-2 gap-2 py-2 flex-wrap">
            ${answers}
         </div>
-            <button class="btn">Show Answer</button>
-
-        <p class="text-gray-700">${escapeHtml(question?.answer)}</p>
     `;
-    questionDiv.querySelectorAll('.answer').forEach((answer, ind) => answer.addEventListener('click', () => {
-        answer.classList.toggle('active');
-        if (ind + 1 === question.answer) {
-            answer.classList.add('correct');
+    const answersButtons = questionDiv.querySelectorAll('.answer');
+    let answerLocked = false;
+    answersButtons.forEach((answer, ind) => answer.addEventListener('click', () => {
+        if (!answerLocked) {
+            if (ind + 1 === question.answer) {
+                answer.classList.add('correct');
+            }
+            else {
+                answer.classList.add('incorrect');
+                setTimeout(() => {
+                    answerLocked = false;
+                    answer.classList.remove('incorrect');
+
+                }, 2000);
+            }
+            answerLocked = true;
         }
+
+
     }))
     return questionDiv;
 }
 function lessonExercises() { }
-function lessonTopics() { }
 
+// check answer in question not finished
+// progress saves on localstorage not finished
+function saveProgress(){
+
+}
+function loadProgress(){
+    
+}
 init();

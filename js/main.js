@@ -1,28 +1,6 @@
 const COLUMN_COUNT = 3;
 
-async function getChapters() {
-    try {
-        let data = await fetch('json/chapters.json');
-        if (!data.ok) {
-            throw new Error(`HTTP error! status: ${data.status}`);
-        }
-        data = await data.json();
-        if (!Array.isArray(data?.chapters)) {
-            throw new Error('Invalid chapters data');
-        }
 
-        showChapters(data.chapters);
-    }
-    catch (error) {
-        console.error('Error fetching chapters data:', error);
-    }
-
-}
-function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str ?? '';
-    return div.innerHTML;
-}
 function showChapters(chapters) {
     const colSize = Math.ceil(chapters.length / COLUMN_COUNT);
     const columns = document.querySelectorAll('.chapter-list');
@@ -63,4 +41,12 @@ function createChapterColumnFragment(chapters, column, size, columnElement) {
     columnElement.appendChild(divFragment);
 
 }
-getChapters();
+async function init(){
+    const chapters = await getChapters();
+    if(!chapters) return;
+    showChapters(chapters);
+    const chapterLessons = await getLessons();
+    console.log(chapterLessons)
+    loadProgress(chapterLessons.chapters);
+}
+init();
