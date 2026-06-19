@@ -7,73 +7,86 @@
   "sections": [
     {
       "type": "intro",
-      "text": "Imagine you want to send a letter to your friend who lives far away. You write the letter, put it in an envelope, write their address on it, and drop it in a mailbox. A postman picks it up, carries it across the country, and delivers it to your friend's door. The web works almost exactly like this — except instead of letters, we send web pages, and instead of postmen, we have computers!"
+      "text": "Every time you open a website, something amazing happens in less than a second. Your computer talks to another computer far away, asks for a page, and gets it back. Let's break down exactly what happens when you use the internet."
     },
     {
       "type": "explanation",
-      "title": "The Big Picture",
-      "text": "The web is a huge collection of pages — like a gigantic library — stored on special computers called servers all around the world. When you want to see a page, your computer (the client) asks the server for it, and the server sends it back. This all happens in less than a second!"
+      "title": "What is the Internet?",
+      "text": "The internet is a giant network of computers all connected to each other, all over the world. These computers can send messages to one another through cables, wires, and even satellites. When you go on a website, your computer is just asking another computer to send it some information."
     },
     {
-      "type": "analogy",
-      "title": "Think of it like a Pizza Shop 🍕",
-      "text": "You (the client) call a pizza shop (the server) and say 'I want a pepperoni pizza!' (a request). The pizza shop makes your pizza and delivers it to your house (a response). The web works the same way — you ask for a page, the server sends it to you."
+      "type": "explanation",
+      "title": "What is the Web?",
+      "text": "The web, short for World Wide Web, is one way people use the internet. It is made of pages full of text, pictures, and videos that are linked together. You click a link on one page and it takes you to another page. The internet is the network of roads, and the web is one type of car driving on it."
     },
     {
       "type": "steps",
-      "title": "What happens when you type google.com?",
+      "title": "What Happens When You Visit a Website",
       "items": [
-        "You type 'google.com' in your browser and press Enter.",
-        "Your computer looks up where Google lives (like looking up a phone number in a book). This is called DNS.",
-        "Your computer connects to Google's server and says 'Can I have your homepage please?'",
-        "Google's server sends back all the code for the homepage.",
-        "Your browser reads that code and draws the page on your screen."
+        "You type a website address into your browser and press enter.",
+        "Your browser asks a special computer called a server: can you send me this page?",
+        "The server finds the page and sends it back to your browser.",
+        "Your browser reads the page and shows it to you on the screen.",
+        "This whole trip can happen in a tiny fraction of a second, even if the server is on the other side of the world."
       ]
     },
     {
+      "type": "analogy",
+      "title": "Think of it like Ordering Food",
+      "text": "Visiting a website is like calling a restaurant and asking for a pizza. You are the browser, the restaurant is the server. You ask for what you want, the restaurant makes it, and then sends it back to you. You don't need to know how the kitchen works, you just need to ask and wait for your order."
+    },
+    {
       "type": "fun-fact",
-      "text": "🤯 Fun Fact: The very first website ever made was by Tim Berners-Lee in 1991. It was just plain text — no pictures, no colors, no videos. You can still visit it today!"
+      "text": "The internet does not have one single owner. It is made up of millions of computers and networks all around the world, all agreeing to talk to each other using the same rules."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "Client", "definition": "Your computer or phone — the thing asking for web pages." },
-        { "word": "Server", "definition": "A special computer that stores websites and sends them to you." },
-        { "word": "Request", "definition": "When your computer asks for a web page." },
-        { "word": "Response", "definition": "When the server sends the web page back to you." },
-        { "word": "Browser", "definition": "The app you use to view web pages, like Chrome or Firefox." }
+        { "word": "Internet", "definition": "A huge network of computers around the world that can send messages to each other." },
+        { "word": "Web", "definition": "Short for World Wide Web, a system of linked pages that you can visit using a browser." },
+        { "word": "Server", "definition": "A computer that stores websites and sends them to your browser when you ask for them." },
+        { "word": "Browser", "definition": "The app on your device, like Chrome or Safari, that asks for web pages and shows them to you." },
+        { "word": "Network", "definition": "A group of computers that are connected together and can talk to each other." }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What do we call the computer that stores websites and sends them to you?",
-      "options": ["Client", "Browser", "Server", "Router"],
-      "answer": 2,
-      "explanation": "A server is a special computer that stores websites. When you ask for a page, the server sends it to you — just like a pizza shop sends you your pizza!"
+      "text": "What is the internet?",
+      "options": [
+        "A single computer in one building",
+        "A huge network of computers connected around the world",
+        "A type of website",
+        "A program for writing code"
+      ],
+      "answer": 1,
+      "explanation": "The internet is a giant network made of millions of computers all over the world that are connected and can send information to each other."
     },
     {
       "id": "q2",
-      "text": "What is YOUR computer called when it asks for a web page?",
-      "options": ["A server", "A client", "A router", "A domain"],
-      "answer": 1,
-      "explanation": "Your computer is the client — it makes requests to servers. Think of yourself as the customer at a pizza shop!"
+      "text": "What is a server?",
+      "options": [
+        "A computer that stores websites and sends them when asked",
+        "A type of internet cable",
+        "The screen you look at",
+        "A button on your keyboard"
+      ],
+      "answer": 0,
+      "explanation": "A server is a computer that stores web pages and other files, and sends them to your browser whenever you ask for them."
     },
     {
       "id": "q3",
-      "text": "When you type a website address and press Enter, what is your computer sending to the server?",
-      "options": ["A response", "A cookie", "A request", "A password"],
-      "answer": 2,
-      "explanation": "Your computer sends a request — it's asking the server 'Hey, can you send me this web page please?'"
-    },
-    {
-      "id": "q4",
-      "text": "Which app do you use to view websites?",
-      "options": ["A server", "A browser", "A compiler", "A terminal"],
+      "text": "What does your browser do when you visit a website?",
+      "options": [
+        "It builds the website from scratch by itself",
+        "It asks a server for the page and then shows it to you",
+        "It deletes old websites",
+        "It creates a new server"
+      ],
       "answer": 1,
-      "explanation": "A browser (like Chrome, Firefox, or Safari) is the app that reads the code sent by the server and shows it as a beautiful web page on your screen."
+      "explanation": "Your browser sends a request to a server asking for the page, then once it gets the page back, it shows it to you on your screen."
     }
   ]
 }

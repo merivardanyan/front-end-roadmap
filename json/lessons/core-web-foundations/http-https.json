@@ -7,105 +7,86 @@
   "sections": [
     {
       "type": "intro",
-      "text": "Have you ever noticed that websites start with 'http://' or 'https://'? These aren't just random letters — they're the rules your computer and the server use to talk to each other. Think of it like a language: if you and your friend both speak English, you can understand each other. HTTP is the language that clients and servers use to communicate on the web!"
+      "text": "Whenever your browser talks to a server, it needs to follow a set of rules so both sides understand each other. That set of rules is called HTTP, and its safer version is called HTTPS."
     },
     {
       "type": "explanation",
-      "title": "What is HTTP? 📨",
-      "text": "HTTP stands for HyperText Transfer Protocol. Don't let those big words scare you! It's just a set of rules that says 'here's how you ask for a web page' and 'here's how the server sends it back.' Without these rules, your computer and the server wouldn't understand each other — like trying to talk to someone who speaks a completely different language."
+      "title": "What is HTTP?",
+      "text": "HTTP stands for HyperText Transfer Protocol. It is the language that browsers and servers use to talk to each other. It is just a set of agreed rules, like how to ask for a page, and how to send a page back. Without HTTP, your browser and the server would not understand each other at all."
     },
     {
       "type": "explanation",
-      "title": "What are HTTP Methods? 🎯",
-      "text": "HTTP has different types of requests called methods. The most common ones are GET (please give me something), POST (here's some new information), PUT (replace this existing thing), and DELETE (remove this thing). As a web developer you'll use all of these when talking to servers!"
+      "title": "What is HTTPS?",
+      "text": "HTTPS is the same idea as HTTP, but with one important extra feature: it is secure. The S stands for Secure. HTTPS scrambles the information being sent so that nobody else watching the connection can read it. This matters a lot when you type in passwords or credit card numbers."
     },
     {
       "type": "steps",
-      "title": "The 4 Most Important HTTP Methods",
+      "title": "How HTTP Requests and Responses Work",
       "items": [
-        "GET — 'Give me this page/data.' Like asking a librarian for a book.",
-        "POST — 'Here's new data, please save it.' Like handing in a filled-out form.",
-        "PUT — 'Replace this existing thing with new data.' Like editing a saved document.",
-        "DELETE — 'Remove this thing.' Like asking the librarian to throw away a book."
+        "Your browser sends an HTTP request to a server, asking for a page.",
+        "The request includes details like which page you want and what type of browser you are using.",
+        "The server reads the request and prepares a response.",
+        "The server sends back an HTTP response, including the page content and a status code.",
+        "Your browser reads the response and displays the page on your screen."
       ]
     },
     {
-      "type": "explanation",
-      "title": "So What is HTTPS? 🔐",
-      "text": "HTTPS is the same as HTTP but with a HUGE bonus: it's encrypted! The 'S' stands for Secure. When you visit an HTTPS website, all the information sent between you and the server is scrambled so nobody else can read it. This is super important for things like passwords, credit card numbers, and private messages."
-    },
-    {
       "type": "analogy",
-      "title": "HTTP vs HTTPS — The Postcard vs Letter Analogy ✉️",
-      "text": "HTTP is like sending a postcard — anyone who handles it along the way can read your message. HTTPS is like sending a letter in a locked box — only you and the person you're sending it to have the key. Always use HTTPS for anything private!"
-    },
-    {
-      "type": "explanation",
-      "title": "HTTP Status Codes 🚦",
-      "text": "When a server responds, it sends a number called a status code to tell you how things went. 200 means 'Everything worked great!' 404 means 'I couldn't find what you asked for.' 500 means 'Something went wrong on my end!' You've probably seen a 404 page before!"
+      "title": "Think of it like Sending a Letter",
+      "text": "HTTP is like writing a letter using a normal envelope: anyone who handles it along the way could peek inside if they wanted to. HTTPS is like sealing that same letter inside a locked box: only the person with the right key, the server, can open it and read what is inside."
     },
     {
       "type": "fun-fact",
-      "text": "🔒 Fun Fact: In 2010, most websites used HTTP. By 2023, over 95% of web traffic is HTTPS! Google even marks HTTP sites as 'Not Secure' in Chrome to warn you."
+      "text": "You can usually tell a website is using HTTPS by looking for a small lock icon next to the website address in your browser."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "HTTP", "definition": "The set of rules clients and servers use to communicate on the web." },
-        { "word": "HTTPS", "definition": "HTTP but encrypted and secure — scrambles your data so nobody can snoop." },
-        { "word": "GET", "definition": "An HTTP method for asking the server to send you some data." },
-        { "word": "POST", "definition": "An HTTP method for sending new data to the server." },
-        { "word": "Status code", "definition": "A number the server sends back to say how things went (200=OK, 404=Not Found)." },
-        { "word": "Encrypted", "definition": "Scrambled so only the right person can read it." }
+        { "word": "HTTP", "definition": "HyperText Transfer Protocol, the set of rules browsers and servers use to talk to each other." },
+        { "word": "HTTPS", "definition": "A secure version of HTTP that scrambles information so others cannot read it." },
+        { "word": "Protocol", "definition": "A set of agreed rules that two computers follow so they can understand each other." },
+        { "word": "Status Code", "definition": "A short number a server sends back to tell the browser what happened, like 200 for success or 404 for not found." },
+        { "word": "Secure Connection", "definition": "A connection where the information sent between client and server is scrambled and protected." }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What does the 'S' in HTTPS stand for?",
-      "options": ["Speed", "Secure", "Simple", "Server"],
+      "text": "What does HTTP help your browser and a server do?",
+      "options": [
+        "Play games together",
+        "Talk to each other using a shared set of rules",
+        "Store passwords",
+        "Draw pictures"
+      ],
       "answer": 1,
-      "explanation": "The 'S' stands for Secure! HTTPS encrypts (scrambles) the data between your browser and the server so nobody else can read it."
+      "explanation": "HTTP is a set of rules that browsers and servers both follow, so they can understand each other when sending requests and responses."
     },
     {
       "id": "q2",
-      "text": "Which HTTP method would you use to ASK a server to GIVE you a web page?",
-      "options": ["DELETE", "POST", "GET", "PUT"],
-      "answer": 2,
-      "explanation": "GET is used to request (get) data from a server. When you type a URL and press Enter, your browser sends a GET request!"
+      "text": "What makes HTTPS different from HTTP?",
+      "options": [
+        "HTTPS is much slower and old",
+        "HTTPS scrambles the information so it stays private and secure",
+        "HTTPS only works on phones",
+        "There is no real difference"
+      ],
+      "answer": 1,
+      "explanation": "HTTPS adds security by scrambling the information sent between the browser and the server, so it cannot be easily read by anyone else."
     },
     {
       "id": "q3",
-      "text": "You see a status code of 404 on a website. What does it mean?",
+      "text": "What can you look for in your browser to see if a site uses HTTPS?",
       "options": [
-        "Everything worked great!",
-        "The server crashed",
-        "The page could not be found",
-        "You need to log in"
-      ],
-      "answer": 2,
-      "explanation": "404 means 'Not Found' — the server looked for what you asked for but couldn't find it. It's one of the most famous error codes on the web!"
-    },
-    {
-      "id": "q4",
-      "text": "What is HTTP?",
-      "options": [
-        "A programming language",
-        "The rules clients and servers use to communicate",
-        "A type of database",
-        "A web browser"
+        "A picture of a star",
+        "A small lock icon next to the website address",
+        "A loud sound",
+        "A red button"
       ],
       "answer": 1,
-      "explanation": "HTTP (HyperText Transfer Protocol) is a set of rules — a communication protocol — that lets clients and servers understand each other when sharing web pages."
-    },
-    {
-      "id": "q5",
-      "text": "Which is SAFER to use when entering your password on a website?",
-      "options": ["HTTP", "HTTPS", "They are both equally safe", "Neither is safe"],
-      "answer": 1,
-      "explanation": "HTTPS is much safer! It encrypts your data — like putting it in a locked box — so even if someone intercepts it, they can't read your password."
+      "explanation": "Browsers usually show a small lock icon near the address bar when a website is using a secure HTTPS connection."
     }
   ]
 }

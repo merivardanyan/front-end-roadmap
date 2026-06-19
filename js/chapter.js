@@ -20,37 +20,47 @@ function showLesson(lesson) {
             section_div.appendChild(lessonKeyTerms(section));
         }
 
+
         explanation_container.appendChild(section_div);
     });
     if ((lesson?.questions || []).length > 0) {
         lesson?.questions.forEach(question => {
-            explanation_container.appendChild(lessonQuestions(question));
+            explanation_container.appendChild(lessonQuestions(question, lesson.chapterId, lesson?.id));
 
         })
     }
 }
 
-function showChapters(arr, chapter) {
+function showChapters(arr, chapter, chapterTitle) {
     const chapter_list = document.querySelector('.chapter-list');
     chapter_list.replaceChildren();
     const divfrag = document.createDocumentFragment();
+    document.querySelector('.chapter-title').textContent = chapterTitle;
+    const chapterHtmlEl = document.querySelector(`.chapter-progress`);
+    showProgress(chapterHtmlEl, progress?.chapters?.[chapter]?.progress ?? 0);
     (arr || []).forEach(lesson => {
         const li = document.createElement('li');
         li.className = 'font-bold';
         li.innerHTML = `
                         <div class="lesson-info flex items-center gap-2 my-2">
-                            <input class="lesson-checkbox-input" type="checkbox" id="${escapeHtml(lesson?.slug)}"
-                                name="${escapeHtml(lesson?.slug)}" />
-                            <label for="${escapeHtml(lesson?.slug)}" class="checkbox">
-                            </label>
+                            <div class="lesson-progress lesson-${lesson?.id}">
+                                <div class="progress-bar">
+                                    <div class="done"></div>
+                                </div>
+                                <div class="hide progress-percent"></div>
+                            </div>
                             <span class="lesson-title">${escapeHtml(lesson?.title)}</span>
                             <div class="lesson">Lesson ${escapeHtml(String(lesson?.order))}</div>
                         </div>  
                 `;
+        showProgress(li.querySelector(`.lesson-${lesson?.id}`), progress?.chapters?.[chapter]?.lessons?.[lesson?.id].progress ?? 0);
         li.addEventListener('click', async () => {
             try {
                 const data = await fetchWithCache(`json/lessons/${chapter}/${lesson?.id}.json`);
+                saveLastOpenedLesson(chapter, lesson.id);
                 showLesson(data);
+                initializeLesson(chapter, lesson?.id, data)
+
             } catch (error) {
                 chapterNotFound();
                 console.error('Error fetching lesson data:', error);
@@ -72,7 +82,7 @@ async function init() {
         chapterNotFound();
         return;
     }
-    showChapters(result?.lessons, chapter);
+    showChapters(result?.lessons, chapter, result?.title);
 
 }
 
@@ -92,7 +102,7 @@ function lessonKeyTerms(section) {
     return terms_div;
 }
 
-function lessonQuestions(question) {
+function lessonQuestions(question, chapter, lesson) {
     const questionDiv = document.createElement('div');
     const answers = (question?.options || []).map(e => `<div class="answer w-3/6">${escapeHtml(e)}</div>`).join('');
     questionDiv.className = 'question';
@@ -107,8 +117,15 @@ function lessonQuestions(question) {
     let answerLocked = false;
     answersButtons.forEach((answer, ind) => answer.addEventListener('click', () => {
         if (!answerLocked) {
-            if (ind + 1 === question.answer) {
+            if (ind === question.answer) {
                 answer.classList.add('correct');
+                completeQuestion(chapter, lesson, question.id)
+
+                console.log(progress?.chapters?.[chapter]?.lessons?.[lesson]?.progress);
+
+                showProgress(document.querySelector(`.chapter-progress`), progress?.chapters?.[chapter]?.progress ?? 0);
+                showProgress(document.querySelector(`.lesson-${lesson}`), progress?.chapters?.[chapter]?.lessons?.[lesson]?.progress ?? 0);
+
             }
             else {
                 answer.classList.add('incorrect');
@@ -125,14 +142,5 @@ function lessonQuestions(question) {
     }))
     return questionDiv;
 }
-function lessonExercises() { }
 
-// check answer in question not finished
-// progress saves on localstorage not finished
-function saveProgress(){
-
-}
-function loadProgress(){
-    
-}
 init();

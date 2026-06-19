@@ -5,38 +5,6 @@ try {
 } catch {
     progress = {};
 }
-function loadProgress(chapters) {
-    if (!Object.values(progress).length) {
-        progress.progress = 0;
-        progress.totalChapters = Object.keys(chapters).length;
-        progress.chapters = {};
-        Object.entries(chapters).forEach(([key, value]) => {
-            const lessons = (value?.lessons || []).reduce((obj, e) => {
-                // (value?.lessons || []).forEach(e => {
-                obj[e.id] = {
-                    completedQuestions: [],
-                    progress: 0,
-                    totalQuestions: 0
-                };
-                return obj;
-                // })
-            }, {});
-            progress.chapters[key] = {
-                chapter: key,
-                lessons,
-                progress: 0,
-                totalLessons: value?.lessons.length || 0
-            };
-
-        });
-        localStorage.setItem('progress', JSON.stringify(progress));
-    }
-}
-
-
-function saveProgress() {
-    localStorage.setItem('progress', JSON.stringify(progress));
-}
 function updateLessonProgress(lesson, question) {
    
     if(lesson.completedQuestions?.includes(question))
@@ -44,6 +12,7 @@ function updateLessonProgress(lesson, question) {
 
     lesson.completedQuestions.push(question); 
 
+    if (!lesson.totalQuestions) return false;
     
     lesson.progress =
         (lesson.completedQuestions.length /
@@ -68,7 +37,7 @@ function updateOverallProgress() {
     progress.progress = ((chapters.reduce((s, e) => s + e.progress, 0)) / (progress.totalChapters * 100));
 }
 
-function completeQuestion(questionCount = 0, chapter = 'core-web-foundations', lesson = 'how-the-web-works', questionID = "q3") {
+function completeQuestion(chapter , lesson, questionID) {
 
     const chapterInStorage = progress.chapters?.[chapter];
     const lessonInStorage = chapterInStorage?.lessons?.[lesson];
@@ -78,13 +47,15 @@ function completeQuestion(questionCount = 0, chapter = 'core-web-foundations', l
     if (!updateLessonProgress(lessonInStorage, questionID)) return;
     updateChapterProgress(chapterInStorage)
     updateOverallProgress()
-    saveProgress()
+    saveProgress(progress);
 }
 
 function initializeLesson(chapterSlug,lessonSlug, lessonData){
     const lessonInStorage = progress.chapters?.[chapterSlug]?.lessons?.[lessonSlug];
-     if (!lessonInStorage?.totalQuestions && lessonData.questions?.length > 0) {
+    if (!lessonInStorage) return;
+    if (!lessonInStorage?.totalQuestions && lessonData.questions?.length > 0) {
         lessonInStorage.totalQuestions = lessonData.questions.length
+        console.log(lessonInStorage);
     }
-    saveProgress()
+    saveProgress(progress)
 }

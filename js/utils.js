@@ -77,3 +77,56 @@ async function getLessons(){
         console.error('Error fetching chapters data:', error);
     }
 }
+
+function loadProgress(chapters,progress) {
+    if (!Object.values(progress).length) {
+        progress.progress = 0;
+        progress.totalChapters = Object.keys(chapters).length;
+        progress.chapters = {};
+        Object.entries(chapters).forEach(([key, value]) => {
+            const lessons = (value?.lessons || []).reduce((obj, e) => {
+                // (value?.lessons || []).forEach(e => {
+                obj[e.id] = {
+                    completedQuestions: [],
+                    progress: 0,
+                    totalQuestions: 0
+                };
+                return obj;
+                // })
+            }, {});
+            progress.chapters[key] = {
+                chapter: key,
+                lessons,
+                progress: 0,
+                totalLessons: value?.lessons.length || 0
+            };
+
+        });
+        localStorage.setItem('progress', JSON.stringify(progress));
+    }
+}
+
+
+function saveProgress(progress) {
+    localStorage.setItem('progress', JSON.stringify(progress));
+}
+
+function saveLastOpenedLesson(chapter, lesson) {
+    localStorage.setItem('lastOpenedLesson',JSON.stringify({chapter,lesson}));
+}
+
+function getLastOpenedLesson() {
+    try {
+        return JSON.parse(
+            localStorage.getItem(LAST_LESSON_KEY)
+        );
+    } catch {
+        return null;
+    }
+}
+
+function showProgress(progressElement, progress){
+    console.log(progressElement);
+    progressElement.querySelector(`.progress-bar .done`).style.width = `${progress.toFixed(2)}%`; 
+    progressElement.querySelector('.progress-percent').textContent = `${progress.toFixed(2)}`; 
+}

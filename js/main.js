@@ -21,32 +21,44 @@ function createChapterColumnFragment(chapters, column, size, columnElement) {
         const li = document.createElement('li');
         li.className = 'font-bold';
         li.innerHTML = `
-                    <div class="lesson-info flex items-center gap-2">
+                    <div class="lesson-info flex items-center justify-between gap-2 my-4">
 
-                        <input class="lesson-checkbox-input" type="checkbox" id="${escapeHtml(chapter.slug)}"
-                            name="${escapeHtml(chapter.slug)}" />
-                        <label for="${escapeHtml(chapter.slug)}" class="checkbox">
-                        </label>
+                        <div class="flex gap-2">
+                            <div class="chapter-progress chapter-${chapter.id}">
+                            <div class="progress-bar">
+                                <div class="done""></div>
+                            </div>
+                            <div class="hide progress-percent">0</div>
+                        </div>
                         <a class="lesson-title" href="chapter.html?chapter=${escapeHtml(chapter.slug)}">${escapeHtml(chapter.title)}</a>
-                        <div class="lesson">Chapter ${chapter.order}</div>
+                        </div>
+                        <div class="lesson justify-self-end">Chapter ${chapter.order}</div>
                     </div>
-                    <div class="flex justify-center py-2">
-                    <svg class="w-6 h-6">
-                        <use href="#arrow-down"></use>
-                    </svg>
-                </div>
+                   
             `;
+            console.log(li.querySelector(`.chapter-${chapter.id}`))
+        showProgress(li.querySelector(`.chapter-${chapter.id}`), progress?.chapters?.[chapter.id].progress ?? 0);
         divFragment.appendChild(li);
     }
     columnElement.appendChild(divFragment);
 
 }
-async function init(){
+async function init() {
     const chapters = await getChapters();
-    if(!chapters) return;
+    if (!chapters) return;
     showChapters(chapters);
     const chapterLessons = await getLessons();
     console.log(chapterLessons)
-    loadProgress(chapterLessons.chapters);
+    loadProgress(chapterLessons.chapters,progress);
+    console.log(progress.progress);
+    showProgress(document.querySelector(`.overall-progress`), progress?.progress ?? 0);
+    const lastLesson = getLastOpenedLesson();
+
+    if (lastLesson) {
+        // show Continue Learning button
+    }
+
 }
+
+
 init();

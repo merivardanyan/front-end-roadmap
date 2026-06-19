@@ -23,18 +23,24 @@
             <div class="logo">MV</div>
             <nav class="nav justify-self-end">
                 <ul class="flex gap-4">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Progress</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="chapter-page">
         <section class="hero secondary-bg py-12">
             <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-bold mb-4">HTML Roadmap</h1>
-                <p class="text-lg text-gray-700">Your guide to becoming a front-end developer</p>
+                <h1 class="text-4xl font-bold mb-4 chapter-title">HTML Roadmap</h1>
+                <div class="chapter-progress progress whitespace-nowrap flex w-5/6 justify-center items-center mt-8 mx-auto">
+                    <div class="progress-bar rounded-full h-4 relative">
+                        <div class="done"></div>
+                    </div>
+                    <div class="progress-text ml-4"> <span class="font-bold progress-percent">0</span> % Complete
+                    </div>
+                </div>
             </div>
         </section>
         <section id="roadmap">

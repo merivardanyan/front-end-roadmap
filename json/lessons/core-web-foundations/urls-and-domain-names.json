@@ -7,102 +7,86 @@
   "sections": [
     {
       "type": "intro",
-      "text": "Every single page on the internet has its own unique address — just like every house has its own street address. These web addresses are called URLs. Learning to read a URL is like learning to read a map — once you understand the parts, you can navigate anywhere on the internet!"
+      "text": "Every page on the internet has its own address, just like every house has its own address. That address is called a URL, and learning to read one helps you understand exactly where you are going on the web."
     },
     {
       "type": "explanation",
-      "title": "What is a URL? 📍",
-      "text": "URL stands for Uniform Resource Locator. That's a fancy way of saying 'the address of something on the web.' A URL tells your browser three main things: what rules to use to get there (the protocol), where to go (the domain), and exactly what to pick up (the path)."
+      "title": "What is a URL?",
+      "text": "URL stands for Uniform Resource Locator. It is the full address you type or click to visit a specific page on the internet. A URL tells your browser which protocol to use, which website to visit, and sometimes which exact page or file on that website."
     },
     {
       "type": "explanation",
-      "title": "Anatomy of a URL 🔬",
-      "text": "Let's break down this URL: https://www.example.com:443/blog/post-1?color=blue#section2 — Every part means something specific!"
+      "title": "What is a Domain Name?",
+      "text": "A domain name is the main part of a URL, the easy to remember name like example.com. It is just one piece of the full URL. Think of the domain name as the name of a building, while the full URL also tells you which room inside that building you want to visit."
     },
     {
       "type": "steps",
-      "title": "The Parts of a URL",
+      "title": "Breaking Down a URL",
       "items": [
-        "https:// — The Protocol. Rules for communication. (http or https)",
-        "www — The Subdomain. A section of the domain. (www is the most common, but you can have blog.example.com, shop.example.com, etc.)",
-        "example.com — The Domain Name. The main address of the website.",
-        ".com — The TLD (Top Level Domain). Could be .com, .org, .net, .io, etc.",
-        ":443 — The Port. Usually hidden — 443 is default for HTTPS, 80 for HTTP.",
-        "/blog/post-1 — The Path. Which specific page or file you want.",
-        "?color=blue — The Query String. Extra information sent to the page (after the ?).",
-        "#section2 — The Fragment. Jumps you to a specific part of the page."
+        "Protocol: the part like https:// that tells the browser how to talk to the server.",
+        "Domain name: the part like example.com that tells the browser which website to visit.",
+        "Path: the part after the domain, like /about, that points to a specific page on that website.",
+        "Query parameters: extra information after a question mark, like ?search=shoes.",
+        "Putting it all together, a full URL might look like https://example.com/about?search=shoes."
       ]
     },
     {
       "type": "analogy",
-      "title": "URL as a Home Address 🏠",
-      "text": "Think of it like a physical address. 'https' is like saying 'I'll walk there' (the mode of travel). 'example.com' is the city and street. '/blog/post-1' is the specific apartment number. '?color=blue' is a note you hand to the person at the door. '#section2' is 'go straight to the kitchen when you get inside.'"
-    },
-    {
-      "type": "explanation",
-      "title": "What is a Domain Name? 🏷️",
-      "text": "The domain name is the human-readable name you register to own a piece of the internet. You can buy domain names from registrars (companies that sell them) for usually a few dollars a year. Popular registrars include GoDaddy, Namecheap, and Google Domains. Once you own a domain, you point it to your server using DNS."
-    },
-    {
-      "type": "explanation",
-      "title": "Absolute vs Relative URLs",
-      "text": "An absolute URL includes everything — the full address from start to finish, like 'https://google.com/maps'. A relative URL only includes the path, like '/maps' — it assumes you're already on the same website. In code, you'll use relative URLs a lot when linking between pages of your own site!"
+      "title": "Think of it like a Home Address",
+      "text": "A domain name is like the name of an apartment building, such as Sunshine Apartments. A full URL is like the complete address, including the building name, the floor number, and the apartment number. It tells you exactly where to go, not just which building."
     },
     {
       "type": "fun-fact",
-      "text": "🌍 Fun Fact: There are over 350 million registered domain names in the world! The very first domain ever registered was 'symbolics.com' in 1985 — and it still exists today."
+      "text": "Domain names have to be registered and paid for every year, which is why companies sometimes lose their domain name if they forget to renew it."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "URL", "definition": "Uniform Resource Locator — the full address of a page or file on the web." },
-        { "word": "Protocol", "definition": "The first part of a URL (http/https) — the rules for communication." },
-        { "word": "Domain Name", "definition": "The human-friendly name of a website (example.com)." },
-        { "word": "Path", "definition": "The part after the domain that points to a specific page or file (/blog/post-1)." },
-        { "word": "Query String", "definition": "Extra data passed in the URL after a ? mark (?color=blue)." },
-        { "word": "Subdomain", "definition": "A prefix before the domain (like 'www' or 'blog' in blog.example.com)." }
+        { "word": "URL", "definition": "Uniform Resource Locator, the full address used to find a specific page on the internet." },
+        { "word": "Domain Name", "definition": "The easy to remember main part of a URL, like example.com." },
+        { "word": "Protocol", "definition": "The part of the URL, like https, that says how the browser should talk to the server." },
+        { "word": "Path", "definition": "The part of the URL after the domain name that points to a specific page." },
+        { "word": "Query Parameters", "definition": "Extra pieces of information added to a URL after a question mark." }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What does URL stand for?",
+      "text": "What is a URL?",
       "options": [
-        "Universal Resource Language",
-        "Uniform Resource Locator",
-        "Unique Route Link",
-        "User Resource Location"
+        "A type of computer virus",
+        "The full address used to find a page on the internet",
+        "A programming language",
+        "A picture file format"
       ],
       "answer": 1,
-      "explanation": "URL stands for Uniform Resource Locator — it's just a fancy name for a web address. Every page on the internet has a unique URL."
+      "explanation": "A URL is the complete address you use to find a specific page on the internet, including the protocol, domain name, and sometimes a path."
     },
     {
       "id": "q2",
-      "text": "In the URL 'https://shop.example.com/products?sort=price', what is 'shop' called?",
-      "options": ["The path", "The TLD", "The subdomain", "The fragment"],
-      "answer": 2,
-      "explanation": "'shop' is a subdomain — it's a section of the main domain 'example.com'. Subdomains let you have different sections of a site at different addresses, like shop.example.com or blog.example.com."
+      "text": "What is a domain name?",
+      "options": [
+        "The easy to remember main part of a URL, like example.com",
+        "A type of browser",
+        "A password",
+        "The text shown on a webpage"
+      ],
+      "answer": 0,
+      "explanation": "A domain name is the easy to remember part of a URL, like example.com, that identifies a particular website."
     },
     {
       "id": "q3",
-      "text": "In the URL 'https://example.com/news/article-5', what is '/news/article-5'?",
-      "options": ["The protocol", "The domain name", "The query string", "The path"],
-      "answer": 3,
-      "explanation": "'/news/article-5' is the path — it tells the server which specific page or resource you want. Think of it like an apartment number within a building (the domain)."
-    },
-    {
-      "id": "q4",
-      "text": "What does the '#section2' at the end of a URL do?",
+      "text": "In the URL https://example.com/about, what is /about called?",
       "options": [
-        "Sends data to the server",
-        "Jumps you to a specific section of the page",
-        "Changes the domain",
-        "Makes the connection secure"
+        "The protocol",
+        "The domain name",
+        "The path",
+        "The query parameter"
       ],
-      "answer": 1,
-      "explanation": "The fragment (#section2) is a client-side anchor — it doesn't get sent to the server at all! Instead, the browser uses it to scroll you to a specific element on the page that has that ID."
+      "answer": 2,
+      "explanation": "The /about part is called the path, and it points to a specific page within the website."
     }
   ]
 }
