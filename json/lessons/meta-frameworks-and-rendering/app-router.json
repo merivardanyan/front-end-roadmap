@@ -1,0 +1,124 @@
+{
+  "id": "app-router",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "App Router (Next.js 13+)",
+  "order": 3,
+  "summary": [
+    "The App Router is the modern way to structure a Next.js app.",
+    "You build routes using folders and files.",
+    "It supports React Server Components by default.",
+    "It replaced the older Pages Router."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Newer versions of Next.js introduced a fresh way to organize an app, called the App Router. It changes how you define pages and unlocks the newest React features, so it is worth understanding as the current default."
+    },
+    {
+      "type": "explanation",
+      "title": "What the App Router Is",
+      "text": "The App Router is Next.js's modern system for defining the structure of your app. Instead of configuring routes by hand, you create folders and special files, and the structure of your folders becomes the structure of your site. It is the recommended approach in current Next.js."
+    },
+    {
+      "type": "explanation",
+      "title": "What It Unlocks",
+      "text": "The App Router was built for the latest React features, especially Server Components, which it uses by default. It also handles things like shared layouts and loading states in a cleaner way. It replaced an older system called the Pages Router, which you will still see in many existing projects.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A folder structure on one side becoming a site's pages on the other",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Filing Cabinet That Builds Itself",
+      "text": "The App Router is like a filing cabinet where the folders you create automatically become the menu. Make a folder named about, and an about page appears. You organize by arranging folders, and the navigation builds itself from that structure.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Folders being added to a cabinet and a matching menu appearing",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using the App Router",
+      "items": [
+        "Create folders to represent your sections.",
+        "Add special files inside them to define pages.",
+        "The folder structure becomes your site's routes.",
+        "Use shared layouts and loading files as needed.",
+        "Server Components work here by default."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Both the App Router and the older Pages Router can even live in the same project during a move from one to the other, which helped teams upgrade gradually."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "App Router",
+          "definition": "The modern way to structure a Next.js app."
+        },
+        {
+          "word": "Folder",
+          "definition": "A directory that helps define a route."
+        },
+        {
+          "word": "Route",
+          "definition": "A page address built from the folder structure."
+        },
+        {
+          "word": "Server Components",
+          "definition": "Components that run on the server, used by default here."
+        },
+        {
+          "word": "Pages Router",
+          "definition": "The older Next.js routing system."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the App Router?",
+      "options": [
+        "The modern way to structure a Next.js app",
+        "A type of image",
+        "A database",
+        "A CSS tool"
+      ],
+      "answer": 0,
+      "explanation": "The App Router is Next.js's modern system for structuring an app."
+    },
+    {
+      "id": "q2",
+      "text": "How do you build routes with it?",
+      "options": [
+        "Using folders and files",
+        "By writing a long config by hand",
+        "With images",
+        "With a database"
+      ],
+      "answer": 0,
+      "explanation": "You build routes by creating folders and files, and the structure becomes your routes."
+    },
+    {
+      "id": "q3",
+      "text": "What does it support by default?",
+      "options": [
+        "React Server Components",
+        "Only the Pages Router",
+        "Plain HTML only",
+        "No React"
+      ],
+      "answer": 0,
+      "explanation": "The App Router supports React Server Components by default."
+    }
+  ]
+}

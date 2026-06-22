@@ -1,0 +1,124 @@
+{
+  "id": "json",
+  "chapterId": "javascript-fundamentals",
+  "title": "JSON",
+  "order": 13,
+  "summary": [
+    "JSON is a simple text format for data.",
+    "It looks like JavaScript objects and arrays.",
+    "It is used to send data between a server and a browser.",
+    "Almost every web app uses it."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When a website talks to a server, they need a shared way to write down data so both understand it. The most common format is JSON. You have already seen its shape in this very app's lesson files."
+    },
+    {
+      "type": "explanation",
+      "title": "What JSON Is",
+      "text": "JSON stands for JavaScript Object Notation. It is a plain text way of writing data using keys and values, lists and pairs, that looks a lot like JavaScript objects and arrays. Because it is just text, it can travel anywhere."
+    },
+    {
+      "type": "explanation",
+      "title": "Why JSON Is Everywhere",
+      "text": "When a browser asks a server for data, the server usually sends it back as JSON text. Your code then turns that text into real JavaScript objects to work with. This back and forth is behind almost everything dynamic on the web.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A server sending JSON text that becomes JavaScript objects",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Universal Shipping Box",
+      "text": "JSON is like a standard shipping box. It does not matter what country sends it or receives it, everyone agrees on the box shape, so the contents arrive understood. JSON is that agreed shape for data, so any program can pack and unpack it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A standard box shipped between countries and unpacked the same way",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How JSON Is Used",
+      "items": [
+        "A browser asks a server for some data.",
+        "The server sends the data back as JSON text.",
+        "Your code turns that text into JavaScript objects.",
+        "You read and use the data like any object or array.",
+        "To send data back, you turn it into JSON text again."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Even though JSON has JavaScript in its name, almost every programming language can read and write it. That is a big reason it became the common language of web data."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "JSON",
+          "definition": "A simple text format for data."
+        },
+        {
+          "word": "Data",
+          "definition": "Information your program works with."
+        },
+        {
+          "word": "Text",
+          "definition": "Plain characters that can travel anywhere."
+        },
+        {
+          "word": "Object",
+          "definition": "A group of key and value pairs, like in JSON."
+        },
+        {
+          "word": "Parse",
+          "definition": "Turning JSON text into real objects to use."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is JSON?",
+      "options": [
+        "A simple text format for data",
+        "A web browser",
+        "A style language",
+        "A type of loop"
+      ],
+      "answer": 0,
+      "explanation": "JSON is a simple, plain text format for data."
+    },
+    {
+      "id": "q2",
+      "text": "What does JSON look like?",
+      "options": [
+        "A picture",
+        "JavaScript objects and arrays",
+        "A video",
+        "A spreadsheet only"
+      ],
+      "answer": 1,
+      "explanation": "JSON looks much like JavaScript objects and arrays."
+    },
+    {
+      "id": "q3",
+      "text": "What is JSON mainly used for?",
+      "options": [
+        "Styling pages",
+        "Sending data between a server and a browser",
+        "Playing sound",
+        "Storing images"
+      ],
+      "answer": 1,
+      "explanation": "JSON is mainly used to send data between a server and a browser."
+    }
+  ]
+}

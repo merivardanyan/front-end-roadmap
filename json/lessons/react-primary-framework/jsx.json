@@ -1,0 +1,124 @@
+{
+  "id": "jsx",
+  "chapterId": "react-primary-framework",
+  "title": "JSX",
+  "order": 2,
+  "summary": [
+    "JSX lets you write HTML like markup inside JavaScript.",
+    "It describes what a component should show.",
+    "It is not really HTML, it becomes JavaScript.",
+    "It keeps markup and logic together."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When you first see React code, you notice something odd, HTML sitting right inside JavaScript. That is JSX, and it is one of the things that makes React pleasant to write once you get used to it."
+    },
+    {
+      "type": "explanation",
+      "title": "What JSX Is",
+      "text": "JSX is a syntax that lets you write markup that looks like HTML directly inside your JavaScript. A component uses it to describe what should appear on screen. It looks like HTML, but it lives in your code, right next to the logic that drives it."
+    },
+    {
+      "type": "explanation",
+      "title": "It Becomes JavaScript",
+      "text": "JSX is not actually HTML, and the browser cannot read it directly. A build step turns your JSX into regular JavaScript that creates the elements. Because it is really JavaScript, you can drop values and small pieces of logic straight into your markup using curly braces.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "JSX markup with values in curly braces turning into JavaScript",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Fill in the Blanks Letter",
+      "text": "JSX is like a letter template with blanks you fill from your data. The fixed text is your markup, and the blanks, marked with curly braces, get filled with real values as you write. Dear blank, your order blank is ready. The shape stays, the details come from your code.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A letter template with blanks being filled from data",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using JSX",
+      "items": [
+        "Inside a component, write markup that looks like HTML.",
+        "Drop in values using curly braces.",
+        "Keep the markup close to the logic that drives it.",
+        "A build step turns the JSX into JavaScript.",
+        "React uses that to put elements on the screen."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A few names differ from plain HTML in JSX, since it is really JavaScript. The most famous is using className instead of class, because class is a reserved word in JavaScript."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "JSX",
+          "definition": "Markup that looks like HTML, written inside JavaScript."
+        },
+        {
+          "word": "Markup",
+          "definition": "The tags that describe what shows on screen."
+        },
+        {
+          "word": "Curly braces",
+          "definition": "How you drop values into JSX."
+        },
+        {
+          "word": "Build step",
+          "definition": "Turns JSX into plain JavaScript."
+        },
+        {
+          "word": "Component",
+          "definition": "The piece of UI that returns JSX."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does JSX let you write?",
+      "options": [
+        "HTML like markup inside JavaScript",
+        "A new programming language",
+        "Only plain text",
+        "Server settings"
+      ],
+      "answer": 0,
+      "explanation": "JSX lets you write HTML like markup directly inside JavaScript."
+    },
+    {
+      "id": "q2",
+      "text": "Is JSX really HTML?",
+      "options": [
+        "Yes, exactly",
+        "No, it becomes JavaScript",
+        "It is an image",
+        "It is a stylesheet"
+      ],
+      "answer": 1,
+      "explanation": "JSX is not really HTML, a build step turns it into JavaScript."
+    },
+    {
+      "id": "q3",
+      "text": "How do you drop values into JSX?",
+      "options": [
+        "With curly braces",
+        "With square brackets",
+        "With a hash",
+        "With quotes only"
+      ],
+      "answer": 0,
+      "explanation": "You drop values into JSX using curly braces."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "promises",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Promises",
+  "order": 1,
+  "summary": [
+    "A promise represents a value that will arrive later.",
+    "It is used for things that take time, like fetching data.",
+    "A promise can succeed, called resolve, or fail, called reject.",
+    "You attach what to do next with then and catch."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Some tasks finish instantly, but others take time, like asking a server for data. Your code cannot just stop and wait. A promise is JavaScript's way of saying the answer is coming, here is a placeholder for it."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Promise Is",
+      "text": "A promise is an object that stands in for a value you do not have yet. When you start a slow task, you get a promise right away. Later, that promise either succeeds with a result, called resolving, or fails with an error, called rejecting."
+    },
+    {
+      "type": "explanation",
+      "title": "Then and Catch",
+      "text": "You decide what happens when it settles. You attach a then to say what to do with the result on success, and a catch to handle a failure. The code reads as when this finishes, do that, instead of freezing while it waits.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A pending promise settling into either a result or an error",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Restaurant Buzzer",
+      "text": "Ordering food at a busy counter, they hand you a buzzer. That buzzer is a promise. You do not stand frozen at the counter, you go sit down. When the food is ready, the buzzer goes off, that is then. If they run out of your dish, they call you back to refund you, that is catch.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A diner holding a buzzer that lights up when the order is ready",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Promise",
+      "items": [
+        "Start a task that takes time, like fetching data.",
+        "You receive a promise straight away.",
+        "Attach a then for what to do on success.",
+        "Attach a catch for what to do on failure.",
+        "Your code keeps running while you wait."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Before promises, this waiting was handled with nested functions called callbacks, which you will meet in lesson 4. Promises were created to make that older style easier to read."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Promise",
+          "definition": "An object standing in for a value that arrives later."
+        },
+        {
+          "word": "Resolve",
+          "definition": "When a promise succeeds with a result."
+        },
+        {
+          "word": "Reject",
+          "definition": "When a promise fails with an error."
+        },
+        {
+          "word": "then",
+          "definition": "Runs code with the result on success."
+        },
+        {
+          "word": "catch",
+          "definition": "Runs code to handle a failure."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a promise represent?",
+      "options": [
+        "A value that will arrive later",
+        "A style rule",
+        "A web page",
+        "A loop"
+      ],
+      "answer": 0,
+      "explanation": "A promise stands in for a value you do not have yet but will get later."
+    },
+    {
+      "id": "q2",
+      "text": "What does it mean when a promise resolves?",
+      "options": [
+        "It fails with an error",
+        "It succeeds with a result",
+        "It is deleted",
+        "It repeats"
+      ],
+      "answer": 1,
+      "explanation": "Resolving means the promise succeeded and has a result."
+    },
+    {
+      "id": "q3",
+      "text": "What do you use to handle a failure?",
+      "options": [
+        "then",
+        "catch",
+        "loop",
+        "return"
+      ],
+      "answer": 1,
+      "explanation": "You attach a catch to handle a promise that fails."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "api-error-handling",
+  "chapterId": "data-apis-and-auth",
+  "title": "API Error Handling",
+  "order": 8,
+  "summary": [
+    "Requests can fail in many ways, so you plan for it.",
+    "The network can drop, or the server can return an error.",
+    "You check responses and use try and catch.",
+    "Good error handling shows the user a helpful message."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Talking to a server is one of the most failure prone things an app does. The internet drops, servers go down, requests time out. Good apps expect this and handle it gracefully, instead of breaking or freezing."
+    },
+    {
+      "type": "explanation",
+      "title": "The Ways Requests Fail",
+      "text": "A request can fail in a few ways. The network might be down, so the request never arrives. Or the server replies, but with an error, like not found or not allowed. Each needs handling. You combine try and catch for network failures with checking the response for server errors."
+    },
+    {
+      "type": "explanation",
+      "title": "Turning Failures into Messages",
+      "text": "The goal is to never leave the user staring at a frozen or blank screen. When something fails, you catch it and show a clear, friendly message, maybe with a retry button. This is the loading, success, and error pattern from the React lessons, with the error case properly handled.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A failed request turning into a friendly error message with a retry button",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Delivery That Might Not Arrive",
+      "text": "Handling API errors is like planning for a delivery that might go wrong. The parcel could get lost in transit, the network, or arrive damaged with a note, a server error. A good shop has a plan for both, a friendly message and a way to reorder, rather than leaving you wondering.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A delivery lost in transit or arriving damaged, with a clear plan for each",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Handling API Errors",
+      "items": [
+        "Wrap the request in try and catch for network failures.",
+        "Also check the response for server errors.",
+        "Decide what each kind of failure should show.",
+        "Display a clear, friendly message to the user.",
+        "Offer a way to retry where it makes sense."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Remember that fetch does not throw on a server error by itself, so checking the response status is a step people often forget, leading to bugs where a failed request looks like a success."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Error handling",
+          "definition": "Planning for requests that fail."
+        },
+        {
+          "word": "Network failure",
+          "definition": "When the request never reaches the server."
+        },
+        {
+          "word": "Server error",
+          "definition": "When the server replies with a problem."
+        },
+        {
+          "word": "try/catch",
+          "definition": "How you catch network failures."
+        },
+        {
+          "word": "Retry",
+          "definition": "Giving the user a way to try again."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Why plan for request failures?",
+      "options": [
+        "Requests can fail in many ways",
+        "Requests never fail",
+        "To slow the app",
+        "For decoration"
+      ],
+      "answer": 0,
+      "explanation": "Requests can fail in many ways, so good apps plan for it."
+    },
+    {
+      "id": "q2",
+      "text": "What two things do you combine?",
+      "options": [
+        "try and catch with checking the response",
+        "Two images",
+        "Two servers",
+        "Two stylesheets"
+      ],
+      "answer": 0,
+      "explanation": "You combine try and catch for network failures with checking the response for server errors."
+    },
+    {
+      "id": "q3",
+      "text": "What should good error handling show?",
+      "options": [
+        "A helpful message to the user",
+        "A blank screen",
+        "Nothing",
+        "The raw code"
+      ],
+      "answer": 0,
+      "explanation": "Good error handling shows the user a clear, helpful message."
+    }
+  ]
+}

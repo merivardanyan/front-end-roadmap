@@ -1,0 +1,124 @@
+{
+  "id": "accessibility-in-html",
+  "chapterId": "html",
+  "title": "Accessibility in HTML",
+  "order": 11,
+  "summary": [
+    "Accessibility means making pages usable by everyone, including people with disabilities.",
+    "Good HTML is accessible by default when you use it correctly.",
+    "Alt text, labels, and semantic elements all help.",
+    "It also helps everyone, not only people with disabilities."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Not everyone uses a website the same way. Some people cannot see the screen, some cannot use a mouse. Accessibility is about building pages that work for all of them, and good HTML does most of the work for you."
+    },
+    {
+      "type": "explanation",
+      "title": "What Accessibility Means",
+      "text": "Accessibility means everyone can use your page, including people who are blind, have low vision, or cannot use a mouse. Many use a screen reader, a tool that reads the page aloud. Your HTML decides how well that tool can do its job."
+    },
+    {
+      "type": "explanation",
+      "title": "How HTML Helps",
+      "text": "You have already met the tools. Alt text describes images. Labels name form fields. Semantic elements like nav and main mark the parts of the page. Used correctly, these make a page accessible without any extra effort.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A screen reader reading a well structured page aloud",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Building with Ramps",
+      "text": "An accessible building has ramps, wide doors, and clear signs. They help people in wheelchairs, but they also help someone pushing a stroller or carrying boxes. Accessible HTML is the same. Built for some, better for all.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A ramp at a building entrance used by many different people",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Simple Accessibility Wins",
+      "items": [
+        "Give every image a clear alt description.",
+        "Give every form field a label.",
+        "Use semantic elements to mark page sections.",
+        "Use headings in order so the outline makes sense.",
+        "Make sure links describe where they go, not just click here."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Captions on videos were made for people who cannot hear, but most people use them in noisy places or with the sound off. Accessibility quietly helps everyone."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Accessibility",
+          "definition": "Making pages usable by everyone, including people with disabilities."
+        },
+        {
+          "word": "Screen reader",
+          "definition": "A tool that reads the page aloud."
+        },
+        {
+          "word": "Alt text",
+          "definition": "A short text description of an image."
+        },
+        {
+          "word": "Label",
+          "definition": "Text that names a form field."
+        },
+        {
+          "word": "Semantic element",
+          "definition": "An element whose name describes its part of the page."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does accessibility mean?",
+      "options": [
+        "Making pages load faster",
+        "Making pages usable by everyone, including people with disabilities",
+        "Making pages colorful",
+        "Making pages smaller"
+      ],
+      "answer": 1,
+      "explanation": "Accessibility means everyone can use the page, including people with disabilities."
+    },
+    {
+      "id": "q2",
+      "text": "What is a screen reader?",
+      "options": [
+        "A tool that reads the page aloud",
+        "A type of monitor",
+        "A photo editor",
+        "A web browser"
+      ],
+      "answer": 0,
+      "explanation": "A screen reader is a tool that reads the page aloud for people who cannot see it."
+    },
+    {
+      "id": "q3",
+      "text": "Which of these improves accessibility?",
+      "options": [
+        "Removing all headings",
+        "Giving images clear alt text",
+        "Hiding the navigation",
+        "Using tiny text"
+      ],
+      "answer": 1,
+      "explanation": "Clear alt text lets screen readers describe images, which improves accessibility."
+    }
+  ]
+}

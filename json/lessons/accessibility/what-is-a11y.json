@@ -1,0 +1,124 @@
+{
+  "id": "what-is-a11y",
+  "chapterId": "accessibility",
+  "title": "What is Accessibility?",
+  "order": 1,
+  "summary": [
+    "Accessibility means everyone can use your site, including people with disabilities.",
+    "It covers vision, hearing, movement, and more.",
+    "Good HTML gets you most of the way.",
+    "It is both the right thing and often required by law."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You met accessibility briefly in the HTML chapter. Here we go deeper. Accessibility, often shortened to a11y, is the practice of building sites that everyone can use, including the many people who interact with the web differently."
+    },
+    {
+      "type": "explanation",
+      "title": "Who It Is For",
+      "text": "Accessibility serves people with a wide range of needs. Some cannot see the screen and use a screen reader. Some cannot use a mouse and navigate by keyboard. Some have low vision, color blindness, or difficulty hearing. Building accessibly means all of them can use what you make."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Matters",
+      "text": "Beyond being the right thing to do, accessibility is often a legal requirement, and it reaches a huge number of users you would otherwise lose. The good news is that you already have the foundations. Semantic HTML, alt text, and labels, which you learned earlier, do most of the work.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A range of people using a site by screen reader, keyboard, and touch",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Curb Cuts on a Sidewalk",
+      "text": "Accessibility is like the small ramps cut into sidewalk corners. They were added for wheelchairs, but they also help people with strollers, suitcases, and delivery carts. Building for those who need it most quietly makes things better for everyone. The web works the same way.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A curb cut used by a wheelchair, a stroller, and a delivery cart",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking About Accessibility",
+      "items": [
+        "Remember people use the web in many ways.",
+        "Build so those using a screen reader can follow along.",
+        "Build so those using only a keyboard can navigate.",
+        "Lean on the semantic HTML you already know.",
+        "Treat it as essential, not an afterthought."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The shorthand a11y comes from the word accessibility itself, the a, then eleven letters, then the y. Similar shorthands exist, like i18n for internationalization."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Accessibility",
+          "definition": "Building so everyone can use your site."
+        },
+        {
+          "word": "a11y",
+          "definition": "Shorthand for accessibility."
+        },
+        {
+          "word": "Disability",
+          "definition": "A range of needs accessibility serves."
+        },
+        {
+          "word": "Screen reader",
+          "definition": "A tool that reads the page aloud."
+        },
+        {
+          "word": "Inclusive",
+          "definition": "Made usable by as many people as possible."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does accessibility mean?",
+      "options": [
+        "Everyone can use your site, including people with disabilities",
+        "Making pages colorful",
+        "Faster servers",
+        "More images"
+      ],
+      "answer": 0,
+      "explanation": "Accessibility means everyone can use your site, including people with disabilities."
+    },
+    {
+      "id": "q2",
+      "text": "What gets you most of the way?",
+      "options": [
+        "Good, semantic HTML",
+        "Bigger images",
+        "A faster server",
+        "More animations"
+      ],
+      "answer": 0,
+      "explanation": "Good semantic HTML, with alt text and labels, does most of the work."
+    },
+    {
+      "id": "q3",
+      "text": "Besides being right, what is it often?",
+      "options": [
+        "Required by law",
+        "Optional forever",
+        "Only for games",
+        "Bad for users"
+      ],
+      "answer": 0,
+      "explanation": "Accessibility is often a legal requirement, as well as the right thing to do."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "aria-roles",
+  "chapterId": "accessibility",
+  "title": "ARIA Roles & Attributes",
+  "order": 2,
+  "summary": [
+    "ARIA adds accessibility information when HTML alone is not enough.",
+    "It can describe roles and states to screen readers.",
+    "The first rule is to use real HTML elements when you can.",
+    "ARIA is a supplement, not a replacement."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes plain HTML cannot fully describe a custom widget to a screen reader. ARIA is a set of extra attributes that fill that gap, telling assistive tools what something is and what state it is in. But it comes with one big rule."
+    },
+    {
+      "type": "explanation",
+      "title": "What ARIA Does",
+      "text": "ARIA, short for Accessible Rich Internet Applications, lets you add information for assistive tools. You can give an element a role, saying it acts like a button or a dialog, and describe its state, like expanded or selected. Screen readers use this to announce the element correctly."
+    },
+    {
+      "type": "explanation",
+      "title": "The First Rule of ARIA",
+      "text": "The most important rule is to prefer real HTML elements first. A real button is already accessible. Rebuilding one from a plain box and patching it with ARIA is harder and easier to get wrong. ARIA is a supplement for when no native element fits, not a replacement for using the right tag.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A custom widget given a role and state for screen readers",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Labels on a Custom Built Machine",
+      "text": "Standard appliances come with built in, understood controls. A custom built machine needs you to add clear labels so anyone can operate it. ARIA is those added labels. But if a standard appliance already does the job, you use that, rather than building a custom one and labeling it from scratch.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A standard labelled appliance beside a custom machine needing added labels",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using ARIA Wisely",
+      "items": [
+        "First, try to use a real HTML element.",
+        "If a native element fits, you likely need no ARIA.",
+        "For a truly custom widget, add a role.",
+        "Describe its state, like expanded or selected.",
+        "Treat ARIA as a supplement, not a replacement."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "There is a saying among accessibility experts that no ARIA is better than bad ARIA. Incorrect ARIA can confuse screen readers more than having none at all, which is why the use real HTML rule comes first."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "ARIA",
+          "definition": "Extra attributes that add accessibility info."
+        },
+        {
+          "word": "Role",
+          "definition": "What an element acts like, such as a button."
+        },
+        {
+          "word": "State",
+          "definition": "An element's condition, like expanded."
+        },
+        {
+          "word": "Supplement",
+          "definition": "An addition, used only when needed."
+        },
+        {
+          "word": "Native element",
+          "definition": "A real HTML element to prefer first."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does ARIA add?",
+      "options": [
+        "Accessibility information when HTML alone is not enough",
+        "New colors",
+        "Faster loading",
+        "More images"
+      ],
+      "answer": 0,
+      "explanation": "ARIA adds accessibility information when plain HTML cannot describe something."
+    },
+    {
+      "id": "q2",
+      "text": "What is the first rule?",
+      "options": [
+        "Use real HTML elements when you can",
+        "Always use ARIA",
+        "Never use HTML",
+        "Avoid buttons"
+      ],
+      "answer": 0,
+      "explanation": "The first rule is to prefer real HTML elements, which are already accessible."
+    },
+    {
+      "id": "q3",
+      "text": "Is ARIA a replacement for HTML?",
+      "options": [
+        "No, it is a supplement",
+        "Yes, always",
+        "Only on phones",
+        "Only for images"
+      ],
+      "answer": 0,
+      "explanation": "ARIA is a supplement for when no native element fits, not a replacement."
+    }
+  ]
+}

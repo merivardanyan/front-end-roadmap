@@ -1,0 +1,124 @@
+{
+  "id": "objects",
+  "chapterId": "javascript-fundamentals",
+  "title": "Objects",
+  "order": 7,
+  "summary": [
+    "An object groups related information together.",
+    "It stores data as key and value pairs.",
+    "You read a value by its key.",
+    "Objects model real things, like a user or a product."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "An array is great for a list, but sometimes you want to describe one thing with many details, like a person with a name, age, and email. For that, you use an object."
+    },
+    {
+      "type": "explanation",
+      "title": "Keys and Values",
+      "text": "An object holds data as pairs. Each pair has a key, the name of the detail, and a value, the detail itself. A person object might have a key name with the value Sam, and a key age with the value ten. You look up any value by its key."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Objects Matter",
+      "text": "Objects let you model real things in code. Instead of loose variables scattered around, you keep everything about one thing together. This makes your code easier to read and pass around, since one object carries all the related details.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An object grouping a name, age, and city under one thing",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An ID Card",
+      "text": "An object is like an ID card. The card describes one person. Each line has a label and a value, name and Sam, age and ten, city and Yerevan. You read any detail by its label. The card keeps it all together in one place.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An ID card with labelled lines for each detail",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an Object",
+      "items": [
+        "Create the object with curly braces.",
+        "Inside, write key and value pairs.",
+        "Read a value by naming its key.",
+        "Add or change a value by its key.",
+        "Pass the whole object around to carry all its details."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The values in an object can be anything, including arrays and even other objects. This lets you describe complex things, like a user who has a list of orders."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Object",
+          "definition": "A group of related data as key and value pairs."
+        },
+        {
+          "word": "Key",
+          "definition": "The name of a detail in an object."
+        },
+        {
+          "word": "Value",
+          "definition": "The detail itself, paired with a key."
+        },
+        {
+          "word": "Pair",
+          "definition": "A key and its value together."
+        },
+        {
+          "word": "Property",
+          "definition": "Another word for a key and value pair on an object."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an object group?",
+      "options": [
+        "Related information together",
+        "Only numbers",
+        "Web addresses",
+        "Style rules"
+      ],
+      "answer": 0,
+      "explanation": "An object groups related information together as key and value pairs."
+    },
+    {
+      "id": "q2",
+      "text": "How do you read a value in an object?",
+      "options": [
+        "By its index",
+        "By its key",
+        "By its color",
+        "By its length"
+      ],
+      "answer": 1,
+      "explanation": "You read a value in an object by naming its key."
+    },
+    {
+      "id": "q3",
+      "text": "What can the values in an object be?",
+      "options": [
+        "Only text",
+        "Only numbers",
+        "Anything, including arrays and other objects",
+        "Nothing"
+      ],
+      "answer": 2,
+      "explanation": "Object values can be anything, including arrays and even other objects."
+    }
+  ]
+}

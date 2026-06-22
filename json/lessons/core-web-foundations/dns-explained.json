@@ -3,51 +3,83 @@
   "chapterId": "core-web-foundations",
   "title": "DNS Explained",
   "order": 4,
-  "emoji": "📒",
+  "summary": [
+    "Every server has a number address called an IP address.",
+    "Names like example.com are easy for people, numbers are easy for computers.",
+    "DNS turns the name you type into the matching number.",
+    "It works like a phone book for the internet."
+  ],
   "sections": [
     {
       "type": "intro",
-      "text": "When you type a website name like example.com into your browser, how does your computer know where to find it? The answer is a system called DNS, which works like a phone book for the internet."
+      "text": "You type a name like example.com, but computers do not find each other by name. They use numbers. Something quietly translates between the two every time, and it happens so fast you never notice."
     },
     {
       "type": "explanation",
-      "title": "What is DNS?",
-      "text": "DNS stands for Domain Name System. Every computer on the internet has an address made of numbers, called an IP address. Humans are not good at remembering long strings of numbers, so DNS lets us use easy names instead, like google.com, and it quietly looks up the matching number for us."
+      "title": "Why Names and Numbers?",
+      "text": "Every server on the internet has an address made of numbers, called an IP address. Numbers are easy for computers but hard for people. Names like example.com are easy for people. We need a way to connect the two."
     },
     {
       "type": "explanation",
-      "title": "Why Do We Need It?",
-      "text": "Without DNS, you would have to remember a number like 142.250.190.78 just to visit a website, instead of typing a simple name. DNS translates the easy name you type into the number that computers actually use to find each other on the internet."
-    },
-    {
-      "type": "steps",
-      "title": "How DNS Looks Up a Website",
-      "items": [
-        "You type a website name into your browser, like example.com.",
-        "Your browser asks a DNS server: what is the IP address for this name?",
-        "The DNS server looks it up and sends back the matching IP address.",
-        "Your browser now knows exactly which computer on the internet to talk to.",
-        "Your browser connects to that IP address and asks the server for the website."
-      ]
+      "title": "What DNS Does",
+      "text": "DNS stands for Domain Name System. When you type a website name, DNS looks up the matching number and hands it back, so your browser knows which server to talk to.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A name being looked up and matched to a number",
+        "placeholder": true
+      }
     },
     {
       "type": "analogy",
-      "title": "Think of it like a Phone Book",
-      "text": "Imagine you want to call your friend but you only remember their name, not their phone number. You look up their name in a phone book, and it tells you the number to dial. DNS does the exact same thing, but instead of names and phone numbers, it matches website names to IP addresses."
+      "title": "A Phone Book for the Internet",
+      "text": "DNS is like the contacts app on your phone. You remember a person's name, not their phone number. You tap the name, and your phone finds the number for you. DNS does the same thing for websites.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Tapping a contact name and the phone finding the number",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "What Happens When You Type an Address",
+      "items": [
+        "You type a website name into the browser.",
+        "The browser asks a DNS server which number goes with this name.",
+        "The DNS server finds the matching IP address.",
+        "It sends the number back to your browser.",
+        "Your browser uses that number to reach the right server."
+      ]
     },
     {
       "type": "fun-fact",
-      "text": "DNS lookups usually happen so fast, often in a tiny fraction of a second, that you never even notice them happening before your page loads."
+      "text": "Your computer remembers recent lookups for a while, so it does not have to ask again every single time. This is called caching, and it makes browsing faster."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "DNS", "definition": "Domain Name System, the system that turns website names into IP addresses." },
-        { "word": "Domain Name", "definition": "The easy to remember name of a website, like example.com." },
-        { "word": "IP Address", "definition": "A number that identifies a specific computer on the internet." },
-        { "word": "DNS Server", "definition": "A computer that keeps a list of domain names and their matching IP addresses." },
-        { "word": "DNS Lookup", "definition": "The process of asking a DNS server for the IP address that matches a domain name." }
+        {
+          "word": "DNS",
+          "definition": "The system that turns a website name into its number."
+        },
+        {
+          "word": "IP address",
+          "definition": "The number address of a server on the internet."
+        },
+        {
+          "word": "Domain name",
+          "definition": "The readable name of a website, like example.com."
+        },
+        {
+          "word": "DNS server",
+          "definition": "A computer that holds the name to number lookups."
+        },
+        {
+          "word": "Cache",
+          "definition": "A short term memory of recent answers, used to go faster."
+        }
       ]
     }
   ],
@@ -56,37 +88,37 @@
       "id": "q1",
       "text": "What does DNS do?",
       "options": [
-        "It deletes old websites",
-        "It turns easy website names into IP addresses",
-        "It draws pictures on the screen",
-        "It writes HTML code"
+        "It stores all your photos",
+        "It turns a website name into its number",
+        "It makes websites load images",
+        "It builds web pages from scratch"
       ],
       "answer": 1,
-      "explanation": "DNS, or Domain Name System, takes the easy name you type, like example.com, and finds the matching IP address so your browser knows where to connect."
+      "explanation": "DNS takes the name you type and finds the matching IP address so your browser can reach the right server."
     },
     {
       "id": "q2",
       "text": "What is an IP address?",
       "options": [
-        "A password for your computer",
-        "A number that identifies a specific computer on the internet",
-        "A type of website",
-        "A button in your browser"
+        "The number address of a server",
+        "The name of your browser",
+        "A type of web page",
+        "A password for a website"
       ],
-      "answer": 1,
-      "explanation": "An IP address is a number that identifies a specific computer on the internet, similar to how a phone number identifies a specific phone."
+      "answer": 0,
+      "explanation": "An IP address is the number that identifies a server on the internet."
     },
     {
       "id": "q3",
-      "text": "In the phone book analogy, what does DNS act like?",
+      "text": "DNS is most like which everyday thing?",
       "options": [
-        "The phone itself",
-        "A phone book that matches names to numbers",
-        "The person calling",
-        "A website"
+        "A calculator",
+        "A contacts list or phone book",
+        "A camera",
+        "A clock"
       ],
       "answer": 1,
-      "explanation": "Just like a phone book matches a name to a phone number, DNS matches a domain name to an IP address."
+      "explanation": "Like a contacts list, DNS lets you use an easy name while it finds the number for you."
     }
   ]
 }

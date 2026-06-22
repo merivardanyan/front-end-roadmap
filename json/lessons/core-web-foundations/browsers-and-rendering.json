@@ -1,0 +1,124 @@
+{
+  "id": "browsers-and-rendering",
+  "chapterId": "core-web-foundations",
+  "title": "Browsers & Rendering",
+  "order": 5,
+  "summary": [
+    "A page arrives as plain code, not as the page you see.",
+    "The browser reads HTML, CSS, and JavaScript to build it.",
+    "HTML is the structure, CSS is the style, JavaScript is the behavior.",
+    "Turning that code into pixels on screen is called rendering."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A web page arrives at your device as plain code, not as the colorful page you see. Your browser does the work of turning that code into something you can read, click, and scroll. That job has a name."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Browser Receives",
+      "text": "When you open a page, the server sends files. Mostly HTML, often CSS, and usually some JavaScript. On their own these are just text. The browser has to read them and build the page."
+    },
+    {
+      "type": "explanation",
+      "title": "What is Rendering?",
+      "text": "Rendering is the process of turning that code into the visual page on your screen. The browser reads the HTML for the structure, applies the CSS for colors and layout, and runs the JavaScript to make things interactive.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Code on one side turning into a finished web page on the other",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Following a Recipe",
+      "text": "Think of the code as a recipe and the browser as the cook. HTML is the list of ingredients, CSS is how the dish should look on the plate, and JavaScript is the steps that make it come alive. The browser follows all of it to serve you the finished page.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A cook following a recipe to plate a finished dish",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Browser Builds a Page",
+      "items": [
+        "It reads the HTML to understand the structure and content.",
+        "It reads the CSS to learn the colors, sizes, and layout.",
+        "It arranges everything in the right place on the screen.",
+        "It paints the pixels so you can see the page.",
+        "It runs the JavaScript so buttons and menus respond to you."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This whole build usually finishes in well under a second, and the browser quietly redoes parts of it whenever something on the page changes."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Browser",
+          "definition": "The app that reads web code and shows you the page."
+        },
+        {
+          "word": "Rendering",
+          "definition": "Turning code into the visual page on your screen."
+        },
+        {
+          "word": "HTML",
+          "definition": "The code that gives a page its structure and content."
+        },
+        {
+          "word": "CSS",
+          "definition": "The code that controls colors, sizes, and layout."
+        },
+        {
+          "word": "JavaScript",
+          "definition": "The code that makes a page interactive."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is rendering?",
+      "options": [
+        "Saving a page to your computer",
+        "Turning code into the visual page on screen",
+        "Sending a request to a server",
+        "Naming a website"
+      ],
+      "answer": 1,
+      "explanation": "Rendering is when the browser turns the code it received into the page you actually see."
+    },
+    {
+      "id": "q2",
+      "text": "Which one gives a page its structure and content?",
+      "options": [
+        "CSS",
+        "JavaScript",
+        "HTML",
+        "DNS"
+      ],
+      "answer": 2,
+      "explanation": "HTML provides the structure and content. CSS styles it and JavaScript makes it interactive."
+    },
+    {
+      "id": "q3",
+      "text": "In the recipe example, what is the browser?",
+      "options": [
+        "The ingredients",
+        "The cook",
+        "The plate",
+        "The menu"
+      ],
+      "answer": 1,
+      "explanation": "The browser is the cook. It follows the code, like a recipe, to serve the finished page."
+    }
+  ]
+}

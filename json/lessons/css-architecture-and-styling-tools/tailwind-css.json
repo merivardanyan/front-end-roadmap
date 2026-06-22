@@ -1,0 +1,124 @@
+{
+  "id": "tailwind-css",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Tailwind CSS",
+  "order": 10,
+  "summary": [
+    "Tailwind is a utility first CSS framework.",
+    "You style by adding small classes right in your HTML.",
+    "Each class does one small thing.",
+    "It speeds up building once you learn the class names."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Most CSS lives in a separate file with named rules. Tailwind takes a different path. You style elements by stacking tiny purpose built classes directly on them. It feels strange at first, then very fast."
+    },
+    {
+      "type": "explanation",
+      "title": "Utility First",
+      "text": "Tailwind gives you a huge set of small classes, each doing one job. One class adds padding, another sets a text color, another makes something a flex container. You combine them on an element to build up its look, without writing custom CSS rules."
+    },
+    {
+      "type": "explanation",
+      "title": "The Trade Off",
+      "text": "The benefit is speed and consistency. You stop inventing class names and switching between files, and the spacing and colors come from one shared system. The cost is that your HTML gets longer and busier, which takes some getting used to.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An element with several small Tailwind classes building up its look",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Building with Small Bricks",
+      "text": "Writing custom CSS is like molding a single custom shape for each part. Tailwind is like building with small standard bricks. Each brick is simple and does one thing, but snap enough of them together and you can build almost anything, quickly.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Small standard bricks snapping together into a finished shape",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Styling with Tailwind",
+      "items": [
+        "Add Tailwind to your project.",
+        "Pick the element you want to style.",
+        "Add small classes for spacing, color, and layout.",
+        "Combine as many classes as the look needs.",
+        "Reuse the same class names across the whole project."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Tailwind scans your files and removes every class you did not use, so the final CSS it ships is usually tiny, even though the full set of classes is enormous."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Tailwind",
+          "definition": "A utility first CSS framework."
+        },
+        {
+          "word": "Utility class",
+          "definition": "A small class that does one styling job."
+        },
+        {
+          "word": "Framework",
+          "definition": "A ready made toolkit you build on top of."
+        },
+        {
+          "word": "Consistency",
+          "definition": "Shared spacing and colors across the project."
+        },
+        {
+          "word": "Utility first",
+          "definition": "Styling mainly by combining small classes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How do you style with Tailwind?",
+      "options": [
+        "By adding small classes in the HTML",
+        "By writing one big rule per page",
+        "By editing images",
+        "By changing the doctype"
+      ],
+      "answer": 0,
+      "explanation": "With Tailwind you style by adding small utility classes directly on the element."
+    },
+    {
+      "id": "q2",
+      "text": "What does each Tailwind class do?",
+      "options": [
+        "Many jobs at once",
+        "One small job",
+        "Nothing",
+        "Loads a font"
+      ],
+      "answer": 1,
+      "explanation": "Each Tailwind utility class does one small styling job."
+    },
+    {
+      "id": "q3",
+      "text": "What is the trade off?",
+      "options": [
+        "The page loads slower",
+        "The HTML gets longer and busier",
+        "Colors disappear",
+        "Links break"
+      ],
+      "answer": 1,
+      "explanation": "The cost of Tailwind is that your HTML becomes longer and busier with classes."
+    }
+  ]
+}

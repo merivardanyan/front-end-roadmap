@@ -1,0 +1,124 @@
+{
+  "id": "animations-and-transitions",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Animations & Transitions",
+  "order": 8,
+  "summary": [
+    "Transitions smoothly change a style over time.",
+    "Animations can move through many steps you define.",
+    "Both make a page feel alive.",
+    "Used gently, they guide the eye."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A button that snaps instantly feels harsh. A button that eases into its new color feels smooth. That smoothness comes from transitions and animations, the parts of CSS that add motion."
+    },
+    {
+      "type": "explanation",
+      "title": "Transitions",
+      "text": "A transition smooths a change from one style to another. Without it, a hover color change happens in an instant. With a transition, the color fades over a fraction of a second. You say which property to animate and how long it should take."
+    },
+    {
+      "type": "explanation",
+      "title": "Animations",
+      "text": "An animation is more powerful. Instead of going from one state to another, it can move through many steps you define, and it can loop. You describe the steps, called keyframes, and the browser plays through them. This is good for things like a loading spinner.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A button easing into a new color, beside a looping spinner",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Light Switch vs a Dimmer",
+      "text": "A change without a transition is like a light switch, instantly on or off. A transition is like a dimmer, easing smoothly between. An animation goes further, like a light that cycles through a whole sequence of colors on its own.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A switch snapping, a dimmer easing, and a light cycling colors",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Adding Motion",
+      "items": [
+        "Decide what should change, like a color or position.",
+        "For a simple change, add a transition with a duration.",
+        "For multiple steps, define keyframes for the sequence.",
+        "Attach the animation and set how long it runs.",
+        "Keep it subtle so it helps rather than distracts."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Too much motion can make some people feel unwell. CSS can detect when someone has asked their device to reduce motion, so you can turn animations down for them."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Transition",
+          "definition": "A smooth change from one style to another."
+        },
+        {
+          "word": "Animation",
+          "definition": "Motion through many steps that can loop."
+        },
+        {
+          "word": "Keyframes",
+          "definition": "The steps you define for an animation."
+        },
+        {
+          "word": "Duration",
+          "definition": "How long a transition or animation takes."
+        },
+        {
+          "word": "Reduce motion",
+          "definition": "A setting that asks for less animation."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a transition do?",
+      "options": [
+        "Smoothly changes a style over time",
+        "Stores data",
+        "Creates links",
+        "Sets the page title"
+      ],
+      "answer": 0,
+      "explanation": "A transition smooths a change from one style to another over time."
+    },
+    {
+      "id": "q2",
+      "text": "What are keyframes?",
+      "options": [
+        "A type of image",
+        "The steps you define for an animation",
+        "A kind of selector",
+        "A font size"
+      ],
+      "answer": 1,
+      "explanation": "Keyframes are the steps you define that an animation plays through."
+    },
+    {
+      "id": "q3",
+      "text": "In the analogy, a transition is like what?",
+      "options": [
+        "A light switch",
+        "A dimmer",
+        "A locked door",
+        "A broken bulb"
+      ],
+      "answer": 1,
+      "explanation": "A transition is like a dimmer, easing smoothly between two states."
+    }
+  ]
+}

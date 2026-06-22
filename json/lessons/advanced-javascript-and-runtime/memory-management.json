@@ -1,0 +1,124 @@
+{
+  "id": "memory-management",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Memory Management & Garbage Collection",
+  "order": 9,
+  "summary": [
+    "Programs use memory to hold their data.",
+    "JavaScript frees memory automatically with garbage collection.",
+    "It cleans up data nothing is using anymore.",
+    "Leaks happen when you accidentally hold onto things."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Every value your program keeps lives in memory, and memory is limited. In some languages you must clean it up by hand. JavaScript does it for you, automatically, with something called garbage collection."
+    },
+    {
+      "type": "explanation",
+      "title": "What Garbage Collection Is",
+      "text": "As your program runs, it creates data that uses memory. When a piece of data is no longer reachable, meaning nothing in your code points to it anymore, JavaScript can safely throw it away and reclaim the memory. This automatic cleanup is called garbage collection."
+    },
+    {
+      "type": "explanation",
+      "title": "Memory Leaks",
+      "text": "The cleanup only works on data nothing is using. If you accidentally keep a reference to something you no longer need, JavaScript thinks it is still wanted and never frees it. Do this over and over and memory slowly fills up. This is called a memory leak.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Used data being cleared, while a forgotten reference is never freed",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Clearing the Table",
+      "text": "Garbage collection is like a waiter clearing a table. Once everyone has left a table, the waiter clears it for the next guests. A memory leak is like a coat left on a chair. The table looks taken, so the waiter never clears it, and slowly the whole place runs out of seats.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A waiter clearing empty tables but skipping one with a coat left behind",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Memory Is Handled",
+      "items": [
+        "Your program creates data, using memory.",
+        "As long as something points to it, it stays.",
+        "When nothing points to it, it becomes unreachable.",
+        "Garbage collection reclaims that unused memory.",
+        "Holding references you do not need causes leaks."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common leak is forgetting to remove an event listener you no longer need. It quietly keeps its element alive in memory, which is why cleaning up listeners matters in long lived apps."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Memory",
+          "definition": "Where a program holds its data while running."
+        },
+        {
+          "word": "Garbage collection",
+          "definition": "Automatic freeing of unused memory."
+        },
+        {
+          "word": "Reachable",
+          "definition": "Data that something still points to."
+        },
+        {
+          "word": "Memory leak",
+          "definition": "Holding data you no longer need, filling memory."
+        },
+        {
+          "word": "Reference",
+          "definition": "A pointer from your code to a piece of data."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does garbage collection do?",
+      "options": [
+        "Frees memory that nothing is using",
+        "Styles the page",
+        "Sends requests",
+        "Creates links"
+      ],
+      "answer": 0,
+      "explanation": "Garbage collection automatically frees memory that nothing is using anymore."
+    },
+    {
+      "id": "q2",
+      "text": "When can data be cleaned up?",
+      "options": [
+        "While it is still in use",
+        "When nothing points to it anymore",
+        "Never",
+        "Only on phones"
+      ],
+      "answer": 1,
+      "explanation": "Data can be cleaned up once nothing in your code points to it."
+    },
+    {
+      "id": "q3",
+      "text": "What is a memory leak?",
+      "options": [
+        "A fast page",
+        "Accidentally holding onto things you no longer need",
+        "A type of loop",
+        "A style rule"
+      ],
+      "answer": 1,
+      "explanation": "A memory leak is when you keep references to data you no longer need, so memory fills up."
+    }
+  ]
+}

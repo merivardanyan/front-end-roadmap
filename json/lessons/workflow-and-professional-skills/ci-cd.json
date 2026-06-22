@@ -1,0 +1,124 @@
+{
+  "id": "ci-cd",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "CI/CD Pipelines",
+  "order": 4,
+  "summary": [
+    "CI/CD automates the steps between writing code and shipping it.",
+    "CI checks every change automatically, like running tests.",
+    "CD automatically deploys code that passes.",
+    "Together they make releasing fast and reliable."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Once code is written, getting it tested and live used to be a manual, error prone chore. CI and CD automate that whole path. Together they let a team ship changes quickly and safely, often many times a day."
+    },
+    {
+      "type": "explanation",
+      "title": "Continuous Integration",
+      "text": "CI, continuous integration, means every time someone proposes a change, an automated system checks it, running the tests, the linter, and the build. If anything fails, the team knows immediately, before the bad code spreads. It catches problems the moment they appear, rather than days later."
+    },
+    {
+      "type": "explanation",
+      "title": "Continuous Delivery",
+      "text": "CD, continuous delivery or deployment, takes the next step: when a change passes all the checks, it can be deployed automatically, with no manual steps. Together, CI and CD form a pipeline, an automated assembly line from a code change to live software, making releases routine instead of risky events.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A pipeline running checks then deploying a passing change automatically",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An Automated Assembly Line",
+      "text": "CI/CD is like an automated assembly line with quality checks built in. Each part, your change, moves along, gets inspected at every station, the tests and checks, and only a piece that passes every station rolls out the door, deployed. Anything faulty is stopped automatically before it ships.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An assembly line inspecting each change and shipping only passing ones",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How CI/CD Works",
+      "items": [
+        "A developer proposes a change.",
+        "CI automatically runs tests, linting, and the build.",
+        "If anything fails, the team is told right away.",
+        "If everything passes, CD can deploy it automatically.",
+        "Releasing becomes fast and routine."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This ties together tools from earlier chapters. The tests, the linter, and the build, all run automatically in a CI pipeline, which is why setting them up well pays off across the whole team."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CI",
+          "definition": "Continuous integration, auto checking each change."
+        },
+        {
+          "word": "CD",
+          "definition": "Continuous delivery, auto deploying passing code."
+        },
+        {
+          "word": "Pipeline",
+          "definition": "The automated path from change to live software."
+        },
+        {
+          "word": "Automate",
+          "definition": "Letting the system do steps for you."
+        },
+        {
+          "word": "Deploy",
+          "definition": "Putting the code live."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does CI/CD automate?",
+      "options": [
+        "The steps between writing code and shipping it",
+        "The page color",
+        "The font size",
+        "The image quality"
+      ],
+      "answer": 0,
+      "explanation": "CI/CD automates the steps between writing code and shipping it."
+    },
+    {
+      "id": "q2",
+      "text": "What does CI do?",
+      "options": [
+        "Checks every change automatically, like running tests",
+        "Designs the page",
+        "Writes the code",
+        "Hosts the database"
+      ],
+      "answer": 0,
+      "explanation": "CI automatically checks every change, running tests, linting, and the build."
+    },
+    {
+      "id": "q3",
+      "text": "What does CD do?",
+      "options": [
+        "Automatically deploys code that passes",
+        "Deletes the tests",
+        "Slows the build",
+        "Changes the font"
+      ],
+      "answer": 0,
+      "explanation": "CD automatically deploys code that passes all the checks."
+    }
+  ]
+}

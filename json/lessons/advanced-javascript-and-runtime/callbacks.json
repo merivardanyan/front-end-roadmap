@@ -1,0 +1,124 @@
+{
+  "id": "callbacks",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Callbacks",
+  "order": 4,
+  "summary": [
+    "A callback is a function you give to another function to run later.",
+    "It was the original way to handle tasks that take time.",
+    "Callbacks still appear everywhere, like in event listeners.",
+    "Too many nested callbacks get hard to read."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You have already used callbacks without naming them. Every time you give an event listener a function to run on click, that function is a callback. It is one of the oldest and most common patterns in JavaScript."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Callback Is",
+      "text": "A callback is simply a function you hand to another function, to be run later at the right moment. You are not running it yourself. You are saying, here, run this when you are ready. The event listener calling your function on a click is exactly this."
+    },
+    {
+      "type": "explanation",
+      "title": "The Downside",
+      "text": "Callbacks were also the original way to handle slow tasks. Do this, and when it is done run this callback, which starts another task with another callback inside. Stack enough of these and the code drifts deep to the right and gets hard to follow. Promises were invented to fix this.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Callbacks nested deeper and deeper, drifting to the right",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Leaving Instructions with a Friend",
+      "text": "A callback is like leaving instructions with a friend. You say, when the package arrives, please put it inside. You walk away. Your friend runs your instruction at the right time. The trouble starts when every instruction contains another instruction inside it, until no one can read the note.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A note with instructions nested inside instructions, growing unreadable",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Callback Works",
+      "items": [
+        "You write a function for a later moment.",
+        "You hand it to another function.",
+        "You do not call it yourself.",
+        "That function runs your callback when the time is right.",
+        "For deep chains, prefer promises or async and await."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The messy, deeply nested version of this pattern earned a nickname, callback hell. Avoiding it is a big reason promises and async await became so popular."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Callback",
+          "definition": "A function given to another function to run later."
+        },
+        {
+          "word": "Function",
+          "definition": "A reusable block of code."
+        },
+        {
+          "word": "Later",
+          "definition": "When the callback is run, at the right moment."
+        },
+        {
+          "word": "Event listener",
+          "definition": "A common place callbacks are used."
+        },
+        {
+          "word": "Nesting",
+          "definition": "Putting callbacks inside callbacks, which gets messy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a callback?",
+      "options": [
+        "A function you give to another function to run later",
+        "A type of variable",
+        "A style rule",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "A callback is a function you hand to another function to run at the right moment."
+    },
+    {
+      "id": "q2",
+      "text": "Where have you already used callbacks?",
+      "options": [
+        "In event listeners",
+        "In the doctype",
+        "In the head",
+        "In a stylesheet"
+      ],
+      "answer": 0,
+      "explanation": "The function you give an event listener to run on a click is a callback."
+    },
+    {
+      "id": "q3",
+      "text": "What problem comes from too many nested callbacks?",
+      "options": [
+        "The page loads faster",
+        "The code gets hard to read",
+        "Colors disappear",
+        "Links break"
+      ],
+      "answer": 1,
+      "explanation": "Deeply nested callbacks drift to the right and become hard to read, known as callback hell."
+    }
+  ]
+}

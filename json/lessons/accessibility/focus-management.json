@@ -1,0 +1,124 @@
+{
+  "id": "focus-management",
+  "chapterId": "accessibility",
+  "title": "Focus Management",
+  "order": 4,
+  "summary": [
+    "Focus is which element the keyboard is currently on.",
+    "A visible focus outline shows where you are.",
+    "You should never remove that outline without a replacement.",
+    "Managing focus well keeps keyboard users from getting lost."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When you move around with a keyboard, one element at a time is in focus, the one your keypresses will affect. Showing and guiding that focus clearly is what keeps keyboard users oriented instead of lost."
+    },
+    {
+      "type": "explanation",
+      "title": "What Focus Is",
+      "text": "Focus is which element is currently active for the keyboard. As you press Tab, focus moves from element to element. Browsers show a focus outline, usually a ring, around the focused element, so you can see where you are. Without it, a keyboard user has no idea what they are about to activate."
+    },
+    {
+      "type": "explanation",
+      "title": "Do Not Remove the Outline",
+      "text": "A very common accessibility mistake is removing that focus outline because it is considered ugly, with nothing to replace it. This leaves keyboard users completely lost. If you do not like the default ring, you replace it with your own clear style, you never just remove it. Good focus management also means moving focus sensibly, like into a dialog when it opens.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A clear focus ring moving between elements as Tab is pressed",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Spotlight on a Stage",
+      "text": "Focus is like a spotlight on a dark stage, showing which performer is active right now. Remove the spotlight and the audience cannot tell who is speaking. You can change the spotlight's color or shape, but you must never turn it off, or the keyboard user is left in the dark.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A stage spotlight following the active performer",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Managing Focus",
+      "items": [
+        "Know that one element holds focus at a time.",
+        "Keep a visible focus outline so users see it.",
+        "Never remove the outline without a clear replacement.",
+        "Move focus sensibly, like into an opened dialog.",
+        "Return focus when something closes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Removing the focus outline with a single line of CSS is one of the most common accessibility mistakes on the web. It looks tidier but quietly breaks the site for every keyboard user."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Focus",
+          "definition": "Which element the keyboard is currently on."
+        },
+        {
+          "word": "Focus outline",
+          "definition": "The visible ring showing the focused element."
+        },
+        {
+          "word": "Keyboard",
+          "definition": "How focus is moved, with Tab."
+        },
+        {
+          "word": "Visible",
+          "definition": "Able to be seen, as a focus outline must be."
+        },
+        {
+          "word": "Dialog",
+          "definition": "A pop up that focus should move into."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is focus?",
+      "options": [
+        "Which element the keyboard is currently on",
+        "The page color",
+        "The font size",
+        "A type of image"
+      ],
+      "answer": 0,
+      "explanation": "Focus is which element the keyboard is currently on."
+    },
+    {
+      "id": "q2",
+      "text": "What shows where you are?",
+      "options": [
+        "A visible focus outline",
+        "A loading spinner",
+        "A background image",
+        "A footer"
+      ],
+      "answer": 0,
+      "explanation": "A visible focus outline shows which element is focused."
+    },
+    {
+      "id": "q3",
+      "text": "What should you never do without a replacement?",
+      "options": [
+        "Remove the focus outline",
+        "Add a heading",
+        "Use a button",
+        "Write alt text"
+      ],
+      "answer": 0,
+      "explanation": "You should never remove the focus outline without a clear replacement."
+    }
+  ]
+}

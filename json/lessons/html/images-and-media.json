@@ -1,0 +1,124 @@
+{
+  "id": "images-and-media",
+  "chapterId": "html",
+  "title": "Images & Media",
+  "order": 5,
+  "summary": [
+    "The img element places a picture on a page.",
+    "The src attribute says where the image file is.",
+    "The alt attribute describes the image in words.",
+    "The video and audio elements play media right in the page."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Words alone make a plain page. Pictures, video, and sound bring it to life. HTML has simple elements for adding all of them."
+    },
+    {
+      "type": "explanation",
+      "title": "Adding an Image",
+      "text": "You place a picture with the img element. The src attribute points to the image file, just like href points a link to its destination. One important part comes next."
+    },
+    {
+      "type": "explanation",
+      "title": "The alt Text",
+      "text": "The alt attribute is a short description of the image in words. If the image fails to load, the text shows instead. More importantly, screen readers read it aloud, so people who cannot see the image still know what it shows.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An image element with its src file and an alt caption",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Picture Frame with a Caption",
+      "text": "The img element is the frame. The src is the photo you slide into it. The alt is the little caption on the back that describes the photo for anyone who cannot see it. A good frame always has that caption.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A photo sliding into a frame with a caption on the back",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Placing an Image",
+      "items": [
+        "Write an img element where you want the picture.",
+        "Add a src attribute pointing to the image file.",
+        "Add an alt attribute describing what the image shows.",
+        "The browser loads the file and displays it.",
+        "If it cannot load, the alt text appears instead."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "For video and audio, the video and audio elements can show built in play and pause buttons without any extra code, just by adding a controls attribute."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "img",
+          "definition": "The element that places an image on the page."
+        },
+        {
+          "word": "src",
+          "definition": "The attribute pointing to the image file."
+        },
+        {
+          "word": "alt",
+          "definition": "A short text description of the image."
+        },
+        {
+          "word": "video",
+          "definition": "The element that plays a movie in the page."
+        },
+        {
+          "word": "audio",
+          "definition": "The element that plays sound in the page."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does the src attribute do on an image?",
+      "options": [
+        "Describes the image in words",
+        "Points to the image file",
+        "Sets the image color",
+        "Hides the image"
+      ],
+      "answer": 1,
+      "explanation": "The src attribute points to the image file the browser should load."
+    },
+    {
+      "id": "q2",
+      "text": "What is the alt attribute for?",
+      "options": [
+        "Describing the image for those who cannot see it",
+        "Making the image bigger",
+        "Linking to another page",
+        "Playing a sound"
+      ],
+      "answer": 0,
+      "explanation": "The alt attribute describes the image in words, read aloud by screen readers and shown if the image fails to load."
+    },
+    {
+      "id": "q3",
+      "text": "Which element plays a movie in the page?",
+      "options": [
+        "The img element",
+        "The audio element",
+        "The video element",
+        "The p element"
+      ],
+      "answer": 2,
+      "explanation": "The video element plays a movie directly in the page."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "what-is-react",
+  "chapterId": "react-primary-framework",
+  "title": "What is React?",
+  "order": 1,
+  "summary": [
+    "React is a JavaScript library for building user interfaces.",
+    "You build pages out of reusable components.",
+    "React updates the screen for you when data changes.",
+    "It powers a huge share of modern web apps."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Building interactive pages by hand, touching the DOM directly, gets messy fast. React offers a different deal. You describe what the screen should look like for your data, and React keeps the screen in sync as that data changes."
+    },
+    {
+      "type": "explanation",
+      "title": "What React Is",
+      "text": "React is a JavaScript library for building user interfaces. Instead of one big page, you build small reusable pieces called components and combine them. You already saw why this matters at the end of the DOM lesson, where changing the page by hand got slow and tangled."
+    },
+    {
+      "type": "explanation",
+      "title": "Declare, Do Not Command",
+      "text": "The big shift is that you describe the result, not the steps. You tell React what the screen should show for the current data, and it figures out the smallest changes needed to make the real page match. You stop commanding the DOM and start declaring what you want.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A developer describing a result while React updates the page to match",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Thermostat",
+      "text": "Old style DOM work is like adjusting the heating by hand all day. React is like a thermostat. You set the temperature you want, and it constantly works to keep the room there. You describe the goal, React handles the fiddly adjustments to reach it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A thermostat set to a target while it keeps the room there on its own",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How React Works at a Glance",
+      "items": [
+        "You build the page from small components.",
+        "Each component describes what it should show for its data.",
+        "When the data changes, you update it in one place.",
+        "React works out what on the screen needs to change.",
+        "It updates only those parts, efficiently."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "React was created at a large social media company to handle constantly changing feeds. The problem it solved, keeping a busy screen in sync with changing data, is still its core job today."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "React",
+          "definition": "A JavaScript library for building user interfaces."
+        },
+        {
+          "word": "Library",
+          "definition": "A toolkit you use to build with."
+        },
+        {
+          "word": "Component",
+          "definition": "A reusable piece of the interface."
+        },
+        {
+          "word": "User interface",
+          "definition": "The part of an app people see and use."
+        },
+        {
+          "word": "Declarative",
+          "definition": "Describing the result, not the steps to get there."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is React for?",
+      "options": [
+        "Building user interfaces",
+        "Storing files",
+        "Sending email",
+        "Editing photos"
+      ],
+      "answer": 0,
+      "explanation": "React is a library for building user interfaces."
+    },
+    {
+      "id": "q2",
+      "text": "What do you build pages out of in React?",
+      "options": [
+        "Reusable components",
+        "Single huge files",
+        "Images only",
+        "Servers"
+      ],
+      "answer": 0,
+      "explanation": "In React you build pages out of small reusable components."
+    },
+    {
+      "id": "q3",
+      "text": "What do you describe in React?",
+      "options": [
+        "Each manual DOM step",
+        "What the screen should look like for your data",
+        "The server settings",
+        "The font files"
+      ],
+      "answer": 1,
+      "explanation": "You describe what the screen should look like for your data, and React makes it match."
+    }
+  ]
+}

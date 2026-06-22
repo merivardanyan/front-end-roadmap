@@ -1,0 +1,124 @@
+{
+  "id": "axios",
+  "chapterId": "data-apis-and-auth",
+  "title": "Axios",
+  "order": 2,
+  "summary": [
+    "Axios is a popular library for talking to servers.",
+    "It does the same job as fetch with extra convenience.",
+    "It reads JSON for you and handles some things automatically.",
+    "Many projects use it instead of fetch."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "fetch is built in and works fine, but a library called Axios became popular for making the same job a little easier. It smooths over some of fetch's rough edges, which is why you will see it in many real projects."
+    },
+    {
+      "type": "explanation",
+      "title": "What Axios Is",
+      "text": "Axios is a library for making requests to servers, just like fetch. The difference is convenience. It turns the response into usable data for you in one step, instead of two, and it has handy features built in, like setting a timeout or shared settings for every request."
+    },
+    {
+      "type": "explanation",
+      "title": "Axios vs fetch",
+      "text": "Both do the same core job. fetch is built in, so it needs no extra package. Axios is an add on that trades a small download for nicer ergonomics, like automatic JSON handling and treating server errors as failures by default. Teams pick based on preference, and you should be comfortable reading both.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Axios reading JSON in one step beside fetch doing it in two",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Manual Car vs an Automatic",
+      "text": "fetch is like a manual car, you do every step yourself, including changing gears. Axios is like an automatic, the same driving, but some steps are handled for you. Neither is wrong. One gives more control, the other more comfort, and you can drive both.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A manual gearstick beside an automatic, both driving the same road",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Axios",
+      "items": [
+        "Add Axios to your project.",
+        "Call it with the web address you want.",
+        "Await the result.",
+        "Read the data directly, already turned into objects.",
+        "Catch errors, which Axios raises for server failures."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "One reason Axios caught on is that it treats a server error response as a failure automatically, so it lands in your catch block, which many people find more intuitive than fetch's behavior."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Axios",
+          "definition": "A popular library for talking to servers."
+        },
+        {
+          "word": "Library",
+          "definition": "An add on package you include in a project."
+        },
+        {
+          "word": "Request",
+          "definition": "A call to a server, the same job as fetch."
+        },
+        {
+          "word": "JSON",
+          "definition": "Data Axios turns into objects for you."
+        },
+        {
+          "word": "Convenience",
+          "definition": "The extra ease Axios provides over fetch."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Axios?",
+      "options": [
+        "A popular library for talking to servers",
+        "A web browser",
+        "A CSS tool",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Axios is a popular library for making requests to servers."
+    },
+    {
+      "id": "q2",
+      "text": "What does it do that fetch needs two steps for?",
+      "options": [
+        "Reads JSON for you in one step",
+        "Styles the page",
+        "Creates a server",
+        "Stores images"
+      ],
+      "answer": 0,
+      "explanation": "Axios turns the response into usable data in one step, where fetch takes two."
+    },
+    {
+      "id": "q3",
+      "text": "Is Axios built in like fetch?",
+      "options": [
+        "No, it is an add on library",
+        "Yes, it is built in",
+        "Only on phones",
+        "Only in Node"
+      ],
+      "answer": 0,
+      "explanation": "Axios is an add on library, while fetch is built into the browser."
+    }
+  ]
+}

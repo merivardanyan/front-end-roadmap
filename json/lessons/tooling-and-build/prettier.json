@@ -1,0 +1,124 @@
+{
+  "id": "prettier",
+  "chapterId": "tooling-and-build",
+  "title": "Prettier",
+  "order": 6,
+  "summary": [
+    "Prettier automatically formats your code.",
+    "It handles spacing, indentation, and line breaks.",
+    "It ends arguments about style.",
+    "It pairs well with ESLint."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Developers can spend real time arguing over how code should look, where the spaces and line breaks go. Prettier ends that debate. It automatically formats your code to one consistent style, so nobody has to think about it."
+    },
+    {
+      "type": "explanation",
+      "title": "What Prettier Does",
+      "text": "Prettier is a formatter. It takes your code and reprints it in a clean, consistent layout, fixing indentation, spacing, and line breaks. You stop hand tidying your code, and you stop debating style, because Prettier just makes it all look the same."
+    },
+    {
+      "type": "explanation",
+      "title": "Formatting vs Linting",
+      "text": "Prettier and ESLint are partners, not rivals. ESLint catches mistakes and risky patterns, the meaning of your code. Prettier handles only how it looks, the layout. Used together, ESLint keeps your code correct and Prettier keeps it neat, and most teams set up both.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Messy code reprinted into a clean, consistent layout by Prettier",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Ironing Your Clothes",
+      "text": "Prettier is like ironing. It does not change what you wear, your clothes, your code, just smooths out the wrinkles so everything looks crisp and consistent. You could fold by hand, but a press does it perfectly every time, without you fussing over each crease.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Wrinkled clothes pressed smooth and crisp",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Prettier",
+      "items": [
+        "Add Prettier to your project.",
+        "It defines one consistent formatting style.",
+        "Run it, or let it run on save.",
+        "Your code is reprinted neatly every time.",
+        "Pair it with ESLint for correctness too."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Many developers set Prettier to run automatically every time they save a file. You stop thinking about formatting entirely, because it just happens the instant you save."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Prettier",
+          "definition": "A tool that automatically formats code."
+        },
+        {
+          "word": "Formatter",
+          "definition": "Software that reprints code neatly."
+        },
+        {
+          "word": "Style",
+          "definition": "How the code is laid out."
+        },
+        {
+          "word": "Consistency",
+          "definition": "The same layout everywhere."
+        },
+        {
+          "word": "ESLint",
+          "definition": "The partner tool for catching mistakes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does Prettier do?",
+      "options": [
+        "Automatically formats your code",
+        "Catches logic bugs",
+        "Sends requests",
+        "Stores files"
+      ],
+      "answer": 0,
+      "explanation": "Prettier automatically formats your code to a consistent style."
+    },
+    {
+      "id": "q2",
+      "text": "What does it handle?",
+      "options": [
+        "Spacing, indentation, and line breaks",
+        "Server speed",
+        "Image quality",
+        "Database tables"
+      ],
+      "answer": 0,
+      "explanation": "Prettier handles layout, like spacing, indentation, and line breaks."
+    },
+    {
+      "id": "q3",
+      "text": "What does it pair well with?",
+      "options": [
+        "ESLint",
+        "A database",
+        "A camera",
+        "A printer"
+      ],
+      "answer": 0,
+      "explanation": "Prettier pairs well with ESLint, which handles correctness."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "enums",
+  "chapterId": "typescript",
+  "title": "Enums",
+  "order": 5,
+  "summary": [
+    "An enum is a set of named choices.",
+    "It gives friendly names to a fixed list of options.",
+    "This prevents typos and invalid values.",
+    "It is good for things like statuses or directions."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Some values come from a small fixed list, like a traffic light that is red, yellow, or green. Using loose text for these invites typos. An enum lets you name each allowed option, so only valid ones are possible."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Enum Is",
+      "text": "An enum is a named set of fixed choices. Instead of scattering raw text like the word pending around your code, you define an enum of the allowed statuses once, and use those names. TypeScript then only lets you use one of the listed options."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Help",
+      "text": "Enums prevent two problems. They stop typos, since a misspelled option simply is not allowed. And they gather the valid choices in one clear place, so anyone reading the code sees the full set at a glance. For a fixed list of options, this is safer than loose strings.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A small list of named choices, with a misspelled one rejected",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Buttons on a Microwave",
+      "text": "An enum is like the labeled buttons on a microwave, defrost, popcorn, reheat. You can only press one of the real buttons. You cannot invent a button that is not there. The choices are fixed, named, and impossible to misspell, which is exactly what an enum gives your code.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A microwave panel where only the real labelled buttons can be pressed",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an Enum",
+      "items": [
+        "Find a value that comes from a fixed set of options.",
+        "Define an enum listing each named choice.",
+        "Use the enum's names instead of loose text.",
+        "TypeScript allows only the listed options.",
+        "Typos and invalid values are caught right away."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Many teams now prefer a simple union of text options over enums in TypeScript, since it is lighter. Both solve the same problem, so you will see both in real code."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Enum",
+          "definition": "A named set of fixed choices."
+        },
+        {
+          "word": "Choices",
+          "definition": "The allowed options in the set."
+        },
+        {
+          "word": "Option",
+          "definition": "One named value in an enum."
+        },
+        {
+          "word": "Fixed set",
+          "definition": "A list that does not change."
+        },
+        {
+          "word": "Typo",
+          "definition": "A spelling mistake an enum prevents."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is an enum?",
+      "options": [
+        "A set of named choices",
+        "A type of loop",
+        "A style rule",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "An enum is a named set of fixed choices."
+    },
+    {
+      "id": "q2",
+      "text": "What problem does it prevent?",
+      "options": [
+        "Slow images",
+        "Typos and invalid values",
+        "Broken links",
+        "Missing fonts"
+      ],
+      "answer": 1,
+      "explanation": "An enum prevents typos and invalid values by allowing only listed options."
+    },
+    {
+      "id": "q3",
+      "text": "What is a good use for an enum?",
+      "options": [
+        "A fixed list like statuses or directions",
+        "A random number",
+        "A large paragraph",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "Enums suit a fixed list of options, like statuses or directions."
+    }
+  ]
+}

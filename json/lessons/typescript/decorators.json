@@ -1,0 +1,124 @@
+{
+  "id": "decorators",
+  "chapterId": "typescript",
+  "title": "Decorators",
+  "order": 8,
+  "summary": [
+    "A decorator adds extra behavior to a class or its parts.",
+    "You attach it with a special at symbol marker.",
+    "It wraps something with added powers without changing its core code.",
+    "Decorators are common in some frameworks."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes you want to add a capability to a class without rewriting it, like logging every time a method runs. Decorators let you attach that extra behavior with a small marker, leaving the original code clean."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Decorator Is",
+      "text": "A decorator is a special marker, written with an at symbol, that you place on a class or one of its methods. It wraps the thing it sits on with extra behavior. The original code stays focused on its main job, while the decorator adds the extra around it."
+    },
+    {
+      "type": "explanation",
+      "title": "Where You See Them",
+      "text": "Decorators are common in certain frameworks that use them to mark and configure parts of your code, like saying this class is a component, or this value should be injected. You attach the marker, and the framework reads it to wire things up. They are powerful but tied to specific tools.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A marker above a class adding behavior without changing its inside",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Sticker on a Suitcase",
+      "text": "A decorator is like a fragile sticker on a suitcase. The suitcase is unchanged inside, but the sticker adds instructions for how it should be handled. Handlers read the sticker and treat the case with extra care. The decorator is that sticker, adding behavior around something without opening it up.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A fragile sticker on a suitcase changing how handlers treat it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Decorator",
+      "items": [
+        "Have a class or method you want to enhance.",
+        "Write the extra behavior as a decorator.",
+        "Attach it with the at symbol marker above the code.",
+        "The decorator wraps the code with its behavior.",
+        "The original code stays clean and focused."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Decorators took a long road to become an official JavaScript feature, and many people first met them through frameworks that adopted the idea early."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Decorator",
+          "definition": "A marker that adds behavior to code it sits on."
+        },
+        {
+          "word": "Marker",
+          "definition": "The at symbol you place above the code."
+        },
+        {
+          "word": "Wrap",
+          "definition": "To add behavior around something."
+        },
+        {
+          "word": "Class",
+          "definition": "A blueprint for objects, often decorated."
+        },
+        {
+          "word": "Method",
+          "definition": "A function on a class, which can be decorated."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a decorator do?",
+      "options": [
+        "Adds extra behavior to a class or its parts",
+        "Deletes a class",
+        "Styles the page",
+        "Loads an image"
+      ],
+      "answer": 0,
+      "explanation": "A decorator adds extra behavior to the class or method it sits on."
+    },
+    {
+      "id": "q2",
+      "text": "How do you attach one?",
+      "options": [
+        "With a special at symbol marker",
+        "With a hash",
+        "With a dot",
+        "With quotes"
+      ],
+      "answer": 0,
+      "explanation": "You attach a decorator with an at symbol marker above the code."
+    },
+    {
+      "id": "q3",
+      "text": "Where are decorators common?",
+      "options": [
+        "In some frameworks",
+        "In image files",
+        "In stylesheets",
+        "In the doctype"
+      ],
+      "answer": 0,
+      "explanation": "Decorators are common in certain frameworks that use them to configure code."
+    }
+  ]
+}

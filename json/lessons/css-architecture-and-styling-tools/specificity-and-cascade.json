@@ -1,0 +1,124 @@
+{
+  "id": "specificity-and-cascade",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Specificity & Cascade",
+  "order": 3,
+  "summary": [
+    "Many rules can target the same element.",
+    "The cascade decides which rule wins.",
+    "More specific selectors beat less specific ones.",
+    "If specificity ties, the last rule written wins."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sooner or later two CSS rules will try to style the same element in different ways. Only one can win. CSS has clear rules for deciding which, and knowing them saves hours of confusion."
+    },
+    {
+      "type": "explanation",
+      "title": "The Cascade",
+      "text": "CSS stands for Cascading Style Sheets, and the cascade is how it settles conflicts. When several rules apply to one element, the browser follows an order to pick the winner. Two things matter most, how specific each selector is, and which rule comes last."
+    },
+    {
+      "type": "explanation",
+      "title": "Specificity",
+      "text": "Specificity is how exact a selector is. An id is more specific than a class, and a class is more specific than an element name. The more specific rule wins, even if a less specific one comes later. If two rules are equally specific, then the last one written wins.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Two rules targeting one element, with the more specific one winning",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Instructions from Different People",
+      "text": "Imagine your teacher says wear blue, but the principal says wear red. The principal outranks the teacher, so red wins. Specificity is that ranking. And if two people of equal rank give different orders, you follow the most recent one.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A teacher and a principal giving orders, with the principal outranking",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Deciding Which Rule Wins",
+      "items": [
+        "Find all the rules targeting the element.",
+        "Compare how specific each selector is.",
+        "An id beats a class, a class beats an element name.",
+        "The most specific rule wins.",
+        "If they tie, the last one in the file wins."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "There is a way to force a rule to win, but it is best avoided. Relying on it usually means the specificity got tangled, and it makes future changes harder."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Cascade",
+          "definition": "The process that decides which rule wins a conflict."
+        },
+        {
+          "word": "Specificity",
+          "definition": "How exact a selector is, used to rank rules."
+        },
+        {
+          "word": "id",
+          "definition": "The most specific common selector, for one element."
+        },
+        {
+          "word": "Class",
+          "definition": "A selector less specific than an id, more than an element."
+        },
+        {
+          "word": "Conflict",
+          "definition": "When two rules try to style the same thing differently."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does the cascade do?",
+      "options": [
+        "Loads the page",
+        "Decides which rule wins when several apply",
+        "Creates new elements",
+        "Sets the page width"
+      ],
+      "answer": 1,
+      "explanation": "The cascade is how CSS decides which rule wins when several target the same element."
+    },
+    {
+      "id": "q2",
+      "text": "Which is more specific, a class or an id?",
+      "options": [
+        "A class",
+        "An id",
+        "They are equal",
+        "Neither"
+      ],
+      "answer": 1,
+      "explanation": "An id is more specific than a class, so it wins the conflict."
+    },
+    {
+      "id": "q3",
+      "text": "If two rules are equally specific, which wins?",
+      "options": [
+        "The first one written",
+        "The last one written",
+        "Neither",
+        "A random one"
+      ],
+      "answer": 1,
+      "explanation": "When specificity ties, the rule written last wins."
+    }
+  ]
+}

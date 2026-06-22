@@ -1,0 +1,124 @@
+{
+  "id": "api-routes",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "API Routes",
+  "order": 6,
+  "summary": [
+    "API routes let you write backend code inside your frontend project.",
+    "They run on the server, not the browser.",
+    "They are good for handling form submissions or hiding secret keys.",
+    "This blurs the line between frontend and backend."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes a frontend app needs a little backend, to save a form, send an email, or use a secret key safely. Frameworks like Next.js let you write that backend code right inside the same project, as API routes."
+    },
+    {
+      "type": "explanation",
+      "title": "What an API Route Is",
+      "text": "An API route is a piece of backend code that lives in your frontend project but runs on the server. Your browser code can call it, and it can do things the browser should not, like talk to a database or use a secret key. It gives you a small backend without a separate project."
+    },
+    {
+      "type": "explanation",
+      "title": "Why This Matters",
+      "text": "Some things must not happen in the browser, because anything there is visible to users. A secret key, for example, would be exposed. An API route keeps that work on the server, out of sight. It is how a mostly frontend app safely handles the few tasks that need a trusted server.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Browser code calling an API route that runs safely on the server",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Service Window at a Shop",
+      "text": "An API route is like a service window at the back of a shop. Customers, the browser, can walk up and make a request, but they cannot step into the back room. The staff behind the window do the sensitive work, using tools the customers never touch, and hand back just the result.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Customers making requests at a service window while staff work in the back room",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an API Route",
+      "items": [
+        "Find work that must run on the server, not the browser.",
+        "Write it as an API route in your project.",
+        "It runs on the server when called.",
+        "Your browser code calls it and gets a result.",
+        "Secrets and sensitive work stay hidden from users."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because the frontend and backend live together, a single developer can build a full feature, the button and the server code behind it, without ever leaving one project."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "API route",
+          "definition": "Backend code inside a frontend project."
+        },
+        {
+          "word": "Backend",
+          "definition": "The server side part of an app."
+        },
+        {
+          "word": "Server",
+          "definition": "Where API routes run, out of the user's sight."
+        },
+        {
+          "word": "Secret key",
+          "definition": "Sensitive value that must stay off the browser."
+        },
+        {
+          "word": "Request",
+          "definition": "A call from the browser to the API route."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do API routes let you write?",
+      "options": [
+        "Backend code inside your frontend project",
+        "Only CSS",
+        "Only images",
+        "A new browser"
+      ],
+      "answer": 0,
+      "explanation": "API routes let you write backend code inside your frontend project."
+    },
+    {
+      "id": "q2",
+      "text": "Where do they run?",
+      "options": [
+        "On the server, not the browser",
+        "Only in the browser",
+        "On the user's phone only",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "API routes run on the server, not in the browser."
+    },
+    {
+      "id": "q3",
+      "text": "Why keep a secret key in an API route?",
+      "options": [
+        "Anything in the browser is visible to users",
+        "It looks nicer",
+        "It loads faster",
+        "It is required by CSS"
+      ],
+      "answer": 0,
+      "explanation": "Anything in the browser is visible to users, so secrets belong on the server."
+    }
+  ]
+}

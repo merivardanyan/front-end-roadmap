@@ -3,90 +3,122 @@
   "chapterId": "core-web-foundations",
   "title": "Client vs Server",
   "order": 2,
-  "emoji": "🤝",
+  "summary": [
+    "The client is the device that asks for something, like your phone or browser.",
+    "The server is the computer that waits for requests and sends back answers.",
+    "They talk by sending requests and getting responses.",
+    "The same computer can be a client one moment and a server the next."
+  ],
   "sections": [
     {
       "type": "intro",
-      "text": "When you use a website, there are always two sides talking to each other: the client and the server. Understanding the difference between them is one of the most important first steps in web development."
+      "text": "When you open an app or a website, two computers are having a quick conversation. One asks for things, the other hands them over. Once you know who is who, the rest of the web starts to make sense.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A phone asking a server for data and getting a reply",
+        "placeholder": true
+      }
     },
     {
       "type": "explanation",
       "title": "What is a Client?",
-      "text": "The client is the device or app that asks for something. When you open a website on your phone or laptop, your browser is acting as the client. The client sends a request, like saying please send me that page, and then waits for an answer."
+      "text": "The client is the device that asks for something. Your phone, your laptop, the browser you are reading this on. It sends a request that says please give me this page or this data, then waits for an answer."
     },
     {
       "type": "explanation",
       "title": "What is a Server?",
-      "text": "The server is a computer that waits for requests and answers them. It stores things like web pages, images, and data, and whenever a client asks for something, the server sends it back. A server can answer many clients at the same time, all day and all night."
+      "text": "A server is a computer whose whole job is to wait for requests and answer them. It might store web pages, images, videos, or the data behind an app. It is usually always on, ready to reply the moment someone asks."
+    },
+    {
+      "type": "analogy",
+      "title": "A Customer and a Kitchen",
+      "text": "Think of a restaurant. You, the customer, are the client. You ask the waiter for a dish. The kitchen, the server, prepares it and sends it out. You never walk into the kitchen yourself. You just ask, and you receive.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A customer ordering food while the kitchen prepares it",
+        "placeholder": true
+      }
     },
     {
       "type": "steps",
       "title": "How a Client and Server Talk",
       "items": [
-        "The client (your browser) sends a request, asking for a page or some data.",
-        "The request travels across the internet to the right server.",
-        "The server receives the request and decides what to send back.",
+        "The client sends a request to the server.",
+        "The request says exactly what it wants, like a certain page.",
+        "The server reads the request and finds what was asked for.",
         "The server sends a response back to the client.",
-        "The client receives the response and shows it to you, like a finished web page."
+        "The client takes that response and shows it to you."
       ]
     },
     {
-      "type": "analogy",
-      "title": "Think of it like a Waiter and a Kitchen",
-      "text": "You are sitting at a table in a restaurant. You are the client, and you tell the waiter what you want. The waiter takes your order to the kitchen, which is the server. The kitchen prepares the food and the waiter brings it back to you. You never go into the kitchen yourself, you just ask and receive."
-    },
-    {
       "type": "fun-fact",
-      "text": "One single server can talk to thousands or even millions of clients at the same time, answering each request separately."
+      "text": "One computer can be both a client and a server at once. When a server needs data from another server, it becomes a client in that moment."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "Client", "definition": "The device or app, like your browser, that asks a server for information." },
-        { "word": "Server", "definition": "A computer that stores information and sends it back when a client asks for it." },
-        { "word": "Request", "definition": "A message the client sends asking for something, like a web page." },
-        { "word": "Response", "definition": "The message the server sends back, containing the information the client asked for." },
-        { "word": "Client-Server Model", "definition": "The system where clients ask for things and servers answer them." }
+        {
+          "word": "Client",
+          "definition": "The device that asks for something, like your phone or browser."
+        },
+        {
+          "word": "Server",
+          "definition": "A computer that waits for requests and sends back what was asked for."
+        },
+        {
+          "word": "Request",
+          "definition": "A message asking for a page, an image, or some data."
+        },
+        {
+          "word": "Response",
+          "definition": "The server's reply, carrying what the client asked for."
+        },
+        {
+          "word": "Data center",
+          "definition": "A building full of servers that stay on and connected all the time."
+        }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What is a client in web development?",
+      "text": "What is a client?",
       "options": [
-        "A computer that stores all the websites",
-        "The device or app that asks a server for information",
-        "A type of cable",
-        "A programming language"
+        "The device that asks for something",
+        "A building full of servers",
+        "A type of internet cable",
+        "A computer that only sends, never asks"
       ],
-      "answer": 1,
-      "explanation": "The client is the device or app, usually your browser, that sends a request asking for a web page or other information."
+      "answer": 0,
+      "explanation": "The client is the device that makes the request, like your phone or your browser."
     },
     {
       "id": "q2",
-      "text": "What does a server do?",
+      "text": "What is a server's main job?",
       "options": [
-        "It only watches videos",
-        "It stores information and sends it back when a client asks for it",
-        "It deletes web pages",
-        "It is the same thing as a browser"
+        "To wait for requests and answer them",
+        "To show pages on your screen",
+        "To type website addresses",
+        "To connect cables together"
       ],
-      "answer": 1,
-      "explanation": "A server stores things like web pages and data, and sends them back whenever a client sends a request asking for them."
+      "answer": 0,
+      "explanation": "A server waits for requests and sends back what was asked for, like a page or some data."
     },
     {
       "id": "q3",
-      "text": "In the restaurant analogy, who plays the role of the server?",
+      "text": "In the restaurant example, who is the server?",
       "options": [
         "The customer",
-        "The table",
+        "The menu",
         "The kitchen",
-        "The menu"
+        "The front door"
       ],
       "answer": 2,
-      "explanation": "The kitchen prepares the food, just like a server prepares and sends back the information that was requested."
+      "explanation": "The kitchen plays the server. It receives the order and prepares what was asked for, just like a real server."
     }
   ]
 }

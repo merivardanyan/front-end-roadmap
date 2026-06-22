@@ -1,0 +1,124 @@
+{
+  "id": "virtual-dom",
+  "chapterId": "performance",
+  "title": "Virtual DOM & Reconciliation",
+  "order": 7,
+  "summary": [
+    "The virtual DOM is React's lightweight copy of the page.",
+    "React changes the copy first, then finds the smallest real changes.",
+    "This process is called reconciliation.",
+    "It makes updates fast."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You learned that changing the real page directly, many times, is slow. React avoids this with a clever trick. It keeps a lightweight copy of the page in memory and uses it to figure out the smallest possible real changes to make."
+    },
+    {
+      "type": "explanation",
+      "title": "What the Virtual DOM Is",
+      "text": "The virtual DOM is React's in memory copy of what the page should look like. It is cheap to create and change, because it is just data, not the real page. When your state changes, React first updates this copy, not the real page directly."
+    },
+    {
+      "type": "explanation",
+      "title": "Reconciliation",
+      "text": "React then compares the new copy with the previous one to find exactly what changed, and makes only those small changes to the real page. This compare and apply process is called reconciliation. Because the real, slow page is touched as little as possible, updates stay fast even in big apps.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "React comparing two copies and applying only the small real changes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Editing a Draft Before the Final Copy",
+      "text": "The virtual DOM is like marking up a cheap draft before touching the expensive final document. You scribble all your changes on the draft, compare it to the last version, then make only those exact edits to the real one. You never rewrite the whole final copy, just the parts that changed.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Changes marked on a cheap draft, then only those applied to the final copy",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How the Virtual DOM Works",
+      "items": [
+        "React keeps a lightweight copy of the page.",
+        "When state changes, it updates the copy first.",
+        "It compares the new copy to the old one.",
+        "It finds the smallest set of real changes.",
+        "It applies only those to the actual page."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This is the answer to the question raised back in the DOM lesson, where hand editing the page many times got slow. The virtual DOM is exactly how React makes many updates fast."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Virtual DOM",
+          "definition": "React's lightweight in memory copy of the page."
+        },
+        {
+          "word": "Copy",
+          "definition": "The cheap data version React changes first."
+        },
+        {
+          "word": "Reconciliation",
+          "definition": "Comparing copies and applying minimal changes."
+        },
+        {
+          "word": "Compare",
+          "definition": "Finding what changed between two copies."
+        },
+        {
+          "word": "Update",
+          "definition": "The small real change applied to the page."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the virtual DOM?",
+      "options": [
+        "React's lightweight copy of the page",
+        "A real server",
+        "A type of image",
+        "A CSS rule"
+      ],
+      "answer": 0,
+      "explanation": "The virtual DOM is React's lightweight in memory copy of the page."
+    },
+    {
+      "id": "q2",
+      "text": "What does React do with it?",
+      "options": [
+        "Changes the copy first, then finds the smallest real changes",
+        "Deletes the page",
+        "Ignores it",
+        "Reloads the server"
+      ],
+      "answer": 0,
+      "explanation": "React updates the copy first, then finds and applies the smallest real changes."
+    },
+    {
+      "id": "q3",
+      "text": "What is that process called?",
+      "options": [
+        "Reconciliation",
+        "Bundling",
+        "Linting",
+        "Routing"
+      ],
+      "answer": 0,
+      "explanation": "Comparing the copies and applying minimal changes is called reconciliation."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "nodejs-basics",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Node.js Basics",
+  "order": 10,
+  "summary": [
+    "Node.js lets JavaScript run outside the browser.",
+    "It runs on servers and on your own computer.",
+    "It is how JavaScript powers backends and tools.",
+    "It uses the same language you already know."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "For most of its life, JavaScript only ran inside web browsers. Node.js changed that. It lets the same language run on servers and on your own machine, which is why JavaScript developers can now build the whole stack."
+    },
+    {
+      "type": "explanation",
+      "title": "JavaScript Outside the Browser",
+      "text": "Node.js is a program that runs JavaScript without a browser. It takes the same language you write for web pages and lets it run as a standalone application, on a server in the cloud or right on your laptop. The language is the same, the setting is new."
+    },
+    {
+      "type": "explanation",
+      "title": "What It Is Used For",
+      "text": "With Node, JavaScript can power the backend of a website, the part that lives on the server and handles data. It also runs the command line tools you use while building, like the ones that bundle your code or install packages. Much of the modern web toolchain runs on Node.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "JavaScript running in a browser on one side and on a server through Node on the other",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Fish That Learned to Walk",
+      "text": "For years JavaScript lived only in the water of the browser. Node.js is like that fish growing legs and walking onto land. It is the same creature, the same language, but now it can go places it never could before, the server, the desktop, the command line.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A fish growing legs and walking from water onto land",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Where Node.js Fits",
+      "items": [
+        "You already know JavaScript from the browser.",
+        "Node.js runs that same language without a browser.",
+        "Use it to build the server side of an app.",
+        "Use it to run build tools and install packages.",
+        "One language now covers both front and back."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because front end and back end can share one language, a single developer can build an entire app alone. This is a big reason JavaScript became so widely used."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Node.js",
+          "definition": "A program that runs JavaScript outside the browser."
+        },
+        {
+          "word": "Server",
+          "definition": "A computer that stores and sends data to users."
+        },
+        {
+          "word": "Backend",
+          "definition": "The server side part of an app."
+        },
+        {
+          "word": "Command line",
+          "definition": "A text based way to run tools and programs."
+        },
+        {
+          "word": "Runtime",
+          "definition": "The setting where code runs, like Node or the browser."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does Node.js let JavaScript do?",
+      "options": [
+        "Run outside the browser",
+        "Change the page color",
+        "Only run on phones",
+        "Replace HTML"
+      ],
+      "answer": 0,
+      "explanation": "Node.js lets JavaScript run outside the browser, on servers and computers."
+    },
+    {
+      "id": "q2",
+      "text": "Where does Node.js run?",
+      "options": [
+        "Only in the browser",
+        "On servers and your own computer",
+        "Only on phones",
+        "Only in the cloud"
+      ],
+      "answer": 1,
+      "explanation": "Node.js runs JavaScript on servers and on your own machine."
+    },
+    {
+      "id": "q3",
+      "text": "What language does Node.js use?",
+      "options": [
+        "A brand new language",
+        "The same JavaScript you already know",
+        "Only Python",
+        "Only HTML"
+      ],
+      "answer": 1,
+      "explanation": "Node.js uses the same JavaScript language you already know from the browser."
+    }
+  ]
+}

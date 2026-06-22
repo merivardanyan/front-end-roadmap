@@ -1,0 +1,124 @@
+{
+  "id": "custom-hooks",
+  "chapterId": "react-primary-framework",
+  "title": "Custom Hooks",
+  "order": 12,
+  "summary": [
+    "A custom hook is your own reusable piece of component logic.",
+    "It bundles related logic so you can reuse it.",
+    "It is just a function that uses other hooks.",
+    "This keeps components clean and avoids repetition."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "As you build, you notice the same logic appearing in several components, like fetching data or tracking a window size. Custom hooks let you pull that shared logic out into one reusable place."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Custom Hook Is",
+      "text": "A custom hook is a function you write that uses React's built in hooks, like useState and useEffect, and bundles some logic together. By convention its name starts with use. It lets you package a behavior once and reuse it across many components."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Help",
+      "text": "Without them, the same setup, like loading data and tracking loading and error states, gets copied into every component that needs it. A custom hook captures that once. Your components then just call the hook and get back what they need, staying short and focused on what they show.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Repeated logic pulled into one custom hook used by many components",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Labeled Recipe Card",
+      "text": "A custom hook is like writing a tricky recipe on a card once. Instead of re explaining the steps every time you cook, you grab the card. The logic lives in one place, and every dish that needs it just follows the same card. Update the card, and every dish improves.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A recipe card reused for many dishes instead of re explaining each time",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Making a Custom Hook",
+      "items": [
+        "Spot logic repeated across components.",
+        "Move it into a function whose name starts with use.",
+        "Inside, use the built in hooks you need.",
+        "Return whatever the components should get back.",
+        "Call your hook from any component that needs it."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The use naming rule is not just style. React relies on it to apply the rules of hooks correctly, so naming your custom hook with use is required, not optional."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Custom hook",
+          "definition": "Your own reusable piece of component logic."
+        },
+        {
+          "word": "Hook",
+          "definition": "A function that adds a React feature."
+        },
+        {
+          "word": "Reusable",
+          "definition": "Written once, used in many components."
+        },
+        {
+          "word": "Logic",
+          "definition": "The behavior the hook bundles up."
+        },
+        {
+          "word": "use prefix",
+          "definition": "The required start of a hook's name."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a custom hook?",
+      "options": [
+        "Your own reusable piece of component logic",
+        "A style rule",
+        "A web server",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "A custom hook is your own reusable piece of component logic."
+    },
+    {
+      "id": "q2",
+      "text": "What is a custom hook, simply?",
+      "options": [
+        "A function that uses other hooks",
+        "A CSS file",
+        "A database",
+        "A new language"
+      ],
+      "answer": 0,
+      "explanation": "A custom hook is just a function that uses React's built in hooks."
+    },
+    {
+      "id": "q3",
+      "text": "What must a custom hook's name start with?",
+      "options": [
+        "get",
+        "use",
+        "do",
+        "run"
+      ],
+      "answer": 1,
+      "explanation": "By rule, a custom hook's name must start with use."
+    }
+  ]
+}

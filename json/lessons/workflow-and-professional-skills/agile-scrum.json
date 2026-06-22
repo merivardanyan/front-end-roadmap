@@ -1,0 +1,124 @@
+{
+  "id": "agile-scrum",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Agile & Scrum",
+  "order": 1,
+  "summary": [
+    "Agile is a way of working in small, frequent steps.",
+    "Scrum is a popular version of it.",
+    "Teams work in short cycles called sprints.",
+    "The goal is to adapt quickly instead of planning everything upfront."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Most software teams do not plan a whole project in detail upfront and then build it all at once. Instead they work in small, repeated steps, adjusting as they learn. Agile is the name for that approach, and Scrum is its most common flavor."
+    },
+    {
+      "type": "explanation",
+      "title": "What Agile Is",
+      "text": "Agile is a way of working that favors small, frequent deliveries over one giant plan. Rather than spending months planning then months building, an Agile team builds a little, shows it, gets feedback, and adjusts. This lets them respond to change instead of being locked into an outdated plan."
+    },
+    {
+      "type": "explanation",
+      "title": "Scrum and Sprints",
+      "text": "Scrum is a specific, popular way to do Agile. Work happens in short, fixed cycles called sprints, often two weeks. The team picks a small set of work for the sprint, builds it, and reviews it at the end. There are also regular short meetings, like a quick daily check in, to keep everyone aligned.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A two week sprint cycle with planning, building, and review",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Cooking and Tasting as You Go",
+      "text": "Agile is like cooking by tasting as you go, adjusting the seasoning step by step, rather than following a fixed recipe blindly to the end and only tasting at the very end. Each small taste, a sprint review, tells you what to adjust next, so the final dish actually comes out right.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A cook tasting and adjusting at each step instead of only at the end",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Scrum Works",
+      "items": [
+        "The team picks a small set of work for a sprint.",
+        "They build it over a short, fixed cycle.",
+        "Quick daily check ins keep everyone aligned.",
+        "At the end, they review what was built.",
+        "They adjust and plan the next sprint."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The daily check in, often called a standup, is sometimes held literally standing up, the idea being that if everyone stays on their feet, the meeting stays short."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Agile",
+          "definition": "Working in small, frequent steps."
+        },
+        {
+          "word": "Scrum",
+          "definition": "A popular specific way to do Agile."
+        },
+        {
+          "word": "Sprint",
+          "definition": "A short, fixed work cycle, often two weeks."
+        },
+        {
+          "word": "Standup",
+          "definition": "A quick daily team check in."
+        },
+        {
+          "word": "Adapt",
+          "definition": "Adjusting as you learn, rather than fixed planning."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Agile?",
+      "options": [
+        "A way of working in small, frequent steps",
+        "A type of server",
+        "A CSS framework",
+        "A web browser"
+      ],
+      "answer": 0,
+      "explanation": "Agile is a way of working in small, frequent steps."
+    },
+    {
+      "id": "q2",
+      "text": "What is Scrum?",
+      "options": [
+        "A popular version of Agile",
+        "A database",
+        "A programming language",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Scrum is a popular, specific way to do Agile."
+    },
+    {
+      "id": "q3",
+      "text": "What are the short cycles called?",
+      "options": [
+        "Sprints",
+        "Loops",
+        "Bundles",
+        "Routes"
+      ],
+      "answer": 0,
+      "explanation": "In Scrum, work happens in short cycles called sprints."
+    }
+  ]
+}

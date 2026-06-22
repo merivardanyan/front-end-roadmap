@@ -1,0 +1,124 @@
+{
+  "id": "server-components",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "React Server Components",
+  "order": 4,
+  "summary": [
+    "React Server Components run on the server, not the browser.",
+    "They can fetch data directly and send less JavaScript.",
+    "They cannot use state or events.",
+    "They pair with regular client components for interactivity."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Normally React components run in the browser. Server Components are a newer idea where some components run only on the server. This shifts work off the user's device and can make apps lighter and faster."
+    },
+    {
+      "type": "explanation",
+      "title": "What Runs Where",
+      "text": "A React Server Component runs on the server and sends finished output to the browser. Because it runs on the server, it can fetch data directly and does not ship its JavaScript to the user, which means less for the browser to download. The catch is it cannot use interactive features like state or events."
+    },
+    {
+      "type": "explanation",
+      "title": "Working with Client Components",
+      "text": "Since Server Components cannot handle clicks or hold state, you still use regular components, called client components, for the interactive parts. The common pattern is server components for the static, data heavy structure, and client components nested inside for the interactive bits. They work together.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A server rendered structure with small interactive client components inside",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Pre Printed Brochure with a Few Buttons",
+      "text": "A server component is like a pre printed brochure, finished at the print shop and just handed to you, no assembly needed. The interactive client components are like a few real buttons glued onto it. Most of the page arrives ready made, with small interactive pieces added where needed.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A finished brochure with a couple of working buttons attached",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Server Components Help",
+      "items": [
+        "Heavy, static parts run as server components.",
+        "They fetch their data directly on the server.",
+        "They send finished output, not extra JavaScript.",
+        "Interactive parts stay as client components.",
+        "The two combine into one page."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "By keeping data fetching on the server, server components can talk to a database directly without exposing secrets to the browser, which is both simpler and safer."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Server Component",
+          "definition": "A component that runs on the server."
+        },
+        {
+          "word": "Client component",
+          "definition": "A regular component that runs in the browser."
+        },
+        {
+          "word": "Server",
+          "definition": "Where server components do their work."
+        },
+        {
+          "word": "JavaScript",
+          "definition": "What server components avoid shipping to the browser."
+        },
+        {
+          "word": "Interactivity",
+          "definition": "Clicks and state, which need client components."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Where do React Server Components run?",
+      "options": [
+        "On the server",
+        "In the browser",
+        "On the user's phone only",
+        "In a stylesheet"
+      ],
+      "answer": 0,
+      "explanation": "React Server Components run on the server, not in the browser."
+    },
+    {
+      "id": "q2",
+      "text": "What can they not use?",
+      "options": [
+        "State or events",
+        "Text",
+        "Images",
+        "Colors"
+      ],
+      "answer": 0,
+      "explanation": "Server components cannot use interactive features like state or events."
+    },
+    {
+      "id": "q3",
+      "text": "What handles the interactive parts?",
+      "options": [
+        "Regular client components",
+        "The server alone",
+        "A database",
+        "Plain HTML"
+      ],
+      "answer": 0,
+      "explanation": "Regular client components handle the interactive parts, nested inside server components."
+    }
+  ]
+}

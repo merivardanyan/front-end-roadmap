@@ -26,7 +26,7 @@ function createChapterColumnFragment(chapters, column, size, columnElement) {
                         <div class="flex gap-2">
                             <div class="chapter-progress chapter-${chapter.id}">
                             <div class="progress-bar">
-                                <div class="done""></div>
+                                <div class="done"></div>
                             </div>
                             <div class="hide progress-percent">0</div>
                         </div>
@@ -36,8 +36,7 @@ function createChapterColumnFragment(chapters, column, size, columnElement) {
                     </div>
                    
             `;
-            console.log(li.querySelector(`.chapter-${chapter.id}`))
-        showProgress(li.querySelector(`.chapter-${chapter.id}`), progress?.chapters?.[chapter.id].progress ?? 0);
+        showProgress(li.querySelector(`.chapter-${chapter.id}`), progress?.chapters?.[chapter.id]?.progress ?? 0);
         divFragment.appendChild(li);
     }
     columnElement.appendChild(divFragment);
@@ -48,9 +47,8 @@ async function init() {
     if (!chapters) return;
     showChapters(chapters);
     const chapterLessons = await getLessons();
-    console.log(chapterLessons)
+    if (!chapterLessons) return;
     loadProgress(chapterLessons.chapters,progress);
-    console.log(progress.progress);
     showProgress(document.querySelector(`.overall-progress`), progress?.progress ?? 0);
     const lastLesson = getLastOpenedLesson();
 

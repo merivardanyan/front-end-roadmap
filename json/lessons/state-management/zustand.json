@@ -1,0 +1,124 @@
+{
+  "id": "zustand",
+  "chapterId": "state-management",
+  "title": "Zustand",
+  "order": 5,
+  "summary": [
+    "Zustand is a small, simple state management library.",
+    "It has very little setup compared to Redux.",
+    "You create a store and use it directly in components.",
+    "It is popular for its ease and small size."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Not everyone wants the structure of Redux. Zustand is a lighter alternative, a small library that lets you share state across an app with very little ceremony. It has become popular precisely because it stays out of your way."
+    },
+    {
+      "type": "explanation",
+      "title": "What Zustand Is",
+      "text": "Zustand is a small state management library. You create a store, a single place that holds some shared state and the functions to change it, and then any component can use that store directly. There is almost no setup, and the code stays short and readable."
+    },
+    {
+      "type": "explanation",
+      "title": "Why People Like It",
+      "text": "Zustand sits between plain Context and full Redux. It gives you a clean shared store without the structure and setup of Redux, but with more power and tidiness than rolling your own with Context. For many apps it hits a sweet spot, simple to learn and pleasant to use.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A small store in the middle, between plain Context and full Redux",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Single Shared Whiteboard",
+      "text": "Zustand is like one shared whiteboard in an office. Anyone can walk up, read what is on it, or update it, and everyone sees the change. There is no committee, no forms, just one clear board everyone shares. That simplicity is the whole appeal.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "One office whiteboard everyone reads and updates freely",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Zustand",
+      "items": [
+        "Create a store with your shared state.",
+        "Add functions to the store that change that state.",
+        "Use the store directly in any component.",
+        "Read values and call the change functions as needed.",
+        "Every component using it stays in sync."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Zustand means state in German, which is a fitting name for a state library. Many modern libraries pick playful or meaningful names like this."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Zustand",
+          "definition": "A small, simple state management library."
+        },
+        {
+          "word": "Store",
+          "definition": "A place holding shared state and its change functions."
+        },
+        {
+          "word": "Library",
+          "definition": "A package you add to your project."
+        },
+        {
+          "word": "Shared state",
+          "definition": "State many components read and update."
+        },
+        {
+          "word": "Simple",
+          "definition": "Little setup and short, readable code."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Zustand?",
+      "options": [
+        "A small, simple state management library",
+        "A database",
+        "A CSS framework",
+        "A web browser"
+      ],
+      "answer": 0,
+      "explanation": "Zustand is a small, simple state management library."
+    },
+    {
+      "id": "q2",
+      "text": "What do you create with it?",
+      "options": [
+        "A store",
+        "A stylesheet",
+        "A server",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "With Zustand you create a store that holds shared state and its change functions."
+    },
+    {
+      "id": "q3",
+      "text": "How much setup does it need compared to Redux?",
+      "options": [
+        "Very little",
+        "Much more",
+        "Exactly the same",
+        "None at all is possible elsewhere"
+      ],
+      "answer": 0,
+      "explanation": "Zustand needs very little setup compared to Redux."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "security-basics",
+  "chapterId": "browser-and-web-platform",
+  "title": "Web Security Basics (XSS, CSRF, CSP)",
+  "order": 6,
+  "summary": [
+    "A few common web attacks are worth knowing.",
+    "XSS is when bad scripts get injected into a page.",
+    "CSRF tricks a user's browser into unwanted actions.",
+    "CSP is a defense that limits what can run on a page."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Security is a big field, but a few common attacks come up so often that every frontend developer should know them by name. Understanding what they are is the first step to writing code that does not fall for them."
+    },
+    {
+      "type": "explanation",
+      "title": "XSS, Injected Scripts",
+      "text": "Cross site scripting, or XSS, is when an attacker manages to inject their own script into your page, often through user input that was not handled safely. That script then runs as if it were yours, able to steal data or act as the user. The defense is to treat all user input as untrusted and never insert it as raw HTML."
+    },
+    {
+      "type": "explanation",
+      "title": "CSRF and CSP",
+      "text": "Cross site request forgery, or CSRF, tricks a logged in user's browser into making an unwanted request, like a hidden action on a site they are signed into. A Content Security Policy, or CSP, is a defense you can set that tells the browser exactly what is allowed to run on your page, blocking injected or unknown scripts.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An injected script blocked by a Content Security Policy",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Forged Note and a Bouncer",
+      "text": "XSS is like slipping a forged note into a stack so it gets read aloud as if official. CSRF is like tricking someone into signing a form they did not mean to. A CSP is like a strict bouncer with a guest list, only letting in scripts that are explicitly allowed, and turning away anything unexpected.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A bouncer with a guest list turning away an unexpected script",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking About Security",
+      "items": [
+        "Treat all user input as untrusted.",
+        "Never insert user input as raw HTML, to avoid XSS.",
+        "Protect actions against forged requests, CSRF.",
+        "Set a Content Security Policy to limit what runs.",
+        "Keep learning, security is an ongoing practice."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This is exactly why this app's own code escapes user content and the lesson renderer uses textContent instead of raw HTML. Those careful choices are XSS defenses in action, the same idea in your own project."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "XSS",
+          "definition": "An attack injecting bad scripts into a page."
+        },
+        {
+          "word": "CSRF",
+          "definition": "Tricking a browser into unwanted actions."
+        },
+        {
+          "word": "CSP",
+          "definition": "A policy limiting what can run on a page."
+        },
+        {
+          "word": "Untrusted input",
+          "definition": "User input you must never blindly trust."
+        },
+        {
+          "word": "Defense",
+          "definition": "A measure that blocks an attack."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is XSS?",
+      "options": [
+        "When bad scripts get injected into a page",
+        "A faster server",
+        "A type of font",
+        "A backup tool"
+      ],
+      "answer": 0,
+      "explanation": "XSS, cross site scripting, is when bad scripts get injected into a page."
+    },
+    {
+      "id": "q2",
+      "text": "What does CSRF do?",
+      "options": [
+        "Tricks a user's browser into unwanted actions",
+        "Speeds up images",
+        "Stores data offline",
+        "Changes the font"
+      ],
+      "answer": 0,
+      "explanation": "CSRF tricks a logged in user's browser into making unwanted requests."
+    },
+    {
+      "id": "q3",
+      "text": "What is CSP?",
+      "options": [
+        "A defense that limits what can run on a page",
+        "A type of image",
+        "A web browser",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "A Content Security Policy limits what is allowed to run on your page."
+    }
+  ]
+}

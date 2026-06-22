@@ -1,0 +1,124 @@
+{
+  "id": "code-splitting",
+  "chapterId": "performance",
+  "title": "Code Splitting",
+  "order": 3,
+  "summary": [
+    "Code splitting breaks your bundle into smaller pieces.",
+    "The browser loads only the code a page needs.",
+    "The rest loads later, when needed.",
+    "This speeds up the first load of large apps."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A bundler packs your code into a bundle, but for a large app that single bundle can get huge, and the user downloads all of it just to see the first page. Code splitting breaks it into pieces, so only what is needed loads first."
+    },
+    {
+      "type": "explanation",
+      "title": "Splitting the Bundle",
+      "text": "Code splitting divides your one big bundle into several smaller ones. Instead of shipping all the code for every page upfront, the browser loads only the piece needed for the current page. The code for other pages loads later, when the user actually goes there."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Speeds Things Up",
+      "text": "For a large app, loading everything upfront is slow. With code splitting, the first page loads only its own slice of code, so it appears much faster. The user pays the cost for a feature only when they reach it, spreading the loading out instead of dumping it all at the start.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "One big bundle split into smaller per page pieces",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Shipping Furniture Room by Room",
+      "text": "Loading one giant bundle is like delivering all the furniture for a whole house in one massive truck before you can enter any room. Code splitting is like furnishing room by room as you move in. The first room is ready fast, and the rest arrives as you need each space.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Furniture delivered room by room instead of all at once",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Code Splitting",
+      "items": [
+        "Notice your bundle is large for a big app.",
+        "Split it along natural lines, like per page.",
+        "Load only the current page's code first.",
+        "Load other pieces when the user navigates to them.",
+        "The first load becomes much faster."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Code splitting pairs naturally with routing. A common pattern is to split by route, so each page's code arrives exactly when you navigate to that page, and not a moment sooner."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Code splitting",
+          "definition": "Breaking a bundle into smaller pieces."
+        },
+        {
+          "word": "Bundle",
+          "definition": "The packed code a bundler produces."
+        },
+        {
+          "word": "Piece",
+          "definition": "One smaller part of a split bundle."
+        },
+        {
+          "word": "First load",
+          "definition": "The initial load, which gets faster."
+        },
+        {
+          "word": "Route",
+          "definition": "A natural line to split code along."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does code splitting break up?",
+      "options": [
+        "Your bundle, into smaller pieces",
+        "Your images",
+        "Your database",
+        "Your styles"
+      ],
+      "answer": 0,
+      "explanation": "Code splitting breaks your bundle into smaller pieces."
+    },
+    {
+      "id": "q2",
+      "text": "What does the browser load first?",
+      "options": [
+        "Only the code a page needs",
+        "Everything at once",
+        "Nothing",
+        "Only images"
+      ],
+      "answer": 0,
+      "explanation": "The browser loads only the code the current page needs first."
+    },
+    {
+      "id": "q3",
+      "text": "What does it speed up?",
+      "options": [
+        "The first load of large apps",
+        "The server shutdown",
+        "The font rendering only",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Code splitting speeds up the first load of large apps."
+    }
+  ]
+}

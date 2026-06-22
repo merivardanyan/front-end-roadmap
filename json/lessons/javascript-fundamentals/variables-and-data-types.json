@@ -1,0 +1,124 @@
+{
+  "id": "variables-and-data-types",
+  "chapterId": "javascript-fundamentals",
+  "title": "Variables & Data Types",
+  "order": 1,
+  "summary": [
+    "Variables store information your code can use.",
+    "You create them with let or const.",
+    "const cannot be reassigned, let can.",
+    "Values have types, like text, numbers, and true or false."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Programs need to remember things. A score, a name, whether a light is on. A variable is a named box where your code keeps a piece of information so it can use it later."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Variable Is",
+      "text": "A variable is a named container for a value. You give it a name, put a value in, then use the name whenever you need that value. In modern JavaScript you make one with the word let or const."
+    },
+    {
+      "type": "explanation",
+      "title": "let vs const, and Types",
+      "text": "Use const when the value should not be reassigned, and let when it might change later. The value inside has a type. Common types are a string for text, a number for figures, and a boolean which is just true or false.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A const box sealed and a let box being refilled",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Labeled Jars in a Kitchen",
+      "text": "Think of labeled jars on a shelf. The label is the variable name, like sugar. What is inside is the value. A const jar is sealed, you do not swap its contents. A let jar you can empty and refill. And jars hold different things, flour, sugar, salt, just like values have different types.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Labeled kitchen jars, one sealed and one being refilled",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Making a Variable",
+      "items": [
+        "Choose let or const.",
+        "Give the variable a clear name.",
+        "Use an equals sign to set its starting value.",
+        "Use the name elsewhere to read the value.",
+        "With let, you can give it a new value later."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "There is an older keyword, var, that you will still see in old code. Modern JavaScript prefers let and const because they behave more predictably."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Variable",
+          "definition": "A named container for a value."
+        },
+        {
+          "word": "const",
+          "definition": "A variable whose value should not be reassigned."
+        },
+        {
+          "word": "let",
+          "definition": "A variable whose value can change later."
+        },
+        {
+          "word": "String",
+          "definition": "A value that is text."
+        },
+        {
+          "word": "Boolean",
+          "definition": "A value that is true or false."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a variable do?",
+      "options": [
+        "Stores information your code can use",
+        "Plays a sound",
+        "Loads an image",
+        "Styles the page"
+      ],
+      "answer": 0,
+      "explanation": "A variable is a named container that stores a value for your code to use."
+    },
+    {
+      "id": "q2",
+      "text": "Which keyword stops a value from being reassigned?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "loop"
+      ],
+      "answer": 2,
+      "explanation": "const is used when the value should not be reassigned."
+    },
+    {
+      "id": "q3",
+      "text": "What is a boolean?",
+      "options": [
+        "A piece of text",
+        "A value that is true or false",
+        "A list of items",
+        "A web address"
+      ],
+      "answer": 1,
+      "explanation": "A boolean is a value that is either true or false."
+    }
+  ]
+}

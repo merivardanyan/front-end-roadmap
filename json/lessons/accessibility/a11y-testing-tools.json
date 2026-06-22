@@ -1,0 +1,124 @@
+{
+  "id": "a11y-testing-tools",
+  "chapterId": "accessibility",
+  "title": "Accessibility Testing Tools",
+  "order": 8,
+  "summary": [
+    "Accessibility testing tools help you find problems automatically.",
+    "Browser extensions and audits can scan a page.",
+    "They catch many issues but not all.",
+    "Some checks still need a human."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You do not have to find every accessibility problem by hand. A range of tools can scan your page and flag issues automatically, giving you a fast first pass. But it is important to know what they can and cannot catch."
+    },
+    {
+      "type": "explanation",
+      "title": "What the Tools Do",
+      "text": "Accessibility tools, including browser extensions and the audit built into Lighthouse, scan your page against known rules. They flag things like missing alt text, low contrast, or form fields without labels, and point you right to the problem. They turn a careful manual review into a quick automatic scan."
+    },
+    {
+      "type": "explanation",
+      "title": "What They Cannot Catch",
+      "text": "These tools are a great start, but they cannot judge everything. They can tell if an image has alt text, but not whether that text is meaningful. They cannot fully test whether your page makes sense to a screen reader user, or flows logically by keyboard. Some checks still need a human, ideally including real users.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A tool flagging clear issues while a person reviews the rest",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Spell Checker, Not an Editor",
+      "text": "Accessibility tools are like a spell checker. They reliably catch clear, mechanical mistakes, a missing label, a bad contrast. But just as a spell checker cannot tell if your sentence makes sense, these tools cannot tell if your page truly works for a real person. You still need human judgment on top.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A spell checker catching typos but missing whether the meaning makes sense",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Testing Accessibility",
+      "items": [
+        "Run an automatic tool, like a browser extension or Lighthouse.",
+        "Fix the clear issues it flags.",
+        "Then test by keyboard yourself.",
+        "Try it with a screen reader.",
+        "Where possible, get feedback from real users."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Studies have found that automatic tools catch only a portion of accessibility issues on their own. They are essential, but the rest comes from testing the way real people actually use the page."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Testing tool",
+          "definition": "Software that scans for accessibility issues."
+        },
+        {
+          "word": "Scan",
+          "definition": "Checking a page against known rules."
+        },
+        {
+          "word": "Automatic",
+          "definition": "Found by the tool without a person."
+        },
+        {
+          "word": "Human check",
+          "definition": "Judgment a tool cannot replace."
+        },
+        {
+          "word": "Lighthouse",
+          "definition": "A tool with a built in accessibility audit."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do accessibility testing tools do?",
+      "options": [
+        "Find problems automatically",
+        "Write your code",
+        "Design the page",
+        "Host the site"
+      ],
+      "answer": 0,
+      "explanation": "Accessibility testing tools find many problems automatically."
+    },
+    {
+      "id": "q2",
+      "text": "What can scan a page?",
+      "options": [
+        "Browser extensions and audits",
+        "Only a printer",
+        "Only a server",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Browser extensions and audits like Lighthouse can scan a page."
+    },
+    {
+      "id": "q3",
+      "text": "Do they catch everything?",
+      "options": [
+        "No, some checks still need a human",
+        "Yes, everything",
+        "Only on phones",
+        "Only the colors"
+      ],
+      "answer": 0,
+      "explanation": "Tools catch many issues but not all, so some checks still need a human."
+    }
+  ]
+}

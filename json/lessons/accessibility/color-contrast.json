@@ -1,0 +1,124 @@
+{
+  "id": "color-contrast",
+  "chapterId": "accessibility",
+  "title": "Color Contrast",
+  "order": 5,
+  "summary": [
+    "Color contrast is the difference between text and its background.",
+    "Enough contrast makes text readable, especially for low vision.",
+    "There are minimum contrast levels to meet.",
+    "Tools can check it for you."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Light gray text on a white background might look elegant to a designer, but many people cannot read it. Color contrast, the difference in brightness between text and its background, is a simple but vital part of making content readable for everyone."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Contrast Matters",
+      "text": "Text needs enough contrast against its background to be readable, especially for people with low vision or those on a phone in bright sunlight. Too little contrast and the text fades into the background. Enough contrast and it stays clear for everyone, in any condition."
+    },
+    {
+      "type": "explanation",
+      "title": "Meeting a Standard",
+      "text": "There are agreed minimum contrast levels that text should meet, set by accessibility guidelines. Normal text needs a higher contrast than large text, since small letters are harder to read. You do not have to judge by eye, tools measure the contrast and tell you whether it passes the standard.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Low contrast text fading out beside clear high contrast text",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Reading a Sign in Fog",
+      "text": "Low contrast text is like a faint sign in fog, technically there, but a strain to read, and impossible for some. High contrast is the same sign on a clear day, bold and instantly readable. You want every reader to see your content as if the day were clear.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A faint sign in fog becoming bold and clear on a bright day",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Checking Color Contrast",
+      "items": [
+        "Look at your text against its background.",
+        "Ask if it stays readable in poor conditions.",
+        "Use a tool to measure the contrast.",
+        "Compare it against the minimum standard.",
+        "Darken or lighten until it passes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Good contrast does not only help people with low vision. Everyone benefits, like when you are reading your phone outdoors and the sun is washing out the screen. It is accessibility that helps all users."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Color contrast",
+          "definition": "The difference between text and its background."
+        },
+        {
+          "word": "Background",
+          "definition": "What the text sits on."
+        },
+        {
+          "word": "Readable",
+          "definition": "Clear enough to read easily."
+        },
+        {
+          "word": "Low vision",
+          "definition": "Reduced sight that needs more contrast."
+        },
+        {
+          "word": "Standard",
+          "definition": "The minimum contrast level to meet."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is color contrast?",
+      "options": [
+        "The difference between text and its background",
+        "The number of colors used",
+        "The font name",
+        "The page width"
+      ],
+      "answer": 0,
+      "explanation": "Color contrast is the difference in brightness between text and its background."
+    },
+    {
+      "id": "q2",
+      "text": "Why does it matter?",
+      "options": [
+        "Enough contrast makes text readable, especially for low vision",
+        "It makes pages load faster",
+        "It adds animations",
+        "It hides text"
+      ],
+      "answer": 0,
+      "explanation": "Enough contrast keeps text readable, especially for people with low vision."
+    },
+    {
+      "id": "q3",
+      "text": "How can you check it?",
+      "options": [
+        "Tools measure the contrast for you",
+        "Only by guessing",
+        "By asking the server",
+        "You cannot"
+      ],
+      "answer": 0,
+      "explanation": "Tools measure the contrast and tell you whether it passes the standard."
+    }
+  ]
+}

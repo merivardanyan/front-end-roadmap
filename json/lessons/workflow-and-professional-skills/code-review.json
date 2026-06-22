@@ -1,0 +1,124 @@
+{
+  "id": "code-review",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Code Review Best Practices",
+  "order": 2,
+  "summary": [
+    "A code review is when another developer checks your code before it is merged.",
+    "It catches bugs and shares knowledge.",
+    "Good reviews are kind, specific, and focused on the code.",
+    "It is a normal, expected part of team work."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "On a team, your code usually is not added to the project until another developer has looked it over. This is called code review, and it is one of the most valuable habits in professional development, both for catching problems and for learning."
+    },
+    {
+      "type": "explanation",
+      "title": "What Code Review Is",
+      "text": "A code review is when a teammate reads through your proposed change before it gets merged into the shared project. They look for bugs, unclear parts, and things that could be improved, and they leave comments. You discuss, make changes if needed, and then the code is approved and merged."
+    },
+    {
+      "type": "explanation",
+      "title": "What Makes a Good Review",
+      "text": "Good reviews are kind, specific, and about the code, never the person. A helpful comment explains the why and suggests an improvement, rather than just saying this is wrong. Reviews also spread knowledge, since both people learn from the exchange. Receiving them well, without taking feedback personally, is a real professional skill.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A teammate leaving specific, kind comments on a proposed change",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Second Pair of Eyes on an Essay",
+      "text": "Code review is like having a friend proofread your essay before you submit it. They catch typos you missed, point out a confusing sentence, and suggest a clearer phrasing. You are free to discuss their notes, and the final essay is stronger for the second pair of eyes.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A friend proofreading an essay and suggesting clearer phrasing",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Code Review Works",
+      "items": [
+        "You propose a change to the shared project.",
+        "A teammate reads it before it is merged.",
+        "They leave specific, kind comments.",
+        "You discuss and make any needed changes.",
+        "Once approved, the code is merged."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Studies have found that having someone review code catches a large share of bugs early, when they are cheapest to fix. A few minutes of review can save hours of debugging later."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Code review",
+          "definition": "A teammate checking your code before merge."
+        },
+        {
+          "word": "Merge",
+          "definition": "Adding the change into the shared project."
+        },
+        {
+          "word": "Comment",
+          "definition": "Feedback left on a proposed change."
+        },
+        {
+          "word": "Feedback",
+          "definition": "Notes meant to improve the code."
+        },
+        {
+          "word": "Knowledge sharing",
+          "definition": "Both people learning from the review."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a code review?",
+      "options": [
+        "When another developer checks your code before it is merged",
+        "A way to delete code",
+        "A type of test runner",
+        "A server setting"
+      ],
+      "answer": 0,
+      "explanation": "A code review is when another developer checks your code before it is merged."
+    },
+    {
+      "id": "q2",
+      "text": "What does it catch and share?",
+      "options": [
+        "Bugs and knowledge",
+        "Images and fonts",
+        "Servers and files",
+        "Colors and spacing"
+      ],
+      "answer": 0,
+      "explanation": "Code review catches bugs and shares knowledge between developers."
+    },
+    {
+      "id": "q3",
+      "text": "What are good reviews focused on?",
+      "options": [
+        "The code, not the person",
+        "The person, not the code",
+        "The page color",
+        "The server brand"
+      ],
+      "answer": 0,
+      "explanation": "Good reviews are kind, specific, and focused on the code, never the person."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "what-is-a-bundler",
+  "chapterId": "tooling-and-build",
+  "title": "What is a Bundler?",
+  "order": 1,
+  "summary": [
+    "A bundler combines your many code files into a few.",
+    "This makes a site load faster.",
+    "It also handles things browsers cannot, like imports.",
+    "Modern frontend almost always uses one."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You learned to split code into many small modules. But sending hundreds of tiny files to a browser is slow. A bundler solves this by combining your files into a few optimized ones, ready for the browser."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Bundler Does",
+      "text": "A bundler takes all your separate code files, follows the imports between them, and packs them into a small number of files for the browser. Along the way it can shrink the code and drop anything unused, so the final result is lean and fast to download."
+    },
+    {
+      "type": "explanation",
+      "title": "Why You Need One",
+      "text": "Browsers prefer few files over many, and they cannot always understand the modern code and imports you write. A bundler bridges this gap. It turns your tidy, split up source into something the browser loads quickly, which is why nearly every modern frontend project uses one.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Many small files being packed into a few optimized bundles",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Packing a Suitcase",
+      "text": "Writing many modules is like having clothes scattered around the room. A bundler is like packing them neatly into one suitcase, folded to take less space, leaving behind what you do not need. One suitcase is far easier to carry than an armful of loose clothes.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Scattered clothes packed neatly into one suitcase",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "What a Bundler Does",
+      "items": [
+        "It starts from your main file.",
+        "It follows the imports to find every file you use.",
+        "It packs them into a few optimized files.",
+        "It shrinks the code and drops the unused parts.",
+        "The browser loads those few files quickly."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A bundler can also drop code you imported but never actually used, a clean up called tree shaking. It keeps your final files smaller without you doing anything."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Bundler",
+          "definition": "A tool that combines many files into a few."
+        },
+        {
+          "word": "Module",
+          "definition": "One of your separate code files."
+        },
+        {
+          "word": "Import",
+          "definition": "A link between files the bundler follows."
+        },
+        {
+          "word": "Optimize",
+          "definition": "Making the output smaller and faster."
+        },
+        {
+          "word": "Tree shaking",
+          "definition": "Dropping code that is imported but unused."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a bundler do?",
+      "options": [
+        "Combines your many code files into a few",
+        "Styles the page",
+        "Stores images",
+        "Sends email"
+      ],
+      "answer": 0,
+      "explanation": "A bundler combines your many code files into a few optimized ones."
+    },
+    {
+      "id": "q2",
+      "text": "Why does that help?",
+      "options": [
+        "A site loads faster with fewer files",
+        "It changes colors",
+        "It deletes the code",
+        "It hides the page"
+      ],
+      "answer": 0,
+      "explanation": "Fewer files mean the browser can load the site faster."
+    },
+    {
+      "id": "q3",
+      "text": "What is dropping unused code called?",
+      "options": [
+        "Tree shaking",
+        "Bundling",
+        "Linting",
+        "Routing"
+      ],
+      "answer": 0,
+      "explanation": "Dropping imported but unused code is called tree shaking."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "integration-testing",
+  "chapterId": "testing-and-debugging",
+  "title": "Integration Testing",
+  "order": 3,
+  "summary": [
+    "An integration test checks that pieces work together.",
+    "It goes a level up from unit tests.",
+    "It catches problems in how parts connect.",
+    "It is slower but catches different bugs."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Unit tests check pieces in isolation, but real bugs often hide in the seams, where one piece hands off to another. Integration tests step up a level to check that the parts actually work together correctly."
+    },
+    {
+      "type": "explanation",
+      "title": "Testing the Connections",
+      "text": "An integration test checks that two or more pieces of code work together as expected. A function might be perfect alone, and another perfect alone, yet they break when combined, maybe they pass data in slightly different shapes. Integration tests catch exactly these connection problems."
+    },
+    {
+      "type": "explanation",
+      "title": "A Different Kind of Coverage",
+      "text": "Integration tests are slower than unit tests, because they involve more moving parts. So you write fewer of them, focused on the important connections. They do not replace unit tests, they complement them, catching a class of bugs that testing each piece alone never could.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Two pieces of code tested together at the point where they connect",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Dress Rehearsal",
+      "text": "If unit tests are checking each actor knows their lines alone, an integration test is the dress rehearsal where a few scenes are run together. Each actor might be perfect solo, but the rehearsal reveals whether their timing and cues actually line up on stage.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Actors who are perfect alone running a scene together at rehearsal",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Writing an Integration Test",
+      "items": [
+        "Choose two or more pieces that work together.",
+        "Set up a realistic situation involving them.",
+        "Run them together.",
+        "Check the combined result is correct.",
+        "Use these for important connections, not everything."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Your weather aggregator project's tests, which check the server and its routes together, are a good example of integration style testing, making sure the parts cooperate, not just each one alone."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Integration test",
+          "definition": "A test that pieces work together."
+        },
+        {
+          "word": "Connection",
+          "definition": "The seam where one piece hands off to another."
+        },
+        {
+          "word": "Together",
+          "definition": "Running parts combined, not in isolation."
+        },
+        {
+          "word": "Coverage",
+          "definition": "The kinds of bugs a test can catch."
+        },
+        {
+          "word": "Complement",
+          "definition": "Adding to unit tests, not replacing them."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an integration test check?",
+      "options": [
+        "That pieces work together",
+        "One function alone",
+        "The page color",
+        "The font"
+      ],
+      "answer": 0,
+      "explanation": "An integration test checks that two or more pieces work together."
+    },
+    {
+      "id": "q2",
+      "text": "What does it catch?",
+      "options": [
+        "Problems in how parts connect",
+        "Spelling mistakes",
+        "Slow images",
+        "Missing fonts"
+      ],
+      "answer": 0,
+      "explanation": "It catches problems in how parts connect to each other."
+    },
+    {
+      "id": "q3",
+      "text": "Compared to unit tests, it is?",
+      "options": [
+        "Slower, but catches different bugs",
+        "Always faster",
+        "Exactly the same",
+        "Useless"
+      ],
+      "answer": 0,
+      "explanation": "Integration tests are slower than unit tests but catch a different class of bugs."
+    }
+  ]
+}

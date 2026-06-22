@@ -1,0 +1,124 @@
+{
+  "id": "event-handling-react",
+  "chapterId": "react-primary-framework",
+  "title": "Event Handling in React",
+  "order": 7,
+  "summary": [
+    "React handles events like clicks and typing with simple props.",
+    "You pass a function to run when the event happens.",
+    "It works much like plain JavaScript events, with small differences.",
+    "This is how React apps respond to users."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You already learned how events work in plain JavaScript. React keeps the same idea but makes it feel built in. Instead of adding listeners separately, you attach a function right in your JSX."
+    },
+    {
+      "type": "explanation",
+      "title": "Handling Events the React Way",
+      "text": "In React, you respond to an event by passing a function to a special prop, like onClick. When the user clicks, React runs your function. There is no separate step to attach a listener. The handler lives right on the element in your JSX, close to what it affects."
+    },
+    {
+      "type": "explanation",
+      "title": "Familiar, With Small Differences",
+      "text": "This is the same event idea from the plain JavaScript lesson, just tidier. The names are written in a slightly different style, like onClick instead of all lowercase, and the function you pass usually updates state, which then re-renders the screen. Click, update state, screen refreshes.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An onClick prop running a function that updates state",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Pre Wired Buttons",
+      "text": "Plain JavaScript events are like wiring a button to a bell yourself. React is like buttons that come pre wired, you just say what should happen when pressed. You write the action right on the button, and React handles the wiring behind the scenes.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A pre wired button running its action when pressed",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Handling an Event in React",
+      "items": [
+        "Choose the element, like a button.",
+        "Add an event prop, like onClick.",
+        "Pass it a function to run when it happens.",
+        "Usually, that function updates some state.",
+        "React re-renders to reflect the change."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The function you pass is not called by you, it is called by React when the event happens. That makes it another example of the callback idea from earlier, handed to React to run later."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Event",
+          "definition": "Something that happens, like a click."
+        },
+        {
+          "word": "onClick",
+          "definition": "The prop for handling a click in React."
+        },
+        {
+          "word": "Handler",
+          "definition": "The function that runs when the event happens."
+        },
+        {
+          "word": "State",
+          "definition": "What the handler usually updates."
+        },
+        {
+          "word": "Re-render",
+          "definition": "React redrawing after state changes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How does React handle events?",
+      "options": [
+        "With simple props like onClick",
+        "By editing the server",
+        "With separate files only",
+        "It cannot handle events"
+      ],
+      "answer": 0,
+      "explanation": "React handles events with props like onClick, right on the element."
+    },
+    {
+      "id": "q2",
+      "text": "What do you pass to an event prop?",
+      "options": [
+        "A color",
+        "A function to run when it happens",
+        "An image",
+        "A file name"
+      ],
+      "answer": 1,
+      "explanation": "You pass a function that React runs when the event happens."
+    },
+    {
+      "id": "q3",
+      "text": "What does the handler function usually do?",
+      "options": [
+        "Reloads the server",
+        "Updates state, which re-renders the screen",
+        "Deletes the page",
+        "Changes the font only"
+      ],
+      "answer": 1,
+      "explanation": "The handler usually updates state, which causes React to re-render."
+    }
+  ]
+}

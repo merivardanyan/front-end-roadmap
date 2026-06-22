@@ -1,0 +1,124 @@
+{
+  "id": "utility-types",
+  "chapterId": "typescript",
+  "title": "Utility Types",
+  "order": 7,
+  "summary": [
+    "Utility types are built in helpers that transform other types.",
+    "They save you from rewriting similar shapes.",
+    "Examples make a type's fields optional or read only.",
+    "They keep your types tidy."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Often you need a slight variation of a type you already have, like the same shape but with every field optional. Rewriting it by hand is wasteful. Utility types are ready made helpers that build these variations for you."
+    },
+    {
+      "type": "explanation",
+      "title": "What Utility Types Are",
+      "text": "A utility type takes an existing type and produces a new one based on it. TypeScript ships with several. One makes every property optional. One makes them all read only. One builds a type from just a few chosen fields of another. You feed in a type, you get a transformed type out."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Help",
+      "text": "Without them, a small variation means copying a whole shape and editing it, which then drifts out of sync when the original changes. Utility types stay linked to the original. Change the base type, and the variations built from it update automatically. Less repetition, fewer mistakes.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A base type and several variations built from it that update together",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Filters on a Photo",
+      "text": "A utility type is like a filter on a photo. The original photo is your type. A filter does not repaint it from scratch, it transforms the one you have, black and white, brighter, cropped. Change the original photo and run the filter again, and the new version follows along.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "One photo with filters producing variations that update when it changes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Utility Type",
+      "items": [
+        "Start with a type you already have.",
+        "Pick a utility type for the change you want.",
+        "Apply it to produce a new transformed type.",
+        "Use the new type where you need that variation.",
+        "It stays linked to the original as it changes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Utility types are themselves built using generics, the placeholder types from earlier. They are a great example of how a few core ideas combine to build powerful tools."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Utility type",
+          "definition": "A built in helper that transforms another type."
+        },
+        {
+          "word": "Transform",
+          "definition": "To produce a new type from an existing one."
+        },
+        {
+          "word": "Optional",
+          "definition": "A field that may or may not be present."
+        },
+        {
+          "word": "Read only",
+          "definition": "A field that cannot be changed."
+        },
+        {
+          "word": "Variation",
+          "definition": "A slightly different version of a type."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do utility types do?",
+      "options": [
+        "Transform other types into new ones",
+        "Style the page",
+        "Send requests",
+        "Store images"
+      ],
+      "answer": 0,
+      "explanation": "Utility types take an existing type and transform it into a new one."
+    },
+    {
+      "id": "q2",
+      "text": "Why use them?",
+      "options": [
+        "To slow the page",
+        "To avoid rewriting similar shapes by hand",
+        "To hide elements",
+        "To load fonts"
+      ],
+      "answer": 1,
+      "explanation": "They save you from copying and editing shapes, and stay linked to the original."
+    },
+    {
+      "id": "q3",
+      "text": "What are utility types built with?",
+      "options": [
+        "Generics",
+        "Images",
+        "Servers",
+        "Stylesheets"
+      ],
+      "answer": 0,
+      "explanation": "Utility types are built using generics, the placeholder types."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "react-router",
+  "chapterId": "react-primary-framework",
+  "title": "React Router",
+  "order": 13,
+  "summary": [
+    "React Router lets a single page app have many pages.",
+    "It shows different components for different URLs.",
+    "The page does not fully reload when you navigate.",
+    "This gives the feel of a normal multi page site."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A React app often loads as a single page, yet real apps have many screens, a home, an about, a profile. React Router is the tool that maps different web addresses to different components, so one app can feel like many pages."
+    },
+    {
+      "type": "explanation",
+      "title": "Routing in a Single Page App",
+      "text": "By default a React app is one page. React Router adds the idea of routes, pairs of a URL path and the component to show for it. Visit slash about and it shows the About component, visit slash profile and it shows the Profile. The app swaps components based on the address."
+    },
+    {
+      "type": "explanation",
+      "title": "Navigating Without a Full Reload",
+      "text": "When you move between routes, React Router swaps the components without making the browser fully reload the page from the server. It feels instant, and the address bar still updates, so back and forward and bookmarks all work as expected. You get the smoothness of an app with the familiar feel of web pages.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Different URLs showing different components without a full reload",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Channels on a TV",
+      "text": "React Router is like changing channels on a TV. The television does not turn off and reboot each time, it just shows different content instantly. The channel number is the URL, and each channel is a different screen. One device, many views, switched smoothly.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A TV switching channels instantly without rebooting",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using React Router",
+      "items": [
+        "Define routes, pairing each path with a component.",
+        "Add links for moving between them.",
+        "When the path changes, the matching component shows.",
+        "The page does not fully reload.",
+        "Back, forward, and bookmarks keep working."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because the address bar stays accurate, users can bookmark or share a deep link straight to a specific screen, and it loads right there, just like on a traditional website."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "React Router",
+          "definition": "A tool for routing in a React app."
+        },
+        {
+          "word": "Route",
+          "definition": "A pairing of a URL path and a component."
+        },
+        {
+          "word": "Path",
+          "definition": "The part of the URL that picks a route."
+        },
+        {
+          "word": "Single page app",
+          "definition": "An app that loads as one page."
+        },
+        {
+          "word": "Navigation",
+          "definition": "Moving between screens in the app."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does React Router let a single page app have?",
+      "options": [
+        "Many pages",
+        "Faster images",
+        "A new server",
+        "More fonts"
+      ],
+      "answer": 0,
+      "explanation": "React Router lets a single page app behave like it has many pages."
+    },
+    {
+      "id": "q2",
+      "text": "What does it show for different URLs?",
+      "options": [
+        "Different components",
+        "The same screen always",
+        "Only images",
+        "Error pages only"
+      ],
+      "answer": 0,
+      "explanation": "React Router shows different components for different URLs."
+    },
+    {
+      "id": "q3",
+      "text": "What happens when you navigate?",
+      "options": [
+        "The page does not fully reload",
+        "The app restarts",
+        "The server resets",
+        "Nothing changes"
+      ],
+      "answer": 0,
+      "explanation": "Navigation swaps components without a full page reload."
+    }
+  ]
+}

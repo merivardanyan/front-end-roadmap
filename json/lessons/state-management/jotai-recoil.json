@@ -1,0 +1,124 @@
+{
+  "id": "jotai-recoil",
+  "chapterId": "state-management",
+  "title": "Jotai & Recoil (Atomic State)",
+  "order": 6,
+  "summary": [
+    "Jotai and Recoil use an atomic approach to state.",
+    "State is split into tiny independent pieces called atoms.",
+    "Components use only the atoms they need.",
+    "This can make updates efficient and code modular."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "There is another style of state management worth knowing, the atomic approach. Instead of one big store, you break state into many tiny independent pieces. Libraries like Jotai and Recoil are built around this idea."
+    },
+    {
+      "type": "explanation",
+      "title": "What Atomic State Is",
+      "text": "In the atomic approach, state is split into small standalone pieces called atoms. Each atom holds one little bit of state. A component subscribes only to the specific atoms it cares about, rather than to one giant shared object. You compose your app's state out of many small atoms."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Can Help",
+      "text": "Because components use only the atoms they need, a change to one atom updates just the components that use it, not the whole app. This can make updates efficient and keep code modular, since each piece of state is independent. Jotai and Recoil are two libraries that follow this pattern.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Many small atoms, each connected only to the components that use it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Light Switches Instead of One Master Switch",
+      "text": "A single big store is like one master switch for the whole house, flip it and everything reacts. Atoms are like individual light switches, each controlling just one room. Change one, and only that room responds. The fine grained control is the point.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Individual room light switches instead of one master switch for the house",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Atomic State Works",
+      "items": [
+        "Split your state into small atoms.",
+        "Each atom holds one independent piece.",
+        "A component subscribes to only the atoms it needs.",
+        "Changing an atom updates just its users.",
+        "Compose the app's state from many atoms."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The word atom is borrowed on purpose, from the idea of the smallest indivisible unit. Each atom is meant to be the smallest sensible piece of state."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Atomic state",
+          "definition": "State split into many tiny independent pieces."
+        },
+        {
+          "word": "Atom",
+          "definition": "One small standalone piece of state."
+        },
+        {
+          "word": "Jotai",
+          "definition": "A library using the atomic approach."
+        },
+        {
+          "word": "Recoil",
+          "definition": "Another library using the atomic approach."
+        },
+        {
+          "word": "Subscribe",
+          "definition": "A component watching only the atoms it needs."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do Jotai and Recoil use?",
+      "options": [
+        "An atomic approach to state",
+        "A single giant file",
+        "Only Context",
+        "No state at all"
+      ],
+      "answer": 0,
+      "explanation": "Jotai and Recoil use an atomic approach, splitting state into small atoms."
+    },
+    {
+      "id": "q2",
+      "text": "What are the tiny independent pieces called?",
+      "options": [
+        "Atoms",
+        "Stores",
+        "Slices",
+        "Routes"
+      ],
+      "answer": 0,
+      "explanation": "In the atomic approach, the tiny independent pieces of state are called atoms."
+    },
+    {
+      "id": "q3",
+      "text": "What does a component subscribe to?",
+      "options": [
+        "Only the atoms it needs",
+        "The whole app always",
+        "Nothing",
+        "The server only"
+      ],
+      "answer": 0,
+      "explanation": "A component subscribes only to the specific atoms it cares about."
+    }
+  ]
+}

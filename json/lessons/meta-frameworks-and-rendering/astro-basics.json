@@ -1,0 +1,124 @@
+{
+  "id": "astro-basics",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "Astro Basics",
+  "order": 9,
+  "summary": [
+    "Astro is a framework focused on fast content websites.",
+    "It ships little or no JavaScript by default.",
+    "It sends mostly plain HTML for speed.",
+    "You add interactive pieces only where needed."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Not every site needs a heavy app full of interactivity. A blog or a docs site is mostly content. Astro is a framework built for exactly that, sites where speed and content matter more than rich interaction."
+    },
+    {
+      "type": "explanation",
+      "title": "What Astro Is",
+      "text": "Astro is a framework aimed at content focused websites, like blogs, documentation, and marketing pages. Its standout idea is shipping as little JavaScript as possible. By default it sends mostly plain HTML, which loads extremely fast, because the browser has little code to run."
+    },
+    {
+      "type": "explanation",
+      "title": "Islands of Interactivity",
+      "text": "Most of an Astro page is static HTML, but you can add interactive pieces exactly where you need them, like a search box or an image carousel. These small interactive spots are sometimes called islands, sitting in a sea of fast static content. You pay the cost of JavaScript only where it earns its keep.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A static page with small interactive islands marked on it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Newspaper with a Few Gadgets",
+      "text": "Astro is like a printed newspaper that is mostly fixed pages, fast to flip through, with a couple of small interactive gadgets tucked in. The bulk is static and instant, and only the rare special feature needs anything more. You are not powering the whole paper just to run one gadget.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A mostly printed newspaper with a couple of small interactive gadgets",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Astro Works",
+      "items": [
+        "You build a mostly content focused site.",
+        "Astro sends it as mostly plain HTML.",
+        "The page loads very fast with little JavaScript.",
+        "Add interactive islands only where needed.",
+        "JavaScript runs only in those small spots."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Astro can even use components from React and other frameworks for its interactive islands, so you are not forced to learn an entirely new component style to use it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Astro",
+          "definition": "A framework for fast content websites."
+        },
+        {
+          "word": "Content website",
+          "definition": "A site that is mostly text and media, like a blog."
+        },
+        {
+          "word": "JavaScript",
+          "definition": "Code Astro tries to ship as little of as possible."
+        },
+        {
+          "word": "HTML",
+          "definition": "The mostly static output Astro sends."
+        },
+        {
+          "word": "Islands",
+          "definition": "Small interactive spots in a static page."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Astro focused on?",
+      "options": [
+        "Fast content websites",
+        "Heavy interactive games",
+        "Databases",
+        "Photo editing"
+      ],
+      "answer": 0,
+      "explanation": "Astro is focused on fast, content heavy websites like blogs and docs."
+    },
+    {
+      "id": "q2",
+      "text": "What does Astro ship by default?",
+      "options": [
+        "Little or no JavaScript",
+        "As much JavaScript as possible",
+        "Only images",
+        "Only videos"
+      ],
+      "answer": 0,
+      "explanation": "Astro ships little or no JavaScript by default, sending mostly plain HTML."
+    },
+    {
+      "id": "q3",
+      "text": "What are the small interactive pieces called?",
+      "options": [
+        "Islands",
+        "Bridges",
+        "Towers",
+        "Rooms"
+      ],
+      "answer": 0,
+      "explanation": "The small interactive spots in an Astro page are called islands."
+    }
+  ]
+}

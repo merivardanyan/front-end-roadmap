@@ -1,0 +1,124 @@
+{
+  "id": "image-optimization",
+  "chapterId": "performance",
+  "title": "Image Optimization",
+  "order": 4,
+  "summary": [
+    "Images are often the heaviest part of a page.",
+    "Optimizing them means smaller files that still look good.",
+    "You use modern formats, right sizes, and compression.",
+    "This is one of the biggest performance wins."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "On most websites, images are by far the heaviest thing to download, often more than all the code combined. Making them smaller without making them look worse is one of the highest impact things you can do for speed."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Images Matter So Much",
+      "text": "A single large photo can outweigh all your code put together. So if a page feels slow, images are often the first place to look. Optimizing them means shrinking the file size while keeping them looking sharp, which directly speeds up the page."
+    },
+    {
+      "type": "explanation",
+      "title": "How to Optimize Them",
+      "text": "There are a few main moves. Use modern image formats that pack the same quality into smaller files. Serve images at the size they are actually shown, not a giant original scaled down. And apply compression to trim away data the eye will not miss. Together these can cut image weight dramatically.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A large image shrinking to a smaller file while staying sharp",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Packing a Photo for Mailing",
+      "text": "A raw image is like mailing a framed poster in a huge box. Optimizing is like rolling the print into a slim tube, using lighter packaging, and trimming the empty space. The picture arrives looking just as good, but it travels far faster and cheaper.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A bulky framed poster repacked into a slim light tube",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Optimizing Images",
+      "items": [
+        "Check whether images are the heaviest part of the page.",
+        "Use a modern, efficient image format.",
+        "Serve each image at the size it is actually shown.",
+        "Apply compression to trim hidden data.",
+        "Enjoy a much lighter, faster page."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Serving an enormous image scaled down to a tiny thumbnail is a very common mistake. The browser still downloads the whole huge file, even though it shows it small, wasting most of that data."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Image optimization",
+          "definition": "Shrinking image files while keeping quality."
+        },
+        {
+          "word": "File size",
+          "definition": "How heavy an image is to download."
+        },
+        {
+          "word": "Format",
+          "definition": "The image type, some pack quality more efficiently."
+        },
+        {
+          "word": "Compression",
+          "definition": "Trimming data the eye will not miss."
+        },
+        {
+          "word": "Size",
+          "definition": "Serving an image at the size it is shown."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is often the heaviest part of a page?",
+      "options": [
+        "Images",
+        "Comments",
+        "Headings",
+        "Links"
+      ],
+      "answer": 0,
+      "explanation": "Images are often the heaviest part of a page to download."
+    },
+    {
+      "id": "q2",
+      "text": "What does optimizing images mean?",
+      "options": [
+        "Smaller files that still look good",
+        "Deleting all images",
+        "Making images bigger",
+        "Changing their color"
+      ],
+      "answer": 0,
+      "explanation": "Optimizing images means smaller files that still look sharp."
+    },
+    {
+      "id": "q3",
+      "text": "What is one way to do it?",
+      "options": [
+        "Using modern formats, right sizes, and compression",
+        "Adding more images",
+        "Removing all text",
+        "Slowing the server"
+      ],
+      "answer": 0,
+      "explanation": "You optimize with modern formats, correct sizes, and compression."
+    }
+  ]
+}

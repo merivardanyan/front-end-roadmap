@@ -1,0 +1,124 @@
+{
+  "id": "husky-lint-staged",
+  "chapterId": "tooling-and-build",
+  "title": "Husky & lint-staged",
+  "order": 7,
+  "summary": [
+    "These tools run checks automatically before you commit code.",
+    "Husky triggers commands at git moments.",
+    "lint-staged runs checks only on the files you changed.",
+    "Together they keep bad code from being committed."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "It is easy to forget to run your linter and formatter before saving your work to version control. Husky and lint-staged automate that. They run your checks for you at the moment you commit, so messy or broken code never sneaks in."
+    },
+    {
+      "type": "explanation",
+      "title": "What These Tools Do",
+      "text": "Husky lets you attach commands to git moments, most commonly just before a commit. lint-staged runs checks only on the files you actually changed, rather than the whole project, which keeps it fast. Used together, they run your linter and formatter on your changes automatically when you commit."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Helps a Team",
+      "text": "With these in place, every commit is automatically checked and tidied before it lands. Nobody can forget, because it is not a manual step anymore. A shared project stays clean and consistent, since bad formatting or obvious mistakes are caught at the door, before they ever reach the shared history.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A commit triggering checks on only the changed files before it lands",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Spell Check Before Sending",
+      "text": "This setup is like a spell check that runs automatically the instant you hit send on an email. You cannot forget to run it, because it runs itself at exactly the right moment, catching mistakes before they go out. Husky is the trigger, and lint-staged checks just what you wrote.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A spell check running automatically the moment an email is sent",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How They Work Together",
+      "items": [
+        "You finish a change and start a commit.",
+        "Husky triggers checks at that git moment.",
+        "lint-staged runs them on only your changed files.",
+        "Your linter and formatter clean and verify those files.",
+        "The commit proceeds only if everything passes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Running checks on only the changed files, rather than the entire project, is what keeps this fast enough to run on every single commit without slowing you down."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Husky",
+          "definition": "A tool that runs commands at git moments."
+        },
+        {
+          "word": "lint-staged",
+          "definition": "Runs checks on only your changed files."
+        },
+        {
+          "word": "Commit",
+          "definition": "Saving a change to version control."
+        },
+        {
+          "word": "Git",
+          "definition": "The version control system these hook into."
+        },
+        {
+          "word": "Automatic",
+          "definition": "Running without you remembering to."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "When do these tools run checks?",
+      "options": [
+        "Automatically before you commit code",
+        "Once a month",
+        "Only when asked",
+        "Never"
+      ],
+      "answer": 0,
+      "explanation": "Husky and lint-staged run checks automatically before you commit."
+    },
+    {
+      "id": "q2",
+      "text": "What does lint-staged check?",
+      "options": [
+        "Only the files you changed",
+        "The whole internet",
+        "Every project on your computer",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "lint-staged runs checks on only the files you changed, which keeps it fast."
+    },
+    {
+      "id": "q3",
+      "text": "What do they keep out?",
+      "options": [
+        "Bad code from being committed",
+        "All new features",
+        "Images",
+        "Comments"
+      ],
+      "answer": 0,
+      "explanation": "Together they keep messy or broken code from being committed."
+    }
+  ]
+}

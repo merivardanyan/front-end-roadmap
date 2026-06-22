@@ -1,0 +1,124 @@
+{
+  "id": "react-performance",
+  "chapterId": "react-primary-framework",
+  "title": "React Performance (memo, useMemo, useCallback)",
+  "order": 14,
+  "summary": [
+    "React is fast, but extra re-renders can slow big apps.",
+    "memo skips re-rendering a component when its props have not changed.",
+    "useMemo and useCallback remember a value or function between renders.",
+    "Use these only where they actually help."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "React is quick by default, but in large apps unnecessary re-rendering can add up. React gives you a few tools to skip work that does not need redoing. The art is using them only where they truly help."
+    },
+    {
+      "type": "explanation",
+      "title": "Skipping Unneeded Renders",
+      "text": "When a component re-renders, its children often do too, even if their data did not change. The tool called memo lets a component skip re-rendering when its props are the same as last time. For a heavy component that did not actually change, this avoids wasted work."
+    },
+    {
+      "type": "explanation",
+      "title": "Remembering Values and Functions",
+      "text": "Two related tools, useMemo and useCallback, remember something between renders. useMemo remembers the result of an expensive calculation so it is not redone every render. useCallback remembers a function so it stays the same between renders, which helps memo do its job. Both avoid recomputing things that have not changed.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A component skipping a re-render because its props did not change",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Keeping Your Work Instead of Redoing It",
+      "text": "These tools are like saving your finished work instead of redoing it from scratch each morning. If nothing changed, you reuse yesterday's result. If something did change, you redo it. The skill is knowing which tasks are worth saving, since saving everything has its own cost.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Reusing saved work when nothing changed, redoing it only when it did",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Optimizing Carefully",
+      "items": [
+        "First, make sure the app actually has a slow spot.",
+        "Use memo to skip re-renders when props are unchanged.",
+        "Use useMemo to remember an expensive calculation.",
+        "Use useCallback to keep a function stable between renders.",
+        "Measure to confirm it actually helped."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Reaching for these tools too early can make code more complex for no real gain. The common advice is to measure first and optimize only the spots that are genuinely slow."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Re-render",
+          "definition": "React redrawing a component."
+        },
+        {
+          "word": "memo",
+          "definition": "Skips a re-render when props are unchanged."
+        },
+        {
+          "word": "useMemo",
+          "definition": "Remembers an expensive calculation's result."
+        },
+        {
+          "word": "useCallback",
+          "definition": "Remembers a function between renders."
+        },
+        {
+          "word": "Optimize",
+          "definition": "Making the app do less unneeded work."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does memo do?",
+      "options": [
+        "Skips re-rendering a component when its props have not changed",
+        "Deletes a component",
+        "Styles the page",
+        "Sends a request"
+      ],
+      "answer": 0,
+      "explanation": "memo lets a component skip re-rendering when its props are the same as last time."
+    },
+    {
+      "id": "q2",
+      "text": "What does useMemo remember?",
+      "options": [
+        "The result of an expensive calculation",
+        "The page color",
+        "A file name",
+        "A server address"
+      ],
+      "answer": 0,
+      "explanation": "useMemo remembers the result of an expensive calculation between renders."
+    },
+    {
+      "id": "q3",
+      "text": "When should you use these tools?",
+      "options": [
+        "On every component always",
+        "Only where they actually help, after measuring",
+        "Never",
+        "Only on phones"
+      ],
+      "answer": 1,
+      "explanation": "Use them only where they genuinely help, after measuring for a real slow spot."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "flexbox",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Flexbox",
+  "order": 4,
+  "summary": [
+    "Flexbox arranges items in a row or a column.",
+    "It makes spacing and alignment easy.",
+    "The container is flex, and the items inside flow.",
+    "It is the tool for one dimensional layouts."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Lining boxes up evenly used to be one of the hardest things in CSS. Flexbox made it simple. It is the tool you reach for whenever items sit in a single row or column."
+    },
+    {
+      "type": "explanation",
+      "title": "The Container and Its Items",
+      "text": "Flexbox works on a container and its direct children. You turn a container into a flex container, and its children become flex items that line up automatically. By default they sit in a row, but you can switch to a column."
+    },
+    {
+      "type": "explanation",
+      "title": "Aligning and Spacing",
+      "text": "Flexbox gives you simple controls for alignment. You can push items to the start, center, or end, space them out evenly, and center them top to bottom. The things that used to take tricky workarounds become one line each.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A row of items centered and evenly spaced inside a flex container",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Books on a Shelf",
+      "text": "Think of a shelf and the books on it. The shelf is the flex container. The books are the items. Flexbox lets you slide them to the left, center them, spread them out evenly, or stand them all at the same height, just by telling the shelf how to arrange them.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Books on a shelf sliding into different alignments",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Flexbox",
+      "items": [
+        "Choose the container that holds your items.",
+        "Make it a flex container.",
+        "Pick a direction, row or column.",
+        "Set how items line up along that direction.",
+        "Set how they align across the other direction."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Flexbox is called one dimensional because it lays items out along a single line at a time, a row or a column. For full grids in both directions, CSS Grid is the next tool."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Flexbox",
+          "definition": "A layout tool for arranging items in a row or column."
+        },
+        {
+          "word": "Flex container",
+          "definition": "The element you turn into a flex layout."
+        },
+        {
+          "word": "Flex item",
+          "definition": "A direct child of a flex container."
+        },
+        {
+          "word": "Row",
+          "definition": "Items laid out left to right."
+        },
+        {
+          "word": "Column",
+          "definition": "Items laid out top to bottom."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does flexbox arrange items into?",
+      "options": [
+        "A row or a column",
+        "A circle",
+        "A table",
+        "A grid of cells"
+      ],
+      "answer": 0,
+      "explanation": "Flexbox arranges items along a single line, either a row or a column."
+    },
+    {
+      "id": "q2",
+      "text": "What becomes a flex item?",
+      "options": [
+        "Every element on the page",
+        "The direct children of a flex container",
+        "Only images",
+        "The body"
+      ],
+      "answer": 1,
+      "explanation": "The direct children of a flex container become flex items."
+    },
+    {
+      "id": "q3",
+      "text": "Flexbox is best for layouts in how many directions at once?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Zero"
+      ],
+      "answer": 0,
+      "explanation": "Flexbox is one dimensional, handling a row or a column at a time."
+    }
+  ]
+}

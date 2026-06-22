@@ -1,0 +1,124 @@
+{
+  "id": "why-test",
+  "chapterId": "testing-and-debugging",
+  "title": "Why Test?",
+  "order": 1,
+  "summary": [
+    "Tests are code that checks your code works.",
+    "They catch bugs before users do.",
+    "They let you change code with confidence.",
+    "They are expected in professional work."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Writing code is only half the job. Making sure it actually works, and keeps working as you change it, is the other half. Tests are small pieces of code whose only job is to check that your real code behaves correctly."
+    },
+    {
+      "type": "explanation",
+      "title": "What Tests Are",
+      "text": "A test is code that runs your code and checks the result is what you expected. Give this function two and three, expect five back. If it returns five, the test passes. If not, it fails and tells you. You write these once and run them as often as you like."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Are Worth It",
+      "text": "The real payoff comes later. When you change code months from now, your tests run and instantly tell you if you broke something. This lets you improve and refactor with confidence, instead of fearing every change. It is also why tests are expected in nearly every professional team.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A test running code and comparing the result to what was expected",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Smoke Detector",
+      "text": "Tests are like smoke detectors in a house. You install them once, and they sit quietly until something goes wrong. The moment there is trouble, they sound the alarm, before the damage spreads. You do not notice them most days, but you are very glad they are there when it matters.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A quiet smoke detector that sounds the alarm the moment there is trouble",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Test Works",
+      "items": [
+        "You write a test describing expected behavior.",
+        "The test runs your real code.",
+        "It checks the result against what you expected.",
+        "If they match, the test passes.",
+        "If not, it fails and points to the problem."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Tests pay off most on the code you change often. The first time a test catches a bug you would have shipped, the time spent writing it pays for itself."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Test",
+          "definition": "Code that checks your code works."
+        },
+        {
+          "word": "Pass",
+          "definition": "When the result matches what was expected."
+        },
+        {
+          "word": "Fail",
+          "definition": "When the result does not match, flagging a problem."
+        },
+        {
+          "word": "Expect",
+          "definition": "The result a test says should happen."
+        },
+        {
+          "word": "Confidence",
+          "definition": "The trust tests give you to change code safely."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are tests?",
+      "options": [
+        "Code that checks your code works",
+        "Images for the page",
+        "A type of server",
+        "A styling tool"
+      ],
+      "answer": 0,
+      "explanation": "Tests are code whose job is to check that your real code behaves correctly."
+    },
+    {
+      "id": "q2",
+      "text": "When do they catch bugs?",
+      "options": [
+        "Before users do",
+        "Only after release",
+        "Never",
+        "Once a year"
+      ],
+      "answer": 0,
+      "explanation": "Tests catch bugs before users do, while you are still developing."
+    },
+    {
+      "id": "q3",
+      "text": "What do they let you do?",
+      "options": [
+        "Change code with confidence",
+        "Style the page",
+        "Send email",
+        "Store files"
+      ],
+      "answer": 0,
+      "explanation": "Tests let you change and refactor code with confidence."
+    }
+  ]
+}

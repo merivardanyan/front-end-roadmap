@@ -1,0 +1,124 @@
+{
+  "id": "design-patterns",
+  "chapterId": "architecture-and-patterns",
+  "title": "Design Patterns (Observer, Factory, Singleton)",
+  "order": 2,
+  "summary": [
+    "Design patterns are general, reusable solutions to common coding problems.",
+    "They come from all of programming, not just frontend.",
+    "Examples include Observer, Factory, and Singleton.",
+    "Knowing them helps you recognize and discuss solutions."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Beyond components, programming as a whole has a famous set of reusable solutions called design patterns. They are language independent ideas for structuring code, and a few names come up so often that they are worth knowing."
+    },
+    {
+      "type": "explanation",
+      "title": "What Design Patterns Are",
+      "text": "A design pattern is a general, proven solution to a problem that shows up across all kinds of software. It is not code you copy, but a shape you apply. They were collected and named decades ago, and the names became a shared language developers use to describe how code is organized."
+    },
+    {
+      "type": "explanation",
+      "title": "Three You Will Hear",
+      "text": "A few names recur. The Observer pattern lets many parts listen and react when something changes, much like the event listeners you already used. The Factory pattern is a tidy way to create objects. The Singleton ensures there is only ever one of something. You do not need to master all patterns, but recognizing these helps.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Observer, Factory, and Singleton shown as three named code shapes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Recipes in a Cookbook",
+      "text": "Design patterns are like recipes in a shared cookbook. Each one is a proven approach to a common dish, with a known name. You adapt it to your ingredients rather than copying exactly. And when a cook mentions a recipe by name, everyone in the kitchen knows roughly what they mean.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A shared cookbook of named recipes adapted to different ingredients",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Working with Design Patterns",
+      "items": [
+        "Recognize a problem common across software.",
+        "Recall if a named pattern fits it.",
+        "Apply the pattern's shape to your own code.",
+        "Use its name to communicate with other developers.",
+        "Learn the common ones first, not all at once."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The Observer pattern is exactly what is happening every time you add an event listener. Many patterns describe things you already do, just giving them a formal name."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Design pattern",
+          "definition": "A general, reusable solution to a coding problem."
+        },
+        {
+          "word": "Observer",
+          "definition": "A pattern where parts react to changes."
+        },
+        {
+          "word": "Factory",
+          "definition": "A tidy pattern for creating objects."
+        },
+        {
+          "word": "Singleton",
+          "definition": "A pattern ensuring only one of something."
+        },
+        {
+          "word": "Shared language",
+          "definition": "Pattern names developers use to communicate."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are design patterns?",
+      "options": [
+        "General, reusable solutions to common coding problems",
+        "Types of fonts",
+        "Image formats",
+        "Web browsers"
+      ],
+      "answer": 0,
+      "explanation": "Design patterns are general, reusable solutions to common coding problems."
+    },
+    {
+      "id": "q2",
+      "text": "Where do they come from?",
+      "options": [
+        "All of programming, not just frontend",
+        "Only React",
+        "Only CSS",
+        "Only databases"
+      ],
+      "answer": 0,
+      "explanation": "Design patterns come from all of programming, not just frontend."
+    },
+    {
+      "id": "q3",
+      "text": "Name an example.",
+      "options": [
+        "Observer, Factory, or Singleton",
+        "Header, Footer, or Nav",
+        "Red, Green, or Blue",
+        "GET, POST, or PUT"
+      ],
+      "answer": 0,
+      "explanation": "Observer, Factory, and Singleton are well known design patterns."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "monorepos",
+  "chapterId": "architecture-and-patterns",
+  "title": "Monorepos",
+  "order": 6,
+  "summary": [
+    "A monorepo keeps many projects in a single repository.",
+    "Related apps and shared code live together.",
+    "It makes sharing and coordinating across projects easier.",
+    "Special tools help manage the large repository."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When an organization has many related projects, they face a choice: keep each in its own repository, or put them all together in one. A monorepo is the second approach, one repository holding many projects side by side."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Monorepo Is",
+      "text": "A monorepo, short for monolithic repository, is a single version control repository that holds many projects at once, perhaps several apps and the shared code they all use. Instead of scattering related projects across many separate repositories, you keep them together in one place."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Teams Use One",
+      "text": "The main benefit is easy sharing and coordination. Shared code lives in one spot all projects can use, and a single change can update several projects together. The trade off is that the repository gets large, so teams use special tools built to manage big monorepos efficiently. It is a popular choice at companies with many connected projects.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Many projects and shared code together in one repository",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "One Big Library vs Scattered Bookshelves",
+      "text": "A monorepo is like keeping all an organization's books in one well managed library, rather than scattered across many small shelves in different rooms. Everything is in one place, easy to cross reference and share, though it takes a good librarian and system to keep a large collection organized.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "One organized library compared to scattered bookshelves in many rooms",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Understanding Monorepos",
+      "items": [
+        "Notice many related projects in an organization.",
+        "Place them in a single repository together.",
+        "Keep shared code in one place all can use.",
+        "Update several projects with one coordinated change.",
+        "Use special tools to manage the large repository."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Some of the largest technology companies keep an enormous amount of their code in a single monorepo, with specialized tools built just to handle a repository that big."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Monorepo",
+          "definition": "One repository holding many projects."
+        },
+        {
+          "word": "Repository",
+          "definition": "A version controlled home for code."
+        },
+        {
+          "word": "Shared code",
+          "definition": "Code many projects use, kept in one place."
+        },
+        {
+          "word": "Coordinate",
+          "definition": "Updating several projects together."
+        },
+        {
+          "word": "Tool",
+          "definition": "Special software for managing a large monorepo."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a monorepo keep in one repository?",
+      "options": [
+        "Many projects",
+        "One image",
+        "A single file",
+        "No code"
+      ],
+      "answer": 0,
+      "explanation": "A monorepo keeps many projects in a single repository."
+    },
+    {
+      "id": "q2",
+      "text": "What lives together in it?",
+      "options": [
+        "Related apps and shared code",
+        "Only images",
+        "Only fonts",
+        "Only the server"
+      ],
+      "answer": 0,
+      "explanation": "Related apps and the shared code they use live together in a monorepo."
+    },
+    {
+      "id": "q3",
+      "text": "What helps manage it?",
+      "options": [
+        "Special tools for large repositories",
+        "Nothing at all",
+        "A single person only",
+        "A printer"
+      ],
+      "answer": 0,
+      "explanation": "Special tools help manage the large repository a monorepo becomes."
+    }
+  ]
+}

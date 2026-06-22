@@ -1,0 +1,124 @@
+{
+  "id": "dom-manipulation",
+  "chapterId": "javascript-fundamentals",
+  "title": "DOM Manipulation",
+  "order": 8,
+  "summary": [
+    "The DOM is the browser's live model of the page.",
+    "JavaScript can read and change it.",
+    "You select an element, then change its text, style, or content.",
+    "This is how pages become interactive."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When a page loads, the browser builds a living model of it that JavaScript can touch. Change that model, and the page on screen changes too. This is how a static page becomes interactive."
+    },
+    {
+      "type": "explanation",
+      "title": "What the DOM Is",
+      "text": "The DOM, short for Document Object Model, is the browser's representation of your page as a tree of objects, one for each element. It is live. If your code changes the DOM, the visible page updates to match."
+    },
+    {
+      "type": "explanation",
+      "title": "Selecting and Changing",
+      "text": "To change something, you first select the element you want, usually by a class or id. Then you can change its text, swap its content, or adjust its style. Select, then change. That two step pattern is the heart of DOM work.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An element being selected, then its text changing",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Remote Control for the Page",
+      "text": "The DOM is like a remote control for the page. Each element is a device you can point at. First you choose which device, that is selecting. Then you press a button to change it, louder, brighter, off. The screen responds right away.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A remote pointing at an element and changing it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Changing the Page",
+      "items": [
+        "Wait for the page to load.",
+        "Select the element you want to change.",
+        "Read or change its text or content.",
+        "Adjust its style if you need to.",
+        "The visible page updates to match."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Changing the DOM many times in a row can slow a page down, because each change can make the browser redo work. This is why frameworks like React were created, to do it efficiently."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "DOM",
+          "definition": "The browser's live model of the page."
+        },
+        {
+          "word": "Element",
+          "definition": "One item on the page, like a button or heading."
+        },
+        {
+          "word": "Select",
+          "definition": "Choosing an element to work with."
+        },
+        {
+          "word": "Tree",
+          "definition": "The nested structure of all the page's elements."
+        },
+        {
+          "word": "Update",
+          "definition": "A change to the DOM that the page reflects."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the DOM?",
+      "options": [
+        "The browser's live model of the page",
+        "A type of server",
+        "A style file",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "The DOM is the browser's live model of the page as a tree of elements."
+    },
+    {
+      "id": "q2",
+      "text": "What two steps change the page?",
+      "options": [
+        "Save, then close",
+        "Select an element, then change it",
+        "Open, then print",
+        "Copy, then paste"
+      ],
+      "answer": 1,
+      "explanation": "You select the element, then change it. That two step pattern is the heart of DOM work."
+    },
+    {
+      "id": "q3",
+      "text": "What happens when JavaScript changes the DOM?",
+      "options": [
+        "Nothing",
+        "The visible page updates to match",
+        "The page reloads from the server",
+        "The file is deleted"
+      ],
+      "answer": 1,
+      "explanation": "The DOM is live, so changing it updates the visible page to match."
+    }
+  ]
+}

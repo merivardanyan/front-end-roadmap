@@ -1,0 +1,124 @@
+{
+  "id": "ticketing-systems",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Ticketing Systems (Jira, Linear)",
+  "order": 5,
+  "summary": [
+    "Ticketing systems track the work a team needs to do.",
+    "Each task is a ticket with details and a status.",
+    "Tools like Jira and Linear are common.",
+    "They keep everyone aware of who is doing what."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A team needs a shared place to track all the work: the features to build, the bugs to fix, the tasks in progress. Ticketing systems are that shared place, where each piece of work becomes a ticket the team can see and track."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Ticket Is",
+      "text": "A ticket is a single unit of work, written down with a title, a description, and a status like to do, in progress, or done. It might be a feature to build or a bug to fix. The team keeps all tickets in one system, so the full picture of work is visible to everyone in one place."
+    },
+    {
+      "type": "explanation",
+      "title": "Common Tools",
+      "text": "Tools like Jira and Linear are popular ticketing systems. They let you create tickets, assign them to people, move them through statuses, and group them into the current sprint. This is how Agile work, sprints and tasks, actually gets organized day to day. Knowing your way around one is expected on most teams.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A board of tickets moving through to do, in progress, and done",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Shared Kitchen Order Board",
+      "text": "A ticketing system is like the order board in a busy kitchen. Each order, a ticket, is posted with its details and moves from ordered, to cooking, to ready. Everyone can glance at the board and instantly see what is waiting, what is underway, and who is handling it. Nothing gets forgotten or doubled up.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A kitchen order board with tickets moving from ordered to cooking to ready",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Ticketing System",
+      "items": [
+        "Write each piece of work as a ticket.",
+        "Give it a clear title and description.",
+        "Assign it to whoever will do it.",
+        "Move it through statuses as work progresses.",
+        "Everyone sees the shared picture of work."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Well written tickets are a quiet professional skill. A ticket with a clear description and what done looks like saves endless back and forth, while a vague one liner creates confusion for everyone."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Ticketing system",
+          "definition": "A shared place to track a team's work."
+        },
+        {
+          "word": "Ticket",
+          "definition": "A single unit of work with details and status."
+        },
+        {
+          "word": "Status",
+          "definition": "Where a ticket is, like to do or done."
+        },
+        {
+          "word": "Jira",
+          "definition": "A popular ticketing tool."
+        },
+        {
+          "word": "Assign",
+          "definition": "Giving a ticket to a person to do."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do ticketing systems track?",
+      "options": [
+        "The work a team needs to do",
+        "The page color",
+        "The server speed",
+        "The font"
+      ],
+      "answer": 0,
+      "explanation": "Ticketing systems track the work a team needs to do."
+    },
+    {
+      "id": "q2",
+      "text": "What is each task?",
+      "options": [
+        "A ticket with details and a status",
+        "An image",
+        "A stylesheet",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "Each task is a ticket with details and a status."
+    },
+    {
+      "id": "q3",
+      "text": "Name a common tool.",
+      "options": [
+        "Jira or Linear",
+        "Chrome or Safari",
+        "React or Vue",
+        "Jest or Cypress"
+      ],
+      "answer": 0,
+      "explanation": "Jira and Linear are common ticketing systems."
+    }
+  ]
+}

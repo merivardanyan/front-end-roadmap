@@ -1,0 +1,124 @@
+{
+  "id": "fetch-api",
+  "chapterId": "data-apis-and-auth",
+  "title": "Fetch API",
+  "order": 1,
+  "summary": [
+    "fetch is the browser's built in tool for getting data from a server.",
+    "It returns a promise.",
+    "You usually await it, then read the data.",
+    "It is how a frontend talks to a backend."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "At some point your app needs to ask a server for data. The browser has a built in tool for exactly this, called fetch. It is the standard way a frontend reaches out across the internet to get what it needs."
+    },
+    {
+      "type": "explanation",
+      "title": "What fetch Does",
+      "text": "The fetch tool sends a request to a web address and gets back a response. Because talking to a server takes time, fetch returns a promise, the placeholder you met earlier. You usually await it, then read the data out of the response, often as JSON."
+    },
+    {
+      "type": "explanation",
+      "title": "The Two Step Read",
+      "text": "One small surprise is that reading a fetch response takes two steps. First you await the response itself, then you await turning its body into usable data, like JSON. Both steps take time, so both are awaited. Once done, you have plain JavaScript objects to work with.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A fetch call returning a response, then the response turned into JSON",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Ordering by Mail",
+      "text": "fetch is like ordering something by mail. You send off a request, the address, and wait for the parcel, the response. When it arrives, you still have to open the box to get the actual item inside. The arrival and the unboxing are the two awaits.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A parcel arriving by mail and then being opened to reveal the item",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using fetch",
+      "items": [
+        "Call fetch with the web address you want.",
+        "Await the response it returns.",
+        "Await turning the response body into data, like JSON.",
+        "Use that data in your app.",
+        "Wrap it in try and catch for failures."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "fetch does not treat a server error like a missing page as a failure on its own. The promise still succeeds, and you check the response yourself, which surprises many newcomers."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "fetch",
+          "definition": "The browser's built in tool for requests."
+        },
+        {
+          "word": "Request",
+          "definition": "The message asking a server for something."
+        },
+        {
+          "word": "Response",
+          "definition": "What the server sends back."
+        },
+        {
+          "word": "Promise",
+          "definition": "The placeholder fetch returns while waiting."
+        },
+        {
+          "word": "JSON",
+          "definition": "The common format the data comes back in."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is fetch?",
+      "options": [
+        "The browser's built in tool for getting data from a server",
+        "A CSS framework",
+        "A type of image",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "fetch is the browser's built in tool for getting data from a server."
+    },
+    {
+      "id": "q2",
+      "text": "What does fetch return?",
+      "options": [
+        "A promise",
+        "A picture",
+        "A stylesheet",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "fetch returns a promise, since talking to a server takes time."
+    },
+    {
+      "id": "q3",
+      "text": "How many steps does reading a fetch response take?",
+      "options": [
+        "One",
+        "Two",
+        "Five",
+        "Zero"
+      ],
+      "answer": 1,
+      "explanation": "You await the response, then await turning its body into data, so two steps."
+    }
+  ]
+}

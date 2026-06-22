@@ -1,0 +1,124 @@
+{
+  "id": "props",
+  "chapterId": "react-primary-framework",
+  "title": "Props",
+  "order": 4,
+  "summary": [
+    "Props pass data from a parent component into a child.",
+    "They make a component reusable with different content.",
+    "Props flow one way, down the tree.",
+    "A child cannot change its own props."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A component is more useful when it can show different content each time. A greeting that always says the same name is boring. Props are how you pass data into a component so it can adapt."
+    },
+    {
+      "type": "explanation",
+      "title": "Passing Data In",
+      "text": "Props are the inputs to a component. A parent component passes them in, much like attributes on an HTML tag. A greeting component might take a name prop, so the same component can greet anyone. You write the component once, then feed it different props to get different results."
+    },
+    {
+      "type": "explanation",
+      "title": "One Way Flow",
+      "text": "Props always flow one way, from parent down to child. The child receives them and uses them, but it cannot change them. If it could, data would get confusing fast, with children secretly altering their parents. Keeping the flow one way makes the app easier to follow.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Data flowing one way from a parent component down to children",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Ordering at a Counter",
+      "text": "Props are like the order you give at a counter. You say a medium coffee with oat milk. The barista, the component, makes exactly that. The same barista can make a different drink for the next person. The order flows one way, from you to them, and they do not change your order on their own.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An order passed to a barista who makes exactly that drink",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Props",
+      "items": [
+        "Decide what data a component needs to vary.",
+        "Pass that data in as props from the parent.",
+        "The child reads the props and uses them.",
+        "Reuse the component with different props each time.",
+        "Remember a child never changes its own props."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This one way flow of data is one of React's core ideas. It is sometimes called top down data flow, and it is a big reason React apps are easier to reason about than tangled two way ones."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Props",
+          "definition": "The data passed into a component."
+        },
+        {
+          "word": "Parent",
+          "definition": "The component that passes props down."
+        },
+        {
+          "word": "Child",
+          "definition": "The component that receives props."
+        },
+        {
+          "word": "One way flow",
+          "definition": "Data moving only from parent to child."
+        },
+        {
+          "word": "Reusable",
+          "definition": "The same component used with different props."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do props do?",
+      "options": [
+        "Pass data from a parent into a child",
+        "Style the whole page",
+        "Store files",
+        "Send email"
+      ],
+      "answer": 0,
+      "explanation": "Props pass data from a parent component into a child."
+    },
+    {
+      "id": "q2",
+      "text": "Which way do props flow?",
+      "options": [
+        "Both ways",
+        "One way, down the tree",
+        "Upward only",
+        "Randomly"
+      ],
+      "answer": 1,
+      "explanation": "Props flow one way, from parent down to child."
+    },
+    {
+      "id": "q3",
+      "text": "Can a child change its own props?",
+      "options": [
+        "Yes",
+        "No",
+        "Only on phones",
+        "Only once"
+      ],
+      "answer": 1,
+      "explanation": "A child cannot change its own props, the data flows one way."
+    }
+  ]
+}

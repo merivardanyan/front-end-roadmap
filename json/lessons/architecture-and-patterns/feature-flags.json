@@ -1,0 +1,124 @@
+{
+  "id": "feature-flags",
+  "chapterId": "architecture-and-patterns",
+  "title": "Feature Flags",
+  "order": 7,
+  "summary": [
+    "A feature flag is a switch that turns a feature on or off without changing code.",
+    "It lets you release code but reveal it later.",
+    "It enables safe rollouts and quick rollbacks.",
+    "It separates deploying from releasing."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes you want to ship code for a new feature without showing it to everyone yet, or be able to turn it off instantly if something goes wrong. Feature flags make this possible, acting as switches you control without touching the code again."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Feature Flag Is",
+      "text": "A feature flag is a simple switch in your app that decides whether a feature is on or off. The code for the feature is already shipped, but the flag controls whether users actually see it. You can flip the switch without deploying new code, changing behavior on the fly."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Is Powerful",
+      "text": "Flags separate two things that used to be one: deploying code and releasing a feature. You can ship code safely in the off position, then turn it on for a few users, then everyone. If a problem appears, you flip it off instantly, no emergency deploy needed. This makes releasing far safer and more controlled.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A switch revealing a shipped feature only when turned on",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Light Switch for Features",
+      "text": "A feature flag is like wiring a new room's lights during construction but leaving the switch off. The wiring, your code, is all in place and shipped. When you are ready, you flip the switch to reveal the room. If something sparks, you switch it back off instantly, without rewiring anything.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A wired room revealed by flipping a switch, and hidden again instantly",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Feature Flags",
+      "items": [
+        "Ship the feature's code behind a flag, turned off.",
+        "The code is deployed but hidden from users.",
+        "Turn the flag on for a few users to test.",
+        "Roll it out to everyone when confident.",
+        "Flip it off instantly if a problem appears."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Feature flags let teams show a new feature to only a small percentage of users at first, watch how it goes, and expand gradually, all without shipping any new code for each step."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Feature flag",
+          "definition": "A switch turning a feature on or off."
+        },
+        {
+          "word": "Switch",
+          "definition": "What controls whether users see the feature."
+        },
+        {
+          "word": "Deploy",
+          "definition": "Shipping the code to the server."
+        },
+        {
+          "word": "Release",
+          "definition": "Actually revealing the feature to users."
+        },
+        {
+          "word": "Rollback",
+          "definition": "Flipping the feature off instantly."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a feature flag?",
+      "options": [
+        "A switch that turns a feature on or off without changing code",
+        "A type of image",
+        "A web server",
+        "A CSS rule"
+      ],
+      "answer": 0,
+      "explanation": "A feature flag is a switch that turns a feature on or off without changing code."
+    },
+    {
+      "id": "q2",
+      "text": "What does it let you do?",
+      "options": [
+        "Release code but reveal it later",
+        "Delete all features",
+        "Slow the app",
+        "Change the font"
+      ],
+      "answer": 0,
+      "explanation": "A feature flag lets you ship code but reveal the feature later."
+    },
+    {
+      "id": "q3",
+      "text": "What does it separate?",
+      "options": [
+        "Deploying from releasing",
+        "Red from blue",
+        "HTML from CSS",
+        "Users from servers"
+      ],
+      "answer": 0,
+      "explanation": "Feature flags separate deploying code from releasing a feature."
+    }
+  ]
+}

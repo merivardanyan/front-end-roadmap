@@ -1,0 +1,124 @@
+{
+  "id": "vite",
+  "chapterId": "tooling-and-build",
+  "title": "Vite",
+  "order": 2,
+  "summary": [
+    "Vite is a modern, fast build tool.",
+    "It gives a near instant start and live updates while you code.",
+    "It is the common choice for new React projects.",
+    "You have likely used it already."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Vite is the build tool you will reach for most in modern frontend work. It became popular for being fast where older tools were slow, especially the moment you start it up and while you are coding."
+    },
+    {
+      "type": "explanation",
+      "title": "What Vite Is",
+      "text": "Vite is a modern build tool that runs your project while you develop and bundles it for release. Its claim to fame is speed. It starts almost instantly, even on big projects, and when you save a file, the change appears in the browser right away without a full reload."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Became Popular",
+      "text": "Older tools could take a long time to start and to reflect changes, which slowed down work. Vite uses a smarter approach that stays fast as projects grow. It is now the common default for new React projects, and the standard starter you would use instead of older options.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A development server starting instantly and updating on save",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An Instant On Light vs a Warming Up Bulb",
+      "text": "Older tools were like an old bulb that takes time to warm up before it is bright. Vite is like an instant on light, full brightness the moment you flip the switch. When your tool starts the instant you need it, you stay in the flow of building.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A slow warming bulb beside an instant on light",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Vite",
+      "items": [
+        "Create a new project with Vite.",
+        "It starts a fast development server almost instantly.",
+        "Edit a file and save it.",
+        "The change appears in the browser right away.",
+        "When ready, Vite bundles the project for release."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Vite means fast in French, which fits perfectly. The whole point of the tool is to keep your build and reloads quick, so you spend time building instead of waiting."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Vite",
+          "definition": "A modern, fast build tool."
+        },
+        {
+          "word": "Build tool",
+          "definition": "Software that runs and bundles your project."
+        },
+        {
+          "word": "Development server",
+          "definition": "The local server you build against."
+        },
+        {
+          "word": "Live update",
+          "definition": "Changes appearing without a full reload."
+        },
+        {
+          "word": "Bundle",
+          "definition": "The packed output for release."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Vite?",
+      "options": [
+        "A modern, fast build tool",
+        "A database",
+        "A CSS framework",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Vite is a modern, fast build tool."
+    },
+    {
+      "id": "q2",
+      "text": "What is its claim to fame?",
+      "options": [
+        "Speed, a near instant start and live updates",
+        "Bright colors",
+        "Free hosting",
+        "More fonts"
+      ],
+      "answer": 0,
+      "explanation": "Vite is known for speed, a near instant start and live updates while you code."
+    },
+    {
+      "id": "q3",
+      "text": "What is it the common choice for?",
+      "options": [
+        "New React projects",
+        "Photo editing",
+        "Spreadsheets",
+        "Email"
+      ],
+      "answer": 0,
+      "explanation": "Vite is the common default for new React projects."
+    }
+  ]
+}

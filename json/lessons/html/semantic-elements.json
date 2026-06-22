@@ -1,0 +1,124 @@
+{
+  "id": "semantic-elements",
+  "chapterId": "html",
+  "title": "Semantic Elements",
+  "order": 2,
+  "summary": [
+    "Semantic elements have names that describe their meaning.",
+    "Examples are header, nav, main, footer, and article.",
+    "They tell the browser and other tools what each part is for.",
+    "They make pages easier to understand, for people and for screen readers."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You could build a whole page using only plain boxes, but nobody would know what each box is for. HTML gives you elements with real names that say what they mean."
+    },
+    {
+      "type": "explanation",
+      "title": "What Semantic Means",
+      "text": "Semantic means meaningful. A semantic element has a name that describes its job. A nav element holds navigation links. A footer element holds the bottom of the page. The name itself tells you what is inside."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Matters",
+      "text": "When elements describe themselves, search engines understand your page better, and screen readers can guide people through it. A plain box gives none of that information. A named element gives all of it.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page with each region labelled header, nav, main, and footer",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Labeled Boxes When Moving",
+      "text": "Imagine moving house with boxes. You could leave them all blank and then guess what is inside each one. Or you could label them kitchen, books, and clothes. Semantic elements are those labels. Everyone instantly knows what belongs where.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Blank moving boxes turning into clearly labelled ones",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Common Semantic Elements",
+      "items": [
+        "The header sits at the top and holds titles or a logo.",
+        "The nav holds the main navigation links.",
+        "The main holds the central content of the page.",
+        "The article holds one self contained piece, like a blog post.",
+        "The footer sits at the bottom with extra links and info."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Before semantic elements existed, developers used plain boxes named things like header by hand. The semantic elements simply made that idea official and built in."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Semantic",
+          "definition": "Meaningful, having a name that describes the job."
+        },
+        {
+          "word": "header",
+          "definition": "The top region, often holding a title or logo."
+        },
+        {
+          "word": "nav",
+          "definition": "The region that holds the main navigation links."
+        },
+        {
+          "word": "main",
+          "definition": "The region that holds the central content."
+        },
+        {
+          "word": "footer",
+          "definition": "The bottom region, with extra links and info."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does semantic mean?",
+      "options": [
+        "Colorful",
+        "Meaningful, with a name that describes its job",
+        "Hidden",
+        "Fast"
+      ],
+      "answer": 1,
+      "explanation": "Semantic means meaningful. The element's name describes what it holds."
+    },
+    {
+      "id": "q2",
+      "text": "Which element holds the main navigation links?",
+      "options": [
+        "footer",
+        "main",
+        "nav",
+        "article"
+      ],
+      "answer": 2,
+      "explanation": "The nav element is meant for the main navigation links."
+    },
+    {
+      "id": "q3",
+      "text": "Why use semantic elements?",
+      "options": [
+        "They help screen readers and search engines understand the page",
+        "They make text bigger",
+        "They load images faster",
+        "They change the page color"
+      ],
+      "answer": 0,
+      "explanation": "Named elements describe the page, so screen readers and search engines can understand it."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "generators-iterators",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Generators & Iterators",
+  "order": 7,
+  "summary": [
+    "An iterator lets you step through items one at a time.",
+    "A generator is an easy way to create one.",
+    "A generator function can pause and resume.",
+    "They are useful for sequences and streams of data."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Usually a function runs start to finish in one go. Generators break that rule. They can pause partway, hand back a value, and resume later from exactly where they stopped. This unlocks some neat patterns."
+    },
+    {
+      "type": "explanation",
+      "title": "Iterators",
+      "text": "An iterator is anything you can step through one item at a time, asking give me the next one, until there are no more. Arrays are easy to loop through because they can be iterated. An iterator is just the general idea of that step by step access."
+    },
+    {
+      "type": "explanation",
+      "title": "Generators",
+      "text": "A generator is a special function that makes creating an iterator easy. As it runs, it can pause and yield a value, then wait. The next time you ask for a value, it picks up right where it left off. This lets you produce a sequence lazily, one piece at a time, instead of all at once.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A generator yielding one value, pausing, then resuming for the next",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Vending Machine",
+      "text": "A generator is like a vending machine. It does not drop every snack at once. You press for one, it gives you one and pauses. Press again, it gives the next. It remembers where it was, and only does work when you ask for the next item.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A vending machine dispensing one item per press and waiting between",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Generator Works",
+      "items": [
+        "Write a generator function.",
+        "Inside, yield a value to hand one out and pause.",
+        "Ask the generator for its next value.",
+        "It resumes from where it paused and yields the next.",
+        "This repeats until the generator has no more to give."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Generators can produce endless sequences without running out of memory, like all the even numbers forever, because they only ever make the next one when asked."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Iterator",
+          "definition": "Something you step through one item at a time."
+        },
+        {
+          "word": "Generator",
+          "definition": "A function that makes an iterator easily."
+        },
+        {
+          "word": "yield",
+          "definition": "Hands out one value and pauses the generator."
+        },
+        {
+          "word": "Pause",
+          "definition": "Stopping partway, ready to resume."
+        },
+        {
+          "word": "Sequence",
+          "definition": "A series of values produced one at a time."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an iterator let you do?",
+      "options": [
+        "Step through items one at a time",
+        "Style the page",
+        "Store passwords",
+        "Send a request"
+      ],
+      "answer": 0,
+      "explanation": "An iterator lets you step through items one at a time."
+    },
+    {
+      "id": "q2",
+      "text": "What can a generator function do that a normal one cannot?",
+      "options": [
+        "Change colors",
+        "Pause and resume",
+        "Load images",
+        "Create links"
+      ],
+      "answer": 1,
+      "explanation": "A generator can pause partway and resume later from where it stopped."
+    },
+    {
+      "id": "q3",
+      "text": "In the analogy, what is the vending machine?",
+      "options": [
+        "The iterator only",
+        "The generator",
+        "The page",
+        "The server"
+      ],
+      "answer": 1,
+      "explanation": "The vending machine, giving one item per press and pausing between, is the generator."
+    }
+  ]
+}

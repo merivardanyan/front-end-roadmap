@@ -1,0 +1,124 @@
+{
+  "id": "why-typescript",
+  "chapterId": "typescript",
+  "title": "Why TypeScript?",
+  "order": 1,
+  "summary": [
+    "TypeScript adds types to JavaScript.",
+    "It catches mistakes before you run the code.",
+    "It makes big projects safer and easier.",
+    "It turns into plain JavaScript to run."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "JavaScript lets you do almost anything, including mistakes it only notices when the code runs and breaks. TypeScript steps in earlier. It checks your code as you write it, catching whole classes of bugs before they ever reach a user."
+    },
+    {
+      "type": "explanation",
+      "title": "What TypeScript Is",
+      "text": "TypeScript is JavaScript with types added. A type says what kind of value something should be, like a number or a piece of text. You write almost the same code, plus these labels, and a tool checks that everything lines up before the code ever runs."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Helps",
+      "text": "The payoff grows with the project. On something small, mistakes are easy to spot. On a large codebase with many files and people, TypeScript catches the moment you pass text where a number was expected, long before a user would. Your editor also gets smarter, suggesting exactly what each thing can do.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An editor flagging a type mismatch as the developer types",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Labels on Wires",
+      "text": "Imagine wiring a house with plain identical wires. You might connect the wrong two and only find out when something sparks. TypeScript is like color coding and labeling every wire. You see a mismatch the instant you try to connect them, not after the lights fail.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Labelled wires showing a mismatch caught before anything sparks",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How TypeScript Fits In",
+      "items": [
+        "You write code with type labels added.",
+        "A checker reads it as you type.",
+        "It warns you the moment something does not match.",
+        "You fix the mistake before running anything.",
+        "The TypeScript compiles down to plain JavaScript to run."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Browsers do not run TypeScript directly. A build step strips the types away and produces plain JavaScript, so the safety happens while you work, and the browser gets ordinary code."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "TypeScript",
+          "definition": "JavaScript with types added."
+        },
+        {
+          "word": "Type",
+          "definition": "A label for what kind of value is allowed."
+        },
+        {
+          "word": "Checker",
+          "definition": "The tool that reads your types as you write."
+        },
+        {
+          "word": "Compile",
+          "definition": "Turning TypeScript into plain JavaScript."
+        },
+        {
+          "word": "JavaScript",
+          "definition": "The language TypeScript builds on and compiles to."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does TypeScript add to JavaScript?",
+      "options": [
+        "Types",
+        "Images",
+        "Colors",
+        "Servers"
+      ],
+      "answer": 0,
+      "explanation": "TypeScript adds types, labels for what kind of value is allowed."
+    },
+    {
+      "id": "q2",
+      "text": "When does it catch mistakes?",
+      "options": [
+        "After the user sees them",
+        "Before you run the code",
+        "Never",
+        "Only on phones"
+      ],
+      "answer": 1,
+      "explanation": "TypeScript checks your code as you write it, before it ever runs."
+    },
+    {
+      "id": "q3",
+      "text": "What does TypeScript turn into to run?",
+      "options": [
+        "Plain JavaScript",
+        "HTML",
+        "A new language",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "A build step strips the types and produces plain JavaScript the browser can run."
+    }
+  ]
+}

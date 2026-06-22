@@ -1,0 +1,124 @@
+{
+  "id": "links-and-anchors",
+  "chapterId": "html",
+  "title": "Links & Anchors",
+  "order": 4,
+  "summary": [
+    "Links connect one page to another and are the heart of the web.",
+    "The a element creates a link, short for anchor.",
+    "The href attribute holds the address the link points to.",
+    "Links can go to other sites, other pages, or spots on the same page."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The thing that makes the web a web, and not just a pile of separate pages, is the link. One click carries you somewhere new. HTML builds that with a single small element."
+    },
+    {
+      "type": "explanation",
+      "title": "The Anchor Element",
+      "text": "A link is made with the a element, short for anchor. The text between the opening and closing tags is what people click. On its own it does nothing until you tell it where to go."
+    },
+    {
+      "type": "explanation",
+      "title": "The href Attribute",
+      "text": "The href attribute holds the destination, the address the link points to. It can be a full web address for another site, a path to another page on your own site, or a marker for a spot further down the same page.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A link with its href arrow pointing to another page",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Doorway",
+      "text": "A link is like a doorway in a building. The text you click is the door you see. The href is where that door leads. Some doors open to another room, some to the street outside, and some lead right back to where you started.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Clicking a door that opens onto a new room",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Link Works",
+      "items": [
+        "You write an a element around some text.",
+        "You add an href attribute with the destination.",
+        "The browser shows the text as a clickable link.",
+        "A visitor clicks the link.",
+        "The browser loads whatever the href pointed to."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A link whose href starts with a hash sign jumps to a spot on the same page instead of loading a new one. That is how in page menus work."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Link",
+          "definition": "A clickable connection from one place to another."
+        },
+        {
+          "word": "Anchor (a)",
+          "definition": "The element that creates a link."
+        },
+        {
+          "word": "href",
+          "definition": "The attribute that holds the link's destination."
+        },
+        {
+          "word": "Attribute",
+          "definition": "Extra information added to an element."
+        },
+        {
+          "word": "Destination",
+          "definition": "The place a link leads to."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What element creates a link?",
+      "options": [
+        "The p element",
+        "The a element",
+        "The img element",
+        "The h1 element"
+      ],
+      "answer": 1,
+      "explanation": "The a element, short for anchor, creates a link."
+    },
+    {
+      "id": "q2",
+      "text": "What does the href attribute hold?",
+      "options": [
+        "The address the link points to",
+        "The color of the link",
+        "The size of the text",
+        "The name of the page"
+      ],
+      "answer": 0,
+      "explanation": "The href attribute holds the destination address the link points to."
+    },
+    {
+      "id": "q3",
+      "text": "What do links do for the web?",
+      "options": [
+        "They make text bold",
+        "They connect pages together",
+        "They store images",
+        "They set the page title"
+      ],
+      "answer": 1,
+      "explanation": "Links connect pages to each other, which is what makes the web a web."
+    }
+  ]
+}

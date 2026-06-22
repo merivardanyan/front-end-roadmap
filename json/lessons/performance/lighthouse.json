@@ -1,0 +1,124 @@
+{
+  "id": "lighthouse",
+  "chapterId": "performance",
+  "title": "Lighthouse & Performance Auditing",
+  "order": 8,
+  "summary": [
+    "Lighthouse is a free tool that audits a web page.",
+    "It scores performance, accessibility, and more.",
+    "It gives specific suggestions to improve.",
+    "It is built into Chrome's DevTools."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Rather than guessing how good your page is, you can have a tool measure it and tell you exactly what to fix. Lighthouse is that tool, a free auditor that scores your page and hands you a clear list of improvements."
+    },
+    {
+      "type": "explanation",
+      "title": "What Lighthouse Does",
+      "text": "Lighthouse runs a series of checks on a page and gives it scores in several areas, including performance, accessibility, and best practices. It does not just give a number, it explains what hurt the score and suggests specific fixes, turning vague slowness into a concrete to do list."
+    },
+    {
+      "type": "explanation",
+      "title": "Where to Find It",
+      "text": "Lighthouse is built right into Chrome's DevTools, so you already have it. You open DevTools, run a Lighthouse report on your page, and read the results. It is the easiest way to get an honest, measured opinion of your page and a prioritized list of what to improve.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A Lighthouse report showing scores and specific suggestions",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Health Check Up",
+      "text": "Lighthouse is like a health check up for your page. It runs a battery of tests, gives you scores on different aspects of health, and hands you a report saying here is what is good, here is what to work on, and here is specifically how. You leave knowing exactly what to improve.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A health check up producing scores and a clear list of things to improve",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Lighthouse",
+      "items": [
+        "Open Chrome's DevTools.",
+        "Run a Lighthouse report on your page.",
+        "Read the scores for performance, accessibility, and more.",
+        "Review its specific suggestions.",
+        "Fix the highest impact items first."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Lighthouse measures the Core Web Vitals you learned about, so it ties this whole chapter together, turning those three measures into a score with concrete advice on how to improve each one."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Lighthouse",
+          "definition": "A free tool that audits a web page."
+        },
+        {
+          "word": "Audit",
+          "definition": "A set of checks that score a page."
+        },
+        {
+          "word": "Score",
+          "definition": "A rating for an area like performance."
+        },
+        {
+          "word": "Suggestion",
+          "definition": "A specific fix Lighthouse recommends."
+        },
+        {
+          "word": "DevTools",
+          "definition": "Where Lighthouse is built in, inside Chrome."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Lighthouse?",
+      "options": [
+        "A free tool that audits a web page",
+        "A web server",
+        "A type of font",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "Lighthouse is a free tool that audits a web page."
+    },
+    {
+      "id": "q2",
+      "text": "What does it score?",
+      "options": [
+        "Performance, accessibility, and more",
+        "Only the page color",
+        "Only the server",
+        "Only the font"
+      ],
+      "answer": 0,
+      "explanation": "Lighthouse scores performance, accessibility, and other areas."
+    },
+    {
+      "id": "q3",
+      "text": "Where is it built in?",
+      "options": [
+        "Chrome's DevTools",
+        "A spreadsheet",
+        "A printer",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "Lighthouse is built into Chrome's DevTools."
+    }
+  ]
+}

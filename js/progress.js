@@ -55,7 +55,6 @@ function initializeLesson(chapterSlug,lessonSlug, lessonData){
     if (!lessonInStorage) return;
     if (!lessonInStorage?.totalQuestions && lessonData.questions?.length > 0) {
         lessonInStorage.totalQuestions = lessonData.questions.length
-        console.log(lessonInStorage);
     }
     saveProgress(progress)
 }

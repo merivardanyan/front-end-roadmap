@@ -1,0 +1,124 @@
+{
+  "id": "documentation",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Writing Documentation",
+  "order": 3,
+  "summary": [
+    "Documentation is written explanation of how something works.",
+    "It helps others, and your future self, use and understand code.",
+    "A good README is the most important piece.",
+    "Clear writing is a valued developer skill."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Code tells the computer what to do, but it does not always tell a person why, or how to use it. Documentation fills that gap. It is the written explanation that helps others, and you in six months, understand and work with what was built."
+    },
+    {
+      "type": "explanation",
+      "title": "What Documentation Is",
+      "text": "Documentation is any writing that explains how something works or how to use it. It ranges from comments in the code, to a guide for setting up a project, to an explanation of how a feature behaves. Its job is to save the reader from having to figure everything out from the code alone."
+    },
+    {
+      "type": "explanation",
+      "title": "The README and Clear Writing",
+      "text": "The single most important piece is usually the README, the front page of a project that explains what it is, how to set it up, and how to use it. A clear README makes a project welcoming and usable. Writing well is genuinely valued in development, since code is read far more often than it is written.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A clear README explaining what a project is and how to use it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Instructions with Flat Pack Furniture",
+      "text": "Documentation is like the instruction sheet that comes with flat pack furniture. The parts, your code, might all be there, but without clear instructions, assembling it is slow and frustrating. Good docs are the well drawn guide that lets anyone put it together smoothly, including you next time.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Furniture parts assembled smoothly thanks to a clear instruction sheet",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Writing Good Documentation",
+      "items": [
+        "Explain what the project or feature is.",
+        "Show how to set it up and run it.",
+        "Give clear examples of how to use it.",
+        "Put the essentials in a README.",
+        "Write for a reader who knows nothing yet."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common saying is that you write documentation for your future self. Six months from now you will have forgotten the details, and good docs are a gift to that future version of you."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Documentation",
+          "definition": "Writing that explains how something works."
+        },
+        {
+          "word": "README",
+          "definition": "The front page guide of a project."
+        },
+        {
+          "word": "Guide",
+          "definition": "Instructions for setting up or using something."
+        },
+        {
+          "word": "Clarity",
+          "definition": "Writing a reader can easily understand."
+        },
+        {
+          "word": "Future self",
+          "definition": "The you who reads it months later."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is documentation?",
+      "options": [
+        "Written explanation of how something works",
+        "A type of image",
+        "A web server",
+        "A CSS rule"
+      ],
+      "answer": 0,
+      "explanation": "Documentation is written explanation of how something works or how to use it."
+    },
+    {
+      "id": "q2",
+      "text": "Who does it help?",
+      "options": [
+        "Others, and your future self",
+        "Only the computer",
+        "Only the server",
+        "No one"
+      ],
+      "answer": 0,
+      "explanation": "Documentation helps others, and your future self, understand the code."
+    },
+    {
+      "id": "q3",
+      "text": "What is the most important piece?",
+      "options": [
+        "A good README",
+        "A large image",
+        "A fast server",
+        "A long comment"
+      ],
+      "answer": 0,
+      "explanation": "The README is usually the most important piece of documentation."
+    }
+  ]
+}

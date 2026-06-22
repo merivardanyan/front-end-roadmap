@@ -1,0 +1,124 @@
+{
+  "id": "lists-and-keys",
+  "chapterId": "react-primary-framework",
+  "title": "Lists & Keys",
+  "order": 9,
+  "summary": [
+    "You can turn an array of data into a list of elements.",
+    "map is the usual way to do it.",
+    "Each item needs a unique key.",
+    "Keys help React update lists efficiently."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Most apps show lists, of messages, products, or lessons. In React, you turn an array of data into a list of elements on screen. There is one small rule that trips up almost everyone, the key."
+    },
+    {
+      "type": "explanation",
+      "title": "Turning Data into Elements",
+      "text": "To show a list, you take your array and transform each item into a piece of JSX, usually with the map method you learned for arrays. An array of names becomes a list of name elements. The data drives the list, so when the data changes, the list does too."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Keys Matter",
+      "text": "React asks for a unique key on each list item. The key helps React tell the items apart between updates, so when one is added or removed, it can update just that item instead of redoing the whole list. Without good keys, lists can update incorrectly or slowly.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A list where each item carries a unique key for tracking",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Numbered Coat Hooks",
+      "text": "Keys are like numbered hooks in a cloakroom. When a coat is added or taken, the attendant uses the numbers to find the right spot instantly, without rehanging every coat. The key is that number. It lets React touch only the item that changed, leaving the rest in place.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Numbered coat hooks letting one coat be added without disturbing others",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Rendering a List",
+      "items": [
+        "Start with an array of data.",
+        "Use map to turn each item into JSX.",
+        "Give each item a unique key.",
+        "React shows the list on screen.",
+        "When the data changes, the list updates by key."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common mistake is using an item's position in the array as its key. It works until items get reordered or removed, then things go wrong. A stable id from the data itself is much safer."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "List",
+          "definition": "Many elements shown from an array of data."
+        },
+        {
+          "word": "map",
+          "definition": "The method that turns each item into JSX."
+        },
+        {
+          "word": "Key",
+          "definition": "A unique label on each list item."
+        },
+        {
+          "word": "Unique",
+          "definition": "Different for every item in the list."
+        },
+        {
+          "word": "Array",
+          "definition": "The data the list is built from."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What method usually turns data into a list?",
+      "options": [
+        "map",
+        "push",
+        "alert",
+        "print"
+      ],
+      "answer": 0,
+      "explanation": "You usually use map to turn each item of an array into JSX."
+    },
+    {
+      "id": "q2",
+      "text": "What does each list item need?",
+      "options": [
+        "A unique key",
+        "A new color",
+        "Its own file",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "Each list item needs a unique key so React can tell items apart."
+    },
+    {
+      "id": "q3",
+      "text": "What do keys help React do?",
+      "options": [
+        "Style the list",
+        "Update lists efficiently",
+        "Delete the array",
+        "Load images"
+      ],
+      "answer": 1,
+      "explanation": "Keys help React update lists efficiently by tracking which item changed."
+    }
+  ]
+}

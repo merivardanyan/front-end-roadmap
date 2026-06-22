@@ -1,0 +1,124 @@
+{
+  "id": "debugging-devtools",
+  "chapterId": "testing-and-debugging",
+  "title": "Debugging with DevTools",
+  "order": 8,
+  "summary": [
+    "Browser DevTools help you inspect and fix a running page.",
+    "You can examine elements, watch network requests, and pause code.",
+    "They are built into every browser.",
+    "They are a developer's most used tool."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When something goes wrong on a page, you do not have to guess. Every browser includes a powerful set of tools, called DevTools, that let you look inside a running page and figure out exactly what is happening."
+    },
+    {
+      "type": "explanation",
+      "title": "What DevTools Offer",
+      "text": "DevTools, opened right in your browser, let you inspect the page in detail. You can examine any element and its styles, watch the network requests your app makes, read messages your code prints, and even pause your JavaScript mid run to see the values at that moment. It is a window into the live page."
+    },
+    {
+      "type": "explanation",
+      "title": "Pausing to Investigate",
+      "text": "One of the most powerful features is the breakpoint. You can tell the code to pause at a certain line, then look at every value right at that point, and step through line by line. Instead of guessing why something broke, you watch it happen in slow motion. This turns debugging from guesswork into investigation.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "DevTools paused at a breakpoint, showing the values at that moment",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An X Ray for a Web Page",
+      "text": "DevTools are like an X ray and a pause button for a web page. Instead of guessing what is wrong inside, you see right through to the structure, watch the traffic flowing in and out, and freeze the action to examine any single moment. Nothing stays hidden once you know how to look.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An X ray view of a page with a pause button freezing the action",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using DevTools",
+      "items": [
+        "Open DevTools in your browser.",
+        "Inspect elements and their styles.",
+        "Watch the network requests your app makes.",
+        "Set a breakpoint to pause your code.",
+        "Step through and examine the values."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "DevTools are completely free and built into every major browser. One of the highest value skills a frontend developer can build is getting truly comfortable with them."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "DevTools",
+          "definition": "Browser tools for inspecting a running page."
+        },
+        {
+          "word": "Inspect",
+          "definition": "Examining elements and their styles."
+        },
+        {
+          "word": "Network",
+          "definition": "The requests your app makes, watchable in DevTools."
+        },
+        {
+          "word": "Breakpoint",
+          "definition": "A spot where code pauses for inspection."
+        },
+        {
+          "word": "Investigate",
+          "definition": "Watching what happens instead of guessing."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do DevTools help you do?",
+      "options": [
+        "Inspect and fix a running page",
+        "Cook a meal",
+        "Store files",
+        "Send email"
+      ],
+      "answer": 0,
+      "explanation": "DevTools let you inspect and fix a running page."
+    },
+    {
+      "id": "q2",
+      "text": "What can you do with a breakpoint?",
+      "options": [
+        "Pause your code to examine values",
+        "Delete the page",
+        "Change the font",
+        "Speed up the server"
+      ],
+      "answer": 0,
+      "explanation": "A breakpoint pauses your code so you can examine the values at that moment."
+    },
+    {
+      "id": "q3",
+      "text": "Where are DevTools found?",
+      "options": [
+        "Built into every browser",
+        "Only sold separately",
+        "Only on phones",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "DevTools are built into every major browser, for free."
+    }
+  ]
+}

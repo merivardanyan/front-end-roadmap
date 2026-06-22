@@ -1,0 +1,124 @@
+{
+  "id": "web-workers",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Web Workers",
+  "order": 8,
+  "summary": [
+    "Web workers run code on a separate track.",
+    "This keeps heavy work off the main page.",
+    "The page stays smooth while the worker does the heavy lifting.",
+    "The worker and page talk by sending messages."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You learned that JavaScript runs on a single track, so a heavy calculation can freeze the page. Web workers are the escape hatch. They let you run that heavy work somewhere else, so the page stays smooth."
+    },
+    {
+      "type": "explanation",
+      "title": "A Second Track",
+      "text": "A web worker is a separate background track where you can run code. While the worker grinds through something heavy, the main page keeps responding to clicks and scrolls. The freezing problem from the event loop lesson goes away, because the heavy work is no longer on the main track."
+    },
+    {
+      "type": "explanation",
+      "title": "Talking by Messages",
+      "text": "The worker cannot touch the page directly. Instead, the page and the worker send messages to each other. The page says here is some work, the worker does it and sends back the result. This separation is what keeps things safe and smooth.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page and a worker on separate tracks passing messages back and forth",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Helper in the Back Room",
+      "text": "Imagine a shop where the cashier must keep serving customers. For a big counting job, they hand it to a helper in the back room. The helper works away out of sight, the cashier keeps serving, and when the count is done the helper passes a note back with the total.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A cashier serving while a back room helper counts and sends back a total",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Web Worker",
+      "items": [
+        "Notice a task heavy enough to freeze the page.",
+        "Move that task into a web worker.",
+        "Send the work to the worker as a message.",
+        "The worker runs it on its own track.",
+        "It sends the result back to the page as a message."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Workers cannot change the page directly on purpose. That rule prevents two tracks from fighting over the same elements at once, which would cause chaos."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Web worker",
+          "definition": "A separate background track for running code."
+        },
+        {
+          "word": "Background track",
+          "definition": "Where the worker runs, off the main page."
+        },
+        {
+          "word": "Message",
+          "definition": "How the page and worker communicate."
+        },
+        {
+          "word": "Main thread",
+          "definition": "The page's own single track."
+        },
+        {
+          "word": "Responsive",
+          "definition": "Staying smooth while heavy work happens elsewhere."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do web workers do?",
+      "options": [
+        "Run code on a separate track",
+        "Style the page",
+        "Store images",
+        "Create links"
+      ],
+      "answer": 0,
+      "explanation": "Web workers run code on a separate background track."
+    },
+    {
+      "id": "q2",
+      "text": "Why use one?",
+      "options": [
+        "To make text bigger",
+        "To keep heavy work off the main page so it stays smooth",
+        "To change colors",
+        "To load fonts"
+      ],
+      "answer": 1,
+      "explanation": "A worker keeps heavy work off the main track, so the page stays responsive."
+    },
+    {
+      "id": "q3",
+      "text": "How do the page and worker communicate?",
+      "options": [
+        "By sending messages",
+        "By sharing the same elements",
+        "By reloading",
+        "They cannot communicate"
+      ],
+      "answer": 0,
+      "explanation": "The page and worker talk by sending messages back and forth."
+    }
+  ]
+}

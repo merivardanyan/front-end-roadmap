@@ -1,0 +1,124 @@
+{
+  "id": "authentication",
+  "chapterId": "data-apis-and-auth",
+  "title": "Authentication (JWT, OAuth, Sessions)",
+  "order": 6,
+  "summary": [
+    "Authentication is proving who a user is.",
+    "Common methods are sessions, tokens like JWT, and OAuth.",
+    "The app remembers you are logged in across requests.",
+    "This protects private data."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When a user logs in, the app needs to remember who they are on every later request, and make sure others cannot pretend to be them. That is authentication, and there are a few common ways to do it."
+    },
+    {
+      "type": "explanation",
+      "title": "Sessions and Tokens",
+      "text": "One classic method is a session, where the server remembers you and gives your browser a small id to send back each time. Another is a token, often a JWT, a signed piece of data the browser holds and sends with each request to prove who it is. Both let the app recognize you after login."
+    },
+    {
+      "type": "explanation",
+      "title": "OAuth, Logging In with Others",
+      "text": "OAuth is the system behind log in with Google or similar buttons. Instead of making a new password, you let a trusted service vouch for you. The app never sees your password, it just receives proof from the provider that you are who you say. It is convenient and avoids yet another password.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A login giving back a session id or token used on later requests",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Wristband at an Event",
+      "text": "Authentication is like getting a wristband at an event. You show your ticket once at the entrance, and in return you get a wristband. After that, you do not show the ticket again, you just flash the wristband. The wristband is your session or token, proving you already checked in.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A ticket shown once at the door, then a wristband flashed thereafter",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Authentication Works",
+      "items": [
+        "The user logs in once with their details.",
+        "The server gives back proof, a session id or a token.",
+        "The browser sends that proof with each later request.",
+        "The server checks it and knows who you are.",
+        "This keeps private data limited to the right user."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A JWT is signed in a way that lets the server detect if anyone tampers with it. Change one character and the signature no longer matches, so forged tokens are rejected."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Authentication",
+          "definition": "Proving who a user is."
+        },
+        {
+          "word": "Session",
+          "definition": "The server remembering you via a small id."
+        },
+        {
+          "word": "JWT",
+          "definition": "A signed token the browser holds to prove identity."
+        },
+        {
+          "word": "OAuth",
+          "definition": "Logging in through a trusted provider."
+        },
+        {
+          "word": "Token",
+          "definition": "A piece of proof sent with each request."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is authentication?",
+      "options": [
+        "Proving who a user is",
+        "Styling a page",
+        "Storing images",
+        "Speeding up a server"
+      ],
+      "answer": 0,
+      "explanation": "Authentication is proving who a user is."
+    },
+    {
+      "id": "q2",
+      "text": "What is a JWT?",
+      "options": [
+        "A signed token the browser holds to prove who it is",
+        "A type of image",
+        "A CSS rule",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "A JWT is a signed token the browser sends to prove its identity."
+    },
+    {
+      "id": "q3",
+      "text": "What is OAuth behind?",
+      "options": [
+        "Log in with Google and similar buttons",
+        "Image loading",
+        "Page styling",
+        "Server hosting"
+      ],
+      "answer": 0,
+      "explanation": "OAuth is the system behind log in with Google and similar buttons."
+    }
+  ]
+}

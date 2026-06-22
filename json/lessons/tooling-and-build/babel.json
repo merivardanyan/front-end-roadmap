@@ -1,0 +1,124 @@
+{
+  "id": "babel",
+  "chapterId": "tooling-and-build",
+  "title": "Babel",
+  "order": 4,
+  "summary": [
+    "Babel translates modern JavaScript into older JavaScript.",
+    "This lets new code run on older browsers.",
+    "It works behind the scenes in your build.",
+    "It is why you can use the latest features safely."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "New JavaScript features appear every year, but not every browser understands them right away. Babel solves this. It quietly translates your modern code into an older form that more browsers can run."
+    },
+    {
+      "type": "explanation",
+      "title": "What Babel Does",
+      "text": "Babel is a translator for JavaScript. You write using the newest features, and Babel converts that into an older, more widely supported version. The behavior stays the same, but the code becomes something even older browsers can understand. It usually runs as part of your build, unseen."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Matters",
+      "text": "Without Babel, using a brand new feature might break the app for people on older browsers. With it, you write modern, clean code and trust the translation to keep it working everywhere. It is a big reason the ES6 features you learned can be used freely today.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Modern JavaScript on one side translated to older JavaScript on the other",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Translator at a Meeting",
+      "text": "Babel is like a translator at a meeting between people who speak different languages. You speak in the modern language you prefer, and the translator delivers it in a language the older audience understands. The message is unchanged, just made understandable to everyone in the room.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A translator relaying a modern message into an older language",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Babel Fits In",
+      "items": [
+        "You write modern JavaScript with the latest features.",
+        "Babel runs as part of your build.",
+        "It translates that into an older, supported version.",
+        "The behavior stays the same.",
+        "Older browsers can now run your code."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Babel can also understand things that are not plain JavaScript, like the JSX from React, translating it into regular JavaScript calls. It is a quiet helper behind a lot of modern tooling."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Babel",
+          "definition": "A tool that translates modern JavaScript to older."
+        },
+        {
+          "word": "Translate",
+          "definition": "Converting code from one version to another."
+        },
+        {
+          "word": "Modern JavaScript",
+          "definition": "The newest features you write with."
+        },
+        {
+          "word": "Browser support",
+          "definition": "Which browsers can run your code."
+        },
+        {
+          "word": "Build",
+          "definition": "The step where Babel runs."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does Babel translate?",
+      "options": [
+        "Modern JavaScript into older JavaScript",
+        "Images into text",
+        "HTML into CSS",
+        "Servers into clients"
+      ],
+      "answer": 0,
+      "explanation": "Babel translates modern JavaScript into an older, more supported version."
+    },
+    {
+      "id": "q2",
+      "text": "Why is that useful?",
+      "options": [
+        "New code can run on older browsers",
+        "It makes pages colorful",
+        "It deletes old code",
+        "It hides the page"
+      ],
+      "answer": 0,
+      "explanation": "It lets your modern code run on older browsers."
+    },
+    {
+      "id": "q3",
+      "text": "When does Babel usually run?",
+      "options": [
+        "Behind the scenes in your build",
+        "While the user clicks",
+        "Once a year",
+        "Never"
+      ],
+      "answer": 0,
+      "explanation": "Babel usually runs behind the scenes as part of your build."
+    }
+  ]
+}

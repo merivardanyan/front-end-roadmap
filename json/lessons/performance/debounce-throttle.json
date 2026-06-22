@@ -1,0 +1,124 @@
+{
+  "id": "debounce-throttle",
+  "chapterId": "performance",
+  "title": "Debounce & Throttle",
+  "order": 6,
+  "summary": [
+    "Debounce and throttle limit how often a function runs.",
+    "They are used for events that fire very rapidly, like typing or scrolling.",
+    "Debounce waits until the activity stops.",
+    "Throttle runs at a steady, capped rate."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Some events fire incredibly often, like every keystroke as you type, or constantly as you scroll. Running heavy work on every single one would overwhelm the page. Debounce and throttle are two techniques to limit how often that work runs."
+    },
+    {
+      "type": "explanation",
+      "title": "The Problem of Rapid Events",
+      "text": "If you run a search on every keystroke, a fast typist fires off dozens of searches in a second, most of them wasted. Scrolling can fire hundreds of events. Doing real work on each one is wasteful and can make the page stutter. You need to limit how often the work actually happens."
+    },
+    {
+      "type": "explanation",
+      "title": "Debounce vs Throttle",
+      "text": "Debounce waits until the activity stops before running, so a search fires only after you pause typing. Throttle instead runs at a steady, capped rate, like at most once every short interval, no matter how fast the events come. Debounce is wait for quiet, throttle is steady pace.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Rapid events reduced to occasional runs by debounce and by throttle",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An Elevator vs a Metronome",
+      "text": "Debounce is like an elevator that waits a moment after the last person steps in before closing, so it does not depart on every single arrival. Throttle is like a metronome, it ticks at a fixed steady beat no matter how frantic things get. One waits for calm, the other keeps a fixed rhythm.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An elevator waiting for a pause beside a steady ticking metronome",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Choosing Debounce or Throttle",
+      "items": [
+        "Find an event that fires very rapidly.",
+        "Decide if you want to wait for it to settle.",
+        "If so, debounce, run after the activity stops.",
+        "If you want a steady capped rate, throttle.",
+        "Either way, the heavy work runs far less often."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A search box that updates results as you type almost always uses debounce, so it waits for a brief pause before searching, instead of firing on every letter."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Debounce",
+          "definition": "Waiting until activity stops before running."
+        },
+        {
+          "word": "Throttle",
+          "definition": "Running at a steady, capped rate."
+        },
+        {
+          "word": "Rapid events",
+          "definition": "Events that fire very often, like typing."
+        },
+        {
+          "word": "Wait",
+          "definition": "What debounce does until things settle."
+        },
+        {
+          "word": "Rate",
+          "definition": "The capped pace throttle keeps."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do debounce and throttle limit?",
+      "options": [
+        "How often a function runs",
+        "The page color",
+        "The file size",
+        "The server location"
+      ],
+      "answer": 0,
+      "explanation": "Debounce and throttle limit how often a function runs."
+    },
+    {
+      "id": "q2",
+      "text": "What does debounce do?",
+      "options": [
+        "Waits until the activity stops",
+        "Runs on every event",
+        "Deletes the function",
+        "Runs once a day"
+      ],
+      "answer": 0,
+      "explanation": "Debounce waits until the activity stops before running."
+    },
+    {
+      "id": "q3",
+      "text": "What does throttle do?",
+      "options": [
+        "Runs at a steady, capped rate",
+        "Waits forever",
+        "Runs on every keystroke",
+        "Never runs"
+      ],
+      "answer": 0,
+      "explanation": "Throttle runs at a steady, capped rate no matter how fast events come."
+    }
+  ]
+}

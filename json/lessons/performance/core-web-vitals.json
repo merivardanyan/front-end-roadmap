@@ -1,0 +1,124 @@
+{
+  "id": "core-web-vitals",
+  "chapterId": "performance",
+  "title": "Core Web Vitals",
+  "order": 1,
+  "summary": [
+    "Core Web Vitals are Google's key measures of a good page experience.",
+    "They measure loading speed, responsiveness, and visual stability.",
+    "Good scores help both users and search ranking.",
+    "There are three main ones."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "How fast and smooth a page feels can be measured. Google defined a small set of measurements, called Core Web Vitals, that capture the most important parts of the experience. They matter for users and for how well your page ranks in search."
+    },
+    {
+      "type": "explanation",
+      "title": "The Three Main Vitals",
+      "text": "There are three. One measures how quickly the main content loads. One measures how quickly the page responds when you interact with it. And one measures visual stability, whether things jump around as the page loads. Together they capture fast, responsive, and steady."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Matter",
+      "text": "Google uses these scores as part of how it ranks pages in search, so good vitals help people find your site. More importantly, they reflect real user experience, a page that loads fast, responds quickly, and does not jump around feels good to use. Improving them helps users and search at the same time.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Three gauges for loading, responsiveness, and visual stability",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Good First Impression at a Shop",
+      "text": "Core Web Vitals are like the first impression of a shop. Loading speed is how quickly the door opens. Responsiveness is how fast a staff member reacts when you ask for help. Visual stability is whether the shelves stay put or shift around as you reach for things. All three shape whether you enjoy the visit.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A shop with a quick door, fast staff, and steady shelves",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Working with Core Web Vitals",
+      "items": [
+        "Measure how fast your main content loads.",
+        "Measure how quickly the page responds to clicks.",
+        "Measure whether things jump around as it loads.",
+        "Improve the weakest of the three first.",
+        "Better scores help both users and search."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Visual stability has a memorable failure mode. You go to tap a button, an image loads above it, everything shifts, and you tap the wrong thing. That annoying jump is exactly what one of the vitals measures."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Core Web Vitals",
+          "definition": "Google's key measures of a good page experience."
+        },
+        {
+          "word": "Loading",
+          "definition": "How quickly the main content appears."
+        },
+        {
+          "word": "Responsiveness",
+          "definition": "How quickly the page reacts to interaction."
+        },
+        {
+          "word": "Visual stability",
+          "definition": "Whether things jump around as the page loads."
+        },
+        {
+          "word": "Ranking",
+          "definition": "How a page places in search results."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are Core Web Vitals?",
+      "options": [
+        "Google's key measures of a good page experience",
+        "A type of image",
+        "A CSS framework",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "Core Web Vitals are Google's key measures of a good page experience."
+    },
+    {
+      "id": "q2",
+      "text": "What three things do they measure?",
+      "options": [
+        "Loading speed, responsiveness, and visual stability",
+        "Color, font, and spacing",
+        "Servers, files, and folders",
+        "Users, pages, and clicks"
+      ],
+      "answer": 0,
+      "explanation": "They measure loading speed, responsiveness, and visual stability."
+    },
+    {
+      "id": "q3",
+      "text": "What do good scores help?",
+      "options": [
+        "Both users and search ranking",
+        "Only the font",
+        "Only the server",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Good Core Web Vitals help both the user experience and search ranking."
+    }
+  ]
+}

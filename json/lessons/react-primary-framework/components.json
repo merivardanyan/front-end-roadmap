@@ -1,0 +1,124 @@
+{
+  "id": "components",
+  "chapterId": "react-primary-framework",
+  "title": "Components",
+  "order": 3,
+  "summary": [
+    "A component is a reusable piece of a user interface.",
+    "You build a page by combining many of them.",
+    "A component is just a function that returns markup.",
+    "Components can be reused anywhere."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The whole idea of React is building pages out of small, reusable pieces. Each piece is a component. Once you can think in components, React stops being a framework and starts being a way of building."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Component Is",
+      "text": "A component is a self contained piece of the interface, like a button, a card, or a whole navigation bar. In modern React, a component is simply a function that returns some JSX describing what it should look like. You give it a name, and you can use it like your own custom element."
+    },
+    {
+      "type": "explanation",
+      "title": "Combining Components",
+      "text": "You build a page by nesting components inside each other. A card component might sit inside a list, which sits inside a page. Each one focuses on its own small job, and together they form the full screen. Because they are reusable, you write a piece once and use it in many places.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Small components nested into a list and then a full page",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Building with Bricks",
+      "text": "Components are like building bricks. Each brick is simple and does one thing, but they snap together into walls, and walls into houses. You do not carve a house from one block, you assemble it from many reusable pieces. React pages are built the same way.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Bricks snapping into walls and walls into a house",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Building with Components",
+      "items": [
+        "Break the page into small, sensible pieces.",
+        "Write each piece as a function that returns JSX.",
+        "Give each component a clear, capitalized name.",
+        "Nest components inside one another to form the page.",
+        "Reuse a component anywhere you need it again."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Component names must start with a capital letter in React. That is how React tells your custom components apart from plain HTML tags, which are lowercase."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Component",
+          "definition": "A reusable, self contained piece of the interface."
+        },
+        {
+          "word": "Reusable",
+          "definition": "Written once, used in many places."
+        },
+        {
+          "word": "Function",
+          "definition": "What a modern component is, returning JSX."
+        },
+        {
+          "word": "JSX",
+          "definition": "The markup a component returns."
+        },
+        {
+          "word": "Nesting",
+          "definition": "Placing components inside one another."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a component?",
+      "options": [
+        "A reusable piece of a user interface",
+        "A type of server",
+        "A color value",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "A component is a reusable, self contained piece of a user interface."
+    },
+    {
+      "id": "q2",
+      "text": "What is a component, simply?",
+      "options": [
+        "An image",
+        "A function that returns markup",
+        "A stylesheet",
+        "A database"
+      ],
+      "answer": 1,
+      "explanation": "In modern React a component is simply a function that returns JSX."
+    },
+    {
+      "id": "q3",
+      "text": "Why must component names be capitalized?",
+      "options": [
+        "For decoration",
+        "So React tells them apart from plain HTML tags",
+        "To make them faster",
+        "It is not required"
+      ],
+      "answer": 1,
+      "explanation": "Capital names let React distinguish custom components from lowercase HTML tags."
+    }
+  ]
+}

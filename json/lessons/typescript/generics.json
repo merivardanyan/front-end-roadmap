@@ -1,0 +1,124 @@
+{
+  "id": "generics",
+  "chapterId": "typescript",
+  "title": "Generics",
+  "order": 4,
+  "summary": [
+    "Generics let code work with many types while staying safe.",
+    "You write it once with a placeholder type.",
+    "The real type is filled in when used.",
+    "Arrays and many tools use generics."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes you want one piece of code to work with any type, a list of numbers, a list of names, anything, without giving up safety. Generics make that possible. They are a placeholder for a type you decide later."
+    },
+    {
+      "type": "explanation",
+      "title": "A Type Placeholder",
+      "text": "A generic is a stand in for a type that gets chosen when the code is used. You write a function or a container once, with a placeholder where a real type would go. When someone uses it with numbers, the placeholder becomes number. With text, it becomes string. One definition, many safe uses."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Matter",
+      "text": "Without generics you would either rewrite the same code for every type, or fall back to any and lose safety. Generics give you both, one reusable piece of code that still knows exactly what type it is holding each time. This is why so many built in tools, even arrays, use them.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "One generic function used safely with numbers and with text",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Gift Box of Any Size",
+      "text": "A generic is like a gift box that adapts to whatever you put in it. The box design is the same every time, but it remembers what it is holding. Put in a watch, it is a box of a watch. Put in a book, a box of a book. The box is one design, yet it never forgets its contents.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A gift box adapting to hold different items while remembering each",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Generic",
+      "items": [
+        "Write code that should work with many types.",
+        "Add a placeholder type in angle brackets.",
+        "Use that placeholder inside instead of a fixed type.",
+        "When used, fill the placeholder with a real type.",
+        "TypeScript keeps it safe for that exact type."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The placeholder is traditionally written as a single capital T, short for type. You can name it anything, but T is so common that most developers recognize it instantly."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Generic",
+          "definition": "Code that works with many types using a placeholder."
+        },
+        {
+          "word": "Placeholder type",
+          "definition": "A stand in for a type chosen later."
+        },
+        {
+          "word": "Reusable",
+          "definition": "Written once, used with many types."
+        },
+        {
+          "word": "Type safe",
+          "definition": "Still knowing the exact type each time."
+        },
+        {
+          "word": "Container",
+          "definition": "Something that holds a value, like an array."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do generics let code do?",
+      "options": [
+        "Work with many types while staying safe",
+        "Only work with text",
+        "Change colors",
+        "Load images"
+      ],
+      "answer": 0,
+      "explanation": "Generics let one piece of code work with many types without losing type safety."
+    },
+    {
+      "id": "q2",
+      "text": "When is the real type filled in?",
+      "options": [
+        "When the code is written",
+        "When the code is used",
+        "Never",
+        "At midnight"
+      ],
+      "answer": 1,
+      "explanation": "The placeholder becomes a real type when the generic code is used."
+    },
+    {
+      "id": "q3",
+      "text": "What is the placeholder traditionally called?",
+      "options": [
+        "X",
+        "T",
+        "Z",
+        "N"
+      ],
+      "answer": 1,
+      "explanation": "By tradition the placeholder is a single capital T, short for type."
+    }
+  ]
+}

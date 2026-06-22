@@ -1,0 +1,124 @@
+{
+  "id": "context-api",
+  "chapterId": "react-primary-framework",
+  "title": "Context API",
+  "order": 11,
+  "summary": [
+    "Context shares data across many components without passing props down every level.",
+    "It is good for things many parts need, like the current user or theme.",
+    "You provide the data once and read it anywhere below.",
+    "It avoids passing props through components that do not use them."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Passing props down works well, until some data is needed deep in the tree by many components. Threading it through every level in between is tedious. Context offers a way to share such data directly."
+    },
+    {
+      "type": "explanation",
+      "title": "The Problem Context Solves",
+      "text": "Imagine the current user is needed by many components at different depths. With props alone, you pass user through every component in between, even ones that do not use it, just to reach the ones that do. This tedious passing is sometimes called prop drilling. Context removes the need for it."
+    },
+    {
+      "type": "explanation",
+      "title": "Provide Once, Read Anywhere",
+      "text": "With context, you provide a value at a high level, and any component below can read it directly, no matter how deep, without it being passed at each step. It is great for app wide data like the logged in user, the theme, or the language. Provide once, read anywhere underneath.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A value provided high in the tree and read directly far below",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Building's Background Music",
+      "text": "Props are like handing a message person to person down a hallway. Context is like background music playing through the whole building. You set it once at the source, and anyone in any room can hear it directly, without it being passed down room by room.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Background music filling a building so every room hears it directly",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Context",
+      "items": [
+        "Notice data many components need at different depths.",
+        "Create a context for it.",
+        "Provide the value high in the tree.",
+        "Read it directly from any component below.",
+        "Skip passing it through every level in between."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Context is powerful, but it is not meant for everything. For data that changes very often, other tools can be a better fit, which is exactly what the next chapter on state management explores."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Context",
+          "definition": "A way to share data across many components."
+        },
+        {
+          "word": "Prop drilling",
+          "definition": "Passing props through levels that do not use them."
+        },
+        {
+          "word": "Provider",
+          "definition": "Where you supply the context value."
+        },
+        {
+          "word": "Consumer",
+          "definition": "A component that reads the context value."
+        },
+        {
+          "word": "Shared data",
+          "definition": "Data many components need, like the user."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does context do?",
+      "options": [
+        "Shares data across many components without passing props down every level",
+        "Styles the page",
+        "Stores images",
+        "Sends email"
+      ],
+      "answer": 0,
+      "explanation": "Context shares data across components without threading props through every level."
+    },
+    {
+      "id": "q2",
+      "text": "What problem does it solve?",
+      "options": [
+        "Slow images",
+        "Prop drilling",
+        "Broken links",
+        "Missing fonts"
+      ],
+      "answer": 1,
+      "explanation": "Context solves prop drilling, the tedious passing of props through every level."
+    },
+    {
+      "id": "q3",
+      "text": "What is context good for?",
+      "options": [
+        "App wide data like the current user or theme",
+        "Single use values",
+        "Image files",
+        "Server logs"
+      ],
+      "answer": 0,
+      "explanation": "Context is good for app wide data like the current user, theme, or language."
+    }
+  ]
+}

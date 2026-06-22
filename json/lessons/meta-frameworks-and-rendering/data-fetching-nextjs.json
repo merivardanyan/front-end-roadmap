@@ -1,0 +1,124 @@
+{
+  "id": "data-fetching-nextjs",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "Data Fetching in Next.js",
+  "order": 7,
+  "summary": [
+    "Next.js gives you several ways to load data.",
+    "You can fetch on the server before a page is sent.",
+    "This makes pages faster and better for search engines.",
+    "The right choice depends on how fresh the data needs to be."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Loading data is at the heart of most apps. Next.js gives you more options than plain React, including fetching data on the server before the page even reaches the browser. Choosing well affects both speed and search ranking."
+    },
+    {
+      "type": "explanation",
+      "title": "Fetching on the Server",
+      "text": "In Next.js, much data fetching can happen on the server, before the page is sent to the user. The page arrives already filled with its data, instead of arriving empty and then loading. This makes the first view faster and means search engines see the full content right away."
+    },
+    {
+      "type": "explanation",
+      "title": "Choosing Based on Freshness",
+      "text": "The right approach depends on the data. Content that rarely changes can be fetched once when the page is built. Content that changes often can be fetched fresh on each request. Next.js lets you control this per page, balancing how fresh the data is against how fast the page loads.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page arriving already filled with data fetched on the server",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Magazine vs a Live News Ticker",
+      "text": "Fetching data ahead of time is like printing a magazine, the content is fixed when it goes to press, and it arrives complete. Fetching fresh each time is like a live news ticker, always current but fetched in the moment. You pick based on whether the content is more like a magazine or a ticker.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A printed magazine beside a live updating news ticker",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Fetching Data in Next.js",
+      "items": [
+        "Decide how fresh the data must be.",
+        "For stable data, fetch it when the page is built.",
+        "For changing data, fetch it on each request.",
+        "Let the page arrive already filled with its data.",
+        "Enjoy faster first views and better search results."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because the page arrives with its content already in the HTML, search engines read it easily. This is a real advantage over a plain client rendered app that arrives empty."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Data fetching",
+          "definition": "Loading the data a page needs."
+        },
+        {
+          "word": "Server",
+          "definition": "Where Next.js can fetch before sending the page."
+        },
+        {
+          "word": "Freshness",
+          "definition": "How up to date the data needs to be."
+        },
+        {
+          "word": "Search engines",
+          "definition": "Tools that read your page's content."
+        },
+        {
+          "word": "First view",
+          "definition": "What the user sees on the very first load."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Where can Next.js fetch data?",
+      "options": [
+        "On the server, before a page is sent",
+        "Only in the browser",
+        "Only on phones",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "Next.js can fetch data on the server before the page is sent to the user."
+    },
+    {
+      "id": "q2",
+      "text": "What does server fetching improve?",
+      "options": [
+        "Speed and search engine results",
+        "Only the font",
+        "Only the color",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Fetching on the server gives faster first views and helps search engines."
+    },
+    {
+      "id": "q3",
+      "text": "What decides the right approach?",
+      "options": [
+        "How fresh the data needs to be",
+        "The page color",
+        "The file name",
+        "The user's name"
+      ],
+      "answer": 0,
+      "explanation": "The right fetching approach depends on how fresh the data needs to be."
+    }
+  ]
+}

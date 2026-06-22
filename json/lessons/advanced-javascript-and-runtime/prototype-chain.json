@@ -1,0 +1,124 @@
+{
+  "id": "prototype-chain",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "Prototype Chain & Inheritance",
+  "order": 5,
+  "summary": [
+    "Objects in JavaScript can inherit from other objects.",
+    "The prototype is the object they fall back to.",
+    "If a property is missing, JavaScript looks up the chain.",
+    "This is how shared behavior works."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "In JavaScript, objects can borrow features from other objects. When you ask an object for something it does not have, JavaScript quietly looks somewhere else for it. That somewhere is the prototype, and the path it follows is the prototype chain."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Prototype Is",
+      "text": "Every object has a hidden link to another object, called its prototype. The prototype can hold properties and methods that the first object can use as if they were its own. This is how many objects can share the same behavior without copying it everywhere."
+    },
+    {
+      "type": "explanation",
+      "title": "The Chain",
+      "text": "When you ask an object for a property, JavaScript checks the object first. If it is not there, it follows the link to the prototype and checks there, then that prototype's prototype, and so on. This path is the prototype chain. The search stops as soon as it finds the property, or reaches the end.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An object linked to a prototype, linked to another, forming a chain",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Asking Up the Family",
+      "text": "Looking for something in an object is like a child asking for help. If the child does not know, they ask a parent. If the parent does not know, they ask a grandparent. The question travels up the family until someone has the answer, or the family runs out.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A question passing from child to parent to grandparent until answered",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How the Lookup Works",
+      "items": [
+        "You ask an object for a property.",
+        "JavaScript checks the object itself first.",
+        "If it is missing, it follows the link to the prototype.",
+        "It keeps climbing the chain, prototype by prototype.",
+        "It stops at the first match, or at the end of the chain."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The class keyword you see in modern JavaScript is mostly a friendlier way of setting up this prototype chain. Underneath the neat syntax, it is still prototypes doing the work."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Prototype",
+          "definition": "The object another object falls back to."
+        },
+        {
+          "word": "Inheritance",
+          "definition": "Borrowing features from another object."
+        },
+        {
+          "word": "Chain",
+          "definition": "The path of prototypes JavaScript searches."
+        },
+        {
+          "word": "Property",
+          "definition": "A named value or method on an object."
+        },
+        {
+          "word": "Lookup",
+          "definition": "Searching for a property up the chain."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a prototype?",
+      "options": [
+        "The object another object falls back to",
+        "A type of loop",
+        "A style rule",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "A prototype is the object that another object falls back to for missing properties."
+    },
+    {
+      "id": "q2",
+      "text": "What happens if a property is missing on an object?",
+      "options": [
+        "JavaScript looks up the prototype chain",
+        "The page crashes",
+        "Nothing happens ever",
+        "The object is deleted"
+      ],
+      "answer": 0,
+      "explanation": "If a property is missing, JavaScript follows the prototype chain to look for it."
+    },
+    {
+      "id": "q3",
+      "text": "What does the class keyword set up underneath?",
+      "options": [
+        "A new browser",
+        "The prototype chain",
+        "A stylesheet",
+        "A server"
+      ],
+      "answer": 1,
+      "explanation": "The class keyword is mostly a friendlier way of setting up the prototype chain."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "cross-browser-compatibility",
+  "chapterId": "browser-and-web-platform",
+  "title": "Cross-Browser Compatibility",
+  "order": 5,
+  "summary": [
+    "Not all browsers behave exactly the same.",
+    "A site should work across the major ones.",
+    "You test in different browsers and handle differences.",
+    "Modern tools have made this much easier than it once was."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "There is more than one browser, and they do not all behave identically. A site that looks perfect in one might break in another. Cross browser compatibility is the practice of making sure your site works for everyone, whatever browser they use."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Browsers Differ",
+      "text": "Different browsers are built by different companies and may support features at different times or interpret things slightly differently. A brand new feature might work in one browser before another. Most of the time things line up, but the differences that remain can cause bugs for some users and not others."
+    },
+    {
+      "type": "explanation",
+      "title": "How to Handle It",
+      "text": "The main defense is to test your site in the major browsers, not just your favorite. When a feature is not supported everywhere, you can check before using it and provide a fallback. Tools like the Babel you learned about, and feature checks, smooth over many differences automatically.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The same site tested across several major browsers",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Plugs in Different Countries",
+      "text": "Browsers are like electrical sockets in different countries. The basic idea is the same, but the exact shape varies, so a device that works in one place may not fit another without an adapter. Testing across browsers, and providing fallbacks, is like carrying the right adapters so your work fits everywhere.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "One device fitting different country sockets using the right adapters",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Handling Cross Browser Issues",
+      "items": [
+        "Remember users come on different browsers.",
+        "Test your site in the major ones.",
+        "Check if a new feature is supported before relying on it.",
+        "Provide a fallback where it is not.",
+        "Lean on tools that smooth over differences."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Cross browser work used to be a huge headache, with one old browser in particular famous for breaking layouts. Browsers have grown far more consistent since, so this is much less painful than it was years ago."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Cross browser",
+          "definition": "Working across different browsers."
+        },
+        {
+          "word": "Compatibility",
+          "definition": "Behaving correctly everywhere it runs."
+        },
+        {
+          "word": "Browser",
+          "definition": "The program used to view the web."
+        },
+        {
+          "word": "Fallback",
+          "definition": "A backup for an unsupported feature."
+        },
+        {
+          "word": "Test",
+          "definition": "Checking the site in each major browser."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Do all browsers behave the same?",
+      "options": [
+        "No, not exactly",
+        "Yes, identically",
+        "Only on phones",
+        "Only at night"
+      ],
+      "answer": 0,
+      "explanation": "Browsers do not all behave exactly the same."
+    },
+    {
+      "id": "q2",
+      "text": "What should a site work across?",
+      "options": [
+        "The major browsers",
+        "Only one browser",
+        "Only the server",
+        "Only old phones"
+      ],
+      "answer": 0,
+      "explanation": "A site should work across the major browsers."
+    },
+    {
+      "id": "q3",
+      "text": "How do you find differences?",
+      "options": [
+        "By testing in different browsers",
+        "By guessing",
+        "By asking the user",
+        "You cannot"
+      ],
+      "answer": 0,
+      "explanation": "You find differences by testing your site in different browsers."
+    }
+  ]
+}

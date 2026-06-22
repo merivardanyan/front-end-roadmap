@@ -1,0 +1,124 @@
+{
+  "id": "remix-basics",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "Remix Basics",
+  "order": 8,
+  "summary": [
+    "Remix is another React framework, like Next.js.",
+    "It focuses on web standards and data loading.",
+    "Each route can load and change its own data.",
+    "It is a strong alternative for data heavy apps."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Next.js is the most popular React framework, but it is not the only one. Remix is another, with its own philosophy that leans heavily on the way the web already works. Knowing it exists rounds out your picture of the React world."
+    },
+    {
+      "type": "explanation",
+      "title": "What Remix Is",
+      "text": "Remix is a React framework for building full websites, similar in goal to Next.js. Its main idea is to lean on web standards, the built in ways browsers and forms already work, rather than inventing new patterns. It puts data loading and forms at the center of how you build."
+    },
+    {
+      "type": "explanation",
+      "title": "Routes That Own Their Data",
+      "text": "In Remix, each route knows how to load the data it needs and how to handle changes to that data, like a form submission. The framework ties the page and its data tightly together. This makes data heavy apps feel organized, since each screen manages its own loading and updates.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Each route loading and handling its own data independently",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Self Sufficient Department",
+      "text": "Remix routes are like departments that each handle their own paperwork. Instead of one central office processing everything, each department loads what it needs and handles its own requests. The work stays close to where it belongs, which keeps a large organization tidy.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Departments each handling their own paperwork instead of one central office",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Remix Works",
+      "items": [
+        "You build pages as routes, like other frameworks.",
+        "Each route loads the data it needs.",
+        "Each route also handles changes, like form submissions.",
+        "Remix leans on built in web standards to do this.",
+        "Data and pages stay tightly connected."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Remix puts a lot of trust in standard HTML forms. Many features that other frameworks rebuild from scratch, Remix gets by using what the browser already does well."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Remix",
+          "definition": "Another React framework, like Next.js."
+        },
+        {
+          "word": "Framework",
+          "definition": "A toolkit for building full websites."
+        },
+        {
+          "word": "Web standards",
+          "definition": "The built in ways browsers already work."
+        },
+        {
+          "word": "Route",
+          "definition": "A page that owns its own data."
+        },
+        {
+          "word": "Data loading",
+          "definition": "How each route gets its data."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Remix?",
+      "options": [
+        "Another React framework, like Next.js",
+        "A database",
+        "A CSS tool",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Remix is another React framework, similar in goal to Next.js."
+    },
+    {
+      "id": "q2",
+      "text": "What does Remix focus on?",
+      "options": [
+        "Web standards and data loading",
+        "Only animations",
+        "Only colors",
+        "Only fonts"
+      ],
+      "answer": 0,
+      "explanation": "Remix focuses on web standards and on data loading."
+    },
+    {
+      "id": "q3",
+      "text": "What does each Remix route handle?",
+      "options": [
+        "Loading and changing its own data",
+        "Only the page color",
+        "Only images",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "In Remix, each route loads and handles changes to its own data."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "context-vs-redux",
+  "chapterId": "state-management",
+  "title": "Context vs Redux",
+  "order": 3,
+  "summary": [
+    "Context and Redux both share state across an app.",
+    "Context is built in and simple, good for data that rarely changes.",
+    "Redux is a separate library for complex, frequently changing state.",
+    "You choose based on how much structure you need."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You have met Context for sharing data without prop drilling. Redux is a popular library for the same goal but with more structure. Knowing when each fits saves you from over building or under building."
+    },
+    {
+      "type": "explanation",
+      "title": "Context, the Built in Option",
+      "text": "Context comes with React and is great for sharing data that does not change very often, like the current user, theme, or language. It is simple, with little setup. But for data that changes constantly across a large app, plain Context can become awkward and harder to keep organized."
+    },
+    {
+      "type": "explanation",
+      "title": "Redux, the Structured Option",
+      "text": "Redux is a separate library that adds a strict, organized way to manage state. All changes go through a clear, predictable flow, which makes large apps easier to trace and debug. That structure is powerful for complex apps, but it is more setup than many smaller apps actually need.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Simple Context beside a more structured Redux flow",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Notepad vs an Accounting System",
+      "text": "Context is like a shared notepad, quick and easy for a few notes everyone reads. Redux is like a full accounting system, with strict rules for every entry. For a small shop the notepad is enough. For a large business, the structure of the accounting system is worth it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A casual shared notepad beside a strict accounting ledger",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Choosing Between Them",
+      "items": [
+        "Ask how often the shared data changes.",
+        "For rarely changing data, Context is often enough.",
+        "For complex, frequently changing state, consider Redux.",
+        "Weigh the structure you gain against the setup it costs.",
+        "Do not reach for Redux before you actually need it."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Modern Redux is far less code than it used to be, thanks to Redux Toolkit, which you will meet next. A lot of Redux's old reputation for being heavy came from the older style."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Context",
+          "definition": "React's built in way to share data."
+        },
+        {
+          "word": "Redux",
+          "definition": "A library for structured state management."
+        },
+        {
+          "word": "Library",
+          "definition": "A separate package you add to a project."
+        },
+        {
+          "word": "Structure",
+          "definition": "The rules and flow a tool gives you."
+        },
+        {
+          "word": "Source of truth",
+          "definition": "The shared place both options provide."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Context good for?",
+      "options": [
+        "Data that rarely changes, like the user or theme",
+        "Heavy graphics",
+        "Storing images",
+        "Running a server"
+      ],
+      "answer": 0,
+      "explanation": "Context suits data that does not change often, like the user, theme, or language."
+    },
+    {
+      "id": "q2",
+      "text": "What is Redux?",
+      "options": [
+        "A separate library for complex, frequently changing state",
+        "A type of image",
+        "A CSS tool",
+        "A browser"
+      ],
+      "answer": 0,
+      "explanation": "Redux is a separate library that adds structure for complex, changing state."
+    },
+    {
+      "id": "q3",
+      "text": "What do you choose based on?",
+      "options": [
+        "How much structure you need",
+        "The page color",
+        "The font",
+        "The server brand"
+      ],
+      "answer": 0,
+      "explanation": "You choose between them based on how much structure your app needs."
+    }
+  ]
+}

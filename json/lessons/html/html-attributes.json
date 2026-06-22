@@ -1,0 +1,124 @@
+{
+  "id": "html-attributes",
+  "chapterId": "html",
+  "title": "HTML Attributes",
+  "order": 9,
+  "summary": [
+    "Attributes add extra information to an element.",
+    "They live inside the opening tag, as a name and a value.",
+    "Examples are href on a link and src on an image.",
+    "Some attributes, like id and class, work on almost any element."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Elements alone can only do so much. To tell an element exactly how to behave, where to point, or what to call it, you add attributes. They are how you fine tune everything in HTML."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Attribute Is",
+      "text": "An attribute is extra information you place inside an element's opening tag. It has a name and usually a value, written as name equals value. For example, an image uses src to say which file, and a link uses href to say where to go."
+    },
+    {
+      "type": "explanation",
+      "title": "Attributes for Any Element",
+      "text": "Some attributes work on nearly every element. The id attribute gives an element a unique name so you can find it. The class attribute groups elements so you can style or select many at once. You will use these two constantly.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An opening tag with its name and several attributes highlighted",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Settings on a Gadget",
+      "text": "Think of an element as a new gadget and attributes as its settings. The same gadget can behave very differently depending on how you set it. Change one setting, like the src on an image, and it shows a completely different picture.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A gadget with setting dials changing how it behaves",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Adding an Attribute",
+      "items": [
+        "Open the element's tag.",
+        "After the element name, add the attribute name.",
+        "Add an equals sign and the value in quotes.",
+        "Add more attributes the same way, separated by spaces.",
+        "The browser reads each one and adjusts the element."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A few attributes need no value at all. Writing disabled on a button is enough to turn it off. Its presence alone does the job."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Attribute",
+          "definition": "Extra information added to an element."
+        },
+        {
+          "word": "Value",
+          "definition": "What an attribute is set to, usually in quotes."
+        },
+        {
+          "word": "id",
+          "definition": "An attribute giving an element a unique name."
+        },
+        {
+          "word": "class",
+          "definition": "An attribute that groups elements together."
+        },
+        {
+          "word": "Opening tag",
+          "definition": "The start tag of an element, where attributes go."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Where do attributes go?",
+      "options": [
+        "Inside the element's opening tag",
+        "At the bottom of the page",
+        "In a separate file always",
+        "In the closing tag"
+      ],
+      "answer": 0,
+      "explanation": "Attributes are written inside the element's opening tag."
+    },
+    {
+      "id": "q2",
+      "text": "What does the id attribute do?",
+      "options": [
+        "Groups many elements",
+        "Gives an element a unique name",
+        "Sets the text color",
+        "Loads an image"
+      ],
+      "answer": 1,
+      "explanation": "The id attribute gives an element a unique name so you can find it."
+    },
+    {
+      "id": "q3",
+      "text": "What is the class attribute used for?",
+      "options": [
+        "Hiding an element",
+        "Setting the page title",
+        "Grouping elements to style or select many at once",
+        "Playing audio"
+      ],
+      "answer": 2,
+      "explanation": "The class attribute groups elements so you can style or select many of them together."
+    }
+  ]
+}

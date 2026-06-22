@@ -1,0 +1,124 @@
+{
+  "id": "styled-components",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Styled Components / CSS-in-JS",
+  "order": 12,
+  "summary": [
+    "CSS in JS lets you write styles inside your JavaScript.",
+    "Styled components attach styles directly to a component.",
+    "Styles are scoped automatically.",
+    "It is popular in React projects."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Some tools take styling even closer to the code by putting the CSS right inside your JavaScript components. The best known is styled components, part of a wider idea called CSS in JS."
+    },
+    {
+      "type": "explanation",
+      "title": "What CSS in JS Means",
+      "text": "CSS in JS means you write your styles in JavaScript files, alongside the component they belong to, instead of in separate CSS files. The styles and the component live together, so everything about one piece of the page is in one place."
+    },
+    {
+      "type": "explanation",
+      "title": "Styled Components",
+      "text": "With styled components, you create a component that already has its styles attached. You use it like any other element, and it carries its look with it. The styles are scoped to that component automatically, so they do not leak out.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A component with its CSS written right beside it in the same file",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Clothes Sewn Onto the Doll",
+      "text": "Normal CSS is like keeping outfits in a separate drawer and dressing the doll each time. Styled components are like a doll whose clothes are sewn right on. The doll and its look travel together as one piece, and you never mix up whose outfit is whose.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A doll whose outfit is sewn on, traveling together as one piece",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Styled Components",
+      "items": [
+        "Add the library to your project.",
+        "Create a styled component with its CSS built in.",
+        "Write normal CSS inside it.",
+        "Use it in your app like a regular element.",
+        "Its styles stay scoped to just that component."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because the styles live in JavaScript, they can react to data. A button can change its color based on a value passed in, using the same logic as the rest of your code."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CSS in JS",
+          "definition": "Writing styles inside JavaScript files."
+        },
+        {
+          "word": "Styled components",
+          "definition": "Components with their styles built in."
+        },
+        {
+          "word": "Scope",
+          "definition": "Where styles apply, here just the component."
+        },
+        {
+          "word": "Component",
+          "definition": "A self contained piece of a user interface."
+        },
+        {
+          "word": "Library",
+          "definition": "A package of ready made code you add to a project."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does CSS in JS let you do?",
+      "options": [
+        "Write styles inside your JavaScript",
+        "Delete websites",
+        "Speed up the internet",
+        "Store passwords"
+      ],
+      "answer": 0,
+      "explanation": "CSS in JS lets you write your styles inside JavaScript, beside the component."
+    },
+    {
+      "id": "q2",
+      "text": "Where do a styled component's styles live?",
+      "options": [
+        "In a separate global file",
+        "Attached to the component itself",
+        "In the doctype",
+        "In an image"
+      ],
+      "answer": 1,
+      "explanation": "A styled component carries its styles attached to itself."
+    },
+    {
+      "id": "q3",
+      "text": "Are styled component styles scoped automatically?",
+      "options": [
+        "No",
+        "Only on phones",
+        "Yes",
+        "Only for text"
+      ],
+      "answer": 2,
+      "explanation": "Styled components scope their styles automatically so they do not leak out."
+    }
+  ]
+}

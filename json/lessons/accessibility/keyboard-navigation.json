@@ -1,0 +1,124 @@
+{
+  "id": "keyboard-navigation",
+  "chapterId": "accessibility",
+  "title": "Keyboard Navigation",
+  "order": 3,
+  "summary": [
+    "Many people use a website with only a keyboard.",
+    "They move with the Tab key and act with Enter or Space.",
+    "Everything clickable must be reachable and usable by keyboard.",
+    "This is a core part of accessibility."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Not everyone uses a mouse. Some people navigate entirely by keyboard, whether by preference, motor difficulty, or because they rely on a screen reader. Making sure your site works fully without a mouse is a core accessibility skill."
+    },
+    {
+      "type": "explanation",
+      "title": "How Keyboard Users Move",
+      "text": "A keyboard user moves through a page with the Tab key, jumping from one interactive element to the next, links, buttons, form fields. They activate things with Enter or Space. Your job is to make sure they can reach and use everything a mouse user can."
+    },
+    {
+      "type": "explanation",
+      "title": "The Common Pitfall",
+      "text": "The usual problem comes from building clickable things out of plain boxes instead of real buttons or links. A real button is reachable by Tab and works with Enter automatically. A plain box that you only made clickable with the mouse is invisible to the keyboard. Using the right elements solves most of this for free.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Tab moving focus through buttons and links across a page",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Getting Around Without the Elevator",
+      "text": "Keyboard navigation is like making sure a building is fully usable by the stairs and ramps, not only the elevator. If a room can only be reached one way, anyone who cannot use that way is locked out. Every important place needs a path that works for everyone.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A building reachable by stairs and ramps, not only the elevator",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Supporting Keyboard Users",
+      "items": [
+        "Use real buttons and links, not plain boxes.",
+        "Check you can Tab to every interactive element.",
+        "Make sure Enter or Space activates them.",
+        "Confirm the tab order makes sense.",
+        "Test the whole page using only the keyboard."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A quick test reveals a lot. Put your mouse aside and try to use your whole page with only the Tab, Enter, and Space keys. If you get stuck anywhere, so do your keyboard users."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Keyboard navigation",
+          "definition": "Using a site with only a keyboard."
+        },
+        {
+          "word": "Tab key",
+          "definition": "Moves focus from one element to the next."
+        },
+        {
+          "word": "Enter",
+          "definition": "A key that activates the focused element."
+        },
+        {
+          "word": "Interactive",
+          "definition": "An element you can act on, like a button."
+        },
+        {
+          "word": "Reachable",
+          "definition": "Able to be focused by the keyboard."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How do keyboard users move through a page?",
+      "options": [
+        "With the Tab key",
+        "With a mouse only",
+        "By scrolling images",
+        "They cannot"
+      ],
+      "answer": 0,
+      "explanation": "Keyboard users move through a page with the Tab key."
+    },
+    {
+      "id": "q2",
+      "text": "How do they activate things?",
+      "options": [
+        "With Enter or Space",
+        "By double clicking",
+        "By shaking the phone",
+        "They cannot"
+      ],
+      "answer": 0,
+      "explanation": "Keyboard users activate elements with Enter or Space."
+    },
+    {
+      "id": "q3",
+      "text": "What must be reachable by keyboard?",
+      "options": [
+        "Everything clickable",
+        "Only images",
+        "Only headings",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Everything clickable must be reachable and usable by keyboard."
+    }
+  ]
+}

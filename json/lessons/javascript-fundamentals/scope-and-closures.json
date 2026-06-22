@@ -1,0 +1,124 @@
+{
+  "id": "scope-and-closures",
+  "chapterId": "javascript-fundamentals",
+  "title": "Scope & Closures",
+  "order": 5,
+  "summary": [
+    "Scope decides where a variable can be seen.",
+    "Variables inside a function are private to it.",
+    "A closure lets a function remember variables from where it was made.",
+    "This is a powerful and common JavaScript idea."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Not every variable is visible everywhere. Where you create a variable decides who can see it. Understanding this, called scope, prevents a whole class of confusing bugs, and leads to a clever idea called closures."
+    },
+    {
+      "type": "explanation",
+      "title": "What Scope Is",
+      "text": "Scope is the area where a variable can be used. A variable made inside a function lives only inside that function. Code outside cannot see it. This keeps different parts of your program from stepping on each other."
+    },
+    {
+      "type": "explanation",
+      "title": "Closures",
+      "text": "Here is the clever part. A function remembers the variables that were around when it was created, even after that outer code has finished. This memory is called a closure. It lets a function keep private information that only it can reach.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An inner function still reaching variables from its outer function",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Rooms in a House",
+      "text": "Scope is like rooms in a house. Something left in the bedroom is not visible from the kitchen. A closure is like a person who steps out of a room but still remembers what was inside it, and can use that memory later, even though no one else can see in.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A person leaving a room but remembering what was inside",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking About Scope",
+      "items": [
+        "Notice where each variable is created.",
+        "A variable in a function is private to that function.",
+        "Inner functions can see the variables around them.",
+        "They keep that access even after the outer function ends.",
+        "That kept access is what we call a closure."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Closures are how a counter can keep its own private count that nothing else can touch or reset. Many real features rely on this quietly."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Scope",
+          "definition": "The area where a variable can be used."
+        },
+        {
+          "word": "Private",
+          "definition": "Visible only inside one place."
+        },
+        {
+          "word": "Closure",
+          "definition": "A function remembering variables from where it was made."
+        },
+        {
+          "word": "Function",
+          "definition": "A reusable block of code."
+        },
+        {
+          "word": "Memory",
+          "definition": "Kept access to earlier variables."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does scope decide?",
+      "options": [
+        "Where a variable can be seen",
+        "The color of text",
+        "How fast the page loads",
+        "The page title"
+      ],
+      "answer": 0,
+      "explanation": "Scope decides where in your code a variable can be used."
+    },
+    {
+      "id": "q2",
+      "text": "Where does a variable made inside a function live?",
+      "options": [
+        "Everywhere on the page",
+        "Only inside that function",
+        "In the head",
+        "In an image"
+      ],
+      "answer": 1,
+      "explanation": "A variable made inside a function is private to that function."
+    },
+    {
+      "id": "q3",
+      "text": "What is a closure?",
+      "options": [
+        "A type of loop",
+        "A function remembering variables from where it was made",
+        "A way to style a page",
+        "A kind of error"
+      ],
+      "answer": 1,
+      "explanation": "A closure is a function that remembers the variables around it when it was created."
+    }
+  ]
+}

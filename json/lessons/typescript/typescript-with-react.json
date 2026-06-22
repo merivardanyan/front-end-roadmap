@@ -1,0 +1,124 @@
+{
+  "id": "typescript-with-react",
+  "chapterId": "typescript",
+  "title": "TypeScript with React",
+  "order": 10,
+  "summary": [
+    "TypeScript and React work very well together.",
+    "You type your component props so they cannot be misused.",
+    "The editor then guides you as you build.",
+    "This combination is common in jobs."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "TypeScript on its own is useful, but with React it becomes something many teams will not work without. It checks the data flowing between your components, catching mistakes that would otherwise show up as broken screens."
+    },
+    {
+      "type": "explanation",
+      "title": "Typing Props",
+      "text": "In React, components receive data through props. With TypeScript, you describe exactly what props a component expects, their names and types. Then if someone uses the component wrong, like forgetting a required prop or passing the wrong kind, you find out immediately, not after it renders blank."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Teams Love It",
+      "text": "Once props are typed, your editor becomes a guide. It suggests the props a component takes, warns when one is missing, and tells you the shape of the data you are working with. On a team, this shared safety net is huge, which is why TypeScript with React is so common in real jobs.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An editor suggesting a component's props and flagging a missing one",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Plugs and Sockets That Match",
+      "text": "Components passing props are like plugs going into sockets. Without types, you might force the wrong plug in and break something. TypeScript shapes each plug and socket so only the right ones fit. You feel the match before you push, instead of finding out when the lights go out.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Shaped plugs fitting only their matching sockets",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using TypeScript with React",
+      "items": [
+        "Describe the props each component expects, with types.",
+        "Use the component, passing those props.",
+        "TypeScript checks you passed the right ones.",
+        "Your editor suggests and warns as you build.",
+        "Mistakes show up while coding, not in the browser."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Most modern React job postings expect TypeScript. Learning them together, rather than React alone first, matches how teams actually build today."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Props",
+          "definition": "The data passed into a React component."
+        },
+        {
+          "word": "Component",
+          "definition": "A reusable piece of a React interface."
+        },
+        {
+          "word": "Type safe",
+          "definition": "Checked so the wrong data cannot be passed."
+        },
+        {
+          "word": "Editor",
+          "definition": "Your code tool, which gets smarter with types."
+        },
+        {
+          "word": "React",
+          "definition": "The library these typed components belong to."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How do TypeScript and React work together?",
+      "options": [
+        "TypeScript types the data flowing between components",
+        "React replaces TypeScript",
+        "They cannot be used together",
+        "TypeScript styles the page"
+      ],
+      "answer": 0,
+      "explanation": "TypeScript types the props and data flowing between React components."
+    },
+    {
+      "id": "q2",
+      "text": "What do you type on a component?",
+      "options": [
+        "Its props",
+        "Its color",
+        "Its file name",
+        "Its speed"
+      ],
+      "answer": 0,
+      "explanation": "You type a component's props, their names and types."
+    },
+    {
+      "id": "q3",
+      "text": "Why do teams love this combination?",
+      "options": [
+        "It hides the code",
+        "It gives a shared safety net and editor guidance",
+        "It removes all styling",
+        "It deletes old files"
+      ],
+      "answer": 1,
+      "explanation": "Typed props give a shared safety net and make the editor guide you as you build."
+    }
+  ]
+}

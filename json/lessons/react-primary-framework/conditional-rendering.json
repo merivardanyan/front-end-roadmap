@@ -1,0 +1,124 @@
+{
+  "id": "conditional-rendering",
+  "chapterId": "react-primary-framework",
+  "title": "Conditional Rendering",
+  "order": 8,
+  "summary": [
+    "Conditional rendering shows different things based on the data.",
+    "You use normal JavaScript logic inside your JSX.",
+    "This is how you show a loading message, then the content.",
+    "It keeps the screen matching the situation."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A real screen is not always the same. It might show a spinner while loading, then the data, or a message if something is empty. Choosing what to show based on the current situation is called conditional rendering."
+    },
+    {
+      "type": "explanation",
+      "title": "Showing Based on a Condition",
+      "text": "Conditional rendering means deciding what to display using the data you have. If you are still loading, show a loading message. If there is no data, show an empty state. If you have data, show it. You use ordinary JavaScript logic to make these choices right inside your component."
+    },
+    {
+      "type": "explanation",
+      "title": "It Is Just JavaScript",
+      "text": "There is nothing special to learn here beyond the logic you already know. Because JSX is really JavaScript, you use the same if checks and simple expressions to pick what to return. This is why learning the fundamentals first pays off, you are just applying them inside a component.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A component choosing between loading, empty, and data views",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Sign That Changes",
+      "text": "Conditional rendering is like a shop sign that changes with the situation. Closed when the shop is shut, open when it is running, back in five minutes when on a break. The sign always matches the real state. Your component does the same, showing the right thing for the current data.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A shop sign switching to match the current situation",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Rendering Conditionally",
+      "items": [
+        "Look at the data the component has.",
+        "Decide what to show in each situation.",
+        "Use normal JavaScript logic to choose.",
+        "Return the right markup for that case.",
+        "As the data changes, the right view appears."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A very common pattern is showing a loading message, then the content, then an error view if something failed. Those three states, loading, success, and error, cover most data driven screens."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Conditional rendering",
+          "definition": "Showing different things based on the data."
+        },
+        {
+          "word": "Condition",
+          "definition": "The check that decides what to show."
+        },
+        {
+          "word": "Loading state",
+          "definition": "What you show while data is on its way."
+        },
+        {
+          "word": "Empty state",
+          "definition": "What you show when there is no data."
+        },
+        {
+          "word": "JSX",
+          "definition": "The markup you choose between."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does conditional rendering do?",
+      "options": [
+        "Shows different things based on the data",
+        "Styles all text the same",
+        "Sends requests",
+        "Stores files"
+      ],
+      "answer": 0,
+      "explanation": "Conditional rendering shows different views depending on the current data."
+    },
+    {
+      "id": "q2",
+      "text": "What do you use to choose what to show?",
+      "options": [
+        "Normal JavaScript logic",
+        "A new special language",
+        "Only CSS",
+        "The server"
+      ],
+      "answer": 0,
+      "explanation": "You use ordinary JavaScript logic, since JSX is really JavaScript."
+    },
+    {
+      "id": "q3",
+      "text": "What three states cover most data screens?",
+      "options": [
+        "Red, green, blue",
+        "Loading, success, and error",
+        "Open, closed, paused",
+        "Start, stop, reset"
+      ],
+      "answer": 1,
+      "explanation": "Loading, success, and error cover most data driven screens."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "wcag-guidelines",
+  "chapterId": "accessibility",
+  "title": "WCAG Guidelines",
+  "order": 7,
+  "summary": [
+    "WCAG is the official set of accessibility guidelines.",
+    "It organizes accessibility into clear, testable rules.",
+    "It has levels, with AA being the common target.",
+    "It is the standard most laws and teams refer to."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Accessibility could feel like a vague goal, but there is an official rulebook that turns it into clear, checkable requirements. It is called WCAG, and it is what most teams and laws point to when they talk about being accessible."
+    },
+    {
+      "type": "explanation",
+      "title": "What WCAG Is",
+      "text": "WCAG stands for Web Content Accessibility Guidelines. It is the internationally recognized set of rules for making web content accessible. Instead of vague advice, it lays out specific, testable criteria, like text must meet a certain contrast, or every image must have a text alternative."
+    },
+    {
+      "type": "explanation",
+      "title": "Levels and the Common Target",
+      "text": "WCAG has three levels of strictness, A, AA, and AAA. Level A is the minimum, AAA is the most demanding, and AA sits in the middle. AA is the level most organizations aim for and that many laws require, so it is the practical target to keep in mind for real projects.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The three WCAG levels with AA highlighted as the common target",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Building Code",
+      "text": "WCAG is like a building code for the web. A building code does not just say make it safe, it gives exact rules, railings this high, exits this wide. WCAG does the same for accessibility, turning a good intention into precise requirements that can be inspected and signed off.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A building code turning safe into exact inspectable rules",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Working with WCAG",
+      "items": [
+        "Treat WCAG as the official accessibility rulebook.",
+        "Use its specific, testable criteria.",
+        "Know the three levels, A, AA, and AAA.",
+        "Aim for AA, the common target.",
+        "Check your work against the relevant criteria."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Many accessibility laws around the world do not write their own rules, they simply point to WCAG level AA. Meeting that one standard often satisfies legal requirements in many countries at once."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "WCAG",
+          "definition": "The official Web Content Accessibility Guidelines."
+        },
+        {
+          "word": "Guidelines",
+          "definition": "The set of accessibility rules."
+        },
+        {
+          "word": "Criteria",
+          "definition": "Specific, testable requirements."
+        },
+        {
+          "word": "Level AA",
+          "definition": "The common target most teams aim for."
+        },
+        {
+          "word": "Standard",
+          "definition": "What laws and teams refer to for accessibility."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is WCAG?",
+      "options": [
+        "The official set of accessibility guidelines",
+        "A web browser",
+        "A type of image",
+        "A CSS framework"
+      ],
+      "answer": 0,
+      "explanation": "WCAG is the official set of Web Content Accessibility Guidelines."
+    },
+    {
+      "id": "q2",
+      "text": "What does it organize accessibility into?",
+      "options": [
+        "Clear, testable rules",
+        "Vague advice",
+        "Random tips",
+        "Colors only"
+      ],
+      "answer": 0,
+      "explanation": "WCAG turns accessibility into clear, testable criteria."
+    },
+    {
+      "id": "q3",
+      "text": "What level is the common target?",
+      "options": [
+        "AA",
+        "AAA",
+        "A only",
+        "There are no levels"
+      ],
+      "answer": 0,
+      "explanation": "Level AA is the common target most organizations aim for."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "error-boundaries",
+  "chapterId": "react-primary-framework",
+  "title": "Error Boundaries",
+  "order": 15,
+  "summary": [
+    "An error boundary catches errors in a part of the UI.",
+    "It shows a fallback message instead of a blank screen.",
+    "It stops one broken component from crashing the whole app.",
+    "It is React's safety net for rendering errors."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Even careful code can hit an unexpected error while rendering. Without a plan, one broken component can take down the entire screen. Error boundaries are React's way to contain the damage."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Error Boundary Is",
+      "text": "An error boundary is a special component that wraps part of your app and watches for errors in the components inside it. If one of them throws an error while rendering, the boundary catches it and shows a fallback message instead, rather than letting the whole app go blank."
+    },
+    {
+      "type": "explanation",
+      "title": "Containing the Damage",
+      "text": "The point is containment. You can wrap a risky section, like a chart or a third party widget, in a boundary. If that section breaks, only it shows a friendly fallback, while the rest of the app keeps working. It is the try and catch idea from earlier, applied to the user interface.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A wrapped section showing a fallback while the rest of the app works",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Watertight Compartments on a Ship",
+      "text": "An error boundary is like the sealed compartments in a ship's hull. If one compartment floods, the seals keep the water from spreading, and the ship stays afloat. The boundary seals off a broken part of the screen, so one leak does not sink the whole app.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Sealed ship compartments keeping a flood from spreading",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an Error Boundary",
+      "items": [
+        "Identify a section that might fail while rendering.",
+        "Wrap it in an error boundary.",
+        "Give the boundary a friendly fallback to show.",
+        "If the section throws, the fallback appears.",
+        "The rest of the app keeps working."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Error boundaries catch errors during rendering, but not inside event handlers or async code. For those, you still use the try and catch you already know."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Error boundary",
+          "definition": "A component that catches rendering errors below it."
+        },
+        {
+          "word": "Fallback",
+          "definition": "The friendly view shown when something breaks."
+        },
+        {
+          "word": "Catch",
+          "definition": "To stop an error from spreading."
+        },
+        {
+          "word": "Containment",
+          "definition": "Keeping a failure limited to one section."
+        },
+        {
+          "word": "Render error",
+          "definition": "An error that happens while drawing the UI."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an error boundary catch?",
+      "options": [
+        "Errors in a part of the UI",
+        "Slow images",
+        "Broken links",
+        "Missing fonts"
+      ],
+      "answer": 0,
+      "explanation": "An error boundary catches errors in the components it wraps."
+    },
+    {
+      "id": "q2",
+      "text": "What does it show instead of a blank screen?",
+      "options": [
+        "A fallback message",
+        "Nothing",
+        "The server logs",
+        "A new page"
+      ],
+      "answer": 0,
+      "explanation": "It shows a friendly fallback message instead of letting the screen go blank."
+    },
+    {
+      "id": "q3",
+      "text": "What does it stop?",
+      "options": [
+        "One broken component from crashing the whole app",
+        "The internet",
+        "All animations",
+        "The build step"
+      ],
+      "answer": 0,
+      "explanation": "It stops one broken component from taking down the entire app."
+    }
+  ]
+}

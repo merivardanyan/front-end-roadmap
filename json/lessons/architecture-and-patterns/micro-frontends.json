@@ -1,0 +1,124 @@
+{
+  "id": "micro-frontends",
+  "chapterId": "architecture-and-patterns",
+  "title": "Micro-Frontends",
+  "order": 5,
+  "summary": [
+    "Micro-frontends split a large app into smaller, independent pieces.",
+    "Different teams can build and deploy each piece separately.",
+    "It helps very large projects scale.",
+    "It adds complexity, so it is not for small apps."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "For very large applications built by many teams, one giant codebase can become a bottleneck. The micro-frontend approach breaks the app into smaller, independent pieces that teams can build and ship on their own."
+    },
+    {
+      "type": "explanation",
+      "title": "What Micro-Frontends Are",
+      "text": "A micro-frontend architecture splits one big frontend into several smaller apps, each owned by a different team. Each piece can be developed, tested, and deployed independently, then combined into the full experience the user sees. It is the frontend version of breaking a large system into smaller services."
+    },
+    {
+      "type": "explanation",
+      "title": "The Trade Off",
+      "text": "The benefit is that big teams can work in parallel without stepping on each other, and ship on their own schedules. The cost is real added complexity: combining the pieces smoothly, keeping them consistent, and avoiding duplicated work all take effort. So micro-frontends suit large organizations, not small projects, where they would be overkill.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "One large frontend split into independent team owned pieces",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Food Court vs One Kitchen",
+      "text": "A normal app is like one big kitchen serving everything. Micro-frontends are like a food court, where each stall is run independently and specializes, all under one roof for the visitor. Great for a large venue with many vendors, but pointless and wasteful if you are just running a single small cafe.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A food court of independent stalls compared to one small kitchen",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Considering Micro-Frontends",
+      "items": [
+        "Notice a very large app and many teams.",
+        "Split the frontend into independent pieces.",
+        "Let each team own and deploy its piece.",
+        "Combine the pieces into one experience.",
+        "Weigh the added complexity, and skip it for small apps."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Micro-frontends borrow their idea from microservices on the backend, where a large system is split into small independent services. The same scaling instinct, applied to the frontend."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Micro-frontend",
+          "definition": "A large frontend split into independent pieces."
+        },
+        {
+          "word": "Independent",
+          "definition": "Built and shipped on its own."
+        },
+        {
+          "word": "Team",
+          "definition": "The group owning one piece."
+        },
+        {
+          "word": "Deploy",
+          "definition": "Shipping a piece separately."
+        },
+        {
+          "word": "Complexity",
+          "definition": "The added cost that makes this unfit for small apps."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do micro-frontends do?",
+      "options": [
+        "Split a large app into smaller, independent pieces",
+        "Make images smaller",
+        "Speed up fonts",
+        "Delete old code"
+      ],
+      "answer": 0,
+      "explanation": "Micro-frontends split a large app into smaller, independent pieces."
+    },
+    {
+      "id": "q2",
+      "text": "What can teams do with them?",
+      "options": [
+        "Build and deploy each piece separately",
+        "Share one giant file",
+        "Avoid all testing",
+        "Skip deploying"
+      ],
+      "answer": 0,
+      "explanation": "Different teams can build and deploy each piece separately."
+    },
+    {
+      "id": "q3",
+      "text": "Are they for small apps?",
+      "options": [
+        "No, they add complexity and suit large projects",
+        "Yes, always",
+        "Only for blogs",
+        "Only for games"
+      ],
+      "answer": 0,
+      "explanation": "Micro-frontends add complexity, so they suit large projects, not small apps."
+    }
+  ]
+}

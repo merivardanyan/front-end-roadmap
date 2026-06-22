@@ -1,0 +1,124 @@
+{
+  "id": "server-state-react-query",
+  "chapterId": "state-management",
+  "title": "Server State & React Query",
+  "order": 7,
+  "summary": [
+    "Server state is data that lives on a server, not in your app.",
+    "It needs fetching, caching, and refreshing.",
+    "React Query manages all of that for you.",
+    "It is different from the local state you keep in components."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "There is an important kind of state that is easy to overlook. Data that actually lives on a server, like a list of products from a database, is not really yours to own. It is a copy you fetch. Managing that well is a different job, and React Query specializes in it."
+    },
+    {
+      "type": "explanation",
+      "title": "Local State vs Server State",
+      "text": "Local state is data your app owns, like whether a menu is open. Server state is a copy of data that truly lives on a server, fetched over the network. The difference matters, because server data can change without you, can go stale, and needs refetching, caching, and handling of loading and errors."
+    },
+    {
+      "type": "explanation",
+      "title": "What React Query Does",
+      "text": "React Query is a library made for server state. It fetches your data, caches it so repeat views are instant, refetches it in the background to keep it fresh, and tracks loading and error states for you. It turns a tangle of fetching code into a few clean, reliable calls.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "React Query fetching, caching, and refreshing server data for an app",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Smart Library Loan",
+      "text": "Server state is like borrowing a book from a library, you hold a copy, but the real one lives there and might get updated. React Query is like a smart librarian who keeps your copy current, lends you the same one quickly next time, and tells you if it is still being fetched or went missing.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A librarian keeping a borrowed copy current and ready to lend again",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using React Query",
+      "items": [
+        "Notice data that really lives on a server.",
+        "Treat it as server state, not local state.",
+        "Let React Query fetch and cache it.",
+        "It refetches in the background to stay fresh.",
+        "It tracks loading and errors for you."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A lot of code that people used to write by hand with useEffect, fetching, caching, and error handling, React Query handles in a fraction of the lines. It removed a huge amount of repetitive work."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Server state",
+          "definition": "A copy of data that really lives on a server."
+        },
+        {
+          "word": "Local state",
+          "definition": "Data your app owns, like a menu being open."
+        },
+        {
+          "word": "React Query",
+          "definition": "A library that manages server state."
+        },
+        {
+          "word": "Cache",
+          "definition": "Stored data so repeat views are instant."
+        },
+        {
+          "word": "Refetch",
+          "definition": "Fetching again to keep data fresh."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is server state?",
+      "options": [
+        "Data that lives on a server, not in your app",
+        "A fixed color",
+        "The page title",
+        "A font file"
+      ],
+      "answer": 0,
+      "explanation": "Server state is a copy of data that truly lives on a server."
+    },
+    {
+      "id": "q2",
+      "text": "What does React Query manage?",
+      "options": [
+        "Fetching, caching, and refreshing server data",
+        "The page background",
+        "Font sizes",
+        "The doctype"
+      ],
+      "answer": 0,
+      "explanation": "React Query manages fetching, caching, and refreshing of server data."
+    },
+    {
+      "id": "q3",
+      "text": "How is it different from local state?",
+      "options": [
+        "Local state your app owns, server state is a fetched copy",
+        "They are identical",
+        "Server state is faster always",
+        "Local state lives on a server"
+      ],
+      "answer": 0,
+      "explanation": "Local state is owned by your app, while server state is a fetched copy of remote data."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "lifting-state-up",
+  "chapterId": "state-management",
+  "title": "Lifting State Up",
+  "order": 2,
+  "summary": [
+    "When two components need the same state, you move it to their shared parent.",
+    "This is called lifting state up.",
+    "The parent holds the data and passes it down.",
+    "It keeps both components in sync."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes two sibling components need to share the same piece of state, like two parts of a form that affect each other. Neither can own it alone. The React answer is to move that state up to the component they share."
+    },
+    {
+      "type": "explanation",
+      "title": "The Problem of Shared State",
+      "text": "If two sibling components each keep their own copy of a value, they drift apart, and changing one does not update the other. They need a single shared copy. But siblings cannot pass data directly to each other, so the copy has to live somewhere they both can reach."
+    },
+    {
+      "type": "explanation",
+      "title": "Lifting It Up",
+      "text": "The solution is to move the state up to the closest parent both components share. The parent holds the single copy and passes it down to each child as props. Now both children read the same value, and when one needs to change it, it asks the parent. This is called lifting state up.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "State moved up to a shared parent and passed down to two children",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Putting the Remote on the Coffee Table",
+      "text": "If two siblings each hide their own TV remote, they fight over different settings. Put one remote on the shared coffee table, and both use the same one. The TV stays consistent. Lifting state up is moving the remote to the shared table everyone can reach.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Two hidden remotes replaced by one shared remote on a coffee table",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Lifting State Up",
+      "items": [
+        "Notice two components needing the same value.",
+        "Find the closest parent they both share.",
+        "Move the state into that parent.",
+        "Pass the value down to each child as props.",
+        "Children ask the parent to change it."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Lifting state up is often all a smaller app needs. Many people reach for big state libraries too early, when moving state to a shared parent would have solved it simply."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Lifting state up",
+          "definition": "Moving shared state to a common parent."
+        },
+        {
+          "word": "Shared parent",
+          "definition": "The closest component both children share."
+        },
+        {
+          "word": "Sibling",
+          "definition": "Components at the same level in the tree."
+        },
+        {
+          "word": "Props",
+          "definition": "How the parent passes the value down."
+        },
+        {
+          "word": "Source of truth",
+          "definition": "The parent that now owns the value."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do you do when two components need the same state?",
+      "options": [
+        "Move it to their shared parent",
+        "Delete one component",
+        "Give each a private copy",
+        "Store it on the server only"
+      ],
+      "answer": 0,
+      "explanation": "You move the shared state up to the closest parent both components share."
+    },
+    {
+      "id": "q2",
+      "text": "What is this called?",
+      "options": [
+        "Lifting state up",
+        "Dropping state down",
+        "Cloning state",
+        "Hiding state"
+      ],
+      "answer": 0,
+      "explanation": "Moving shared state to a common parent is called lifting state up."
+    },
+    {
+      "id": "q3",
+      "text": "Who holds the data after lifting?",
+      "options": [
+        "The shared parent",
+        "Each child separately",
+        "The server",
+        "No one"
+      ],
+      "answer": 0,
+      "explanation": "After lifting, the shared parent holds the data and passes it down."
+    }
+  ]
+}

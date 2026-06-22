@@ -1,0 +1,124 @@
+{
+  "id": "react-testing-library",
+  "chapterId": "testing-and-debugging",
+  "title": "React Testing Library",
+  "order": 6,
+  "summary": [
+    "React Testing Library helps you test React components.",
+    "It checks what the user actually sees and does.",
+    "It avoids testing internal details.",
+    "It pairs with a runner like Jest."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Testing a React component is a bit different from testing a plain function. React Testing Library is the standard tool for it, and it pushes you toward testing your components the way a real user would experience them."
+    },
+    {
+      "type": "explanation",
+      "title": "Testing Like a User",
+      "text": "React Testing Library lets you render a component in a test and then interact with it as a user would, finding a button by its text and clicking it, checking that the right message appears. It focuses on what the user sees and does, not on the hidden internal workings."
+    },
+    {
+      "type": "explanation",
+      "title": "Why That Approach",
+      "text": "By testing what the user experiences, rather than internal details, your tests keep passing even when you refactor the inside of a component, as long as it still behaves the same for the user. This makes tests less brittle and more meaningful. It pairs with a runner like Jest, which actually runs the tests.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A component tested by finding and clicking elements as a user would",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Reviewing a Restaurant by Eating There",
+      "text": "Testing internal details is like judging a restaurant by inspecting its kitchen layout. React Testing Library is like judging it by actually eating the meal, the way a customer does. As long as the food is great, it does not matter how they rearranged the kitchen. You test the experience, not the wiring.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A diner judging a restaurant by the meal, not the kitchen layout",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using React Testing Library",
+      "items": [
+        "Render the component in a test.",
+        "Find elements the way a user would, like by text.",
+        "Interact with them, like clicking a button.",
+        "Check the user visible result is correct.",
+        "Let a runner like Jest run the test."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This library's guiding motto is that the more your tests resemble how the software is used, the more confidence they give you. That single idea shapes its whole design."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "React Testing Library",
+          "definition": "A tool for testing React components."
+        },
+        {
+          "word": "Component",
+          "definition": "The React piece being tested."
+        },
+        {
+          "word": "User",
+          "definition": "Whose experience the tests focus on."
+        },
+        {
+          "word": "Render",
+          "definition": "Drawing the component inside a test."
+        },
+        {
+          "word": "Jest",
+          "definition": "The runner that actually runs the tests."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does React Testing Library help you test?",
+      "options": [
+        "React components",
+        "Database tables",
+        "Server logs",
+        "Image files"
+      ],
+      "answer": 0,
+      "explanation": "React Testing Library helps you test React components."
+    },
+    {
+      "id": "q2",
+      "text": "What does it focus on?",
+      "options": [
+        "What the user actually sees and does",
+        "Hidden internal details",
+        "The server speed",
+        "The file size"
+      ],
+      "answer": 0,
+      "explanation": "It focuses on what the user sees and does, not internal workings."
+    },
+    {
+      "id": "q3",
+      "text": "What does it pair with?",
+      "options": [
+        "A runner like Jest",
+        "A database",
+        "A camera",
+        "A printer"
+      ],
+      "answer": 0,
+      "explanation": "It pairs with a runner like Jest, which actually runs the tests."
+    }
+  ]
+}

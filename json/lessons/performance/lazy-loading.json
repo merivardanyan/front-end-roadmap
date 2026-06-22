@@ -1,0 +1,124 @@
+{
+  "id": "lazy-loading",
+  "chapterId": "performance",
+  "title": "Lazy Loading",
+  "order": 2,
+  "summary": [
+    "Lazy loading delays loading things until they are needed.",
+    "For example, images load as you scroll to them.",
+    "This makes the first load faster.",
+    "It saves data the user may never need."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A page often contains far more than fits on screen at once, like a long list of images. Loading all of it upfront is wasteful and slow. Lazy loading is the trick of waiting to load something until the moment it is actually needed."
+    },
+    {
+      "type": "explanation",
+      "title": "Loading Just in Time",
+      "text": "Lazy loading means not loading something until it is about to be used. The classic example is images. Instead of loading every image on a long page at once, you load each one only as the user scrolls near it. The page starts fast, and unseen images are never loaded at all."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Helps",
+      "text": "This makes the first load much quicker, since the browser only fetches what is needed right away. It also saves data, because anything the user never scrolls to is never downloaded. For long pages and image heavy sites, lazy loading is one of the simplest big wins.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Images loading one by one as the user scrolls down a long page",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Buffet Refilled as Needed",
+      "text": "Lazy loading is like a buffet that refills each tray only when guests reach that part of the line, instead of cooking everything at once at opening. Food is ready just in time, nothing sits wasted, and the kitchen is never overwhelmed all at once.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A buffet refilling each tray just as guests reach it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Lazy Loading",
+      "items": [
+        "Find content below the first screen, like images.",
+        "Hold off loading it at first.",
+        "Load each piece as the user scrolls near it.",
+        "The first view loads fast.",
+        "Unseen content is never downloaded."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Modern browsers can lazy load images with a single small attribute, no extra code needed. One of the easiest performance wins is almost free."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Lazy loading",
+          "definition": "Delaying loading until something is needed."
+        },
+        {
+          "word": "Just in time",
+          "definition": "Loading right before it is used."
+        },
+        {
+          "word": "First load",
+          "definition": "The initial view, which gets faster."
+        },
+        {
+          "word": "Scroll",
+          "definition": "The action that triggers loading more."
+        },
+        {
+          "word": "Save data",
+          "definition": "Not downloading what the user never sees."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does lazy loading do?",
+      "options": [
+        "Delays loading things until they are needed",
+        "Loads everything at once",
+        "Deletes images",
+        "Styles the page"
+      ],
+      "answer": 0,
+      "explanation": "Lazy loading delays loading something until it is actually needed."
+    },
+    {
+      "id": "q2",
+      "text": "What is a classic example?",
+      "options": [
+        "Images loading as you scroll to them",
+        "Fonts changing color",
+        "Servers restarting",
+        "Files merging"
+      ],
+      "answer": 0,
+      "explanation": "The classic example is images loading only as you scroll near them."
+    },
+    {
+      "id": "q3",
+      "text": "What does it make faster?",
+      "options": [
+        "The first load",
+        "The server shutdown",
+        "The font",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "Lazy loading makes the first load faster by fetching only what is needed."
+    }
+  ]
+}

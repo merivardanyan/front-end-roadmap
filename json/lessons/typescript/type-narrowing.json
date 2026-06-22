@@ -1,0 +1,124 @@
+{
+  "id": "type-narrowing",
+  "chapterId": "typescript",
+  "title": "Type Narrowing & Guards",
+  "order": 6,
+  "summary": [
+    "A value can sometimes be more than one type.",
+    "Narrowing figures out which one it is right now.",
+    "You check the value, then TypeScript knows more.",
+    "Guards are the checks that do this."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes a value could be one of several types, like something that is either a string or a number. Before you use it, you need to know which it is. Narrowing is how you and TypeScript figure that out safely."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Narrowing Is Needed",
+      "text": "If a value might be a string or a number, you cannot treat it as definitely one of them. Each type can do different things. Narrowing means doing a check that tells you which type you actually have right now, so you can handle it correctly."
+    },
+    {
+      "type": "explanation",
+      "title": "Type Guards",
+      "text": "A type guard is the check that does the narrowing. You ask a simple question, like is this a string, inside an if. Within that branch, TypeScript now trusts it is a string and lets you use it as one. Outside, it knows it is the other type. The check teaches TypeScript what you have learned.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A value checked, then handled as the right type inside each branch",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Sorting Mail by Type",
+      "text": "Imagine a pile of mail that is either letters or parcels. Before handling, you sort. Once a piece is in the letters pile, you know how to treat it, and the same for parcels. The act of checking and sorting is narrowing. After it, there is no more guessing about what each item is.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Mixed mail being sorted into letters and parcels piles",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Narrowing a Value",
+      "items": [
+        "Notice a value that could be more than one type.",
+        "Write a check, a type guard, to test which it is.",
+        "Put the check inside an if.",
+        "In that branch, TypeScript knows the exact type.",
+        "Handle each type safely in its own branch."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "TypeScript is clever enough to narrow from many everyday checks you already write, like checking if a value exists before using it. Good defensive code often narrows for free."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Narrowing",
+          "definition": "Figuring out which type a value is right now."
+        },
+        {
+          "word": "Type guard",
+          "definition": "The check that does the narrowing."
+        },
+        {
+          "word": "Check",
+          "definition": "A test, like asking if a value is a string."
+        },
+        {
+          "word": "Branch",
+          "definition": "A path of code inside an if."
+        },
+        {
+          "word": "Union",
+          "definition": "A value that could be one of several types."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does narrowing figure out?",
+      "options": [
+        "Which type a value is right now",
+        "The page color",
+        "How fast code runs",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "Narrowing figures out which of its possible types a value currently is."
+    },
+    {
+      "id": "q2",
+      "text": "What is a type guard?",
+      "options": [
+        "A style rule",
+        "The check that does the narrowing",
+        "A type of loop",
+        "An image"
+      ],
+      "answer": 1,
+      "explanation": "A type guard is the check that narrows a value to a specific type."
+    },
+    {
+      "id": "q3",
+      "text": "Where do you usually put the check?",
+      "options": [
+        "Inside an if",
+        "In the head",
+        "In a stylesheet",
+        "In an image"
+      ],
+      "answer": 0,
+      "explanation": "You usually put the check inside an if, so each branch knows the exact type."
+    }
+  ]
+}

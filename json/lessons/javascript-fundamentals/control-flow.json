@@ -1,0 +1,124 @@
+{
+  "id": "control-flow",
+  "chapterId": "javascript-fundamentals",
+  "title": "Control Flow (if, switch, loops)",
+  "order": 3,
+  "summary": [
+    "Control flow decides which code runs and when.",
+    "if statements run code only when a condition is true.",
+    "switch chooses among many options.",
+    "Loops repeat code many times."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Code does not always run straight from top to bottom. Sometimes it should skip a part, choose between paths, or repeat the same step. Control flow is how you steer it."
+    },
+    {
+      "type": "explanation",
+      "title": "Making Decisions",
+      "text": "An if statement runs a block of code only when its condition is true. You can add an else for what to do otherwise. When you have many possible cases, a switch can be a cleaner way to pick the matching one."
+    },
+    {
+      "type": "explanation",
+      "title": "Repeating with Loops",
+      "text": "A loop repeats a block of code. A for loop runs a set number of times, like counting from one to ten. A while loop keeps going as long as a condition stays true. Loops save you from writing the same line over and over.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An if branching two ways, beside a loop arrow repeating",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Recipe with Choices and Repeats",
+      "text": "A recipe says if the dough is sticky, add flour. That is an if. It also says stir for twenty turns, that is a loop, repeating one action. Control flow turns a flat list of steps into a recipe that reacts and repeats.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A recipe branching on a condition, then repeating a stir step",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Steering Your Code",
+      "items": [
+        "Use an if to run code only when something is true.",
+        "Add an else for the other case.",
+        "Use a switch when choosing among many fixed options.",
+        "Use a for loop to repeat a set number of times.",
+        "Use a while loop to repeat until a condition changes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A loop with a condition that never becomes false will run forever and freeze the page. This is called an infinite loop, and it is one of the most common beginner mistakes."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Control flow",
+          "definition": "Deciding which code runs and when."
+        },
+        {
+          "word": "if statement",
+          "definition": "Runs code only when a condition is true."
+        },
+        {
+          "word": "else",
+          "definition": "Runs code when the if condition is false."
+        },
+        {
+          "word": "Loop",
+          "definition": "Repeats a block of code."
+        },
+        {
+          "word": "switch",
+          "definition": "Chooses among many fixed options."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "When does an if statement run its code?",
+      "options": [
+        "Always",
+        "Only when its condition is true",
+        "Never",
+        "Once per page"
+      ],
+      "answer": 1,
+      "explanation": "An if statement runs its block only when the condition is true."
+    },
+    {
+      "id": "q2",
+      "text": "What does a loop do?",
+      "options": [
+        "Repeats a block of code",
+        "Names a variable",
+        "Styles the page",
+        "Loads a server"
+      ],
+      "answer": 0,
+      "explanation": "A loop repeats a block of code, saving you from rewriting it."
+    },
+    {
+      "id": "q3",
+      "text": "What is an infinite loop?",
+      "options": [
+        "A loop that runs once",
+        "A loop whose condition never becomes false, so it runs forever",
+        "A loop with no code",
+        "A fast loop"
+      ],
+      "answer": 1,
+      "explanation": "An infinite loop never stops because its condition never turns false."
+    }
+  ]
+}

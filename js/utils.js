@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'progress';
 const CACHE_NAME = 'lessons-v1';
+const LAST_LESSON_KEY = 'lastOpenedLesson';
 async function fetchWithCache(url) {
     try {
         const cache = await caches.open(CACHE_NAME);
@@ -24,20 +25,15 @@ function escapeHtml(str) {
 
 async function getChapters() {
     try {
-        let data = await fetch('json/chapters.json');
-        if (!data.ok) {
-            throw new Error(`HTTP error! status: ${data.status}`);
-        }
-        data = await data.json();
-        if (Object.keys(data?.chapters || {}).length === 0){
+        const data = await fetchWithCache('json/chapters.json');
+        if (!Object.keys(data?.chapters || {}).length) {
             throw new Error('Invalid chapters data');
         }
-
-        return data?.chapters;}
-    catch (error) {
+        return data.chapters;
+    } catch (error) {
         console.error('Error fetching chapters data:', error);
+        return undefined;
     }
-
 }
 
 
@@ -60,21 +56,14 @@ async function getChapterLessons(chapter) {
 
 }
 
-async function getLessons(){
+async function getLessons() {
     try {
-        let data = await fetch('json/lessons.json');
-        if (!data.ok) {
-            throw new Error(`HTTP error! status: ${data.status}`);
-        }
-        data = await data.json();
-        if (!data?.chapters) {
-            throw new Error('Invalid chapters data', data);
-        }
+        const data = await fetchWithCache('json/lessons.json');
+        if (!data?.chapters) throw new Error('Invalid lessons data');
         return data;
-        
-    }
-    catch (error) {
-        console.error('Error fetching chapters data:', error);
+    } catch (error) {
+        console.error('Error fetching lessons data:', error);
+        return undefined;
     }
 }
 
@@ -112,21 +101,18 @@ function saveProgress(progress) {
 }
 
 function saveLastOpenedLesson(chapter, lesson) {
-    localStorage.setItem('lastOpenedLesson',JSON.stringify({chapter,lesson}));
+    localStorage.setItem(LAST_LESSON_KEY, JSON.stringify({ chapter, lesson }));
 }
 
 function getLastOpenedLesson() {
     try {
-        return JSON.parse(
-            localStorage.getItem(LAST_LESSON_KEY)
-        );
+        return JSON.parse(localStorage.getItem(LAST_LESSON_KEY));
     } catch {
         return null;
     }
 }
 
 function showProgress(progressElement, progress){
-    console.log(progressElement);
     progressElement.querySelector(`.progress-bar .done`).style.width = `${progress.toFixed(2)}%`; 
     progressElement.querySelector('.progress-percent').textContent = `${progress.toFixed(2)}`; 
 }

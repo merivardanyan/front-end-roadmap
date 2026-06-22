@@ -1,0 +1,124 @@
+{
+  "id": "web-apis",
+  "chapterId": "browser-and-web-platform",
+  "title": "Web APIs (Geolocation, Clipboard, Notifications)",
+  "order": 3,
+  "summary": [
+    "Browsers offer built in features your code can use, called web APIs.",
+    "Examples include location, clipboard, and notifications.",
+    "They often ask the user for permission first.",
+    "They let a website do more device like things."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Modern browsers come with a surprising number of built in abilities your code can tap into, from finding the user's location to copying text or showing notifications. These built in features are called web APIs, and they let a website behave more like a native app."
+    },
+    {
+      "type": "explanation",
+      "title": "What Web APIs Are",
+      "text": "A web API is a built in browser feature your JavaScript can call. The Geolocation feature can find the user's location, the Clipboard feature can copy and paste text, and the Notifications feature can show system messages. You did not build these, the browser provides them, ready to use."
+    },
+    {
+      "type": "explanation",
+      "title": "Permission and Trust",
+      "text": "Because these features touch private things, the browser usually asks the user for permission first. Sharing your location, reading the clipboard, or sending notifications all prompt the user to allow it. This keeps the user in control, and it means your code must handle the case where permission is refused.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A browser prompting the user to allow location, clipboard, or notifications",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Tools Provided in a Rental Kitchen",
+      "text": "Web APIs are like the appliances already installed in a rental kitchen. You did not bring the oven or the blender, they came with the place, ready to use. But some, like a locked cabinet, you need the host's permission to open. The browser is the host, granting access when the user agrees.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A rental kitchen with ready appliances and one locked cabinet needing permission",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a Web API",
+      "items": [
+        "Pick a built in feature, like location or clipboard.",
+        "Call it from your JavaScript.",
+        "The browser may prompt the user for permission.",
+        "Handle the case where they allow it.",
+        "Also handle the case where they refuse."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "There are far more web APIs than most developers ever use, for things like vibration, battery level, and detecting the network speed. The browser is a much richer toolbox than it first appears."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Web API",
+          "definition": "A built in browser feature your code can use."
+        },
+        {
+          "word": "Geolocation",
+          "definition": "The feature that finds the user's location."
+        },
+        {
+          "word": "Clipboard",
+          "definition": "The feature for copying and pasting text."
+        },
+        {
+          "word": "Notifications",
+          "definition": "The feature for showing system messages."
+        },
+        {
+          "word": "Permission",
+          "definition": "The user's consent the browser asks for."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are web APIs?",
+      "options": [
+        "Built in browser features your code can use",
+        "Outside libraries you install",
+        "Types of images",
+        "CSS rules"
+      ],
+      "answer": 0,
+      "explanation": "Web APIs are built in browser features your JavaScript can call."
+    },
+    {
+      "id": "q2",
+      "text": "Name some examples.",
+      "options": [
+        "Location, clipboard, and notifications",
+        "Headings, links, and lists",
+        "Red, green, and blue",
+        "Servers, files, and folders"
+      ],
+      "answer": 0,
+      "explanation": "Examples include Geolocation, Clipboard, and Notifications."
+    },
+    {
+      "id": "q3",
+      "text": "What do they often ask for first?",
+      "options": [
+        "The user's permission",
+        "A password",
+        "A payment",
+        "A restart"
+      ],
+      "answer": 0,
+      "explanation": "Because they touch private things, web APIs often ask the user for permission first."
+    }
+  ]
+}

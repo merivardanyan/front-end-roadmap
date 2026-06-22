@@ -1,0 +1,124 @@
+{
+  "id": "cors",
+  "chapterId": "data-apis-and-auth",
+  "title": "CORS",
+  "order": 7,
+  "summary": [
+    "CORS is a browser rule about which sites can call which servers.",
+    "By default a page cannot call a different site's server.",
+    "The server must allow it with special headers.",
+    "It is a common source of confusing errors."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sooner or later you will hit a CORS error, and it confuses almost everyone the first time. It is not a bug in your code. It is a browser security rule about which websites are allowed to talk to which servers."
+    },
+    {
+      "type": "explanation",
+      "title": "What CORS Protects Against",
+      "text": "For safety, browsers block a page on one site from freely calling a server on a different site. Without this, a malicious page could quietly use your logged in sessions elsewhere. CORS, which stands for Cross Origin Resource Sharing, is the rule that governs when such cross site requests are allowed."
+    },
+    {
+      "type": "explanation",
+      "title": "How It Gets Allowed",
+      "text": "The decision is made by the server being called. It can send special headers that say which other sites are permitted to call it. If your site is on the allowed list, the browser lets the request through. If not, the browser blocks it and shows a CORS error, even though your code was fine.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A server sending headers that allow certain sites to call it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Guest List at the Door",
+      "text": "CORS is like a guest list at a private event. The browser is the doorperson. Just because you walk up does not mean you get in. The host, the server, decides who is on the list. If your name, your site, is on it, you enter. If not, you are turned away at the door.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A doorperson checking a guest list and allowing only listed sites",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Understanding a CORS Error",
+      "items": [
+        "Your page tries to call a server on another site.",
+        "The browser checks if that is allowed.",
+        "The server must send headers permitting your site.",
+        "If it does, the request goes through.",
+        "If not, the browser blocks it with a CORS error."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because CORS is enforced by the browser, the same request often works fine from a tool that is not a browser. That is why a request can fail in your app but succeed when you test the server directly."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CORS",
+          "definition": "A browser rule for cross site requests."
+        },
+        {
+          "word": "Cross origin",
+          "definition": "A request to a different site than the page."
+        },
+        {
+          "word": "Browser",
+          "definition": "What enforces the CORS rule."
+        },
+        {
+          "word": "Header",
+          "definition": "What the server sends to permit a site."
+        },
+        {
+          "word": "Allowed",
+          "definition": "On the server's list of permitted sites."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is CORS about?",
+      "options": [
+        "Which sites can call which servers",
+        "The page color",
+        "Font sizes",
+        "Image quality"
+      ],
+      "answer": 0,
+      "explanation": "CORS is a browser rule about which sites can call which servers."
+    },
+    {
+      "id": "q2",
+      "text": "Can a page call a different site's server by default?",
+      "options": [
+        "No",
+        "Yes, always",
+        "Only on phones",
+        "Only at night"
+      ],
+      "answer": 0,
+      "explanation": "By default the browser blocks a page from calling a different site's server."
+    },
+    {
+      "id": "q3",
+      "text": "Who decides to allow it?",
+      "options": [
+        "The server, with special headers",
+        "The user",
+        "The browser alone",
+        "No one"
+      ],
+      "answer": 0,
+      "explanation": "The server being called decides, by sending special headers that permit sites."
+    }
+  ]
+}

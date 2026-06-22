@@ -3,51 +3,83 @@
   "chapterId": "core-web-foundations",
   "title": "URLs & Domain Names",
   "order": 6,
-  "emoji": "🔗",
+  "summary": [
+    "A URL is the full address of one exact thing on the web.",
+    "The domain name is the main, memorable part, like example.com.",
+    "A URL has parts: the protocol, the domain, and the path.",
+    "The path points to a specific page inside the website."
+  ],
   "sections": [
     {
       "type": "intro",
-      "text": "Every page on the internet has its own address, just like every house has its own address. That address is called a URL, and learning to read one helps you understand exactly where you are going on the web."
+      "text": "The address bar at the top of your browser holds more than it looks. Every part of that address has a job, and once you can read it, you always know where you are on the web."
     },
     {
       "type": "explanation",
       "title": "What is a URL?",
-      "text": "URL stands for Uniform Resource Locator. It is the full address you type or click to visit a specific page on the internet. A URL tells your browser which protocol to use, which website to visit, and sometimes which exact page or file on that website."
+      "text": "URL stands for Uniform Resource Locator. It is the full address that points to one exact thing on the web, like a page, an image, or a file. You type it or click it, and the browser knows exactly where to go."
     },
     {
       "type": "explanation",
       "title": "What is a Domain Name?",
-      "text": "A domain name is the main part of a URL, the easy to remember name like example.com. It is just one piece of the full URL. Think of the domain name as the name of a building, while the full URL also tells you which room inside that building you want to visit."
-    },
-    {
-      "type": "steps",
-      "title": "Breaking Down a URL",
-      "items": [
-        "Protocol: the part like https:// that tells the browser how to talk to the server.",
-        "Domain name: the part like example.com that tells the browser which website to visit.",
-        "Path: the part after the domain, like /about, that points to a specific page on that website.",
-        "Query parameters: extra information after a question mark, like ?search=shoes.",
-        "Putting it all together, a full URL might look like https://example.com/about?search=shoes."
-      ]
+      "text": "The domain name is the main, memorable part of a URL, like example.com. It is the name of the website itself. One domain can hold many pages, and each page has its own full URL.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A URL with the domain name highlighted",
+        "placeholder": true
+      }
     },
     {
       "type": "analogy",
-      "title": "Think of it like a Home Address",
-      "text": "A domain name is like the name of an apartment building, such as Sunshine Apartments. A full URL is like the complete address, including the building name, the floor number, and the apartment number. It tells you exactly where to go, not just which building."
+      "title": "A Home Address",
+      "text": "A URL is like a full postal address. The domain is the city and street that tells you the general place. The path that comes after is like the house number, pointing to the exact home you want to reach.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A full address zooming from a city down to one house",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "The Parts of a URL",
+      "items": [
+        "The protocol comes first, like https, and sets the rules for the connection.",
+        "The domain name comes next, like example.com, naming the website.",
+        "The path follows, like /about, pointing to a specific page.",
+        "Extra parts can come after to carry small bits of information.",
+        "Together they form one address that leads to exactly one place."
+      ]
     },
     {
       "type": "fun-fact",
-      "text": "Domain names have to be registered and paid for every year, which is why companies sometimes lose their domain name if they forget to renew it."
+      "text": "The dots and slashes in a URL are not decoration. Each one separates a part, so the browser can read the address piece by piece."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "URL", "definition": "Uniform Resource Locator, the full address used to find a specific page on the internet." },
-        { "word": "Domain Name", "definition": "The easy to remember main part of a URL, like example.com." },
-        { "word": "Protocol", "definition": "The part of the URL, like https, that says how the browser should talk to the server." },
-        { "word": "Path", "definition": "The part of the URL after the domain name that points to a specific page." },
-        { "word": "Query Parameters", "definition": "Extra pieces of information added to a URL after a question mark." }
+        {
+          "word": "URL",
+          "definition": "The full address that points to one exact thing on the web."
+        },
+        {
+          "word": "Domain name",
+          "definition": "The main, memorable name of a website, like example.com."
+        },
+        {
+          "word": "Protocol",
+          "definition": "The first part of a URL that sets the rules, like https."
+        },
+        {
+          "word": "Path",
+          "definition": "The part of a URL that points to a specific page."
+        },
+        {
+          "word": "Address bar",
+          "definition": "The box at the top of the browser where the URL appears."
+        }
       ]
     }
   ],
@@ -56,37 +88,37 @@
       "id": "q1",
       "text": "What is a URL?",
       "options": [
-        "A type of computer virus",
-        "The full address used to find a page on the internet",
-        "A programming language",
-        "A picture file format"
+        "The full address that points to one exact thing on the web",
+        "A type of image file",
+        "The name of your browser",
+        "A button on the keyboard"
       ],
-      "answer": 1,
-      "explanation": "A URL is the complete address you use to find a specific page on the internet, including the protocol, domain name, and sometimes a path."
+      "answer": 0,
+      "explanation": "A URL is the complete web address that leads to one exact page, image, or file."
     },
     {
       "id": "q2",
-      "text": "What is a domain name?",
+      "text": "Which part is the memorable name of the website?",
       "options": [
-        "The easy to remember main part of a URL, like example.com",
-        "A type of browser",
-        "A password",
-        "The text shown on a webpage"
+        "The path",
+        "The domain name",
+        "The protocol",
+        "The slash"
       ],
-      "answer": 0,
-      "explanation": "A domain name is the easy to remember part of a URL, like example.com, that identifies a particular website."
+      "answer": 1,
+      "explanation": "The domain name, like example.com, is the main memorable part that names the website."
     },
     {
       "id": "q3",
-      "text": "In the URL https://example.com/about, what is /about called?",
+      "text": "In the address example, what does the path act like?",
       "options": [
-        "The protocol",
-        "The domain name",
-        "The path",
-        "The query parameter"
+        "The country",
+        "The house number pointing to the exact home",
+        "The mailbox color",
+        "The street lights"
       ],
-      "answer": 2,
-      "explanation": "The /about part is called the path, and it points to a specific page within the website."
+      "answer": 1,
+      "explanation": "The path is like the house number. It points to the exact page inside the website."
     }
   ]
 }

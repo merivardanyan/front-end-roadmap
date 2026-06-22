@@ -1,0 +1,124 @@
+{
+  "id": "operators",
+  "chapterId": "javascript-fundamentals",
+  "title": "Operators",
+  "order": 2,
+  "summary": [
+    "Operators do something with values.",
+    "Math operators add, subtract, multiply, and divide.",
+    "Comparison operators check if values are equal or bigger.",
+    "Logical operators combine true or false answers."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Once you have values, you need to do things with them. Add two numbers, check if a score is high enough, decide if two things match. Operators are the small symbols that do this work."
+    },
+    {
+      "type": "explanation",
+      "title": "Math and Comparison",
+      "text": "Math operators work like school math, plus, minus, times, and divide. Comparison operators ask a question and answer true or false. Is this bigger than that, are these two equal. They are how your code makes decisions."
+    },
+    {
+      "type": "explanation",
+      "title": "Logical Operators",
+      "text": "Logical operators combine true or false values. And is true only when both sides are true. Or is true when at least one side is true. Not flips true to false and back. These let you build more careful conditions.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "And, or, and not combining true and false values",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Kitchen Scale and a Checklist",
+      "text": "Math operators are like a scale, combining amounts. Comparison operators are like asking is this heavier than that, yes or no. Logical operators are like a checklist rule, serve the dish only if it is cooked and seasoned. Both must be ticked.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A scale weighing, then a checklist with two boxes being ticked",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Operators",
+      "items": [
+        "Pick the values you want to work with.",
+        "For math, use plus, minus, times, or divide.",
+        "To compare, ask a question that gives true or false.",
+        "To combine conditions, use and, or, and not.",
+        "Use the result to decide what your code does next."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "When checking if two things are equal, JavaScript has a strict version that also checks the type. Using strict equals avoids surprising bugs, so most developers always use it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Operator",
+          "definition": "A symbol that does something with values."
+        },
+        {
+          "word": "Comparison",
+          "definition": "Checking values, giving true or false."
+        },
+        {
+          "word": "Logical operator",
+          "definition": "Combines true or false values, like and and or."
+        },
+        {
+          "word": "true",
+          "definition": "One of the two boolean values."
+        },
+        {
+          "word": "false",
+          "definition": "The other boolean value."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do comparison operators answer?",
+      "options": [
+        "A number",
+        "true or false",
+        "A color",
+        "A name"
+      ],
+      "answer": 1,
+      "explanation": "Comparison operators ask a question and answer true or false."
+    },
+    {
+      "id": "q2",
+      "text": "When is and true?",
+      "options": [
+        "When at least one side is true",
+        "Only when both sides are true",
+        "Never",
+        "Always"
+      ],
+      "answer": 1,
+      "explanation": "The and operator is true only when both sides are true."
+    },
+    {
+      "id": "q3",
+      "text": "Why prefer strict equals?",
+      "options": [
+        "It also checks the type, avoiding surprises",
+        "It runs faster",
+        "It is shorter to type",
+        "It changes the value"
+      ],
+      "answer": 0,
+      "explanation": "Strict equals checks both value and type, which avoids surprising bugs."
+    }
+  ]
+}

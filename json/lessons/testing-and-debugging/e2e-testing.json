@@ -1,0 +1,124 @@
+{
+  "id": "e2e-testing",
+  "chapterId": "testing-and-debugging",
+  "title": "End-to-End Testing",
+  "order": 4,
+  "summary": [
+    "An end to end test acts like a real user.",
+    "It clicks through the whole app in a real browser.",
+    "It checks complete journeys work.",
+    "It is the slowest but most realistic kind."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The most realistic test of all pretends to be a real person using your app. End to end tests open a real browser, click buttons, fill forms, and check that whole journeys work from start to finish, just as a user would experience them."
+    },
+    {
+      "type": "explanation",
+      "title": "Testing the Whole Journey",
+      "text": "An end to end test, often shortened to e2e, drives the full app like a user. It might open the site, log in, add an item to a cart, and check out, verifying the entire flow works together. Nothing is faked. It exercises the real app, front to back."
+    },
+    {
+      "type": "explanation",
+      "title": "The Slowest but Most Realistic",
+      "text": "Because it runs the whole app in a real browser, e2e testing is the slowest kind, and the most prone to being flaky if the app is slow or the network hiccups. So you write only a handful, covering the most important journeys. They give the most confidence that the app truly works for users.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A test driving the full app through a complete user journey",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Test Drive",
+      "text": "Unit tests check the engine and brakes separately. An end to end test is taking the whole car for a real drive, down the street, around the corner, into a parking spot. It is the truest test of whether the car works, even if you cannot test drive it as often as you can inspect a single part.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A finished car taken for a full real test drive",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How an E2E Test Works",
+      "items": [
+        "It opens your app in a real browser.",
+        "It acts like a user, clicking and typing.",
+        "It follows a full journey, like signing up.",
+        "It checks the journey ends correctly.",
+        "You write a few, for the most important flows."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common shape for a healthy test suite is many fast unit tests, fewer integration tests, and just a few end to end tests. This shape is often pictured as a pyramid."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "End to end test",
+          "definition": "A test that drives the whole app like a user."
+        },
+        {
+          "word": "User journey",
+          "definition": "A full flow, like signing up and checking out."
+        },
+        {
+          "word": "Real browser",
+          "definition": "Where an e2e test runs the app."
+        },
+        {
+          "word": "Realistic",
+          "definition": "As close to real use as testing gets."
+        },
+        {
+          "word": "Flaky",
+          "definition": "A test that sometimes fails for unrelated reasons."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an end to end test act like?",
+      "options": [
+        "A real user",
+        "A single function",
+        "A database",
+        "A stylesheet"
+      ],
+      "answer": 0,
+      "explanation": "An end to end test acts like a real user using the whole app."
+    },
+    {
+      "id": "q2",
+      "text": "Where does it run?",
+      "options": [
+        "In a real browser",
+        "Only on the server",
+        "In a spreadsheet",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "An end to end test runs the app in a real browser."
+    },
+    {
+      "id": "q3",
+      "text": "What kind of test is it?",
+      "options": [
+        "The slowest but most realistic",
+        "The fastest",
+        "The least useful",
+        "Identical to a unit test"
+      ],
+      "answer": 0,
+      "explanation": "End to end tests are the slowest to run but the most realistic."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "sass-scss",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Sass / SCSS",
+  "order": 9,
+  "summary": [
+    "Sass is a tool that adds features to CSS.",
+    "It has variables, nesting, and reusable pieces.",
+    "You write Sass, and a tool compiles it to plain CSS.",
+    "SCSS is the most common Sass syntax."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Plain CSS works, but on big projects it can get repetitive. Sass is a tool that adds helpful features on top of CSS to keep your styles organized and tidy."
+    },
+    {
+      "type": "explanation",
+      "title": "What Sass Is",
+      "text": "Sass is a preprocessor, which means you write in its enhanced syntax, and a tool turns it into normal CSS that browsers understand. The most common flavor is called SCSS, and it looks almost exactly like regular CSS with extra powers added."
+    },
+    {
+      "type": "explanation",
+      "title": "What It Adds",
+      "text": "Sass gives you variables for reused values, nesting so related rules sit inside each other like your HTML does, and reusable chunks you can include in many places. The result is less repetition and styles that are easier to read.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Nested SCSS rules compiling down into plain CSS",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Word Processor vs a Plain Notepad",
+      "text": "Plain CSS is like writing in a basic notepad. Sass is like a full word processor. You can still write the same words, but now you have shortcuts, templates, and tools that save time and reduce mistakes. In the end it all becomes the same finished document.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A notepad and a word processor producing the same final page",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How Sass Fits In",
+      "items": [
+        "You write your styles in Sass, usually SCSS.",
+        "You use its features like variables and nesting.",
+        "A build tool compiles the Sass into plain CSS.",
+        "The browser loads that plain CSS as normal.",
+        "You get the convenience, the browser gets standard CSS."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Plain CSS has slowly borrowed Sass ideas. CSS variables and, more recently, native nesting mean some reasons to reach for Sass have shrunk, though many projects still use it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Sass",
+          "definition": "A tool that adds features on top of CSS."
+        },
+        {
+          "word": "SCSS",
+          "definition": "The most common Sass syntax, much like normal CSS."
+        },
+        {
+          "word": "Preprocessor",
+          "definition": "A tool that turns enhanced syntax into plain CSS."
+        },
+        {
+          "word": "Nesting",
+          "definition": "Writing related rules inside each other."
+        },
+        {
+          "word": "Compile",
+          "definition": "Turning Sass into plain CSS the browser can read."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Sass?",
+      "options": [
+        "A tool that adds features to CSS",
+        "A new web browser",
+        "A type of image",
+        "A page layout"
+      ],
+      "answer": 0,
+      "explanation": "Sass is a tool that adds helpful features on top of CSS."
+    },
+    {
+      "id": "q2",
+      "text": "What does a preprocessor do?",
+      "options": [
+        "Plays audio",
+        "Turns your enhanced syntax into plain CSS",
+        "Stores data",
+        "Creates links"
+      ],
+      "answer": 1,
+      "explanation": "A preprocessor takes your enhanced Sass syntax and turns it into plain CSS."
+    },
+    {
+      "id": "q3",
+      "text": "What is the most common Sass syntax called?",
+      "options": [
+        "BEM",
+        "SCSS",
+        "HTML",
+        "JSON"
+      ],
+      "answer": 1,
+      "explanation": "SCSS is the most common Sass syntax, and it looks much like normal CSS."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "browser-rendering-pipeline",
+  "chapterId": "browser-and-web-platform",
+  "title": "Browser Rendering Pipeline",
+  "order": 4,
+  "summary": [
+    "The rendering pipeline is the steps a browser takes to turn code into pixels.",
+    "It parses HTML and CSS, builds a model, lays it out, then paints it.",
+    "Understanding it helps you see why some changes are slow.",
+    "It connects to the DOM you learned about."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When a browser receives your HTML, CSS, and JavaScript, it does not show them directly. It runs a series of steps to turn that code into the pixels you see on screen. Knowing those steps helps you understand why some changes are cheap and others are costly."
+    },
+    {
+      "type": "explanation",
+      "title": "From Code to Pixels",
+      "text": "The browser first reads your HTML and builds the DOM, the tree of elements you learned about. It reads your CSS to know how things should look. Then it works out where everything goes, a step called layout, and finally paints the pixels onto the screen. That sequence is the rendering pipeline."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Matters",
+      "text": "Some changes are cheap, like changing a color, which may only need a repaint. Others are expensive, like changing a size or position, which forces the browser to redo layout for many elements. Knowing this is why advice like batching changes, and tools like the virtual DOM, exist, to avoid triggering costly steps too often.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The steps from HTML and CSS to DOM, layout, and painted pixels",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Building a Stage Set",
+      "text": "The rendering pipeline is like setting up a stage. First you read the script and gather the pieces, the DOM and styles. Then you arrange everything in its place, layout. Finally you turn on the lights so the audience sees it, painting. Moving a large set piece means rearranging the whole stage, which is why it costs more.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A stage set being gathered, arranged, and lit step by step",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "The Rendering Pipeline",
+      "items": [
+        "The browser parses HTML into the DOM.",
+        "It reads CSS to know the styles.",
+        "It calculates where everything goes, the layout.",
+        "It paints the pixels onto the screen.",
+        "Changing size or position can force layout again."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This is why the performance advice you saw works. The virtual DOM and batching changes both aim to trigger expensive layout and paint steps as rarely as possible, keeping the pipeline from doing extra work."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Rendering pipeline",
+          "definition": "The steps turning code into pixels."
+        },
+        {
+          "word": "Parse",
+          "definition": "Reading code to build a model from it."
+        },
+        {
+          "word": "Layout",
+          "definition": "Working out where everything goes."
+        },
+        {
+          "word": "Paint",
+          "definition": "Drawing the pixels onto the screen."
+        },
+        {
+          "word": "DOM",
+          "definition": "The tree of elements built from your HTML."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the rendering pipeline?",
+      "options": [
+        "The steps a browser takes to turn code into pixels",
+        "A type of server",
+        "A CSS framework",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "The rendering pipeline is the steps a browser takes to turn code into pixels."
+    },
+    {
+      "id": "q2",
+      "text": "What does it build from your HTML?",
+      "options": [
+        "The DOM",
+        "A cookie",
+        "An image",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "The browser parses your HTML into the DOM."
+    },
+    {
+      "id": "q3",
+      "text": "Which step works out where everything goes?",
+      "options": [
+        "Layout",
+        "Parsing",
+        "Painting",
+        "Caching"
+      ],
+      "answer": 0,
+      "explanation": "Layout is the step that calculates where everything goes."
+    }
+  ]
+}

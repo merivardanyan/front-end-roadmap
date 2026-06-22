@@ -1,0 +1,124 @@
+{
+  "id": "forms-and-inputs",
+  "chapterId": "html",
+  "title": "Forms & Inputs",
+  "order": 8,
+  "summary": [
+    "Forms collect information from people.",
+    "The form element wraps all the fields together.",
+    "Inputs are the fields people fill in, like text boxes and checkboxes.",
+    "A label names each field so people know what to enter."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Search bars, sign up pages, comment boxes. Any time a website asks you for information, you are using a form. HTML gives you the pieces to build one."
+    },
+    {
+      "type": "explanation",
+      "title": "The Form and Its Inputs",
+      "text": "A form is wrapped in the form element. Inside it go inputs, the fields people fill in. An input can be a text box, a checkbox, a radio button, and more, all decided by its type attribute."
+    },
+    {
+      "type": "explanation",
+      "title": "Labels Matter",
+      "text": "Every field should have a label, the text that names it, like Email or Password. A label tied to its input helps everyone, and it lets screen reader users know exactly what each field is for. It also makes the label clickable, which is easier to tap.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A simple form with labels above each input field",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Paper Form at the Clinic",
+      "text": "A web form is like the paper form you fill in at a clinic. The form is the whole sheet. Each blank line is an input. The printed word next to each line, like Name or Date, is the label telling you what to write.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A paper form with labelled blank lines being filled in",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Building a Simple Form",
+      "items": [
+        "Wrap everything in a form element.",
+        "Add a label for each piece of information you want.",
+        "Add an input next to each label for people to fill in.",
+        "Set the input type, like text, email, or checkbox.",
+        "Add a button so people can send the form."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Choosing the right input type helps on phones. An input of type email shows a keyboard with the at sign ready, and type number shows a number pad."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "form",
+          "definition": "The element that wraps a set of fields to collect info."
+        },
+        {
+          "word": "input",
+          "definition": "A field people fill in, like a text box or checkbox."
+        },
+        {
+          "word": "label",
+          "definition": "The text that names an input field."
+        },
+        {
+          "word": "type",
+          "definition": "The attribute that decides what kind of input it is."
+        },
+        {
+          "word": "Button",
+          "definition": "The control people press to send the form."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a form do?",
+      "options": [
+        "Plays video",
+        "Collects information from people",
+        "Stores images",
+        "Sets the page title"
+      ],
+      "answer": 1,
+      "explanation": "A form collects information that people fill in."
+    },
+    {
+      "id": "q2",
+      "text": "What is a label for?",
+      "options": [
+        "Naming a field so people know what to enter",
+        "Making text bold",
+        "Linking to another page",
+        "Loading an image"
+      ],
+      "answer": 0,
+      "explanation": "A label names a field and helps everyone, including screen reader users, know what to enter."
+    },
+    {
+      "id": "q3",
+      "text": "What decides whether an input is a text box or a checkbox?",
+      "options": [
+        "Its color",
+        "Its size",
+        "Its type attribute",
+        "Its position"
+      ],
+      "answer": 2,
+      "explanation": "The type attribute decides what kind of input a field is."
+    }
+  ]
+}

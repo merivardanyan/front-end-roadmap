@@ -1,0 +1,124 @@
+{
+  "id": "basic-types",
+  "chapterId": "typescript",
+  "title": "Basic Types",
+  "order": 2,
+  "summary": [
+    "Types describe what kind of value something holds.",
+    "Common ones are string, number, and boolean.",
+    "You can type arrays and objects too.",
+    "TypeScript can often guess the type for you."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The heart of TypeScript is the type, a small label that says what kind of value is allowed. Once you know the basic ones, most of the language opens up."
+    },
+    {
+      "type": "explanation",
+      "title": "The Common Types",
+      "text": "The everyday types match the JavaScript values you already know. A string is text, a number is any figure, and a boolean is true or false. You add the type after a name, and from then on TypeScript makes sure only that kind of value goes there."
+    },
+    {
+      "type": "explanation",
+      "title": "Arrays, Objects, and Inference",
+      "text": "You can also type a list, like an array of numbers, and describe the shape of an object, like one with a name string and an age number. Often you do not even have to write the type. If you set a value right away, TypeScript infers it, guessing the type from what you gave it.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Values labelled with their types, and one type guessed automatically",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Shaped Slots in a Toy",
+      "text": "Think of a toy where each hole is a shape, a circle, a square, a triangle. The shapes are the types. The square block only fits the square hole. TypeScript checks the shape before you push the block in, so the wrong piece never goes in the wrong slot.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Shaped blocks fitting only their matching holes in a toy",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Basic Types",
+      "items": [
+        "Pick the value you want to store.",
+        "Add a type label, like string or number.",
+        "TypeScript only allows that kind of value there.",
+        "For lists and objects, describe their shape too.",
+        "Often, let TypeScript infer the type for you."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "There is a type called any that turns the checking off for a value. It is tempting when you are stuck, but using it too much throws away the very safety you came for."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "string",
+          "definition": "A type for text values."
+        },
+        {
+          "word": "number",
+          "definition": "A type for any figure."
+        },
+        {
+          "word": "boolean",
+          "definition": "A type for true or false."
+        },
+        {
+          "word": "Array",
+          "definition": "A list, which you can type by its items."
+        },
+        {
+          "word": "Inference",
+          "definition": "TypeScript guessing a type from the value."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a type describe?",
+      "options": [
+        "What kind of value something holds",
+        "The color of text",
+        "The page title",
+        "How fast code runs"
+      ],
+      "answer": 0,
+      "explanation": "A type describes what kind of value is allowed in a place."
+    },
+    {
+      "id": "q2",
+      "text": "What is inference?",
+      "options": [
+        "Turning off checking",
+        "TypeScript guessing the type from the value you gave",
+        "Deleting a value",
+        "Naming a file"
+      ],
+      "answer": 1,
+      "explanation": "Inference is TypeScript guessing a type from the value you assigned."
+    },
+    {
+      "id": "q3",
+      "text": "What does the any type do?",
+      "options": [
+        "Turns off checking for that value",
+        "Makes text bigger",
+        "Speeds up the page",
+        "Creates a loop"
+      ],
+      "answer": 0,
+      "explanation": "any turns off type checking for that value, which gives up safety if overused."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "what-is-state",
+  "chapterId": "state-management",
+  "title": "What is State?",
+  "order": 1,
+  "summary": [
+    "State is data that changes over time in an app.",
+    "Managing it well keeps the screen correct.",
+    "Small apps need little, big apps need a plan.",
+    "State management is about where data lives and who can change it."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You met state in React as a component's own memory. Zoom out to a whole app, and state becomes a bigger question. Where should each piece of data live, and who is allowed to change it? That question is what state management is about."
+    },
+    {
+      "type": "explanation",
+      "title": "State at the App Level",
+      "text": "State is any data that changes while the app runs, like the logged in user, items in a cart, or whether a menu is open. In a small app, a few useState calls handle it. As an app grows, the same data is needed in many places, and you need a plan for where it lives."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Needs Managing",
+      "text": "When many parts of an app read and change the same data, things can get tangled. Two places might disagree about the truth, or a change in one spot might not reach another. State management is the practice of keeping one clear source of truth, so the whole app stays consistent.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Many parts of an app reading from one shared source of truth",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Shared Family Calendar",
+      "text": "App state is like a family's shared calendar. If everyone keeps their own private copy, plans clash and someone misses an event. One shared calendar everyone reads and updates keeps the household in sync. State management is choosing and maintaining that one shared calendar.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Separate private calendars clashing, then one shared calendar keeping everyone in sync",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking About State",
+      "items": [
+        "Notice which data changes while the app runs.",
+        "Ask which parts of the app need that data.",
+        "Decide where the single source of truth should live.",
+        "Make sure changes flow out to everyone who needs them.",
+        "Keep one clear truth, not many private copies."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A surprising amount of frontend bugs come down to two parts of an app disagreeing about the same piece of state. Good state management prevents a whole class of these."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "State",
+          "definition": "Data that changes over time in an app."
+        },
+        {
+          "word": "Source of truth",
+          "definition": "The one place a piece of data really lives."
+        },
+        {
+          "word": "App state",
+          "definition": "State shared across the whole app."
+        },
+        {
+          "word": "Consistency",
+          "definition": "All parts of the app agreeing on the data."
+        },
+        {
+          "word": "Manage",
+          "definition": "Deciding where state lives and how it changes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is state?",
+      "options": [
+        "Data that changes over time in an app",
+        "A fixed image",
+        "A web address",
+        "A font"
+      ],
+      "answer": 0,
+      "explanation": "State is data that changes over time while an app runs."
+    },
+    {
+      "id": "q2",
+      "text": "What is state management about?",
+      "options": [
+        "Where data lives and who can change it",
+        "The page color",
+        "The file name",
+        "The server brand"
+      ],
+      "answer": 0,
+      "explanation": "State management is about where data lives and who is allowed to change it."
+    },
+    {
+      "id": "q3",
+      "text": "What does keeping one source of truth prevent?",
+      "options": [
+        "Parts of the app disagreeing",
+        "Fast loading",
+        "Nice colors",
+        "New features"
+      ],
+      "answer": 0,
+      "explanation": "One source of truth prevents different parts of the app from disagreeing."
+    }
+  ]
+}

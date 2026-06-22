@@ -1,0 +1,124 @@
+{
+  "id": "environment-variables",
+  "chapterId": "data-apis-and-auth",
+  "title": "Environment Variables",
+  "order": 9,
+  "summary": [
+    "Environment variables hold settings that change between places.",
+    "They keep secrets and addresses out of your code.",
+    "The same code runs differently in development and production.",
+    "Never put real secrets in frontend code."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Your app often needs different settings in different places, a test server while you build, the real one when live. And some values, like keys, should never sit in your code. Environment variables solve both by keeping these settings outside your code."
+    },
+    {
+      "type": "explanation",
+      "title": "What They Are",
+      "text": "An environment variable is a setting stored outside your code, that your code reads at run time. Things like the address of the server to call, or which mode the app is in, live here. Because they are separate, the same code can use a test server in development and the real one in production, just by changing the variable."
+    },
+    {
+      "type": "explanation",
+      "title": "Secrets and a Frontend Warning",
+      "text": "Environment variables also keep sensitive values, like keys, out of the code you commit. But there is a crucial catch for frontend work. Anything sent to the browser can be read by users, so a truly secret key must never live in frontend code, even in a variable. Real secrets belong on the server, behind an API route.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Settings read from outside the code, with secrets kept on the server",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Settings, Not Hard Wiring",
+      "text": "Environment variables are like the settings dial on an appliance instead of hard wiring it for one country. Ship the same appliance everywhere, and each place sets the dial for its own voltage. The machine, your code, stays the same, and only the setting changes per location.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "One appliance with a voltage dial set differently in each country",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Environment Variables",
+      "items": [
+        "Identify settings that change between places.",
+        "Store them as environment variables, outside the code.",
+        "Read them in your code at run time.",
+        "Use different values in development and production.",
+        "Keep real secrets on the server, never in frontend code."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A classic, costly mistake is putting a secret key in a frontend environment variable, thinking it is hidden. It is not. Anyone can read it in the browser, so secrets always belong on the server."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Environment variable",
+          "definition": "A setting stored outside your code."
+        },
+        {
+          "word": "Setting",
+          "definition": "A value that can change between places."
+        },
+        {
+          "word": "Development",
+          "definition": "The setting while you build the app."
+        },
+        {
+          "word": "Production",
+          "definition": "The setting when the app is live."
+        },
+        {
+          "word": "Secret",
+          "definition": "A sensitive value that belongs on the server."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do environment variables hold?",
+      "options": [
+        "Settings that change between places",
+        "Images",
+        "Page titles",
+        "Fonts"
+      ],
+      "answer": 0,
+      "explanation": "Environment variables hold settings that change between places."
+    },
+    {
+      "id": "q2",
+      "text": "What can the same code do with them?",
+      "options": [
+        "Run differently in development and production",
+        "Run only once",
+        "Change its own language",
+        "Delete itself"
+      ],
+      "answer": 0,
+      "explanation": "With environment variables, the same code can run differently in development and production."
+    },
+    {
+      "id": "q3",
+      "text": "Where should real secrets never go?",
+      "options": [
+        "In frontend code",
+        "On the server",
+        "In an API route",
+        "In a database"
+      ],
+      "answer": 0,
+      "explanation": "Real secrets must never go in frontend code, since the browser exposes them."
+    }
+  ]
+}

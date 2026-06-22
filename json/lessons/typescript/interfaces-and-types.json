@@ -1,0 +1,124 @@
+{
+  "id": "interfaces-and-types",
+  "chapterId": "typescript",
+  "title": "Interfaces & Type Aliases",
+  "order": 3,
+  "summary": [
+    "Interfaces and type aliases describe the shape of an object.",
+    "They let you name a shape and reuse it.",
+    "This keeps your code consistent.",
+    "Both are very common in TypeScript."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When many parts of your app handle the same kind of object, like a user, you want one agreed description of what a user looks like. Interfaces and type aliases let you write that shape once and reuse it everywhere."
+    },
+    {
+      "type": "explanation",
+      "title": "Describing a Shape",
+      "text": "An interface describes the shape of an object, listing each property and its type. A user interface might say there is a name that is a string and an age that is a number. Anywhere you say a value is a user, TypeScript checks it has exactly that shape."
+    },
+    {
+      "type": "explanation",
+      "title": "Interfaces and Type Aliases",
+      "text": "A type alias does much the same job, giving a name to a shape so you can reuse it. For describing objects, the two are very similar, and teams often just pick one and stay consistent. Both turn a repeated shape into a single named thing.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "One named shape reused to check several objects",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Blueprint for a Form",
+      "text": "An interface is like a blueprint for a paper form. The blueprint says this form has a name line, an age line, an email line. Every form printed from it has the same fields. TypeScript checks each object against the blueprint, rejecting any that is missing a field or has the wrong kind.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A blueprint stamping out identical forms, rejecting a wrong one",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an Interface",
+      "items": [
+        "Identify an object shape you use often.",
+        "Write an interface listing its properties and types.",
+        "Give the interface a clear name.",
+        "Use that name wherever the shape is expected.",
+        "TypeScript checks every object matches the blueprint."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common style is to name interfaces after the real thing they describe, like User or Product, with a capital letter. It makes the code read almost like plain English."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Interface",
+          "definition": "A description of an object's shape."
+        },
+        {
+          "word": "Type alias",
+          "definition": "A name given to a shape so it can be reused."
+        },
+        {
+          "word": "Shape",
+          "definition": "The set of properties and types an object has."
+        },
+        {
+          "word": "Property",
+          "definition": "One named field on an object."
+        },
+        {
+          "word": "Reuse",
+          "definition": "Using one named shape in many places."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do interfaces describe?",
+      "options": [
+        "The shape of an object",
+        "The color of a button",
+        "The page speed",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "An interface describes the shape of an object, its properties and their types."
+    },
+    {
+      "id": "q2",
+      "text": "Why use one?",
+      "options": [
+        "To slow the page",
+        "To name a shape and reuse it for consistency",
+        "To hide elements",
+        "To load images"
+      ],
+      "answer": 1,
+      "explanation": "They let you name a shape once and reuse it, keeping code consistent."
+    },
+    {
+      "id": "q3",
+      "text": "What does TypeScript do with an interface?",
+      "options": [
+        "Deletes it",
+        "Checks objects match that shape",
+        "Renames files",
+        "Plays audio"
+      ],
+      "answer": 1,
+      "explanation": "TypeScript checks that objects match the shape the interface describes."
+    }
+  ]
+}

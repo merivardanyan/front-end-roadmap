@@ -1,0 +1,124 @@
+{
+  "id": "error-handling",
+  "chapterId": "javascript-fundamentals",
+  "title": "Error Handling (try/catch)",
+  "order": 10,
+  "summary": [
+    "Errors happen, and good code expects them.",
+    "try and catch let you handle an error gracefully.",
+    "The try block runs the risky code.",
+    "The catch block runs if something goes wrong."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes code fails. A file is missing, the internet drops, a value is not what you expected. Without a plan, one error can crash everything. Error handling lets your code stumble without falling."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Handle Errors",
+      "text": "Some actions can fail for reasons outside your control, like asking a server for data. If you ignore that, a single failure can stop the whole program. Handling errors means deciding in advance what to do when something goes wrong."
+    },
+    {
+      "type": "explanation",
+      "title": "try and catch",
+      "text": "The main tool is try and catch. You put the risky code inside a try block. If it works, great. If it throws an error, the code jumps to the catch block, where you handle it calmly, maybe showing a friendly message instead of crashing.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Risky code in a try block, with a catch block ready to handle failure",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Safety Net for a Trapeze Artist",
+      "text": "try and catch is like a safety net under a trapeze. The artist attempts the risky move, that is the try. Most of the time it works. But if they slip, the net catches them, that is the catch. The show goes on instead of ending in disaster.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A trapeze artist caught by a safety net after a slip",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Handling an Error",
+      "items": [
+        "Identify the code that might fail.",
+        "Put that code inside a try block.",
+        "Write a catch block for when it fails.",
+        "In the catch, handle it, like showing a message.",
+        "The program keeps running instead of crashing."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A good error message helps future you. Catching an error and quietly ignoring it is tempting, but it hides problems that come back to bite later."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Error",
+          "definition": "A problem that stops normal code from continuing."
+        },
+        {
+          "word": "try",
+          "definition": "The block that holds the risky code."
+        },
+        {
+          "word": "catch",
+          "definition": "The block that runs if the try code fails."
+        },
+        {
+          "word": "Throw",
+          "definition": "What code does when it raises an error."
+        },
+        {
+          "word": "Handle",
+          "definition": "To deal with an error calmly instead of crashing."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do try and catch let you do?",
+      "options": [
+        "Handle an error gracefully",
+        "Style the page",
+        "Store data",
+        "Create links"
+      ],
+      "answer": 0,
+      "explanation": "try and catch let you handle an error instead of crashing."
+    },
+    {
+      "id": "q2",
+      "text": "Where does the risky code go?",
+      "options": [
+        "In the catch block",
+        "In the try block",
+        "In the head",
+        "In an image"
+      ],
+      "answer": 1,
+      "explanation": "The risky code goes inside the try block."
+    },
+    {
+      "id": "q3",
+      "text": "When does the catch block run?",
+      "options": [
+        "Always",
+        "Never",
+        "When the try code throws an error",
+        "Before the try block"
+      ],
+      "answer": 2,
+      "explanation": "The catch block runs only when the code in the try block throws an error."
+    }
+  ]
+}

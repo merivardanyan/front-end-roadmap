@@ -1,0 +1,124 @@
+{
+  "id": "solid-principles",
+  "chapterId": "architecture-and-patterns",
+  "title": "SOLID Principles",
+  "order": 3,
+  "summary": [
+    "SOLID is a set of five principles for writing maintainable code.",
+    "Each letter stands for one principle.",
+    "Together they encourage code that is easy to change and extend.",
+    "They are guidelines, not strict rules."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "As projects grow, code can become tangled and hard to change. SOLID is a famous set of five principles meant to keep code clean, flexible, and easy to maintain over time. The name is an acronym, one letter per principle."
+    },
+    {
+      "type": "explanation",
+      "title": "What SOLID Stands For",
+      "text": "SOLID is five principles bundled under a memorable name. In plain terms, they encourage each piece of code to have one clear job, to be open to extension without needing to be rewritten, and to depend on simple, well defined connections rather than tangled ones. The details matter less at first than the overall spirit."
+    },
+    {
+      "type": "explanation",
+      "title": "The Spirit of SOLID",
+      "text": "The shared goal behind all five is code that is easy to change safely. Code following these principles tends to be made of small, focused pieces with clear responsibilities, so changing one thing does not break another. They are guidelines to aim for, not strict laws, and applying them sensibly comes with experience.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Five principles bundled under the single name SOLID",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Well Organized Toolbox",
+      "text": "SOLID is like keeping a well organized toolbox where each tool has one clear purpose and its own place. When everything is focused and tidy, you can swap or add a tool without disturbing the rest. A messy box where one tool does five jobs is the tangled code SOLID helps you avoid.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A tidy toolbox where each tool has one clear purpose",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Applying SOLID",
+      "items": [
+        "Give each piece of code one clear job.",
+        "Make code easy to extend without rewriting it.",
+        "Keep connections between pieces simple and clear.",
+        "Aim for small, focused, changeable parts.",
+        "Treat these as guidelines, not rigid rules."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Each letter of SOLID stands for a separate principle, so the word itself is a memory aid. Naming a set of ideas with a catchy acronym is a common trick to make them stick."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "SOLID",
+          "definition": "Five principles for maintainable code."
+        },
+        {
+          "word": "Principle",
+          "definition": "A guiding idea, one per letter."
+        },
+        {
+          "word": "Maintainable",
+          "definition": "Easy to change and keep working."
+        },
+        {
+          "word": "Single responsibility",
+          "definition": "Each piece having one clear job."
+        },
+        {
+          "word": "Guideline",
+          "definition": "Something to aim for, not a strict law."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is SOLID?",
+      "options": [
+        "A set of five principles for writing maintainable code",
+        "A web browser",
+        "A type of image",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "SOLID is a set of five principles for writing maintainable code."
+    },
+    {
+      "id": "q2",
+      "text": "What does each letter stand for?",
+      "options": [
+        "One principle",
+        "One color",
+        "One file",
+        "One browser"
+      ],
+      "answer": 0,
+      "explanation": "Each letter of SOLID stands for one principle."
+    },
+    {
+      "id": "q3",
+      "text": "Are they strict rules?",
+      "options": [
+        "No, they are guidelines",
+        "Yes, strict laws",
+        "Only on phones",
+        "Only for games"
+      ],
+      "answer": 0,
+      "explanation": "SOLID principles are guidelines to aim for, not strict rules."
+    }
+  ]
+}

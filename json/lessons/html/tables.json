@@ -1,0 +1,124 @@
+{
+  "id": "tables",
+  "chapterId": "html",
+  "title": "Tables",
+  "order": 7,
+  "summary": [
+    "Tables show data in rows and columns.",
+    "The table element wraps the whole thing.",
+    "Rows go in tr, header cells in th, and normal cells in td.",
+    "Tables are for data, not for page layout."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When information naturally fits a grid, like a schedule or a price list, a table is the right tool. HTML builds tables out of a few simple pieces."
+    },
+    {
+      "type": "explanation",
+      "title": "The Building Blocks",
+      "text": "A table starts with the table element. Inside it, each row is a tr. Inside each row, a normal cell is a td, and a heading cell, like a column title, is a th. Stack rows and cells together and you get a grid."
+    },
+    {
+      "type": "explanation",
+      "title": "Tables Are for Data",
+      "text": "Tables are meant for real data that belongs in rows and columns, like a timetable. They are not for arranging the layout of a page. Long ago people misused them for layout, but CSS does that job far better now.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A simple table with a header row and several data rows",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Spreadsheet",
+      "text": "A table is just like a spreadsheet. The table is the whole sheet, each tr is a row, and each td is a single cell. The th cells are the bold labels across the top that tell you what each column means.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A spreadsheet grid with labelled columns and filled cells",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Building a Simple Table",
+      "items": [
+        "Start with a table element.",
+        "Add a tr for each row you need.",
+        "In the top row, use th cells for the column titles.",
+        "In the other rows, use td cells for the data.",
+        "The browser lines them up into a neat grid."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Adding a caption element inside a table gives it a title, which helps screen reader users understand what the table is about before they read it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "table",
+          "definition": "The element that wraps a whole table."
+        },
+        {
+          "word": "tr",
+          "definition": "A single row in a table."
+        },
+        {
+          "word": "th",
+          "definition": "A heading cell, like a column title."
+        },
+        {
+          "word": "td",
+          "definition": "A normal data cell."
+        },
+        {
+          "word": "Caption",
+          "definition": "A title for the table that aids understanding."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a table for?",
+      "options": [
+        "Laying out a whole page",
+        "Showing data in rows and columns",
+        "Storing images",
+        "Playing video"
+      ],
+      "answer": 1,
+      "explanation": "Tables are for showing data that belongs in rows and columns."
+    },
+    {
+      "id": "q2",
+      "text": "What element is a single row?",
+      "options": [
+        "The td element",
+        "The th element",
+        "The tr element",
+        "The table element"
+      ],
+      "answer": 2,
+      "explanation": "Each row in a table is a tr element."
+    },
+    {
+      "id": "q3",
+      "text": "Should you use tables to lay out a page?",
+      "options": [
+        "No, tables are for data and CSS handles layout",
+        "Yes, always",
+        "Only on phones",
+        "Only for images"
+      ],
+      "answer": 0,
+      "explanation": "Tables are for data. CSS is the right tool for page layout."
+    }
+  ]
+}

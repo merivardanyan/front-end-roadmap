@@ -1,0 +1,124 @@
+{
+  "id": "ssr-vs-ssg-vs-csr",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "SSR vs SSG vs CSR",
+  "order": 2,
+  "summary": [
+    "There are different times a page can be built.",
+    "CSR builds it in the browser after loading.",
+    "SSR builds it on the server for each request.",
+    "SSG builds it ahead of time, before anyone visits."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A web page made of components has to be turned into real HTML at some point. The big question is when. Doing it in the browser, on the server per visit, or ahead of time each gives a different balance of speed and freshness."
+    },
+    {
+      "type": "explanation",
+      "title": "The Three Approaches",
+      "text": "Client side rendering, CSR, sends a nearly empty page and builds it in the browser with JavaScript. Server side rendering, SSR, builds the full page on the server for each request. Static site generation, SSG, builds the pages ahead of time, before anyone visits, so they are ready instantly."
+    },
+    {
+      "type": "explanation",
+      "title": "The Trade Offs",
+      "text": "CSR is simple but can show a blank screen first while JavaScript loads. SSR gives a ready page and suits content that changes per visit, but does work on every request. SSG is the fastest to serve since pages are pre built, but it suits content that does not change often. You pick based on how fresh and how fast you need things.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Three timelines showing a page built in the browser, on the server, or ahead of time",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Cooking to Order vs Meal Prep",
+      "text": "SSR is like cooking each meal to order, fresh but it takes time per customer. SSG is like meal prep on Sunday, everything is ready instantly all week, but it was made in advance. CSR is like handing someone the ingredients to assemble at the table. Same goal, different timing.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A meal cooked to order, a batch meal prepped ahead, and ingredients assembled at the table",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Choosing an Approach",
+      "items": [
+        "Ask how often the content changes.",
+        "For rarely changing pages, prefer SSG, built ahead.",
+        "For per visit content, consider SSR, built on request.",
+        "For highly interactive apps, CSR may be fine.",
+        "Modern frameworks let you mix these per page."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Next.js does not force one choice. You can use static generation for your marketing pages and server rendering for a personalized dashboard, all in the same app."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CSR",
+          "definition": "Client side rendering, built in the browser."
+        },
+        {
+          "word": "SSR",
+          "definition": "Server side rendering, built per request on the server."
+        },
+        {
+          "word": "SSG",
+          "definition": "Static site generation, built ahead of time."
+        },
+        {
+          "word": "Render",
+          "definition": "Turning components into real HTML."
+        },
+        {
+          "word": "Trade off",
+          "definition": "Balancing speed against freshness."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Where does CSR build the page?",
+      "options": [
+        "In the browser after loading",
+        "On the server per request",
+        "Ahead of time",
+        "In a database"
+      ],
+      "answer": 0,
+      "explanation": "Client side rendering builds the page in the browser after it loads."
+    },
+    {
+      "id": "q2",
+      "text": "When does SSG build the pages?",
+      "options": [
+        "On every request",
+        "Ahead of time, before anyone visits",
+        "Never",
+        "Only in the browser"
+      ],
+      "answer": 1,
+      "explanation": "Static site generation builds pages ahead of time, so they are ready instantly."
+    },
+    {
+      "id": "q3",
+      "text": "What does SSR do?",
+      "options": [
+        "Builds the full page on the server for each request",
+        "Sends an empty page",
+        "Builds nothing",
+        "Only loads images"
+      ],
+      "answer": 0,
+      "explanation": "Server side rendering builds the full page on the server for each request."
+    }
+  ]
+}

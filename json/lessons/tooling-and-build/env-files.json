@@ -1,0 +1,124 @@
+{
+  "id": "env-files",
+  "chapterId": "tooling-and-build",
+  "title": ".env Files & Secrets",
+  "order": 8,
+  "summary": [
+    "A .env file stores settings and secrets outside your code.",
+    "It keeps them out of the files you share.",
+    "You must never commit it to version control.",
+    "This protects keys and passwords."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "You learned that settings and secrets belong outside your code, in environment variables. The usual place to keep them during development is a special file named .env. Using it correctly is important, because a slip can leak a secret to the world."
+    },
+    {
+      "type": "explanation",
+      "title": "What a .env File Is",
+      "text": "A .env file is a simple text file that holds your environment variables, the settings and secret values your app needs. Your code reads from it while you develop. Keeping these values in one separate file, instead of scattered in your code, makes them easy to manage and change."
+    },
+    {
+      "type": "explanation",
+      "title": "Never Commit It",
+      "text": "The single most important rule is to never commit your .env file to version control. It often holds secrets, and committing it could expose them publicly. You add the file to your ignore list so it stays on your machine only. Teams usually share a safe example file that lists the needed names, but never the real values.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A .env file kept local and added to the ignore list, never committed",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Diary You Keep at Home",
+      "text": "A .env file is like a private diary. It is useful and you refer to it often, but you keep it at home, never packed into a bag you share. Committing it would be like photocopying your diary and pinning it to a public board. The section names can be shared, but never the private contents.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A private diary kept at home, never shared in public",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a .env File",
+      "items": [
+        "Put your settings and secrets in a .env file.",
+        "Your code reads the values from it while developing.",
+        "Add the file to your ignore list right away.",
+        "Never commit it to version control.",
+        "Share a safe example file with only the names."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Public code sites regularly scan for committed secrets, and an accidentally shared key can be found and misused within minutes. That is why ignoring the .env file is not optional, it is essential."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": ".env file",
+          "definition": "A file holding settings and secrets outside code."
+        },
+        {
+          "word": "Secret",
+          "definition": "A sensitive value like a key or password."
+        },
+        {
+          "word": "Version control",
+          "definition": "The shared history a .env file must stay out of."
+        },
+        {
+          "word": "Ignore",
+          "definition": "Telling version control to skip the file."
+        },
+        {
+          "word": "Example file",
+          "definition": "A safe file listing the names but not the values."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a .env file store?",
+      "options": [
+        "Settings and secrets outside your code",
+        "Images",
+        "The page layout",
+        "Fonts"
+      ],
+      "answer": 0,
+      "explanation": "A .env file stores settings and secrets outside your code."
+    },
+    {
+      "id": "q2",
+      "text": "What must you never do with it?",
+      "options": [
+        "Commit it to version control",
+        "Read from it",
+        "Name it",
+        "Edit it"
+      ],
+      "answer": 0,
+      "explanation": "You must never commit a .env file to version control, since it holds secrets."
+    },
+    {
+      "id": "q3",
+      "text": "What do teams share instead?",
+      "options": [
+        "A safe example file with only the names",
+        "The real secrets",
+        "Nothing at all",
+        "A screenshot"
+      ],
+      "answer": 0,
+      "explanation": "Teams share a safe example file that lists the needed names, but not the real values."
+    }
+  ]
+}

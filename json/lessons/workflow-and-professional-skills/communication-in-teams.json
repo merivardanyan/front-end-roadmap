@@ -1,0 +1,124 @@
+{
+  "id": "communication-in-teams",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Communication in Dev Teams",
+  "order": 6,
+  "summary": [
+    "Clear communication is as important as coding on a team.",
+    "It means asking good questions, sharing progress, and writing clearly.",
+    "Much of it happens in writing, like chat and tickets.",
+    "It is often what separates good developers from great ones."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "It is tempting to think development is all about code, but on a team, how you communicate matters just as much. Sharing what you are doing, asking for help well, and writing clearly are skills that shape how effective you really are."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Communication Matters",
+      "text": "Software is built by groups, so the work depends on people understanding each other. A brilliant solution nobody knows about, or a blocker you stayed silent on, helps no one. Communicating clearly, what you are working on, what is blocking you, what you decided, keeps the whole team moving together."
+    },
+    {
+      "type": "explanation",
+      "title": "Mostly in Writing",
+      "text": "A lot of team communication is written, in chat, tickets, code review comments, and documentation, especially on remote teams across time zones. Asking a clear question, giving a useful update, and explaining a decision in writing are everyday skills. Doing them well builds trust and saves everyone time.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Clear written updates and questions flowing between remote teammates",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Players Calling the Ball",
+      "text": "Good team communication is like players on a field calling for the ball. The most skilled players still constantly say what they are doing and what they need. Silence leads to collisions and missed passes. A team that talks, even briefly and clearly, plays far better than a group of talented individuals who do not.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Teammates calling for the ball to avoid collisions and missed passes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Communicating Well on a Team",
+      "items": [
+        "Share what you are working on.",
+        "Speak up early when you are blocked.",
+        "Ask clear, specific questions.",
+        "Write updates and decisions down clearly.",
+        "Keep it brief and considerate of others' time."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Many experienced developers say communication, not raw coding skill, is what most often separates a good developer from a great one, especially as you grow into more senior roles."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Communication",
+          "definition": "Sharing understanding across a team."
+        },
+        {
+          "word": "Updates",
+          "definition": "Telling others what you are working on."
+        },
+        {
+          "word": "Blocker",
+          "definition": "Something stopping your progress to raise early."
+        },
+        {
+          "word": "Writing",
+          "definition": "Where much team communication happens."
+        },
+        {
+          "word": "Trust",
+          "definition": "What clear communication builds over time."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How important is communication on a team?",
+      "options": [
+        "As important as coding",
+        "Not important at all",
+        "Only for managers",
+        "Only once a year"
+      ],
+      "answer": 0,
+      "explanation": "On a team, clear communication is as important as coding."
+    },
+    {
+      "id": "q2",
+      "text": "What does it include?",
+      "options": [
+        "Asking good questions, sharing progress, and writing clearly",
+        "Only writing code",
+        "Only attending meetings",
+        "Only fixing bugs"
+      ],
+      "answer": 0,
+      "explanation": "It includes asking good questions, sharing progress, and writing clearly."
+    },
+    {
+      "id": "q3",
+      "text": "Where does much of it happen?",
+      "options": [
+        "In writing, like chat and tickets",
+        "Only in person",
+        "Only by phone",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "Much team communication happens in writing, like chat and tickets."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "event-loop",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "The Event Loop",
+  "order": 3,
+  "summary": [
+    "JavaScript does one thing at a time.",
+    "The event loop lets it stay responsive while waiting.",
+    "Slow tasks are set aside, then handled when ready.",
+    "This is why the page does not freeze."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "JavaScript can only do one thing at a time, yet pages stay smooth while loading data in the background. The trick behind this is a quiet manager called the event loop."
+    },
+    {
+      "type": "explanation",
+      "title": "One Thing at a Time",
+      "text": "JavaScript runs on a single track, handling one piece of code at a time. If it stopped to wait for every slow task, the whole page would freeze. So instead of waiting, it sets slow tasks aside and keeps going."
+    },
+    {
+      "type": "explanation",
+      "title": "How the Loop Works",
+      "text": "When a slow task like a timer or a data fetch finishes, its follow up code waits in a line. The event loop is the manager that checks, whenever the main track is free, and runs the next waiting item. This is how waiting work gets done without ever blocking the page.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A main track with finished tasks waiting in a line to be run",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Chef with a Timer",
+      "text": "A good chef does not stare at the oven. They put a dish in, set a timer, and start chopping vegetables. When the timer dings, they handle the dish at the next free moment. The event loop is that timer and the habit of checking it, so nothing sits idle and nothing blocks.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A chef setting a timer and chopping, then handling the dish on the ding",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How the Event Loop Helps",
+      "items": [
+        "Code runs one piece at a time on the main track.",
+        "A slow task gets set aside to finish on its own.",
+        "The main track keeps running other code.",
+        "When the slow task is done, its follow up waits in line.",
+        "The event loop runs it as soon as the track is free."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "This is why a long, heavy calculation can freeze a page, but waiting on a server does not. The calculation hogs the single track, while the server wait is set aside politely."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Event loop",
+          "definition": "The manager that runs waiting tasks when the track is free."
+        },
+        {
+          "word": "Single track",
+          "definition": "JavaScript handling one piece of code at a time."
+        },
+        {
+          "word": "Slow task",
+          "definition": "Work set aside to finish on its own."
+        },
+        {
+          "word": "Queue",
+          "definition": "The line of finished tasks waiting to run."
+        },
+        {
+          "word": "Responsive",
+          "definition": "Staying smooth instead of freezing."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "How many things does JavaScript do at a time?",
+      "options": [
+        "One",
+        "Two",
+        "Many",
+        "None"
+      ],
+      "answer": 0,
+      "explanation": "JavaScript runs on a single track, doing one thing at a time."
+    },
+    {
+      "id": "q2",
+      "text": "What does the event loop do?",
+      "options": [
+        "Styles the page",
+        "Runs waiting tasks when the main track is free",
+        "Stores images",
+        "Deletes data"
+      ],
+      "answer": 1,
+      "explanation": "The event loop runs the next waiting task whenever the main track is free."
+    },
+    {
+      "id": "q3",
+      "text": "Why does a heavy calculation freeze the page?",
+      "options": [
+        "It hogs the single track",
+        "It is set aside politely",
+        "It runs on a worker",
+        "It uses a promise"
+      ],
+      "answer": 0,
+      "explanation": "A heavy calculation hogs the single track, so nothing else can run until it finishes."
+    }
+  ]
+}

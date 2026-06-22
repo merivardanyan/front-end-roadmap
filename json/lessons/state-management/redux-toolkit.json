@@ -1,0 +1,124 @@
+{
+  "id": "redux-toolkit",
+  "chapterId": "state-management",
+  "title": "Redux Toolkit",
+  "order": 4,
+  "summary": [
+    "Redux Toolkit is the modern, official way to use Redux.",
+    "It removes most of the old boilerplate.",
+    "It makes common tasks short and simple.",
+    "It is the recommended starting point for Redux today."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Redux used to be known for requiring a lot of repetitive setup code. Redux Toolkit fixed that. It is the official, modern way to use Redux, and it makes the same power available with far less typing."
+    },
+    {
+      "type": "explanation",
+      "title": "What Redux Toolkit Is",
+      "text": "Redux Toolkit is a package that wraps Redux with helpful defaults and shortcuts. The old Redux required writing a lot of repetitive code, called boilerplate, for every piece of state. Toolkit bundles that away, so you describe your state and its changes in much less code."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Is the Default Now",
+      "text": "Because it removes the tedious parts and steers you toward good patterns, Redux Toolkit is the recommended way to start any new Redux project. If you ever see older Redux examples full of repetitive setup, know that Toolkit is the modern, shorter replacement teams use today.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A wall of old Redux boilerplate shrinking into a few Toolkit lines",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Meal Kit vs Buying Every Ingredient",
+      "text": "Old Redux was like cooking from scratch, gathering and prepping every single ingredient yourself. Redux Toolkit is like a meal kit, the prep is done, the right pieces are included, and you just assemble. Same dish, far less work, and harder to get wrong.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Gathering every raw ingredient beside an easy ready prepped meal kit",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Redux Toolkit",
+      "items": [
+        "Start new Redux projects with Redux Toolkit.",
+        "Describe each slice of state and its changes.",
+        "Let Toolkit handle the repetitive setup for you.",
+        "Write much less code than old Redux required.",
+        "Follow the good patterns it guides you toward."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The Redux team now actively tells people not to use the old style for new code. Redux Toolkit is not just an option, it is the official recommended way."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Redux Toolkit",
+          "definition": "The modern, official way to use Redux."
+        },
+        {
+          "word": "Boilerplate",
+          "definition": "Repetitive setup code Toolkit removes."
+        },
+        {
+          "word": "Slice",
+          "definition": "A piece of state and its changes, described together."
+        },
+        {
+          "word": "Default",
+          "definition": "The recommended starting choice."
+        },
+        {
+          "word": "Redux",
+          "definition": "The state library Toolkit builds on."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Redux Toolkit?",
+      "options": [
+        "The modern, official way to use Redux",
+        "A new browser",
+        "A CSS tool",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Redux Toolkit is the modern, official way to use Redux."
+    },
+    {
+      "id": "q2",
+      "text": "What does it remove?",
+      "options": [
+        "Most of the old boilerplate",
+        "All of your state",
+        "The user interface",
+        "The server"
+      ],
+      "answer": 0,
+      "explanation": "Redux Toolkit removes most of the repetitive boilerplate the old style required."
+    },
+    {
+      "id": "q3",
+      "text": "Is it the recommended way to start Redux today?",
+      "options": [
+        "Yes",
+        "No",
+        "Only on phones",
+        "Only for games"
+      ],
+      "answer": 0,
+      "explanation": "Redux Toolkit is the officially recommended way to start a new Redux project."
+    }
+  ]
+}

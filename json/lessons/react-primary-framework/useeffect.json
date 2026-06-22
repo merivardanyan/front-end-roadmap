@@ -1,0 +1,124 @@
+{
+  "id": "useeffect",
+  "chapterId": "react-primary-framework",
+  "title": "useEffect",
+  "order": 6,
+  "summary": [
+    "useEffect runs code in response to changes, not just during rendering.",
+    "It is for side effects like fetching data or setting a timer.",
+    "You control when it runs with a dependency list.",
+    "It can also clean up after itself."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Rendering is about describing what the screen looks like. But sometimes a component needs to reach outside that, to fetch data, start a timer, or talk to the browser. useEffect is where that kind of work belongs."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Side Effect Is",
+      "text": "A side effect is anything beyond simply returning markup, like loading data from a server, setting up a timer, or listening to the window size. These should not happen in the middle of rendering. useEffect gives them a proper place to run, after the component has rendered."
+    },
+    {
+      "type": "explanation",
+      "title": "Controlling When It Runs",
+      "text": "useEffect takes a list of dependencies, the values it cares about. It runs after render, and then again only when one of those values changes. An empty list means run just once, when the component first appears. This list is how you control exactly when your effect happens.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An effect running after render and again when a watched value changes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Reminder When Something Changes",
+      "text": "useEffect is like a sticky note that says whenever the address changes, update the map. You are not doing it constantly, only reacting when the thing you watch changes. The dependency list is what you are watching. Nothing on the list changes, nothing happens.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A note watching one value and acting only when it changes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using useEffect",
+      "items": [
+        "Identify work that reaches outside rendering, like fetching.",
+        "Put that work inside a useEffect.",
+        "List the values it depends on.",
+        "It runs after render, and again when those change.",
+        "Return a cleanup function if it needs tidying up."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Effects can clean up after themselves. If you set up a timer or a listener, you return a small function that removes it, so you do not leave behind the kind of memory leak you met earlier."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "useEffect",
+          "definition": "The hook for running side effects."
+        },
+        {
+          "word": "Side effect",
+          "definition": "Work beyond returning markup, like fetching."
+        },
+        {
+          "word": "Dependency list",
+          "definition": "The values an effect watches."
+        },
+        {
+          "word": "Cleanup",
+          "definition": "A function that tidies up after an effect."
+        },
+        {
+          "word": "Render",
+          "definition": "When a component produces its markup."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is useEffect for?",
+      "options": [
+        "Side effects like fetching data or setting a timer",
+        "Styling text",
+        "Naming files",
+        "Storing passwords"
+      ],
+      "answer": 0,
+      "explanation": "useEffect is for side effects, like fetching data or setting a timer."
+    },
+    {
+      "id": "q2",
+      "text": "What controls when it runs?",
+      "options": [
+        "A dependency list",
+        "The page color",
+        "The file size",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "A dependency list controls when an effect runs again."
+    },
+    {
+      "id": "q3",
+      "text": "What does an empty dependency list mean?",
+      "options": [
+        "Run on every render",
+        "Run just once, when the component first appears",
+        "Never run",
+        "Run only on phones"
+      ],
+      "answer": 1,
+      "explanation": "An empty dependency list means the effect runs once, when the component first appears."
+    }
+  ]
+}

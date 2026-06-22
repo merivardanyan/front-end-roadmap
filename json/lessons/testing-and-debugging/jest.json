@@ -1,0 +1,124 @@
+{
+  "id": "jest",
+  "chapterId": "testing-and-debugging",
+  "title": "Jest",
+  "order": 5,
+  "summary": [
+    "Jest is a popular tool for running tests.",
+    "It provides a way to write and run them.",
+    "It reports which passed and which failed.",
+    "You have likely seen it in your own project."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "To write and run tests, you need a test runner, a tool that finds your tests, runs them, and reports the results. Jest is one of the most popular, and it is the kind of tool your own weather aggregator project uses."
+    },
+    {
+      "type": "explanation",
+      "title": "What Jest Provides",
+      "text": "Jest gives you everything to write and run tests in one package. You describe a test and what you expect, and Jest runs it and reports whether it passed or failed. It finds your test files automatically and shows a clear summary of results, green for passing, red for failing."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Is Popular",
+      "text": "Jest became popular because it works with little setup, runs tests quickly, and gives readable, friendly output. It is widely used across JavaScript projects, which means knowing it transfers almost anywhere. You already have hands on experience with this style of testing from your own work.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Jest running a set of tests and reporting passes and failures",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "An Exam Marker",
+      "text": "Jest is like an exam marker. You write the questions and the correct answers, your tests and expectations. Jest runs through them, marks each one, and hands back a clear report of what passed and what failed, with the failures explained, so you know exactly what to fix.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "An exam being marked with a clear report of passes and failures",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Jest",
+      "items": [
+        "Write test files describing expected behavior.",
+        "State what each test should produce.",
+        "Run Jest.",
+        "It finds and runs all your tests.",
+        "It reports which passed and which failed."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Jest can also show you how much of your code your tests actually cover, a report called coverage. It highlights the parts no test has touched yet."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Jest",
+          "definition": "A popular tool for running tests."
+        },
+        {
+          "word": "Test runner",
+          "definition": "A tool that finds and runs your tests."
+        },
+        {
+          "word": "Pass",
+          "definition": "A test whose result matched expectations."
+        },
+        {
+          "word": "Fail",
+          "definition": "A test whose result did not match."
+        },
+        {
+          "word": "Coverage",
+          "definition": "How much of your code the tests touch."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Jest?",
+      "options": [
+        "A popular tool for running tests",
+        "A web browser",
+        "A CSS framework",
+        "An image format"
+      ],
+      "answer": 0,
+      "explanation": "Jest is a popular tool for writing and running tests."
+    },
+    {
+      "id": "q2",
+      "text": "What does it report?",
+      "options": [
+        "Which tests passed and failed",
+        "The page color",
+        "The server location",
+        "The font size"
+      ],
+      "answer": 0,
+      "explanation": "Jest reports which tests passed and which failed."
+    },
+    {
+      "id": "q3",
+      "text": "Where have you likely seen it?",
+      "options": [
+        "In your own project",
+        "Only in textbooks",
+        "Nowhere",
+        "In a spreadsheet"
+      ],
+      "answer": 0,
+      "explanation": "Jest, or this style of testing, appears in your own weather aggregator project."
+    }
+  ]
+}

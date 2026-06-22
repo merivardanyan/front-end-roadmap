@@ -1,0 +1,124 @@
+{
+  "id": "service-workers",
+  "chapterId": "browser-and-web-platform",
+  "title": "Service Workers",
+  "order": 2,
+  "summary": [
+    "A service worker is a script that runs in the background, separate from the page.",
+    "It can intercept network requests and serve cached responses.",
+    "It is what lets a site work offline.",
+    "It powers features like offline mode and push notifications."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Normally your JavaScript runs only while the page is open. A service worker is different. It is a special script that runs in the background, between your page and the network, and it unlocks abilities a normal page does not have, like working offline."
+    },
+    {
+      "type": "explanation",
+      "title": "A Script in the Middle",
+      "text": "A service worker sits between your web app and the network. It can intercept the requests your page makes and decide how to answer them, perhaps from a cache instead of the network. Because it runs separately from the page, it can even work when no page is open."
+    },
+    {
+      "type": "explanation",
+      "title": "What It Enables",
+      "text": "This middle position is powerful. By serving cached files when the network is gone, a service worker lets a site keep working offline. It also enables push notifications, messages that reach the user even when your site is not open. Service workers are the engine behind app like web experiences.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A service worker sitting between the page and the network, answering from a cache",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Receptionist Who Takes Messages",
+      "text": "A service worker is like a receptionist sitting between visitors and the office. They can answer common questions from a folder on their desk without disturbing anyone, the cache, and they can take messages when the office is closed, push notifications. They handle things even when the main office is empty.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A receptionist answering from a desk folder and taking messages after hours",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Service Worker Works",
+      "items": [
+        "The browser registers your service worker script.",
+        "It runs in the background, separate from the page.",
+        "It can intercept the network requests the page makes.",
+        "It may answer from a cache, even offline.",
+        "It can receive push notifications when the site is closed."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "For safety, service workers only run on secure connections. A site must be served over HTTPS to use one, since intercepting requests is powerful enough that it must be protected."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Service worker",
+          "definition": "A background script between page and network."
+        },
+        {
+          "word": "Background",
+          "definition": "Running separately from the open page."
+        },
+        {
+          "word": "Intercept",
+          "definition": "Catching requests to decide how to answer them."
+        },
+        {
+          "word": "Offline",
+          "definition": "Working without a network connection."
+        },
+        {
+          "word": "Push notification",
+          "definition": "A message reaching the user when the site is closed."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Where does a service worker run?",
+      "options": [
+        "In the background, separate from the page",
+        "Only inside one button",
+        "On the server only",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "A service worker runs in the background, separate from the page."
+    },
+    {
+      "id": "q2",
+      "text": "What can it intercept?",
+      "options": [
+        "The network requests your page makes",
+        "The user's keyboard",
+        "The page colors",
+        "The font"
+      ],
+      "answer": 0,
+      "explanation": "A service worker can intercept the network requests your page makes."
+    },
+    {
+      "id": "q3",
+      "text": "What does it let a site do?",
+      "options": [
+        "Work offline",
+        "Run faster fonts",
+        "Change languages",
+        "Delete itself"
+      ],
+      "answer": 0,
+      "explanation": "By serving cached responses, a service worker lets a site work offline."
+    }
+  ]
+}

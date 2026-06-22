@@ -1,0 +1,124 @@
+{
+  "id": "bem-methodology",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "BEM Methodology",
+  "order": 13,
+  "summary": [
+    "BEM is a way to name your CSS classes clearly.",
+    "It stands for Block, Element, Modifier.",
+    "The names show how the parts relate.",
+    "It keeps big stylesheets organized."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "As stylesheets grow, vague class names turn into a mess. BEM is a naming system that keeps them clear, so anyone can look at a class and understand what it is and where it belongs."
+    },
+    {
+      "type": "explanation",
+      "title": "Block, Element, Modifier",
+      "text": "BEM breaks names into three ideas. A block is a standalone piece, like a card. An element is a part inside it, like the card's title. A modifier is a variation, like a featured card. The name itself shows the relationship."
+    },
+    {
+      "type": "explanation",
+      "title": "How the Names Look",
+      "text": "BEM uses a clear pattern so the three parts are easy to spot in a class name. You can tell at a glance that one class is the block, another is an element inside it, and another is a modified version. There is no guessing about what belongs to what.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A class name split into its block, element, and modifier parts",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Naming Rooms in a House",
+      "text": "Imagine labeling a house. The block is the kitchen. An element is the kitchen sink, clearly part of the kitchen. A modifier is the kitchen sink that is broken, a special version of it. The names alone tell you the room, the part, and its state.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Labels on a kitchen, then its sink, then a broken version of the sink",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Naming with BEM",
+      "items": [
+        "Find the standalone piece and name it the block.",
+        "Name each part inside it as an element of that block.",
+        "Add a modifier name for any variation.",
+        "Keep the same pattern across the whole project.",
+        "Now any class name explains itself."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "BEM became popular partly because it works in plain CSS with no tools at all. It is just a discipline of naming, which is why teams could adopt it gradually."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "BEM",
+          "definition": "A class naming system, short for Block Element Modifier."
+        },
+        {
+          "word": "Block",
+          "definition": "A standalone piece, like a card."
+        },
+        {
+          "word": "Element",
+          "definition": "A part inside a block, like its title."
+        },
+        {
+          "word": "Modifier",
+          "definition": "A variation of a block or element."
+        },
+        {
+          "word": "Naming convention",
+          "definition": "An agreed pattern for naming things."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does BEM stand for?",
+      "options": [
+        "Block, Element, Modifier",
+        "Bold, Edit, Move",
+        "Box, Edge, Margin",
+        "Build, Export, Merge"
+      ],
+      "answer": 0,
+      "explanation": "BEM stands for Block, Element, Modifier."
+    },
+    {
+      "id": "q2",
+      "text": "What is a block?",
+      "options": [
+        "A part inside something",
+        "A standalone piece, like a card",
+        "A variation",
+        "A color"
+      ],
+      "answer": 1,
+      "explanation": "A block is a standalone piece, like a card."
+    },
+    {
+      "id": "q3",
+      "text": "What does BEM help with?",
+      "options": [
+        "Playing audio",
+        "Keeping class names clear and organized",
+        "Loading images",
+        "Sizing the page"
+      ],
+      "answer": 1,
+      "explanation": "BEM keeps class names clear and organized in big stylesheets."
+    }
+  ]
+}

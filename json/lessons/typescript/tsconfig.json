@@ -1,0 +1,124 @@
+{
+  "id": "tsconfig",
+  "chapterId": "typescript",
+  "title": "tsconfig.json",
+  "order": 9,
+  "summary": [
+    "tsconfig.json is the settings file for TypeScript.",
+    "It tells the compiler how strict to be and what to do.",
+    "It controls which files are included and how they compile.",
+    "Every TypeScript project has one."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "TypeScript needs to know your preferences, how strict to be, which files to check, what kind of JavaScript to produce. All of that lives in one settings file called tsconfig.json, the control panel for your project."
+    },
+    {
+      "type": "explanation",
+      "title": "What tsconfig Does",
+      "text": "The tsconfig.json file holds the options that tell the TypeScript compiler how to behave. It decides how strict the checking is, which files are part of the project, and what version of JavaScript to output. Change a setting here and it affects how your whole project is checked and built."
+    },
+    {
+      "type": "explanation",
+      "title": "Strictness Matters Most",
+      "text": "The most important setting for many teams is strictness. Turning on strict mode makes TypeScript catch far more potential mistakes, like values that might be missing. It can feel demanding at first, but it is where most of TypeScript's safety actually comes from.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A settings file with a strict mode option turned on",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Settings on a Camera",
+      "text": "tsconfig.json is like the settings menu on a camera. The camera can shoot in easy automatic mode or in a strict manual mode that demands more from you but gives sharper results. The menu does not take the photo, it shapes how every photo is taken. tsconfig shapes how all your code is checked.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A camera settings menu switching between automatic and strict manual modes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Working with tsconfig",
+      "items": [
+        "Every TypeScript project has a tsconfig.json file.",
+        "Open it to see the compiler options.",
+        "Set how strict the type checking should be.",
+        "Choose which files to include and what to output.",
+        "The compiler follows these rules for the whole project."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Turning on strict mode is one of the highest value things you can do in a TypeScript project. It is a single setting that unlocks most of the safety people praise TypeScript for."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "tsconfig.json",
+          "definition": "The settings file for a TypeScript project."
+        },
+        {
+          "word": "Compiler",
+          "definition": "The tool that checks and builds your TypeScript."
+        },
+        {
+          "word": "Strict mode",
+          "definition": "A setting that catches far more mistakes."
+        },
+        {
+          "word": "Options",
+          "definition": "The settings inside tsconfig.json."
+        },
+        {
+          "word": "Output",
+          "definition": "The kind of JavaScript the compiler produces."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is tsconfig.json?",
+      "options": [
+        "The settings file for TypeScript",
+        "An image file",
+        "A stylesheet",
+        "A web address"
+      ],
+      "answer": 0,
+      "explanation": "tsconfig.json is the settings file that configures a TypeScript project."
+    },
+    {
+      "id": "q2",
+      "text": "What does it control?",
+      "options": [
+        "The page color",
+        "How strict to be, which files, and how to compile",
+        "The font only",
+        "Nothing"
+      ],
+      "answer": 1,
+      "explanation": "It controls strictness, which files are included, and how the project compiles."
+    },
+    {
+      "id": "q3",
+      "text": "What is the highest value setting for many teams?",
+      "options": [
+        "Strict mode",
+        "Dark mode",
+        "Airplane mode",
+        "Sleep mode"
+      ],
+      "answer": 0,
+      "explanation": "Turning on strict mode unlocks most of the safety TypeScript is praised for."
+    }
+  ]
+}

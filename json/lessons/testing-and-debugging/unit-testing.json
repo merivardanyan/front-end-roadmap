@@ -1,0 +1,124 @@
+{
+  "id": "unit-testing",
+  "chapterId": "testing-and-debugging",
+  "title": "Unit Testing",
+  "order": 2,
+  "summary": [
+    "A unit test checks one small piece of code on its own.",
+    "It usually tests a single function.",
+    "It is fast and focused.",
+    "Most of your tests will be unit tests."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The most common kind of test is the unit test. It zooms in on one small piece of your code, usually a single function, and checks it in isolation. Small, fast, and focused, these make up the bulk of most test suites."
+    },
+    {
+      "type": "explanation",
+      "title": "Testing One Piece Alone",
+      "text": "A unit test checks a single unit of code, like one function, all by itself. You feed it some input, and check it returns the right output. Because it tests just that one piece, with nothing else involved, a failure points straight at where the problem is."
+    },
+    {
+      "type": "explanation",
+      "title": "Fast and Plentiful",
+      "text": "Unit tests are quick to run because each one does so little. That means you can have hundreds of them and still run the whole set in seconds. The common advice is to have many small unit tests covering your functions, since they catch the most bugs for the least effort.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A single function tested alone with an input and expected output",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Checking Each Ingredient",
+      "text": "Unit testing is like tasting each ingredient before cooking. You check the eggs are fresh, the milk is not sour, the flour is good, each one on its own. If a dish later goes wrong, you already know each part was fine, so the problem must be in how they came together.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Each ingredient tasted and checked on its own before cooking",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Writing a Unit Test",
+      "items": [
+        "Pick one small piece of code, like a function.",
+        "Give it a known input.",
+        "State the output you expect.",
+        "Run the test to check they match.",
+        "Keep these small and fast, and write many."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A common goal is for unit tests to run in mere seconds, even when there are hundreds of them. That speed is what lets developers run them constantly while they work."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Unit test",
+          "definition": "A test of one small piece of code alone."
+        },
+        {
+          "word": "Function",
+          "definition": "The usual unit a test checks."
+        },
+        {
+          "word": "Isolation",
+          "definition": "Testing a piece with nothing else involved."
+        },
+        {
+          "word": "Input",
+          "definition": "What you give the code in a test."
+        },
+        {
+          "word": "Output",
+          "definition": "What you check the code returns."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a unit test check?",
+      "options": [
+        "One small piece of code on its own",
+        "The whole app at once",
+        "The server only",
+        "The page color"
+      ],
+      "answer": 0,
+      "explanation": "A unit test checks one small piece of code in isolation."
+    },
+    {
+      "id": "q2",
+      "text": "What does it usually test?",
+      "options": [
+        "A single function",
+        "An entire website",
+        "A database",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "A unit test usually checks a single function."
+    },
+    {
+      "id": "q3",
+      "text": "What kind of test will most of yours be?",
+      "options": [
+        "Unit tests",
+        "End to end tests",
+        "Manual tests",
+        "No tests"
+      ],
+      "answer": 0,
+      "explanation": "Most of your tests will be small, fast unit tests."
+    }
+  ]
+}

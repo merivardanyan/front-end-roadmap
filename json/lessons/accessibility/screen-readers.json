@@ -1,0 +1,124 @@
+{
+  "id": "screen-readers",
+  "chapterId": "accessibility",
+  "title": "Screen Readers",
+  "order": 6,
+  "summary": [
+    "A screen reader reads a page aloud for people who cannot see it.",
+    "It relies on your HTML to understand the page.",
+    "Semantic elements, alt text, and labels make it work well.",
+    "Testing with one reveals real problems."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "For people who are blind or have very low vision, a screen reader is how they use the web. It reads the page aloud and lets them navigate by its structure. How well it works depends almost entirely on the HTML you wrote."
+    },
+    {
+      "type": "explanation",
+      "title": "How a Screen Reader Works",
+      "text": "A screen reader announces the page out loud, element by element, and lets the user jump around by headings, links, and regions. It does not see the visual design. It reads the underlying HTML. So a well structured page is easy to follow, and a poorly structured one is confusing or unusable."
+    },
+    {
+      "type": "explanation",
+      "title": "What Makes It Work",
+      "text": "Everything you already learned feeds the screen reader. Semantic elements tell it what each part is. Headings in order give it an outline to navigate. Alt text describes images. Labels name form fields. When these are right, the screen reader paints a clear picture in sound. When they are missing, it cannot.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A screen reader announcing a well structured page section by section",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Friend Describing a Room",
+      "text": "A screen reader is like a friend describing a room to someone who cannot see it. If the room is organized with clear labels, the description is easy, here is the door, here is the desk. If everything is unlabeled boxes, the friend can only say there is a box, then another box. Your HTML decides which it is.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A friend easily describing a clearly labelled room versus a room of unlabeled boxes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Supporting Screen Readers",
+      "items": [
+        "Use semantic elements to mark page parts.",
+        "Keep headings in a sensible order.",
+        "Give every image meaningful alt text.",
+        "Label every form field.",
+        "Test with an actual screen reader to hear the result."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Most computers and phones already include a screen reader built in. Turning it on and trying to use your own site with your eyes closed is one of the most eye opening tests a developer can do."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Screen reader",
+          "definition": "A tool that reads a page aloud."
+        },
+        {
+          "word": "Announce",
+          "definition": "Reading each element out loud."
+        },
+        {
+          "word": "Structure",
+          "definition": "The HTML organization it relies on."
+        },
+        {
+          "word": "Semantic",
+          "definition": "Elements that describe their part of the page."
+        },
+        {
+          "word": "Navigate",
+          "definition": "Jumping by headings, links, and regions."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a screen reader do?",
+      "options": [
+        "Reads a page aloud for people who cannot see it",
+        "Edits photos",
+        "Speeds up the server",
+        "Stores files"
+      ],
+      "answer": 0,
+      "explanation": "A screen reader reads a page aloud for people who cannot see it."
+    },
+    {
+      "id": "q2",
+      "text": "What does it rely on?",
+      "options": [
+        "Your HTML to understand the page",
+        "The page's colors",
+        "The server speed",
+        "The font size only"
+      ],
+      "answer": 0,
+      "explanation": "A screen reader relies on your HTML to understand and announce the page."
+    },
+    {
+      "id": "q3",
+      "text": "What makes it work well?",
+      "options": [
+        "Semantic elements, alt text, and labels",
+        "Bright colors",
+        "Large images",
+        "Fast servers"
+      ],
+      "answer": 0,
+      "explanation": "Semantic elements, alt text, and labels make a screen reader work well."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "component-patterns",
+  "chapterId": "architecture-and-patterns",
+  "title": "Component Patterns",
+  "order": 1,
+  "summary": [
+    "Component patterns are common, proven ways to structure components.",
+    "They solve problems like sharing logic or building flexible pieces.",
+    "Learning them saves you reinventing solutions.",
+    "You have already used some without naming them."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "As you build more components, the same structural problems come up again and again. How do you share logic between components, or build one flexible enough to be reused everywhere? Component patterns are the well known, reusable answers."
+    },
+    {
+      "type": "explanation",
+      "title": "What Component Patterns Are",
+      "text": "A component pattern is a tried and tested way to arrange components to solve a common problem. For example, one pattern keeps a component purely about how things look, while a parent handles the data and logic. Another builds flexible components that accept content from outside through props. These shapes recur across projects."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Help",
+      "text": "You do not have to invent a structure from scratch each time. When you recognize that a problem fits a known pattern, you can reach for the proven solution and other developers instantly understand it. Many patterns you have likely already used, like passing content into a component through props, you just did not have a name for them.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A data holding parent paired with a display only child component",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Standard Joints in Carpentry",
+      "text": "Component patterns are like the standard joints a carpenter knows. Rather than inventing a new way to connect two pieces of wood each time, they reach for a proven joint that fits the job. The joints are named and shared, so any carpenter recognizes them. Patterns give developers the same shared vocabulary.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A carpenter choosing a proven joint instead of inventing a new one",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Component Patterns",
+      "items": [
+        "Notice a structural problem you keep facing.",
+        "Ask if a known pattern already solves it.",
+        "Reach for the proven shape instead of inventing one.",
+        "Other developers recognize it instantly.",
+        "Build a vocabulary of patterns over time."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "You have already used patterns without realizing. Splitting a component into one that holds data and one that just displays it is a classic pattern, and you likely did it by instinct."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Component pattern",
+          "definition": "A proven way to structure components."
+        },
+        {
+          "word": "Reusable",
+          "definition": "Able to be applied across many projects."
+        },
+        {
+          "word": "Logic",
+          "definition": "The behavior a pattern may help share."
+        },
+        {
+          "word": "Props",
+          "definition": "How flexible components accept outside content."
+        },
+        {
+          "word": "Vocabulary",
+          "definition": "Shared names developers use for patterns."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are component patterns?",
+      "options": [
+        "Common, proven ways to structure components",
+        "Types of images",
+        "CSS colors",
+        "A kind of server"
+      ],
+      "answer": 0,
+      "explanation": "Component patterns are common, proven ways to structure components."
+    },
+    {
+      "id": "q2",
+      "text": "What do they solve?",
+      "options": [
+        "Problems like sharing logic or building flexible pieces",
+        "Slow servers",
+        "Missing fonts",
+        "Large images"
+      ],
+      "answer": 0,
+      "explanation": "They solve recurring problems like sharing logic or building flexible components."
+    },
+    {
+      "id": "q3",
+      "text": "Why learn them?",
+      "options": [
+        "To save reinventing solutions",
+        "To slow down",
+        "To avoid React",
+        "To delete code"
+      ],
+      "answer": 0,
+      "explanation": "Learning patterns saves you from reinventing a solution each time."
+    }
+  ]
+}

@@ -3,90 +3,121 @@
   "chapterId": "core-web-foundations",
   "title": "HTTP & HTTPS",
   "order": 3,
-  "emoji": "🔒",
+  "summary": [
+    "HTTP is the shared set of rules browsers and servers use to talk.",
+    "A protocol just means an agreed way of doing something.",
+    "HTTPS is the same as HTTP but with security added.",
+    "The S stands for Secure, and the padlock in the address bar means it is on."
+  ],
   "sections": [
     {
       "type": "intro",
-      "text": "Whenever your browser talks to a server, it needs to follow a set of rules so both sides understand each other. That set of rules is called HTTP, and its safer version is called HTTPS."
+      "text": "Every time a browser and a server talk, they follow a shared set of rules so they understand each other. That set of rules has a name, and there is a safer version that protects your information."
     },
     {
       "type": "explanation",
       "title": "What is HTTP?",
-      "text": "HTTP stands for HyperText Transfer Protocol. It is the language that browsers and servers use to talk to each other. It is just a set of agreed rules, like how to ask for a page, and how to send a page back. Without HTTP, your browser and the server would not understand each other at all."
+      "text": "HTTP stands for HyperText Transfer Protocol. A protocol is just an agreed way of doing something. HTTP is the agreement browsers and servers use to send requests and responses, so both sides always know what the other means."
     },
     {
       "type": "explanation",
       "title": "What is HTTPS?",
-      "text": "HTTPS is the same idea as HTTP, but with one important extra feature: it is secure. The S stands for Secure. HTTPS scrambles the information being sent so that nobody else watching the connection can read it. This matters a lot when you type in passwords or credit card numbers."
-    },
-    {
-      "type": "steps",
-      "title": "How HTTP Requests and Responses Work",
-      "items": [
-        "Your browser sends an HTTP request to a server, asking for a page.",
-        "The request includes details like which page you want and what type of browser you are using.",
-        "The server reads the request and prepares a response.",
-        "The server sends back an HTTP response, including the page content and a status code.",
-        "Your browser reads the response and displays the page on your screen."
-      ]
+      "text": "HTTPS is HTTP with a layer of security added. The S stands for Secure. It scrambles the information traveling between your browser and the server, so nobody in the middle can read it.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A browser address bar showing a padlock and https",
+        "placeholder": true
+      }
     },
     {
       "type": "analogy",
-      "title": "Think of it like Sending a Letter",
-      "text": "HTTP is like writing a letter using a normal envelope: anyone who handles it along the way could peek inside if they wanted to. HTTPS is like sealing that same letter inside a locked box: only the person with the right key, the server, can open it and read what is inside."
+      "title": "A Postcard vs a Sealed Letter",
+      "text": "Plain HTTP is like sending a postcard. Anyone who handles it along the way can read it. HTTPS is like sealing your message in a locked envelope. Only the person it is meant for can open it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A postcard being read by others, then a sealed locked envelope",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "What HTTPS Does for You",
+      "items": [
+        "It hides your data while it travels across the internet.",
+        "It checks that the server is really who it claims to be.",
+        "It stops others from secretly changing the data on the way.",
+        "It shows a padlock in the address bar so you know it is on."
+      ]
     },
     {
       "type": "fun-fact",
-      "text": "You can usually tell a website is using HTTPS by looking for a small lock icon next to the website address in your browser."
+      "text": "Browsers now warn you when a site uses plain HTTP, because so much of the web has moved to HTTPS that the unsafe version stands out."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "HTTP", "definition": "HyperText Transfer Protocol, the set of rules browsers and servers use to talk to each other." },
-        { "word": "HTTPS", "definition": "A secure version of HTTP that scrambles information so others cannot read it." },
-        { "word": "Protocol", "definition": "A set of agreed rules that two computers follow so they can understand each other." },
-        { "word": "Status Code", "definition": "A short number a server sends back to tell the browser what happened, like 200 for success or 404 for not found." },
-        { "word": "Secure Connection", "definition": "A connection where the information sent between client and server is scrambled and protected." }
+        {
+          "word": "HTTP",
+          "definition": "The rules browsers and servers use to send requests and responses."
+        },
+        {
+          "word": "HTTPS",
+          "definition": "HTTP with security added, so the data is scrambled and safe."
+        },
+        {
+          "word": "Protocol",
+          "definition": "An agreed way of doing something that both sides follow."
+        },
+        {
+          "word": "Encryption",
+          "definition": "Scrambling data so only the right person can read it."
+        },
+        {
+          "word": "Padlock",
+          "definition": "The small lock icon in the address bar that shows HTTPS is on."
+        }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What does HTTP help your browser and a server do?",
+      "text": "What does the S in HTTPS stand for?",
       "options": [
-        "Play games together",
-        "Talk to each other using a shared set of rules",
-        "Store passwords",
-        "Draw pictures"
+        "Speed",
+        "Secure",
+        "Server",
+        "System"
       ],
       "answer": 1,
-      "explanation": "HTTP is a set of rules that browsers and servers both follow, so they can understand each other when sending requests and responses."
+      "explanation": "The S stands for Secure. HTTPS adds a layer of security on top of plain HTTP."
     },
     {
       "id": "q2",
-      "text": "What makes HTTPS different from HTTP?",
+      "text": "What does the word protocol mean here?",
       "options": [
-        "HTTPS is much slower and old",
-        "HTTPS scrambles the information so it stays private and secure",
-        "HTTPS only works on phones",
-        "There is no real difference"
+        "A type of computer",
+        "An agreed way of doing something",
+        "A website address",
+        "A kind of image file"
       ],
       "answer": 1,
-      "explanation": "HTTPS adds security by scrambling the information sent between the browser and the server, so it cannot be easily read by anyone else."
+      "explanation": "A protocol is just an agreed set of rules that both sides follow so they understand each other."
     },
     {
       "id": "q3",
-      "text": "What can you look for in your browser to see if a site uses HTTPS?",
+      "text": "What does HTTPS do that plain HTTP does not?",
       "options": [
-        "A picture of a star",
-        "A small lock icon next to the website address",
-        "A loud sound",
-        "A red button"
+        "It makes pages load slower",
+        "It changes the website name",
+        "It scrambles the data so others cannot read it",
+        "It removes all the images"
       ],
-      "answer": 1,
-      "explanation": "Browsers usually show a small lock icon near the address bar when a website is using a secure HTTPS connection."
+      "answer": 2,
+      "explanation": "HTTPS encrypts the data as it travels, so anyone in the middle cannot read it."
     }
   ]
 }

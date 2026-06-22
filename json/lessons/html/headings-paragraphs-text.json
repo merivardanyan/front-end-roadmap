@@ -1,0 +1,124 @@
+{
+  "id": "headings-paragraphs-text",
+  "chapterId": "html",
+  "title": "Headings, Paragraphs & Text",
+  "order": 3,
+  "summary": [
+    "Headings label sections and come in levels from h1 to h6.",
+    "h1 is the most important, h6 the least.",
+    "Normal blocks of text go inside the p element.",
+    "Elements like strong and em give words extra meaning."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Most of a web page is just text, but not all text is equal. Some of it is a title, some is a paragraph, and some needs to stand out. HTML has an element for each."
+    },
+    {
+      "type": "explanation",
+      "title": "Headings",
+      "text": "Headings label the sections of a page. They go from h1 down to h6. h1 is the biggest and most important, usually the page title. The smaller numbers mark smaller subsections. You use them in order so the page has a clear outline."
+    },
+    {
+      "type": "explanation",
+      "title": "Paragraphs and Text Meaning",
+      "text": "Normal blocks of text go inside a p element, short for paragraph. To give words extra meaning you can use strong for something important, or em for emphasis. These change the meaning, not only the look.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page outline showing h1, h2, and h3 nested in order",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Book's Table of Contents",
+      "text": "Headings are like the chapter and section titles in a book. h1 is the book title, h2 is a chapter, h3 is a section inside that chapter. Read only the headings and you still understand the shape of the whole thing.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A book opening to a table of contents with nested titles",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Text Elements Well",
+      "items": [
+        "Use one h1 for the main title of the page.",
+        "Use h2 for the main sections under it.",
+        "Use h3 and below for smaller subsections, in order.",
+        "Put normal text inside p elements.",
+        "Use strong or em to mark words that carry extra meaning."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Skipping heading levels, like jumping from h1 straight to h4, can confuse screen readers. Going in order keeps the page easy to follow."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Heading",
+          "definition": "A label for a section of the page."
+        },
+        {
+          "word": "h1",
+          "definition": "The most important heading, usually the page title."
+        },
+        {
+          "word": "Paragraph (p)",
+          "definition": "The element that holds a normal block of text."
+        },
+        {
+          "word": "strong",
+          "definition": "Marks text as important."
+        },
+        {
+          "word": "em",
+          "definition": "Marks text with emphasis."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Which heading is the most important?",
+      "options": [
+        "h6",
+        "h3",
+        "h1",
+        "h4"
+      ],
+      "answer": 2,
+      "explanation": "h1 is the most important heading, usually used for the page title."
+    },
+    {
+      "id": "q2",
+      "text": "What element holds a normal block of text?",
+      "options": [
+        "The p element",
+        "The h2 element",
+        "The nav element",
+        "The img element"
+      ],
+      "answer": 0,
+      "explanation": "The p element, short for paragraph, holds a normal block of text."
+    },
+    {
+      "id": "q3",
+      "text": "Why use headings in order?",
+      "options": [
+        "To make them colorful",
+        "So the page has a clear outline screen readers can follow",
+        "To load the page faster",
+        "To hide some text"
+      ],
+      "answer": 1,
+      "explanation": "Headings in order create a clear outline that screen readers and people can follow."
+    }
+  ]
+}

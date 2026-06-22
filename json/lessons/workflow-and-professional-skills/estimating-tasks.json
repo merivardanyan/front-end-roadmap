@@ -1,0 +1,124 @@
+{
+  "id": "estimating-tasks",
+  "chapterId": "workflow-and-professional-skills",
+  "title": "Estimating & Breaking Down Tasks",
+  "order": 7,
+  "summary": [
+    "Estimating is predicting how long work will take.",
+    "Breaking big tasks into small ones makes estimates better.",
+    "Smaller pieces are easier to judge and finish.",
+    "Estimates are educated guesses, not promises."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Teams need a rough sense of how long work will take, to plan sprints and set expectations. Estimating is that skill, and the single best trick for doing it well is breaking large, fuzzy tasks into small, clear ones."
+    },
+    {
+      "type": "explanation",
+      "title": "Why Break Things Down",
+      "text": "A big task like build the user profile page is hard to estimate, because it hides many smaller pieces. Break it into small, specific tasks, and each one becomes far easier to judge. Small pieces are also easier to finish, track, and review, and they reveal hidden work you would have missed in the big version."
+    },
+    {
+      "type": "explanation",
+      "title": "Estimates Are Guesses",
+      "text": "An estimate is an educated guess, not a guarantee. Work often surprises you, so good estimates include a little room for the unexpected, and you get better at them with experience. The goal is a useful prediction to plan around, not a promise you will be punished for missing. Honest, thoughtful estimates beat optimistic ones.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A big task broken into small pieces, each estimated on its own",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Planning a Road Trip in Legs",
+      "text": "Estimating a big task in one go is like guessing a whole road trip's time from a glance at the map. Breaking it into legs, this city to that one, then the next, gives a far more accurate total, and you notice the mountain pass that will slow you down. Small legs add up to a trustworthy estimate.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A road trip split into legs, revealing a slow mountain pass",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Estimating Work",
+      "items": [
+        "Take a big or fuzzy task.",
+        "Break it into small, specific pieces.",
+        "Estimate each small piece on its own.",
+        "Add a little room for the unexpected.",
+        "Treat the total as a guess to plan around."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Developers are famously optimistic estimators, often assuming everything will go smoothly. Knowing this about yourself, and padding a little, is part of getting better at it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Estimating",
+          "definition": "Predicting how long work will take."
+        },
+        {
+          "word": "Break down",
+          "definition": "Splitting a big task into small pieces."
+        },
+        {
+          "word": "Small tasks",
+          "definition": "Pieces easier to judge and finish."
+        },
+        {
+          "word": "Educated guess",
+          "definition": "A thoughtful prediction, not a promise."
+        },
+        {
+          "word": "Planning",
+          "definition": "Using estimates to plan sprints and expectations."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is estimating?",
+      "options": [
+        "Predicting how long work will take",
+        "Deleting old code",
+        "Writing tests",
+        "Styling a page"
+      ],
+      "answer": 0,
+      "explanation": "Estimating is predicting how long work will take."
+    },
+    {
+      "id": "q2",
+      "text": "What makes estimates better?",
+      "options": [
+        "Breaking big tasks into small ones",
+        "Skipping the planning",
+        "Guessing once",
+        "Avoiding tickets"
+      ],
+      "answer": 0,
+      "explanation": "Breaking big tasks into small ones makes estimates more accurate."
+    },
+    {
+      "id": "q3",
+      "text": "Are estimates promises?",
+      "options": [
+        "No, they are educated guesses",
+        "Yes, strict promises",
+        "Only on Fridays",
+        "Only for managers"
+      ],
+      "answer": 0,
+      "explanation": "Estimates are educated guesses to plan around, not promises."
+    }
+  ]
+}

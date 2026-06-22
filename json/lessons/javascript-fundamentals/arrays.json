@@ -1,0 +1,124 @@
+{
+  "id": "arrays",
+  "chapterId": "javascript-fundamentals",
+  "title": "Arrays & Array Methods",
+  "order": 6,
+  "summary": [
+    "An array is an ordered list of values.",
+    "Each item has a position called an index, starting at zero.",
+    "Array methods let you add, remove, and transform items.",
+    "Arrays are everywhere in real code."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When you need to hold many values together, like a list of names or scores, you use an array. It keeps them in order and lets you work with the whole group at once."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Array Is",
+      "text": "An array is an ordered list of values inside square brackets. Each item has a position called an index, and counting starts at zero, so the first item is at index zero. You can read any item by its index."
+    },
+    {
+      "type": "explanation",
+      "title": "Array Methods",
+      "text": "Arrays come with built in helpers called methods. Some add or remove items. Others go further, like map to make a new array by transforming each item, or filter to keep only the items that pass a test. These methods are a huge part of daily JavaScript.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An array transformed by map into a new array",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Numbered Train",
+      "text": "Think of an array as a train with numbered cars, starting at zero. Each car holds one passenger, the value. You can find a passenger by the car number, add a new car at the end, or walk through every car in order.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A numbered train where each car holds one value",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Working with an Array",
+      "items": [
+        "Create the array with values in square brackets.",
+        "Read an item using its index, starting at zero.",
+        "Add or remove items with the right method.",
+        "Use map to transform every item into a new array.",
+        "Use filter to keep only the items you want."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because counting starts at zero, the last item is always at the position one less than the array's length. This trips up nearly every beginner at least once."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Array",
+          "definition": "An ordered list of values."
+        },
+        {
+          "word": "Index",
+          "definition": "The position of an item, starting at zero."
+        },
+        {
+          "word": "Method",
+          "definition": "A built in helper that works on the array."
+        },
+        {
+          "word": "map",
+          "definition": "Makes a new array by transforming each item."
+        },
+        {
+          "word": "filter",
+          "definition": "Keeps only the items that pass a test."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is an array?",
+      "options": [
+        "An ordered list of values",
+        "A single number",
+        "A web address",
+        "A style rule"
+      ],
+      "answer": 0,
+      "explanation": "An array is an ordered list of values."
+    },
+    {
+      "id": "q2",
+      "text": "What index is the first item at?",
+      "options": [
+        "One",
+        "Zero",
+        "Two",
+        "The last"
+      ],
+      "answer": 1,
+      "explanation": "Array counting starts at zero, so the first item is at index zero."
+    },
+    {
+      "id": "q3",
+      "text": "What does filter do?",
+      "options": [
+        "Transforms every item",
+        "Keeps only the items that pass a test",
+        "Sorts numbers",
+        "Deletes the array"
+      ],
+      "answer": 1,
+      "explanation": "filter keeps only the items that pass the test you give it."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "optimistic-updates",
+  "chapterId": "state-management",
+  "title": "Optimistic Updates",
+  "order": 8,
+  "summary": [
+    "An optimistic update shows the result of an action before the server confirms it.",
+    "This makes an app feel instant.",
+    "If the server fails, you undo the change.",
+    "It is a common trick in fast feeling apps."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When you like a post and the heart fills in instantly, the app did not really wait for the server. It assumed success and showed it right away. That trick is called an optimistic update, and it is what makes good apps feel snappy."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Optimistic Update Is",
+      "text": "Normally an app waits for the server to confirm an action before showing the result, which adds a small delay. An optimistic update flips this. It updates the screen immediately, assuming the action will succeed, and sends the request in the background. The user sees an instant response."
+    },
+    {
+      "type": "explanation",
+      "title": "Handling Failure",
+      "text": "The catch is that the server might fail. So an optimistic update needs a backup plan. If the request comes back as a failure, you undo the change you showed, returning the screen to how it was, perhaps with a small message. Most of the time it succeeds, so most of the time it feels instant.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A screen updating instantly, then rolling back if the server fails",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Seating Guests Before Confirming the Booking",
+      "text": "An optimistic update is like a host seating you right away while the booking is still being confirmed in the back. Almost always the booking is fine, and you never waited. On the rare miss, the host apologizes and sorts it out. The default is speed, with a polite fallback.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A host seating guests immediately while the booking confirms in the back",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Making an Optimistic Update",
+      "items": [
+        "The user takes an action, like liking a post.",
+        "Update the screen immediately, assuming success.",
+        "Send the real request in the background.",
+        "If it succeeds, nothing more is needed.",
+        "If it fails, undo the change and inform the user."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Tools like React Query have built in support for optimistic updates, including undoing the change automatically if the request fails, so you get the snappy feel without much extra code."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Optimistic update",
+          "definition": "Showing a result before the server confirms it."
+        },
+        {
+          "word": "Instant",
+          "definition": "The fast feel the user gets."
+        },
+        {
+          "word": "Server",
+          "definition": "What confirms the action in the background."
+        },
+        {
+          "word": "Undo",
+          "definition": "Rolling back the change if it fails."
+        },
+        {
+          "word": "Fallback",
+          "definition": "The backup plan for a failed action."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does an optimistic update show?",
+      "options": [
+        "The result of an action before the server confirms it",
+        "An error every time",
+        "Only a loading spinner",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "An optimistic update shows the result immediately, before the server confirms it."
+    },
+    {
+      "id": "q2",
+      "text": "Why use it?",
+      "options": [
+        "To make an app feel instant",
+        "To slow the app down",
+        "To hide content",
+        "To use more data"
+      ],
+      "answer": 0,
+      "explanation": "Optimistic updates make an app feel instant by not waiting for the server."
+    },
+    {
+      "id": "q3",
+      "text": "What do you do if the server fails?",
+      "options": [
+        "Undo the change",
+        "Keep the wrong result",
+        "Reload the whole app always",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "If the server fails, you undo the change and let the user know."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "mvc-mvvm",
+  "chapterId": "architecture-and-patterns",
+  "title": "MVC & MVVM",
+  "order": 4,
+  "summary": [
+    "MVC and MVVM are ways to organize an app into separate parts.",
+    "They split data, display, and the logic connecting them.",
+    "This separation keeps code organized as it grows.",
+    "Many frameworks are built on these ideas."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A common way to keep an app organized is to separate it into distinct parts with clear jobs, rather than mixing everything together. MVC and MVVM are two well known ways of doing this, and their ideas underpin many frameworks."
+    },
+    {
+      "type": "explanation",
+      "title": "Separating the Parts",
+      "text": "MVC stands for Model, View, Controller. The Model is the data, the View is what the user sees, and the Controller is the logic connecting them. By keeping these separate, each part stays focused and the app is easier to understand and change. MVVM is a close relative with a similar split."
+    },
+    {
+      "type": "explanation",
+      "title": "Why This Matters",
+      "text": "The exact letters matter less than the core idea: keep your data, your display, and the logic between them in separate places. This is the same instinct behind splitting a React component into one that holds data and one that displays it. Recognizing these patterns helps you understand how frameworks are organized under the hood.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Data, display, and connecting logic kept in three separate parts",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Restaurant's Roles",
+      "text": "These patterns are like the separate roles in a restaurant. The kitchen holds and prepares the food, the data. The dining room is what the guest sees, the display. The waiter carries between them, the logic. Each role is focused, and the restaurant runs smoothly because nobody is doing all three jobs at once.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A restaurant with kitchen, dining room, and waiter as separate roles",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking in MVC or MVVM",
+      "items": [
+        "Separate your data from your display.",
+        "Keep the connecting logic in its own place.",
+        "Let each part focus on one job.",
+        "Recognize this split inside frameworks.",
+        "Apply the same instinct in your own components."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The core idea behind these patterns, separating data from display, is so useful that you find versions of it in almost every framework, even ones that do not use the exact MVC name."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "MVC",
+          "definition": "Model, View, Controller, a way to split an app."
+        },
+        {
+          "word": "MVVM",
+          "definition": "A close relative of MVC with a similar split."
+        },
+        {
+          "word": "Model",
+          "definition": "The data part of the app."
+        },
+        {
+          "word": "View",
+          "definition": "What the user sees."
+        },
+        {
+          "word": "Separation",
+          "definition": "Keeping parts in their own focused places."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do MVC and MVVM do?",
+      "options": [
+        "Organize an app into separate parts",
+        "Speed up the server",
+        "Store images",
+        "Change fonts"
+      ],
+      "answer": 0,
+      "explanation": "MVC and MVVM organize an app into separate, focused parts."
+    },
+    {
+      "id": "q2",
+      "text": "What do they split?",
+      "options": [
+        "Data, display, and the logic connecting them",
+        "Red, green, and blue",
+        "Files, folders, and disks",
+        "Past, present, and future"
+      ],
+      "answer": 0,
+      "explanation": "They split data, display, and the logic connecting them."
+    },
+    {
+      "id": "q3",
+      "text": "Why does it help?",
+      "options": [
+        "The separation keeps code organized as it grows",
+        "It adds more colors",
+        "It deletes code",
+        "It hides the page"
+      ],
+      "answer": 0,
+      "explanation": "Separating the parts keeps code organized as the app grows."
+    }
+  ]
+}

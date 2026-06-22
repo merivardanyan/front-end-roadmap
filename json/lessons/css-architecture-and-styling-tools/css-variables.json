@@ -1,0 +1,124 @@
+{
+  "id": "css-variables",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "CSS Custom Properties (Variables)",
+  "order": 7,
+  "summary": [
+    "CSS variables store a value you can reuse.",
+    "You set them once and use them everywhere.",
+    "Change the value in one place and it updates across the page.",
+    "They are great for colors and spacing."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Imagine using the same brand color in fifty places, then needing to change it. Updating fifty spots is painful. CSS variables let you set it once and change it once."
+    },
+    {
+      "type": "explanation",
+      "title": "What a CSS Variable Is",
+      "text": "A CSS variable, also called a custom property, is a named value you define and reuse. You give it a name and a value, then you use that name wherever you need the value. The browser fills in the real value for you."
+    },
+    {
+      "type": "explanation",
+      "title": "Why They Help",
+      "text": "The big win is one place to change. Store your main color in a variable, use it across buttons, links, and headings, and when you want a new color you edit the variable once. Everything that uses it updates together.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "One color variable feeding into many elements at once",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Saved Contact",
+      "text": "Think of saving a friend's number under their name. You call the name, not the number. If their number changes, you update it once in your contacts, and every future call still works. A CSS variable is that saved name for a value.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Updating one saved contact number so all future calls still work",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a CSS Variable",
+      "items": [
+        "Define the variable with a name and a value.",
+        "Usually define it near the top so it covers the page.",
+        "Use the variable's name wherever you need that value.",
+        "Reuse it in as many places as you like.",
+        "To change everything, edit the variable in one spot."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Unlike variables in Sass, CSS variables live in the browser as the page runs, so JavaScript can change them on the fly. That is how many sites switch to dark mode instantly."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CSS variable",
+          "definition": "A named value you define once and reuse."
+        },
+        {
+          "word": "Custom property",
+          "definition": "The official name for a CSS variable."
+        },
+        {
+          "word": "Value",
+          "definition": "What the variable holds, like a color or a size."
+        },
+        {
+          "word": "Reuse",
+          "definition": "Using the same variable in many places."
+        },
+        {
+          "word": "Dark mode",
+          "definition": "A darker color theme that variables make easy to switch."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a CSS variable store?",
+      "options": [
+        "A value you can reuse",
+        "An image file",
+        "A web address",
+        "A page title"
+      ],
+      "answer": 0,
+      "explanation": "A CSS variable stores a named value you can reuse across the page."
+    },
+    {
+      "id": "q2",
+      "text": "What is the main benefit?",
+      "options": [
+        "It makes text bigger",
+        "Change the value in one place and it updates everywhere",
+        "It hides elements",
+        "It loads faster images"
+      ],
+      "answer": 1,
+      "explanation": "You edit the variable once and everything that uses it updates together."
+    },
+    {
+      "id": "q3",
+      "text": "Can JavaScript change a CSS variable while the page runs?",
+      "options": [
+        "No, never",
+        "Only on phones",
+        "Yes",
+        "Only for text"
+      ],
+      "answer": 2,
+      "explanation": "CSS variables live in the browser as the page runs, so JavaScript can change them on the fly."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "css-modules",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "CSS Modules",
+  "order": 11,
+  "summary": [
+    "CSS Modules keep styles scoped to one file.",
+    "Class names become unique automatically.",
+    "This stops styles from clashing across the project.",
+    "They are common in component based apps like React."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "In a big project, two people might both name a class card, and the styles collide. CSS Modules solve this by making each file's class names private to that file."
+    },
+    {
+      "type": "explanation",
+      "title": "The Naming Problem",
+      "text": "Normal CSS class names are global. A class named title in one file styles every title everywhere, which can cause surprises when different parts of an app use the same word. As projects grow, these clashes get common."
+    },
+    {
+      "type": "explanation",
+      "title": "How Modules Fix It",
+      "text": "With CSS Modules, you write normal CSS in a special file tied to one component. The build tool then rewrites your class names into unique ones behind the scenes. Your title stays separate from someone else's title, with no clashes.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A class name being rewritten into a unique version by the build tool",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "First Names in Different Families",
+      "text": "Lots of families have a kid named Alex. Within one home, Alex is clear. Confusion only happens if you shout the name across the whole town. CSS Modules give each Alex a hidden full name, so the right one always answers, even when the simple name is shared.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Two kids named Alex in different homes, each with a hidden full name",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using CSS Modules",
+      "items": [
+        "Create a CSS file tied to one component.",
+        "Write normal class names inside it.",
+        "Import those styles into the component.",
+        "The build tool makes each class name unique.",
+        "Styles stay scoped to that component, with no clashes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The unique names the tool creates often look like the original name plus a random string of letters. They are ugly on purpose, since no human needs to read them."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CSS Modules",
+          "definition": "A way to scope styles to one file."
+        },
+        {
+          "word": "Scope",
+          "definition": "Where a style applies, here just one component."
+        },
+        {
+          "word": "Global",
+          "definition": "Applying everywhere, which normal class names do."
+        },
+        {
+          "word": "Unique name",
+          "definition": "The rewritten class name that avoids clashes."
+        },
+        {
+          "word": "Component",
+          "definition": "A self contained piece of a user interface."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do CSS Modules do?",
+      "options": [
+        "Keep styles scoped to one file",
+        "Play video",
+        "Speed up the internet",
+        "Create links"
+      ],
+      "answer": 0,
+      "explanation": "CSS Modules keep a file's styles scoped to that file."
+    },
+    {
+      "id": "q2",
+      "text": "What problem do they solve?",
+      "options": [
+        "Slow images",
+        "Class names clashing across the project",
+        "Missing fonts",
+        "Broken links"
+      ],
+      "answer": 1,
+      "explanation": "They solve the problem of class names clashing when reused across a project."
+    },
+    {
+      "id": "q3",
+      "text": "What happens to your class names?",
+      "options": [
+        "They disappear",
+        "They become unique automatically",
+        "They turn into ids",
+        "They get deleted"
+      ],
+      "answer": 1,
+      "explanation": "The build tool rewrites your class names into unique ones to avoid clashes."
+    }
+  ]
+}

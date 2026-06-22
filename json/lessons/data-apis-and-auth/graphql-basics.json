@@ -1,0 +1,124 @@
+{
+  "id": "graphql-basics",
+  "chapterId": "data-apis-and-auth",
+  "title": "GraphQL Basics",
+  "order": 4,
+  "summary": [
+    "GraphQL is another way to get data from a server.",
+    "You ask for exactly the fields you want.",
+    "The server sends back just those, no more.",
+    "It can replace many REST endpoints with one."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "REST is the common style, but GraphQL is a popular alternative with a different idea. Instead of fixed endpoints that return fixed data, you write a query describing exactly what you want, and the server returns precisely that."
+    },
+    {
+      "type": "explanation",
+      "title": "Ask for Exactly What You Need",
+      "text": "With GraphQL, you send a query that lists the exact fields you want, and nothing more. If you only need a user's name and photo, you ask for just those, and that is all you get back. This avoids the common REST problem of receiving more data than you need, or having to call several endpoints."
+    },
+    {
+      "type": "explanation",
+      "title": "One Endpoint, Many Shapes",
+      "text": "Where REST has many endpoints, GraphQL usually has one. You shape each request by what you ask for, so the same endpoint can return tiny or rich results depending on your query. This flexibility is powerful, though it adds its own setup and learning on the server side.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A single GraphQL query returning exactly the chosen fields",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Build Your Own Plate Buffet",
+      "text": "REST is like set menus, each dish comes as a fixed plate. GraphQL is like a build your own plate buffet, you take exactly the items you want, in the amounts you want, on one trip. No leftover food you did not ask for, and no extra trips for missing sides.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A buffet where you place exactly the chosen items on one plate",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using GraphQL",
+      "items": [
+        "Write a query listing the fields you want.",
+        "Send it to the single GraphQL endpoint.",
+        "The server reads your query.",
+        "It returns exactly those fields, no more.",
+        "Use the precisely shaped data in your app."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "GraphQL also lets you fetch related data in one request, like a user and all their posts together, which in REST might take several calls. That is one of its biggest draws."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "GraphQL",
+          "definition": "A way to ask a server for exactly the data you want."
+        },
+        {
+          "word": "Query",
+          "definition": "A request listing the fields you want."
+        },
+        {
+          "word": "Field",
+          "definition": "One piece of data you can ask for."
+        },
+        {
+          "word": "Endpoint",
+          "definition": "The single address GraphQL usually uses."
+        },
+        {
+          "word": "Flexible",
+          "definition": "Able to return tiny or rich results per query."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does GraphQL let you ask for?",
+      "options": [
+        "Exactly the fields you want",
+        "A random page",
+        "Only images",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "With GraphQL you ask for exactly the fields you want."
+    },
+    {
+      "id": "q2",
+      "text": "How many endpoints does GraphQL usually have?",
+      "options": [
+        "One",
+        "Hundreds",
+        "Zero",
+        "Two per page"
+      ],
+      "answer": 0,
+      "explanation": "GraphQL usually has a single endpoint, shaped by your query."
+    },
+    {
+      "id": "q3",
+      "text": "What does the server send back?",
+      "options": [
+        "Just the fields you asked for",
+        "Everything it has",
+        "Only errors",
+        "An image"
+      ],
+      "answer": 0,
+      "explanation": "The server returns exactly the fields you requested, no more."
+    }
+  ]
+}

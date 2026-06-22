@@ -1,0 +1,124 @@
+{
+  "id": "css-grid",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "CSS Grid",
+  "order": 5,
+  "summary": [
+    "Grid lays out items in rows and columns at the same time.",
+    "It is made for two dimensional layouts.",
+    "You define the columns and rows, then place items.",
+    "It is perfect for full page layouts."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Flexbox handles a single row or column beautifully. But real page layouts often need both at once, rows and columns together. That is exactly what CSS Grid is built for."
+    },
+    {
+      "type": "explanation",
+      "title": "Rows and Columns Together",
+      "text": "Grid turns a container into a grid with rows and columns that you define. You decide how many columns there are and how wide each one is, and items drop into the cells. Because it controls both directions, it is called two dimensional."
+    },
+    {
+      "type": "explanation",
+      "title": "Placing Items",
+      "text": "Once you have a grid, you can let items fill the cells automatically, or place a specific item to span several columns or rows. This makes complex layouts, like a header across the top and a sidebar beside the content, straightforward.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page layout grid with a header, sidebar, and main area",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Chessboard",
+      "text": "Picture a chessboard. The board is the grid container, divided into neat rows and columns of squares. Each piece sits in a square, and some moves let a piece cover several squares. Grid lets you place and stretch items across the board the same way.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Pieces placed on a chessboard, some spanning several squares",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using CSS Grid",
+      "items": [
+        "Choose the container for your layout.",
+        "Make it a grid container.",
+        "Define the columns and their widths.",
+        "Define the rows if you need set heights.",
+        "Let items fill the cells, or place specific ones to span more."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Flexbox and Grid are not rivals. Many real layouts use Grid for the overall page shape and Flexbox inside the smaller pieces. They work best together."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "CSS Grid",
+          "definition": "A layout tool for rows and columns at the same time."
+        },
+        {
+          "word": "Grid container",
+          "definition": "The element you turn into a grid."
+        },
+        {
+          "word": "Column",
+          "definition": "A vertical track in the grid."
+        },
+        {
+          "word": "Row",
+          "definition": "A horizontal track in the grid."
+        },
+        {
+          "word": "Cell",
+          "definition": "One spot in the grid where an item can sit."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is CSS Grid made for?",
+      "options": [
+        "One dimensional rows only",
+        "Two dimensional layouts, rows and columns at once",
+        "Playing audio",
+        "Storing data"
+      ],
+      "answer": 1,
+      "explanation": "Grid is built for two dimensional layouts, controlling rows and columns together."
+    },
+    {
+      "id": "q2",
+      "text": "What do items drop into on a grid?",
+      "options": [
+        "Cells",
+        "Links",
+        "Tabs",
+        "Frames"
+      ],
+      "answer": 0,
+      "explanation": "Items are placed into the cells formed by the grid's rows and columns."
+    },
+    {
+      "id": "q3",
+      "text": "Can Grid and Flexbox be used together?",
+      "options": [
+        "No, never",
+        "Yes, often",
+        "Only on phones",
+        "Only for images"
+      ],
+      "answer": 1,
+      "explanation": "They work well together, often Grid for the page shape and Flexbox inside the pieces."
+    }
+  ]
+}

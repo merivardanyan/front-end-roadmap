@@ -1,0 +1,124 @@
+{
+  "id": "playwright-cypress",
+  "chapterId": "testing-and-debugging",
+  "title": "Playwright & Cypress",
+  "order": 7,
+  "summary": [
+    "Playwright and Cypress are tools for end to end testing.",
+    "They drive a real browser through your app.",
+    "They let you write user journeys as code.",
+    "They are the common choices for e2e."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "To write those end to end tests that act like a real user, you need a tool that can control a browser. Playwright and Cypress are the two most common, letting you script a full user journey and have a real browser carry it out."
+    },
+    {
+      "type": "explanation",
+      "title": "What These Tools Do",
+      "text": "Playwright and Cypress automate a real browser. You write a script that says go to this page, type here, click this button, and then check this text appears. The tool runs that in an actual browser, just as a person would, and reports whether the journey worked."
+    },
+    {
+      "type": "explanation",
+      "title": "Two Popular Choices",
+      "text": "Both do end to end testing well, with slightly different styles and strengths. Cypress is known for a friendly experience and a nice visual runner. Playwright is known for testing across many browsers and strong speed. Teams pick one, and being comfortable with the idea matters more than the specific tool.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A script of user actions being carried out in a real browser",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Robot Following a Script",
+      "text": "These tools are like a robot you hand a script to. The script says walk to the door, open it, flip the switch, confirm the light came on. The robot does exactly that in the real room, every time, tirelessly. Playwright and Cypress are that robot for your app in a real browser.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A robot tirelessly following a script of actions in a real room",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using an E2E Tool",
+      "items": [
+        "Write a script of user actions, like click and type.",
+        "The tool opens a real browser.",
+        "It performs those actions in order.",
+        "It checks the expected result appears.",
+        "It reports whether the journey passed."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "These tools can record video or take screenshots when a test fails, so you can watch exactly what went wrong, which makes tracking down a failing journey much easier."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Playwright",
+          "definition": "An end to end testing tool, strong across browsers."
+        },
+        {
+          "word": "Cypress",
+          "definition": "An end to end testing tool with a friendly runner."
+        },
+        {
+          "word": "End to end",
+          "definition": "Testing full journeys like a real user."
+        },
+        {
+          "word": "Browser",
+          "definition": "What these tools drive automatically."
+        },
+        {
+          "word": "Journey",
+          "definition": "The user flow written as a script."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What are Playwright and Cypress for?",
+      "options": [
+        "End to end testing",
+        "Styling pages",
+        "Storing data",
+        "Editing photos"
+      ],
+      "answer": 0,
+      "explanation": "Playwright and Cypress are tools for end to end testing."
+    },
+    {
+      "id": "q2",
+      "text": "What do they drive?",
+      "options": [
+        "A real browser through your app",
+        "A database",
+        "A printer",
+        "A server only"
+      ],
+      "answer": 0,
+      "explanation": "They drive a real browser through your app, like a user would."
+    },
+    {
+      "id": "q3",
+      "text": "What do they let you write as code?",
+      "options": [
+        "User journeys",
+        "Stylesheets",
+        "Images",
+        "Fonts"
+      ],
+      "answer": 0,
+      "explanation": "They let you write user journeys as scripts that a browser carries out."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "responsive-design",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "Responsive Design & Media Queries",
+  "order": 6,
+  "summary": [
+    "Responsive design makes a page look good on any screen size.",
+    "Media queries apply styles based on the screen width.",
+    "Layouts shift from phone to desktop.",
+    "Designing mobile first is a common approach."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "People visit websites on tiny phones and huge monitors and everything between. A good page adjusts to fit each one. Making that happen is called responsive design."
+    },
+    {
+      "type": "explanation",
+      "title": "What Responsive Means",
+      "text": "Responsive design means the layout responds to the size of the screen. On a narrow phone, content might stack in one column. On a wide screen, the same content might spread into several columns. One page, many shapes."
+    },
+    {
+      "type": "explanation",
+      "title": "Media Queries",
+      "text": "The main tool is the media query. A media query says when the screen is at least this wide, use these styles. You can change the layout, font sizes, or spacing at different widths, so the page always fits the device looking at it.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The same page shown stacked on a phone and spread out on a desktop",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Water Taking the Shape of Its Glass",
+      "text": "Responsive design is like water. Pour it into a tall thin glass and it becomes tall and thin. Pour it into a wide bowl and it spreads out. The content is the water, the screen is the container, and the page simply takes the right shape.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Water poured into a tall glass, then a wide bowl, taking each shape",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Building Responsively",
+      "items": [
+        "Start by designing for the smallest screen first.",
+        "Make sure the content stacks and stays readable.",
+        "Add a viewport meta tag so phones size the page right.",
+        "Use media queries to adjust the layout at wider widths.",
+        "Test the page at several sizes to be sure it holds up."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Designing for the small screen first is called mobile first. It is popular because it is easier to add space as the screen grows than to cram a big design into a small one."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Responsive design",
+          "definition": "Making a page look good on any screen size."
+        },
+        {
+          "word": "Media query",
+          "definition": "A rule that applies styles based on screen width."
+        },
+        {
+          "word": "Mobile first",
+          "definition": "Designing for the smallest screen first."
+        },
+        {
+          "word": "Viewport",
+          "definition": "The visible area of the page on a device."
+        },
+        {
+          "word": "Breakpoint",
+          "definition": "A width where the layout changes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does responsive design do?",
+      "options": [
+        "Makes a page look good on any screen size",
+        "Plays video",
+        "Stores passwords",
+        "Speeds up the internet"
+      ],
+      "answer": 0,
+      "explanation": "Responsive design makes the page adjust to look good on any screen size."
+    },
+    {
+      "id": "q2",
+      "text": "What does a media query do?",
+      "options": [
+        "Creates links",
+        "Applies styles based on the screen width",
+        "Loads images",
+        "Names the page"
+      ],
+      "answer": 1,
+      "explanation": "A media query applies certain styles depending on the screen width."
+    },
+    {
+      "id": "q3",
+      "text": "What is mobile first?",
+      "options": [
+        "Designing for the biggest screen first",
+        "Designing for the smallest screen first",
+        "Ignoring phones",
+        "Using only images"
+      ],
+      "answer": 1,
+      "explanation": "Mobile first means designing for the smallest screen first, then adding for larger ones."
+    }
+  ]
+}

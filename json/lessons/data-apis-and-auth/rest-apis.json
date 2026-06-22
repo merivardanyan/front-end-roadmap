@@ -1,0 +1,124 @@
+{
+  "id": "rest-apis",
+  "chapterId": "data-apis-and-auth",
+  "title": "REST APIs",
+  "order": 3,
+  "summary": [
+    "A REST API is a common way for a server to offer data.",
+    "You reach data at web addresses called endpoints.",
+    "You use verbs like GET to read and POST to create.",
+    "It is the most common API style on the web."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "When a frontend talks to a backend, there is usually an agreed set of rules for how. REST is the most common of these. It organizes a server's data into addresses you can read from and write to, in a predictable way."
+    },
+    {
+      "type": "explanation",
+      "title": "Endpoints and Resources",
+      "text": "A REST API exposes data as resources, like users or products, each reachable at a web address called an endpoint. To get all products you visit one endpoint, to get a single product you visit a slightly more specific one. The addresses are organized and predictable."
+    },
+    {
+      "type": "explanation",
+      "title": "Verbs for Actions",
+      "text": "REST pairs each endpoint with a verb that says what you want to do. GET reads data, POST creates new data, PUT or PATCH updates it, and DELETE removes it. The same address can do different things depending on the verb. Address plus verb tells the server exactly what you mean.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Endpoints paired with verbs like GET, POST, and DELETE",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Well Organized Library",
+      "text": "A REST API is like a well organized library. Each shelf, the endpoint, holds one kind of thing. The verbs are what you do there, borrow to read, return to give back, add a new book, remove an old one. Once you know the layout and the actions, you can find and change anything.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Organized library shelves with actions like borrow, return, and add",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using a REST API",
+      "items": [
+        "Find the endpoint for the data you want.",
+        "Choose the verb for your action, like GET or POST.",
+        "Send the request to that endpoint with that verb.",
+        "The server does the action and replies.",
+        "Read the response, usually as JSON."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "REST is a set of conventions, not a strict law, so real APIs vary in how closely they follow it. Learning the common patterns lets you understand most APIs you will meet."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "REST API",
+          "definition": "A common style for a server to offer data."
+        },
+        {
+          "word": "Endpoint",
+          "definition": "A web address for a piece of data."
+        },
+        {
+          "word": "Resource",
+          "definition": "A kind of thing, like users or products."
+        },
+        {
+          "word": "GET",
+          "definition": "The verb that reads data."
+        },
+        {
+          "word": "POST",
+          "definition": "The verb that creates new data."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is a REST API?",
+      "options": [
+        "A common way for a server to offer data",
+        "A style of image",
+        "A CSS framework",
+        "A type of font"
+      ],
+      "answer": 0,
+      "explanation": "A REST API is a common, organized way for a server to offer data."
+    },
+    {
+      "id": "q2",
+      "text": "What are the web addresses called?",
+      "options": [
+        "Endpoints",
+        "Atoms",
+        "Stores",
+        "Routes"
+      ],
+      "answer": 0,
+      "explanation": "In a REST API, the web addresses for data are called endpoints."
+    },
+    {
+      "id": "q3",
+      "text": "Which verb reads data?",
+      "options": [
+        "GET",
+        "DELETE",
+        "POST",
+        "PUT"
+      ],
+      "answer": 0,
+      "explanation": "GET is the verb used to read data."
+    }
+  ]
+}

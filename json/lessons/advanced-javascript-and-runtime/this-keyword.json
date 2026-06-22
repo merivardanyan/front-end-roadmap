@@ -1,0 +1,124 @@
+{
+  "id": "this-keyword",
+  "chapterId": "advanced-javascript-and-runtime",
+  "title": "The this Keyword",
+  "order": 6,
+  "summary": [
+    "this refers to the object a function is working with.",
+    "Its value depends on how the function is called.",
+    "Getting this wrong is a common source of bugs.",
+    "Arrow functions handle this differently."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The word this is one of the most confusing parts of JavaScript, because its meaning changes depending on the situation. Once you learn the simple question to ask, it stops being scary."
+    },
+    {
+      "type": "explanation",
+      "title": "What this Means",
+      "text": "Inside a function, this refers to the object that the function is acting on. In a method on an object, this is usually that object. The key idea is that this is not fixed when you write the function. It is decided by how the function is called."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Trips People Up",
+      "text": "Because this depends on the call, the same function can have a different this in different situations. Pull a method off its object and call it alone, and this may no longer point where you expect. This is the source of many puzzling bugs, which is why it pays to slow down and ask what this refers to here.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The same function having a different this depending on how it is called",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "The Word Here",
+      "text": "this is like the word here in a sentence. Here means something different depending on where you are standing. Say here in the kitchen and here in the garden, and the word points to different places, even though the word never changed. this works the same way, it depends on the situation.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "The word here pointing to different places as a person moves around",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Figuring Out this",
+      "items": [
+        "Find where the function is being called, not written.",
+        "If it is called as a method on an object, this is that object.",
+        "If it is called alone, this may be something else.",
+        "Ask plainly, what object is this acting on right now.",
+        "If you want this to stay fixed, an arrow function can help."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Arrow functions do not get their own this. They borrow it from the surrounding code, which is exactly why they became popular for avoiding this confusion in callbacks."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "this",
+          "definition": "The object a function is acting on."
+        },
+        {
+          "word": "Method",
+          "definition": "A function attached to an object."
+        },
+        {
+          "word": "Call",
+          "definition": "How a function is run, which decides this."
+        },
+        {
+          "word": "Object",
+          "definition": "What this usually points to in a method."
+        },
+        {
+          "word": "Arrow function",
+          "definition": "A function that borrows this from around it."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does this refer to?",
+      "options": [
+        "The object a function is working with",
+        "A type of loop",
+        "The page title",
+        "A color"
+      ],
+      "answer": 0,
+      "explanation": "this refers to the object that the function is acting on."
+    },
+    {
+      "id": "q2",
+      "text": "What decides the value of this?",
+      "options": [
+        "Where the function is written",
+        "How the function is called",
+        "The file name",
+        "The page width"
+      ],
+      "answer": 1,
+      "explanation": "this is decided by how the function is called, not where it is written."
+    },
+    {
+      "id": "q3",
+      "text": "How do arrow functions treat this?",
+      "options": [
+        "They borrow it from the surrounding code",
+        "They delete it",
+        "They always set it to null",
+        "They pick it randomly"
+      ],
+      "answer": 0,
+      "explanation": "Arrow functions do not get their own this, they borrow it from the surrounding code."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "meta-tags-and-head",
+  "chapterId": "html",
+  "title": "Meta Tags & the Head",
+  "order": 10,
+  "summary": [
+    "The head holds information about the page, not visible content.",
+    "Meta tags give browsers and other tools details about the page.",
+    "The title sets the text shown on the browser tab.",
+    "The viewport meta tag makes the page work well on phones."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "There is a whole part of every page that visitors never see directly, yet it shapes how the page looks on phones, how it appears in search results, and what the tab says. It all lives in the head."
+    },
+    {
+      "type": "explanation",
+      "title": "What Lives in the Head",
+      "text": "The head is for information about the page rather than content people read. It holds the page title, links to stylesheets, and meta tags. None of it shows up in the body, but all of it matters."
+    },
+    {
+      "type": "explanation",
+      "title": "Meta Tags",
+      "text": "A meta tag carries a small piece of information about the page. One common meta tag describes the page for search engines. Another, the viewport tag, tells phones how to size the page so it fits the small screen instead of looking zoomed out.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "The head section listing a title and several meta tags",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "The Label on a Package",
+      "text": "The body is the food you eat. The head is the label on the package. You do not eat the label, but it tells you the name, the ingredients, and how to store it. Meta tags are the lines of small print that machines read.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A package with a detailed label of small print being scanned",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Common Things in the Head",
+      "items": [
+        "Set the page title, which shows on the browser tab.",
+        "Add a meta tag describing the page for search engines.",
+        "Add the viewport meta tag so the page fits phone screens.",
+        "Link any stylesheets the page needs.",
+        "The browser reads all of this before showing the body."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The text in the title element is what shows up as the clickable headline when your page appears in search results, so a clear title really matters."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "head",
+          "definition": "The part of the page holding info, not visible content."
+        },
+        {
+          "word": "Meta tag",
+          "definition": "A tag carrying a small piece of info about the page."
+        },
+        {
+          "word": "title",
+          "definition": "The element that sets the browser tab text."
+        },
+        {
+          "word": "Viewport",
+          "definition": "A meta tag that helps the page fit phone screens."
+        },
+        {
+          "word": "Stylesheet",
+          "definition": "A file of styles the head can link to."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What kind of thing lives in the head?",
+      "options": [
+        "Visible paragraphs",
+        "Information about the page, not visible content",
+        "Images for the page",
+        "The footer links"
+      ],
+      "answer": 1,
+      "explanation": "The head holds information about the page, like the title and meta tags, not the visible content."
+    },
+    {
+      "id": "q2",
+      "text": "What does the title element set?",
+      "options": [
+        "The text shown on the browser tab",
+        "The background color",
+        "The first heading",
+        "The page width"
+      ],
+      "answer": 0,
+      "explanation": "The title element sets the text shown on the browser tab and in search results."
+    },
+    {
+      "id": "q3",
+      "text": "What does the viewport meta tag help with?",
+      "options": [
+        "Playing audio",
+        "Making the page fit phone screens",
+        "Storing data",
+        "Creating links"
+      ],
+      "answer": 1,
+      "explanation": "The viewport meta tag tells phones how to size the page so it fits the screen."
+    }
+  ]
+}

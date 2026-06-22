@@ -1,0 +1,124 @@
+{
+  "id": "forms-in-react",
+  "chapterId": "react-primary-framework",
+  "title": "Forms in React",
+  "order": 10,
+  "summary": [
+    "Forms in React usually tie inputs to state.",
+    "The input shows the state, and typing updates the state.",
+    "This is called a controlled input.",
+    "It keeps your data and the screen in sync."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Forms are where users give you data, and React has a clear way to handle them. The idea is to make your state the single source of truth, with the input simply reflecting it."
+    },
+    {
+      "type": "explanation",
+      "title": "Controlled Inputs",
+      "text": "In React, the common approach is a controlled input. The input's value comes from state, and when the user types, an event handler updates that state. The state and the input always match, because the state is in charge. This is the standard pattern you will see everywhere."
+    },
+    {
+      "type": "explanation",
+      "title": "Why This Pattern",
+      "text": "Tying inputs to state means your component always knows the current values, without digging into the page. You can check them, change them, or clear them just by working with state. It is the same state and event ideas from earlier, applied to form fields.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An input showing state, with typing updating that state",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Whiteboard Everyone Reads From",
+      "text": "A controlled input is like a whiteboard that is the official record. The input does not keep its own private value, it shows whatever is on the whiteboard, the state. When you type, you update the whiteboard, and the input reflects it. There is one source of truth, and everyone reads from it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A whiteboard as the single record that the input always reflects",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Building a Controlled Input",
+      "items": [
+        "Hold the field's value in state.",
+        "Set the input's value from that state.",
+        "On typing, run a handler that updates the state.",
+        "The input always shows the current state.",
+        "Use the state when the form is submitted."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Because state holds the values, validating a form is easy. You just check the state and decide what to show, like a message when an email looks wrong, all without touching the page directly."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Controlled input",
+          "definition": "An input whose value comes from state."
+        },
+        {
+          "word": "State",
+          "definition": "The single source of truth for the value."
+        },
+        {
+          "word": "Value",
+          "definition": "What the input currently shows."
+        },
+        {
+          "word": "Handler",
+          "definition": "The function that updates state on typing."
+        },
+        {
+          "word": "Source of truth",
+          "definition": "The one place the real value lives."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do React forms usually tie inputs to?",
+      "options": [
+        "State",
+        "Images",
+        "The server only",
+        "The doctype"
+      ],
+      "answer": 0,
+      "explanation": "React forms usually tie inputs to state."
+    },
+    {
+      "id": "q2",
+      "text": "What is a controlled input?",
+      "options": [
+        "An input whose value comes from state",
+        "An input with no value",
+        "A button",
+        "A link"
+      ],
+      "answer": 0,
+      "explanation": "A controlled input takes its value from state and updates state on typing."
+    },
+    {
+      "id": "q3",
+      "text": "Why use this pattern?",
+      "options": [
+        "It hides the form",
+        "It keeps your data and the screen in sync",
+        "It removes styling",
+        "It deletes inputs"
+      ],
+      "answer": 1,
+      "explanation": "Tying inputs to state keeps your data and the screen in sync."
+    }
+  ]
+}

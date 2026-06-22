@@ -1,0 +1,124 @@
+{
+  "id": "lists",
+  "chapterId": "html",
+  "title": "Lists (ul, ol, dl)",
+  "order": 6,
+  "summary": [
+    "Lists group related items together.",
+    "An unordered list (ul) uses bullets, when order does not matter.",
+    "An ordered list (ol) uses numbers, when order matters.",
+    "A description list (dl) pairs terms with their definitions."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Some information is naturally a list. Steps in a recipe, names on a team, words and their meanings. HTML has three kinds of lists, each for a different need."
+    },
+    {
+      "type": "explanation",
+      "title": "Unordered and Ordered Lists",
+      "text": "An unordered list, the ul element, shows items with bullets. Use it when the order does not matter, like a shopping list. An ordered list, the ol element, shows items with numbers. Use it when order matters, like steps you must follow in sequence. Each item in either list goes in an li element."
+    },
+    {
+      "type": "explanation",
+      "title": "Description Lists",
+      "text": "A description list, the dl element, is for pairs. Each pair has a term and its description, like a word and its meaning. It is perfect for something like a small glossary.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A bulleted list, a numbered list, and a term and definition list side by side",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Shopping List vs a Recipe",
+      "text": "An unordered list is your shopping list. Milk, eggs, bread, in any order, it does not matter. An ordered list is the recipe. Step one, step two, step three, and the order absolutely matters.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A shopping list with bullets next to a recipe with numbered steps",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Choosing the Right List",
+      "items": [
+        "Ask whether the order of the items matters.",
+        "If it does not, use a ul for bullets.",
+        "If it does, use an ol for numbers.",
+        "Put each item inside its own li element.",
+        "For term and definition pairs, use a dl instead."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Lists can sit inside other lists. A list item can hold its own full list, which is how websites build menus with submenus."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "ul",
+          "definition": "An unordered list, shown with bullets."
+        },
+        {
+          "word": "ol",
+          "definition": "An ordered list, shown with numbers."
+        },
+        {
+          "word": "li",
+          "definition": "A single item inside a list."
+        },
+        {
+          "word": "dl",
+          "definition": "A description list of term and definition pairs."
+        },
+        {
+          "word": "List item",
+          "definition": "One entry in a list, written as li."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "When should you use an ordered list?",
+      "options": [
+        "When the order of items matters",
+        "When you want bullets",
+        "When you have only one item",
+        "When you want no markers"
+      ],
+      "answer": 0,
+      "explanation": "An ordered list uses numbers and is for items where the order matters."
+    },
+    {
+      "id": "q2",
+      "text": "What element holds a single item in a list?",
+      "options": [
+        "The ul element",
+        "The li element",
+        "The dl element",
+        "The p element"
+      ],
+      "answer": 1,
+      "explanation": "Each item in a ul or ol goes inside its own li element."
+    },
+    {
+      "id": "q3",
+      "text": "What is a dl used for?",
+      "options": [
+        "Numbered steps",
+        "Bulleted points",
+        "Pairing terms with their definitions",
+        "Placing images"
+      ],
+      "answer": 2,
+      "explanation": "A description list, dl, pairs each term with its definition."
+    }
+  ]
+}

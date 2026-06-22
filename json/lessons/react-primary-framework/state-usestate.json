@@ -1,0 +1,124 @@
+{
+  "id": "state-usestate",
+  "chapterId": "react-primary-framework",
+  "title": "State & useState",
+  "order": 5,
+  "summary": [
+    "State is data a component remembers and can change.",
+    "useState is the hook that adds state to a component.",
+    "When state changes, React re-renders the component.",
+    "This is how interactive screens update."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Props come from outside and cannot change. But components often need their own memory that can change, like whether a menu is open or what a user has typed. That changeable memory is called state."
+    },
+    {
+      "type": "explanation",
+      "title": "What State Is",
+      "text": "State is data that a component owns and can change over time. Unlike props, which come from a parent and stay put, state belongs to the component itself. A counter's current number, a toggle's on or off, the text in a box, these are all state."
+    },
+    {
+      "type": "explanation",
+      "title": "useState and Re-rendering",
+      "text": "You add state with a tool called useState, one of React's hooks. It gives you the current value and a function to change it. The key magic is that when you change state through that function, React automatically re-renders the component to show the new value. You change the data, the screen follows.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "State changing through its setter and the component re-rendering",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Scoreboard",
+      "text": "State is like a scoreboard at a game. It holds the current score, and when a team scores, you update the board, and everyone sees the new number. You do not repaint the whole stadium, you change the number and the display refreshes. useState is the button that updates the board.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A scoreboard number updating while the rest of the stadium stays put",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using State",
+      "items": [
+        "Identify data the component must remember and change.",
+        "Add it with useState, getting a value and a setter.",
+        "Show the value in your JSX.",
+        "Call the setter to change the value.",
+        "React re-renders to show the new value."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "You must change state through its setter function, never by editing the value directly. That setter is how React knows something changed and the screen needs updating."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "State",
+          "definition": "Data a component owns and can change."
+        },
+        {
+          "word": "useState",
+          "definition": "The hook that adds state to a component."
+        },
+        {
+          "word": "Hook",
+          "definition": "A special function that adds a React feature."
+        },
+        {
+          "word": "Setter",
+          "definition": "The function that changes a piece of state."
+        },
+        {
+          "word": "Re-render",
+          "definition": "React redrawing the component after a change."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is state?",
+      "options": [
+        "Data a component remembers and can change",
+        "Data that never changes",
+        "A web address",
+        "A stylesheet"
+      ],
+      "answer": 0,
+      "explanation": "State is data a component owns and can change over time."
+    },
+    {
+      "id": "q2",
+      "text": "What does useState do?",
+      "options": [
+        "Styles the page",
+        "Adds state to a component",
+        "Sends a request",
+        "Deletes a component"
+      ],
+      "answer": 1,
+      "explanation": "useState is the hook that adds state to a component."
+    },
+    {
+      "id": "q3",
+      "text": "What happens when state changes?",
+      "options": [
+        "Nothing",
+        "React re-renders the component",
+        "The page reloads from the server",
+        "The file is deleted"
+      ],
+      "answer": 1,
+      "explanation": "When state changes through its setter, React re-renders the component."
+    }
+  ]
+}

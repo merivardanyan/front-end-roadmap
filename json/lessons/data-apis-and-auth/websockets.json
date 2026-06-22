@@ -1,0 +1,124 @@
+{
+  "id": "websockets",
+  "chapterId": "data-apis-and-auth",
+  "title": "WebSockets",
+  "order": 5,
+  "summary": [
+    "A WebSocket keeps a live two way connection open.",
+    "The server can send updates without being asked.",
+    "It is good for chat, live scores, and notifications.",
+    "Normal requests cannot do this."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Normal requests are one and done, you ask, the server answers, the line closes. But some features need the server to push new data the moment it happens, like a chat message arriving. WebSockets keep a live line open for exactly that."
+    },
+    {
+      "type": "explanation",
+      "title": "A Live, Two Way Line",
+      "text": "A WebSocket is a connection that stays open between the browser and the server. Unlike a normal request that closes after one reply, this line stays connected, and either side can send a message at any time. The server can push new data to you without you asking again."
+    },
+    {
+      "type": "explanation",
+      "title": "When You Need It",
+      "text": "This matters for anything live. A chat app, live sports scores, a collaborative document, or instant notifications all need the server to reach the user the moment something changes. Repeatedly asking would be slow and wasteful. A WebSocket lets the update come to you instantly.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An open WebSocket line with messages flowing both ways",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Phone Call vs Sending Letters",
+      "text": "Normal requests are like sending letters, one message each way, then you wait and send another. A WebSocket is like a phone call left open, both people can speak the instant they have something to say, with no waiting to send a new letter each time.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Mailed letters going back and forth beside an open phone call",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a WebSocket Works",
+      "items": [
+        "The browser opens a WebSocket connection to the server.",
+        "The connection stays open, not closing after one reply.",
+        "Either side can send a message at any time.",
+        "The server pushes updates the moment they happen.",
+        "You use this for live features like chat."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Before WebSockets, sites faked live updates by asking the server over and over, very fast. It worked but wasted effort. WebSockets replaced that polling with a real open line."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "WebSocket",
+          "definition": "A live two way connection that stays open."
+        },
+        {
+          "word": "Connection",
+          "definition": "The open line between browser and server."
+        },
+        {
+          "word": "Two way",
+          "definition": "Either side can send at any time."
+        },
+        {
+          "word": "Push",
+          "definition": "The server sending data without being asked."
+        },
+        {
+          "word": "Live",
+          "definition": "Updates that arrive the moment they happen."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a WebSocket keep open?",
+      "options": [
+        "A live two way connection",
+        "An image file",
+        "A stylesheet",
+        "A database table"
+      ],
+      "answer": 0,
+      "explanation": "A WebSocket keeps a live two way connection open between browser and server."
+    },
+    {
+      "id": "q2",
+      "text": "What can the server do with it?",
+      "options": [
+        "Send updates without being asked",
+        "Only reply once",
+        "Nothing",
+        "Delete the page"
+      ],
+      "answer": 0,
+      "explanation": "With a WebSocket, the server can push updates without being asked."
+    },
+    {
+      "id": "q3",
+      "text": "What is it good for?",
+      "options": [
+        "Chat, live scores, and notifications",
+        "Static blog pages",
+        "Image editing",
+        "Storing files"
+      ],
+      "answer": 0,
+      "explanation": "WebSockets are good for live features like chat, scores, and notifications."
+    }
+  ]
+}

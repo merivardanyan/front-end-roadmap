@@ -1,0 +1,124 @@
+{
+  "id": "box-model",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "The Box Model",
+  "order": 2,
+  "summary": [
+    "Every element is a rectangular box.",
+    "The box has content, padding, border, and margin.",
+    "Padding is space inside, margin is space outside.",
+    "Understanding the box model explains spacing on a page."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "To the browser, every element on the page is a box, even round looking buttons. Each box is built from the same four layers. Once you see them, spacing finally makes sense."
+    },
+    {
+      "type": "explanation",
+      "title": "The Four Layers",
+      "text": "Every box has content in the middle, the actual text or image. Around that is padding, space inside the box. Around that is the border, the edge line. Outside everything is margin, the space between this box and its neighbors."
+    },
+    {
+      "type": "explanation",
+      "title": "Padding vs Margin",
+      "text": "The easy mix up is padding versus margin. Padding is space inside the box, pushing the content away from the edge. Margin is space outside the box, pushing other boxes away. Inside, then outside.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A box with content, padding, border, and margin layers labelled",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Framed Picture on a Wall",
+      "text": "Think of a framed photo. The photo is the content. The mat board around it inside the frame is the padding. The frame itself is the border. The gap between this frame and the next picture on the wall is the margin.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A framed photo showing mat board, frame, and gap to the next frame",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Reading the Box Model",
+      "items": [
+        "Start at the content in the center.",
+        "Add padding to create space inside, around the content.",
+        "Add a border around the padding.",
+        "Add margin outside to space it from other boxes.",
+        "Together these decide how much room the element takes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "By default the width you set covers only the content, and padding and border get added on top. One line, box sizing set to border box, makes the width include them, which is why many people turn it on first."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Box model",
+          "definition": "The idea that every element is a box of four layers."
+        },
+        {
+          "word": "Content",
+          "definition": "The text or image in the middle of the box."
+        },
+        {
+          "word": "Padding",
+          "definition": "Space inside the box, around the content."
+        },
+        {
+          "word": "Border",
+          "definition": "The edge line around the padding."
+        },
+        {
+          "word": "Margin",
+          "definition": "Space outside the box, between it and other boxes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is padding?",
+      "options": [
+        "Space outside the box",
+        "Space inside the box, around the content",
+        "The edge line",
+        "The text itself"
+      ],
+      "answer": 1,
+      "explanation": "Padding is the space inside the box, between the content and the border."
+    },
+    {
+      "id": "q2",
+      "text": "What is margin?",
+      "options": [
+        "Space outside the box, between it and other boxes",
+        "The content area",
+        "Space inside the box",
+        "The border color"
+      ],
+      "answer": 0,
+      "explanation": "Margin is the space outside the box that separates it from other boxes."
+    },
+    {
+      "id": "q3",
+      "text": "In the framed photo, what is the border?",
+      "options": [
+        "The photo",
+        "The mat board",
+        "The frame",
+        "The wall"
+      ],
+      "answer": 2,
+      "explanation": "The frame plays the border, the edge around the padding."
+    }
+  ]
+}

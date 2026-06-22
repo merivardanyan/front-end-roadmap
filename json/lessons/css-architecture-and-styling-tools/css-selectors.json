@@ -1,0 +1,124 @@
+{
+  "id": "css-selectors",
+  "chapterId": "css-architecture-and-styling-tools",
+  "title": "CSS Selectors",
+  "order": 1,
+  "summary": [
+    "Selectors pick which elements to style.",
+    "You can select by element name, by class, or by id.",
+    "Class is the most common because you can reuse it.",
+    "Combine selectors to target exactly what you want."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "HTML builds the page, but everything looks plain until you style it. Before you can style something, you have to point at it and say this one. That is what a selector does."
+    },
+    {
+      "type": "explanation",
+      "title": "What a Selector Is",
+      "text": "A selector is the part of CSS that chooses which elements to style. You write the selector, then the styles go inside curly braces after it. The browser finds every matching element and applies those styles."
+    },
+    {
+      "type": "explanation",
+      "title": "Three Common Ways to Select",
+      "text": "You can select by element name, like p, to style every paragraph. You can select by class, written with a dot, to style everything you gave that class. Or by id, written with a hash, to style one unique element. Class is the one you will use most, because you can reuse it.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Three style rules selecting by element, by class, and by id",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Calling Out Names in a Classroom",
+      "text": "Imagine a teacher in a classroom. Saying everyone in a red shirt is like a class selector, it picks a group. Saying the student named Sam is like an id, it picks one person. Saying all students is like an element selector. The selector is just how you call out who you mean.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A teacher pointing to a group, then one student, then the whole class",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "How a Style Rule Works",
+      "items": [
+        "Write a selector to choose your elements.",
+        "Open a set of curly braces.",
+        "Inside, write the styles as property and value pairs.",
+        "Close the braces.",
+        "The browser styles every element the selector matched."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "You can combine selectors to be very specific, like writing nav a to style only the links inside the navigation. A space between names means inside."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Selector",
+          "definition": "The part of CSS that chooses which elements to style."
+        },
+        {
+          "word": "Class",
+          "definition": "A reusable label you can give many elements, selected with a dot."
+        },
+        {
+          "word": "id",
+          "definition": "A unique name for one element, selected with a hash."
+        },
+        {
+          "word": "Element selector",
+          "definition": "Selecting by the element name, like p."
+        },
+        {
+          "word": "Rule",
+          "definition": "A selector plus the styles inside its braces."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does a selector do?",
+      "options": [
+        "Chooses which elements to style",
+        "Loads images faster",
+        "Sets the page title",
+        "Plays sound"
+      ],
+      "answer": 0,
+      "explanation": "A selector chooses which elements a style rule applies to."
+    },
+    {
+      "id": "q2",
+      "text": "How do you write a class selector?",
+      "options": [
+        "With a hash before the name",
+        "With a dot before the name",
+        "With a star before the name",
+        "With no symbol"
+      ],
+      "answer": 1,
+      "explanation": "A class selector is written with a dot before the class name."
+    },
+    {
+      "id": "q3",
+      "text": "Which selector is the most reusable?",
+      "options": [
+        "id",
+        "Element name",
+        "Class",
+        "Doctype"
+      ],
+      "answer": 2,
+      "explanation": "A class can be reused on many elements, which makes it the most reusable."
+    }
+  ]
+}

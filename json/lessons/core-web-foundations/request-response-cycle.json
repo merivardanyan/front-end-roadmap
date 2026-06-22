@@ -1,92 +1,124 @@
 {
   "id": "request-response-cycle",
   "chapterId": "core-web-foundations",
-  "title": "Request–Response Cycle",
+  "title": "Request-Response Cycle",
   "order": 7,
-  "emoji": "🔄",
+  "summary": [
+    "The web works as a simple back and forth.",
+    "The client sends a request asking for something.",
+    "The server sends a response with the answer.",
+    "This ask and receive pattern repeats for everything you load."
+  ],
   "sections": [
     {
       "type": "intro",
-      "text": "We have already met clients, servers, DNS, and HTTP. Now let's put it all together and see the full journey a single click takes, from the moment you ask for a page to the moment it appears on your screen."
+      "text": "Almost everything you do online is one simple pattern repeated over and over. Ask, receive, ask again. Once you see the pattern, the whole web starts to make sense."
     },
     {
       "type": "explanation",
-      "title": "What is the Request-Response Cycle?",
-      "text": "The request-response cycle is the complete round trip that happens every time your browser asks for something and gets an answer back. It is called a cycle because it repeats over and over, every single time you click a link, load a page, or press a button that needs new information."
+      "title": "What is a Request?",
+      "text": "A request is the message your browser sends to a server. It says what you want, like a page or an image, and where to find it. Every click and every page load starts with a request."
     },
     {
       "type": "explanation",
-      "title": "Why It Matters",
-      "text": "Almost everything that happens on the web follows this same basic pattern: something asks, and something answers. Once you understand this cycle, you will recognize it everywhere, whether you are loading a webpage, sending a message, or even watching a video online."
-    },
-    {
-      "type": "steps",
-      "title": "The Full Journey of a Web Request",
-      "items": [
-        "You type a URL or click a link in your browser.",
-        "Your browser uses DNS to find the IP address of the right server.",
-        "Your browser sends an HTTP request to that server, asking for a page.",
-        "The server receives the request, prepares the page, and sends back an HTTP response.",
-        "Your browser receives the response and turns it into the page you see, ready for you to read or click again."
-      ]
+      "title": "What is a Response?",
+      "text": "A response is the server's reply. It carries what you asked for, like the page content, plus a short status that says whether things went well or something went wrong.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A request arrow going out and a response arrow coming back",
+        "placeholder": true
+      }
     },
     {
       "type": "analogy",
-      "title": "Think of it like Mailing a Letter and Getting a Reply",
-      "text": "You write a letter asking a question and mail it to a friend. Your friend reads it, writes an answer, and mails it back to you. You open the reply and now you have what you asked for. The request-response cycle works the same way, just much, much faster."
+      "title": "A Quick Conversation",
+      "text": "The cycle is like asking a friend a question and getting an answer. You ask, they reply. If you have another question, you ask again. The web is just this conversation happening very fast, many times over.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Two people in a quick back and forth conversation",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "The Request and Response Cycle",
+      "items": [
+        "You do something, like click a link or load a page.",
+        "Your browser sends a request to the server.",
+        "The server reads the request and prepares what was asked for.",
+        "The server sends a response back.",
+        "Your browser shows the result and waits for your next action."
+      ]
     },
     {
       "type": "fun-fact",
-      "text": "A single webpage can actually trigger many request-response cycles at once, one for the HTML, others for images, styles, and scripts, all happening together in the background."
+      "text": "A single web page can trigger dozens of request and response pairs at once, one for the page and more for each image, font, and script it needs."
     },
     {
       "type": "key-terms",
       "title": "Words to Remember",
       "terms": [
-        { "word": "Request", "definition": "A message sent by the client asking the server for something." },
-        { "word": "Response", "definition": "The message the server sends back, containing what was asked for." },
-        { "word": "Cycle", "definition": "A process that repeats, in this case the repeating pattern of asking and answering." },
-        { "word": "Round Trip", "definition": "The full journey of a request going out and a response coming back." },
-        { "word": "Request-Response Cycle", "definition": "The complete process of a client asking for something and a server answering it." }
+        {
+          "word": "Request",
+          "definition": "The message a browser sends asking for something."
+        },
+        {
+          "word": "Response",
+          "definition": "The server's reply, carrying what was asked for."
+        },
+        {
+          "word": "Cycle",
+          "definition": "The repeating back and forth of request then response."
+        },
+        {
+          "word": "Status",
+          "definition": "A short code that says if the response went well or not."
+        },
+        {
+          "word": "Client",
+          "definition": "The device making the request, like your browser."
+        }
       ]
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "text": "What is the request-response cycle?",
+      "text": "What is a request?",
       "options": [
-        "A type of website design",
-        "The complete process of a client asking for something and a server answering",
-        "A way to delete files",
-        "A type of computer virus"
+        "The message the browser sends asking for something",
+        "A picture on a web page",
+        "The name of a website",
+        "A type of server"
       ],
-      "answer": 1,
-      "explanation": "The request-response cycle is the full round trip where a client sends a request and a server sends back a response."
+      "answer": 0,
+      "explanation": "A request is the message the browser sends to a server to ask for a page, image, or data."
     },
     {
       "id": "q2",
-      "text": "What happens right after your browser finds the server's IP address using DNS?",
+      "text": "What does a response contain?",
       "options": [
-        "The browser deletes the page",
-        "The browser sends an HTTP request to that server",
-        "The page disappears",
-        "Nothing happens at all"
+        "Only your password",
+        "What you asked for, plus a short status",
+        "A list of all websites",
+        "Nothing at all"
       ],
       "answer": 1,
-      "explanation": "Once the browser knows the IP address from DNS, it sends an HTTP request to that server asking for the page."
+      "explanation": "A response carries what was asked for along with a status that says whether it went well."
     },
     {
       "id": "q3",
-      "text": "Can one webpage trigger more than one request-response cycle?",
+      "text": "What is the repeating pattern of the web called?",
       "options": [
-        "No, only one is ever allowed",
-        "Yes, separate cycles can happen for the HTML, images, and other files",
-        "Only on weekends",
-        "Only if you refresh the page twice"
+        "The loading screen",
+        "The request and response cycle",
+        "The home page",
+        "The download"
       ],
       "answer": 1,
-      "explanation": "A single webpage often loads many things separately, like images and styles, each one using its own request-response cycle."
+      "explanation": "The web repeats a request then a response, over and over. That is the request and response cycle."
     }
   ]
 }

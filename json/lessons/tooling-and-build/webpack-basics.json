@@ -1,0 +1,124 @@
+{
+  "id": "webpack-basics",
+  "chapterId": "tooling-and-build",
+  "title": "Webpack Basics",
+  "order": 3,
+  "summary": [
+    "Webpack is an older, powerful bundler.",
+    "It can be configured to do almost anything.",
+    "It powered a generation of frontend projects.",
+    "You will still meet it in many existing codebases."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Before Vite, Webpack was the bundler nearly everyone used. It is older and can feel more complex, but it is powerful and still runs countless projects, so it is worth understanding even if you start new work with Vite."
+    },
+    {
+      "type": "explanation",
+      "title": "What Webpack Is",
+      "text": "Webpack is a bundler that packs your files together, like others, but with a deep set of options. You configure it to handle many kinds of files and tasks. That flexibility made it the workhorse of frontend builds for years, powering a huge number of apps."
+    },
+    {
+      "type": "explanation",
+      "title": "Power and Complexity",
+      "text": "Webpack's strength is also its challenge. Because it can do almost anything, its setup can get long and detailed, which is part of why faster, simpler tools like Vite gained ground. Still, many existing projects run on Webpack, so reading and understanding it remains a useful skill.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A detailed Webpack configuration packing many file types",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Professional Workshop",
+      "text": "Webpack is like a fully equipped professional workshop with a tool for every job. It can build anything, but you need to know your way around. Newer tools are like a tidy, ready to use kit. Both produce great results, but the workshop asks more of you up front.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A fully equipped workshop beside a tidy ready to use kit",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Understanding Webpack",
+      "items": [
+        "Webpack packs your files into bundles, like other tools.",
+        "You configure it for the files and tasks you need.",
+        "Its many options give deep flexibility.",
+        "That flexibility makes the setup more involved.",
+        "You will meet it in many existing projects."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Webpack's flexibility led to whole ecosystems of plugins and loaders, add ons for handling everything from images to styles. That richness is a big reason it dominated for so long."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Webpack",
+          "definition": "An older, powerful bundler."
+        },
+        {
+          "word": "Bundler",
+          "definition": "A tool that packs your files together."
+        },
+        {
+          "word": "Configuration",
+          "definition": "The settings that tell Webpack what to do."
+        },
+        {
+          "word": "Flexible",
+          "definition": "Able to be set up for almost any task."
+        },
+        {
+          "word": "Plugin",
+          "definition": "An add on that extends what Webpack can do."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Webpack?",
+      "options": [
+        "An older, powerful bundler",
+        "A new web browser",
+        "A type of font",
+        "A database"
+      ],
+      "answer": 0,
+      "explanation": "Webpack is an older, powerful bundler."
+    },
+    {
+      "id": "q2",
+      "text": "What is its main strength?",
+      "options": [
+        "It can be configured to do almost anything",
+        "It needs no setup",
+        "It only handles images",
+        "It is the smallest tool"
+      ],
+      "answer": 0,
+      "explanation": "Webpack's strength is that it can be configured to do almost anything."
+    },
+    {
+      "id": "q3",
+      "text": "Where will you still meet it?",
+      "options": [
+        "In many existing codebases",
+        "Only in new projects",
+        "Only on phones",
+        "Nowhere anymore"
+      ],
+      "answer": 0,
+      "explanation": "Webpack still runs many existing codebases, so you will meet it there."
+    }
+  ]
+}

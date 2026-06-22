@@ -1,0 +1,124 @@
+{
+  "id": "events",
+  "chapterId": "javascript-fundamentals",
+  "title": "Events & Event Listeners",
+  "order": 9,
+  "summary": [
+    "Events are things that happen on a page, like a click.",
+    "An event listener waits for an event and runs code.",
+    "This is how a page reacts to a user.",
+    "Clicks, typing, and scrolling are all events."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "A page that does nothing when you click is just a poster. The magic happens when the page reacts to what you do. Those actions are called events, and JavaScript can listen for them."
+    },
+    {
+      "type": "explanation",
+      "title": "What an Event Is",
+      "text": "An event is something that happens, often caused by the user. A click, a key press, the mouse moving, the page finishing loading. The browser announces these events, and your code can choose to respond."
+    },
+    {
+      "type": "explanation",
+      "title": "Listening for Events",
+      "text": "To react, you add an event listener to an element. You tell it which event to watch for and what code to run when it happens. When the user clicks that button, your code runs. This is the link between what a user does and what your page does.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A button with a listener running code on click",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Doorbell",
+      "text": "An event listener is like a doorbell. You set it up once and it waits quietly. When someone presses the button, that is the event, the bell rings and you go answer the door, that is your code running. No press, no response.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A doorbell being pressed and someone answering the door",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Reacting to a User",
+      "items": [
+        "Choose the element to watch, like a button.",
+        "Add an event listener to it.",
+        "Say which event to listen for, like a click.",
+        "Give it the code to run when that happens.",
+        "Now the page responds every time the user acts."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "A single click can trigger listeners on several elements as it travels up the page tree. This traveling is called bubbling, and it is a handy tool once you understand it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Event",
+          "definition": "Something that happens on a page, like a click."
+        },
+        {
+          "word": "Event listener",
+          "definition": "Code that waits for an event and responds."
+        },
+        {
+          "word": "Click",
+          "definition": "A common event when a user presses something."
+        },
+        {
+          "word": "React",
+          "definition": "To run code in response to an event."
+        },
+        {
+          "word": "Bubbling",
+          "definition": "An event traveling up the page tree."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is an event?",
+      "options": [
+        "Something that happens on a page, like a click",
+        "A type of variable",
+        "A style rule",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "An event is something that happens on the page, often caused by the user."
+    },
+    {
+      "id": "q2",
+      "text": "What does an event listener do?",
+      "options": [
+        "Styles the page",
+        "Waits for an event and runs code",
+        "Stores data",
+        "Loads images"
+      ],
+      "answer": 1,
+      "explanation": "An event listener waits for a chosen event and runs code when it happens."
+    },
+    {
+      "id": "q3",
+      "text": "In the analogy, what is the doorbell press?",
+      "options": [
+        "The code running",
+        "The event",
+        "The house",
+        "The listener"
+      ],
+      "answer": 1,
+      "explanation": "Pressing the doorbell is the event. The bell ringing and you answering is the code running."
+    }
+  ]
+}

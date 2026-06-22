@@ -1,0 +1,124 @@
+{
+  "id": "html-document-structure",
+  "chapterId": "html",
+  "title": "HTML Document Structure",
+  "order": 1,
+  "summary": [
+    "Every HTML page follows the same basic skeleton.",
+    "It starts with a doctype line that says this is HTML.",
+    "The html element wraps everything, with a head and a body inside.",
+    "The head holds info about the page, the body holds what you see."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Open any web page in the world and underneath it shares the same simple skeleton. Once you know that skeleton, you can read or build any page with confidence."
+    },
+    {
+      "type": "explanation",
+      "title": "The Basic Skeleton",
+      "text": "Every HTML page starts with a doctype line that tells the browser this is HTML. Then comes the html element, which wraps the whole page. Inside it sit two parts, the head and the body."
+    },
+    {
+      "type": "explanation",
+      "title": "Head and Body",
+      "text": "The head holds information about the page that you do not see directly, like its title and settings. The body holds everything you do see, like text, images, and buttons.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A page split into a hidden head section and a visible body section",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A House Blueprint",
+      "text": "Think of the doctype as the sign that says this is a house. The html element is the outer walls. The head is the utility room with the wiring and labels, hidden but important. The body is the living space where people actually spend their time.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A house cutaway showing a hidden utility room and a visible living space",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "The Parts in Order",
+      "items": [
+        "The doctype line declares the page as HTML.",
+        "The html element opens and wraps everything.",
+        "The head holds the title and page settings.",
+        "The body holds all the visible content.",
+        "The html element closes at the very end."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "The doctype used to be a long and confusing line of text. In modern HTML it is just one short line, and that is all you need."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Doctype",
+          "definition": "The first line that tells the browser the page is HTML."
+        },
+        {
+          "word": "html element",
+          "definition": "The element that wraps the whole page."
+        },
+        {
+          "word": "head",
+          "definition": "The part that holds info about the page, like its title."
+        },
+        {
+          "word": "body",
+          "definition": "The part that holds everything you actually see."
+        },
+        {
+          "word": "Element",
+          "definition": "A building block of a page, like a heading or a paragraph."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does the doctype tell the browser?",
+      "options": [
+        "That the page is HTML",
+        "Where to find images",
+        "The name of the website",
+        "How fast to load"
+      ],
+      "answer": 0,
+      "explanation": "The doctype line tells the browser that the document is HTML."
+    },
+    {
+      "id": "q2",
+      "text": "What goes in the body?",
+      "options": [
+        "Only the page title",
+        "Everything you see on the page",
+        "The browser settings",
+        "Nothing at all"
+      ],
+      "answer": 1,
+      "explanation": "The body holds all the visible content, like text, images, and buttons."
+    },
+    {
+      "id": "q3",
+      "text": "Where do the page title and settings live?",
+      "options": [
+        "In the body",
+        "In the footer",
+        "In the head",
+        "In the doctype"
+      ],
+      "answer": 2,
+      "explanation": "The head holds information about the page, like the title and settings, which you do not see directly."
+    }
+  ]
+}

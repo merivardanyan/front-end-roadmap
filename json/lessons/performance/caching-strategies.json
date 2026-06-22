@@ -1,0 +1,124 @@
+{
+  "id": "caching-strategies",
+  "chapterId": "performance",
+  "title": "Caching Strategies",
+  "order": 5,
+  "summary": [
+    "Caching saves a copy of something so it does not have to be fetched again.",
+    "The browser can cache files, and servers can cache data.",
+    "This makes repeat visits much faster.",
+    "The challenge is knowing when to refresh the copy."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Fetching the same thing over and over is wasteful. Caching is the practice of saving a copy of something the first time, so next time you can use the saved copy instantly instead of fetching it again. It is everywhere in fast websites."
+    },
+    {
+      "type": "explanation",
+      "title": "What Caching Does",
+      "text": "A cache is a saved copy kept close by for reuse. The first time the browser loads an image or a file, it can keep a copy. The next time the page needs it, it uses the local copy instantly, with no download. This makes repeat visits and revisited pages dramatically faster."
+    },
+    {
+      "type": "explanation",
+      "title": "The Hard Part, Freshness",
+      "text": "The tricky part of caching is knowing when the saved copy is out of date. If the real thing changes but you keep showing the old cached copy, users see stale content. So caching strategies are mostly about deciding how long to trust a copy, and how to refresh it when the original changes.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A saved copy reused instantly, with a plan to refresh when it changes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Keeping Snacks in the Cupboard",
+      "text": "Caching is like keeping snacks in your cupboard instead of going to the shop each time you are hungry. It is instant and saves trips. The only catch is freshness, you have to know when something has expired and needs replacing, or you end up with a stale snack.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A cupboard of snacks reused instantly, with expiry dates checked",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Thinking About Caching",
+      "items": [
+        "Notice things fetched repeatedly.",
+        "Save a copy the first time, in a cache.",
+        "Reuse the copy instead of fetching again.",
+        "Decide how long to trust the copy.",
+        "Refresh it when the original changes."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "You met caching already, in this app's own fetchWithCache helper and in the React Query lesson. Caching shows up at every layer of the web, from the browser to the server."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Cache",
+          "definition": "A saved copy kept close by for reuse."
+        },
+        {
+          "word": "Copy",
+          "definition": "The saved version used instead of fetching."
+        },
+        {
+          "word": "Reuse",
+          "definition": "Using the saved copy again instantly."
+        },
+        {
+          "word": "Freshness",
+          "definition": "Whether the copy is still up to date."
+        },
+        {
+          "word": "Refresh",
+          "definition": "Updating the copy when the original changes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does caching do?",
+      "options": [
+        "Saves a copy so it does not have to be fetched again",
+        "Deletes all data",
+        "Slows the page",
+        "Changes colors"
+      ],
+      "answer": 0,
+      "explanation": "Caching saves a copy of something so it does not have to be fetched again."
+    },
+    {
+      "id": "q2",
+      "text": "What does it make faster?",
+      "options": [
+        "Repeat visits",
+        "The first ever visit only",
+        "Nothing",
+        "The server shutdown"
+      ],
+      "answer": 0,
+      "explanation": "Caching makes repeat visits much faster by reusing saved copies."
+    },
+    {
+      "id": "q3",
+      "text": "What is the hard part?",
+      "options": [
+        "Knowing when to refresh the copy",
+        "Saving the copy",
+        "Reading the copy",
+        "Deleting the page"
+      ],
+      "answer": 0,
+      "explanation": "The hard part of caching is knowing when the saved copy is stale and needs refreshing."
+    }
+  ]
+}

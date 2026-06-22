@@ -1,0 +1,124 @@
+{
+  "id": "what-is-nextjs",
+  "chapterId": "meta-frameworks-and-rendering",
+  "title": "What is Next.js?",
+  "order": 1,
+  "summary": [
+    "Next.js is a framework built on top of React.",
+    "It adds routing, rendering choices, and a backend.",
+    "It handles many setup decisions for you.",
+    "It is the most popular React framework."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "React gives you the pieces to build a user interface, but a real website needs more, pages, fast first loads, a way to talk to a server. Next.js is a framework that wraps React and provides all of that, so you build less plumbing yourself."
+    },
+    {
+      "type": "explanation",
+      "title": "What Next.js Adds",
+      "text": "React on its own is just the view layer. Next.js builds on top of it and adds the things a full website needs, routing between pages, choices about how pages are rendered, and even a place to put backend code. You still write React, but with a lot of decisions already made for you."
+    },
+    {
+      "type": "explanation",
+      "title": "Why a Framework",
+      "text": "With plain React you assemble your own tools for routing, building, and data. A framework like Next.js bundles sensible choices together, so you spend less time wiring things up and more time building. The trade off is you follow its conventions, which is usually a fair deal.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "React at the center with Next.js adding routing, rendering, and backend around it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Kit Home vs Raw Materials",
+      "text": "Plain React is like a pile of quality building materials. You can build anything, but you decide every detail. Next.js is like a kit home. The big decisions are made, the parts fit together, and you focus on making it yours. You give up some freedom for a lot of speed.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Raw building materials beside a ready to assemble kit home",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Where Next.js Fits",
+      "items": [
+        "You already know React for building the interface.",
+        "Next.js wraps React and adds the missing pieces.",
+        "It gives you routing between pages.",
+        "It lets you choose how each page is rendered.",
+        "It even provides a place for backend code."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Next.js is made by a company called Vercel, which also offers easy hosting for it. That tight fit between the framework and its hosting is part of why it became so popular."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "Next.js",
+          "definition": "A framework built on top of React."
+        },
+        {
+          "word": "Framework",
+          "definition": "A toolkit that bundles many decisions for you."
+        },
+        {
+          "word": "React",
+          "definition": "The view layer Next.js builds on."
+        },
+        {
+          "word": "Routing",
+          "definition": "Moving between the pages of a site."
+        },
+        {
+          "word": "Convention",
+          "definition": "An agreed way of doing things the framework expects."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Next.js built on top of?",
+      "options": [
+        "React",
+        "Python",
+        "A database",
+        "An image library"
+      ],
+      "answer": 0,
+      "explanation": "Next.js is a framework built on top of React."
+    },
+    {
+      "id": "q2",
+      "text": "What does Next.js add?",
+      "options": [
+        "Routing, rendering choices, and a backend",
+        "Only colors",
+        "Only fonts",
+        "Nothing new"
+      ],
+      "answer": 0,
+      "explanation": "Next.js adds routing, rendering choices, and a place for backend code."
+    },
+    {
+      "id": "q3",
+      "text": "Why use a framework?",
+      "options": [
+        "It bundles sensible choices so you wire up less yourself",
+        "It makes code slower",
+        "It removes React",
+        "It hides the page"
+      ],
+      "answer": 0,
+      "explanation": "A framework bundles sensible choices, so you spend less time wiring things up."
+    }
+  ]
+}

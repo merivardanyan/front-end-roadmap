@@ -1,0 +1,124 @@
+{
+  "id": "eslint",
+  "chapterId": "tooling-and-build",
+  "title": "ESLint",
+  "order": 5,
+  "summary": [
+    "ESLint checks your code for problems and bad patterns.",
+    "It catches mistakes before you run the code.",
+    "It can enforce a consistent style across a team.",
+    "It is standard in professional projects."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "It helps to have a careful reviewer reading your code as you write, pointing out likely mistakes and messy patterns. ESLint is that reviewer, an automated one that checks your JavaScript against a set of rules."
+    },
+    {
+      "type": "explanation",
+      "title": "What ESLint Does",
+      "text": "ESLint scans your code and flags problems, like a variable you declared but never used, or a pattern known to cause bugs. It catches these as you write, before the code even runs. It is like a spell checker, but for code mistakes and risky habits."
+    },
+    {
+      "type": "explanation",
+      "title": "Consistency for a Team",
+      "text": "Beyond catching bugs, ESLint can enforce an agreed style across a whole team, so everyone's code looks and behaves consistently. This makes a shared codebase easier to read and review. That is why setting up ESLint is standard practice in professional projects.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "ESLint underlining a problem in code as it is written",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "A Grammar Checker for Code",
+      "text": "ESLint is like the grammar checker in a writing app. As you type, it underlines mistakes and awkward phrasing, suggesting fixes. It does not write for you, it keeps your writing correct and consistent. ESLint does the same for your code, quietly improving it as you go.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A grammar checker underlining and suggesting fixes while typing",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using ESLint",
+      "items": [
+        "Add ESLint to your project.",
+        "Choose a set of rules to follow.",
+        "It checks your code as you write.",
+        "It flags mistakes and risky patterns.",
+        "The whole team's code stays consistent."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Many ESLint rules can fix themselves. With one command, it can clean up a whole batch of small issues automatically, saving you from fixing each by hand."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "ESLint",
+          "definition": "A tool that checks code for problems."
+        },
+        {
+          "word": "Lint",
+          "definition": "To scan code for mistakes and bad patterns."
+        },
+        {
+          "word": "Rule",
+          "definition": "A check ESLint applies to your code."
+        },
+        {
+          "word": "Consistency",
+          "definition": "Code that looks and behaves the same across a team."
+        },
+        {
+          "word": "Mistake",
+          "definition": "A likely error ESLint flags early."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does ESLint check?",
+      "options": [
+        "Your code for problems and bad patterns",
+        "The page color",
+        "Image quality",
+        "The server speed"
+      ],
+      "answer": 0,
+      "explanation": "ESLint checks your code for problems and risky patterns."
+    },
+    {
+      "id": "q2",
+      "text": "When does it catch mistakes?",
+      "options": [
+        "Before you run the code",
+        "After the user complains",
+        "Once a year",
+        "Never"
+      ],
+      "answer": 0,
+      "explanation": "ESLint catches mistakes as you write, before the code runs."
+    },
+    {
+      "id": "q3",
+      "text": "What can it enforce across a team?",
+      "options": [
+        "A consistent style",
+        "A faster server",
+        "More colors",
+        "Fewer files"
+      ],
+      "answer": 0,
+      "explanation": "ESLint can enforce a consistent style across a whole team."
+    }
+  ]
+}

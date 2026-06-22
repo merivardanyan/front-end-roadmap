@@ -1,0 +1,124 @@
+{
+  "id": "browser-storage",
+  "chapterId": "browser-and-web-platform",
+  "title": "Browser Storage (localStorage, sessionStorage, cookies)",
+  "order": 1,
+  "summary": [
+    "The browser can store small bits of data on the user's device.",
+    "localStorage keeps data until you delete it.",
+    "sessionStorage clears when the tab closes.",
+    "Cookies are sent to the server with each request."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "Sometimes your app needs to remember something on the user's own device, like a theme choice or a draft. The browser gives you a few small storage spots for this, each with different rules about how long the data lasts."
+    },
+    {
+      "type": "explanation",
+      "title": "localStorage and sessionStorage",
+      "text": "These two store small pieces of data right in the browser as simple text. localStorage keeps what you save until you or the user clears it, even after closing the browser. sessionStorage holds data only until that tab is closed. Both are easy to use and good for things like preferences or a saved draft."
+    },
+    {
+      "type": "explanation",
+      "title": "Cookies Are Different",
+      "text": "Cookies also store small data, but with a key difference: they are sent to the server with every request. That makes them suited to things the server needs to know, like a login token. Because they travel with each request, you keep cookies small and avoid putting anything sensitive in them unprotected.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "Three storage spots: localStorage, sessionStorage, and cookies with their lifetimes",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Three Kinds of Notes",
+      "text": "localStorage is like a note stuck to your fridge, it stays until you take it down. sessionStorage is like a note on your desk that gets cleared each evening. A cookie is like a note you tuck in your pocket and show at the door every time you enter, because the doorkeeper, the server, needs to see it.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "A fridge note, a desk note cleared nightly, and a pocket note shown at the door",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Choosing Browser Storage",
+      "items": [
+        "Decide how long the data should last.",
+        "For lasting data on the device, use localStorage.",
+        "For data only until the tab closes, use sessionStorage.",
+        "For data the server needs each request, use a cookie.",
+        "Keep cookies small and never store secrets unprotected."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "localStorage can only hold text, so to save an object you turn it into a JSON string first, the same JSON you learned earlier, and parse it back when you read it."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "localStorage",
+          "definition": "Browser storage that lasts until cleared."
+        },
+        {
+          "word": "sessionStorage",
+          "definition": "Browser storage cleared when the tab closes."
+        },
+        {
+          "word": "Cookie",
+          "definition": "Small data sent to the server each request."
+        },
+        {
+          "word": "Device",
+          "definition": "The user's own machine, where this data lives."
+        },
+        {
+          "word": "Persist",
+          "definition": "To keep data around over time."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What does localStorage do?",
+      "options": [
+        "Keeps data until you delete it",
+        "Clears every second",
+        "Sends data to the server",
+        "Stores images only"
+      ],
+      "answer": 0,
+      "explanation": "localStorage keeps saved data until you or the user clears it."
+    },
+    {
+      "id": "q2",
+      "text": "When does sessionStorage clear?",
+      "options": [
+        "When the tab closes",
+        "Never",
+        "Once a year",
+        "When you click a button"
+      ],
+      "answer": 0,
+      "explanation": "sessionStorage holds data only until that tab is closed."
+    },
+    {
+      "id": "q3",
+      "text": "What is special about cookies?",
+      "options": [
+        "They are sent to the server with each request",
+        "They hold images",
+        "They never expire",
+        "They run code"
+      ],
+      "answer": 0,
+      "explanation": "Cookies are sent to the server with every request, unlike the other two."
+    }
+  ]
+}

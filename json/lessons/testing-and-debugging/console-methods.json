@@ -1,0 +1,124 @@
+{
+  "id": "console-methods",
+  "chapterId": "testing-and-debugging",
+  "title": "Console Methods",
+  "order": 9,
+  "summary": [
+    "Console methods print information from your code.",
+    "console.log is the most common.",
+    "There are others for warnings, errors, and tables.",
+    "They are a quick, simple way to see what is happening."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "The simplest debugging tool of all is printing a message from your code to see what is going on. The console object gives you a family of methods for this, and console.log is one you will use constantly."
+    },
+    {
+      "type": "explanation",
+      "title": "The Workhorse, console.log",
+      "text": "console.log prints whatever you give it to the browser's console, where you can read it. Drop a log in your code to see a value at that point, confirm a function ran, or check the shape of some data. It is the quickest way to peek at what your code is doing while it runs."
+    },
+    {
+      "type": "explanation",
+      "title": "Beyond Plain Logs",
+      "text": "The console offers more than just log. There is one for warnings and one for errors, which stand out in different colors, and even one that prints data as a neat table, which is great for arrays of objects. Knowing these makes your quick debugging clearer and easier to scan.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "A console showing a log, a warning, an error, and a table",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Leaving Notes to Yourself",
+      "text": "Console methods are like leaving sticky notes for yourself as you trace a problem. Made it to step three. The value here is forty two. This list looks wrong. You read the notes back in order and the path of the bug becomes clear. The colored ones are like notes you underline to stand out.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Sticky notes left along the path of a problem to trace it",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Using Console Methods",
+      "items": [
+        "Add a console.log where you want to see a value.",
+        "Run the code and read the output in the console.",
+        "Use the warning and error methods to stand out.",
+        "Use the table method for arrays of objects.",
+        "Remove the logs once the problem is solved."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "Leftover console.log lines are one of the most common things found in shipped code. Cleaning them up before sharing your work is a small habit that signals real polish, exactly the kind of detail that gets noticed."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "console",
+          "definition": "The object with methods for printing from code."
+        },
+        {
+          "word": "console.log",
+          "definition": "The most common method for printing a value."
+        },
+        {
+          "word": "Warning",
+          "definition": "A console method that stands out for caution."
+        },
+        {
+          "word": "Error",
+          "definition": "A console method that stands out for problems."
+        },
+        {
+          "word": "Table",
+          "definition": "A console method that prints data as a neat table."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What do console methods do?",
+      "options": [
+        "Print information from your code",
+        "Style the page",
+        "Store images",
+        "Send requests"
+      ],
+      "answer": 0,
+      "explanation": "Console methods print information from your code so you can see what is happening."
+    },
+    {
+      "id": "q2",
+      "text": "What is the most common one?",
+      "options": [
+        "console.log",
+        "console.table",
+        "console.error",
+        "console.warn"
+      ],
+      "answer": 0,
+      "explanation": "console.log is the most common console method."
+    },
+    {
+      "id": "q3",
+      "text": "Besides plain logs, what else is there?",
+      "options": [
+        "Methods for warnings, errors, and tables",
+        "Only images",
+        "Nothing else",
+        "A way to delete files"
+      ],
+      "answer": 0,
+      "explanation": "The console also offers methods for warnings, errors, and printing tables."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "es6-features",
+  "chapterId": "javascript-fundamentals",
+  "title": "ES6+ Features",
+  "order": 11,
+  "summary": [
+    "ES6 was a big update to JavaScript in 2015.",
+    "It added cleaner ways to write common code.",
+    "Features include let and const, arrow functions, and template strings.",
+    "Modern JavaScript is built on these."
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "text": "In 2015, JavaScript got a major upgrade known as ES6. It did not change what the language could do so much as make it far nicer to write. Today these features are everywhere, so they are worth knowing by name."
+    },
+    {
+      "type": "explanation",
+      "title": "What ES6 Added",
+      "text": "ES6 brought let and const for variables, arrow functions as a shorter way to write functions, and template strings that let you drop values right into text easily. It also added cleaner ways to pull values out of arrays and objects."
+    },
+    {
+      "type": "explanation",
+      "title": "Why It Matters",
+      "text": "These features are not optional extras anymore. Nearly all modern code and every framework uses them. Reading today's JavaScript, or any React tutorial, means seeing arrow functions and template strings on almost every line.",
+      "media": {
+        "type": "image",
+        "src": "",
+        "alt": "An old style function beside a shorter arrow function doing the same job",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "analogy",
+      "title": "Upgrading Your Tools",
+      "text": "Imagine a carpenter who worked with hand tools, then got power tools. The job is the same, building things, but the work is faster and cleaner. ES6 was that upgrade for JavaScript. The old tools still work, but almost everyone reaches for the new ones now.",
+      "media": {
+        "type": "animation",
+        "src": "",
+        "alt": "Hand tools being swapped for power tools doing the same job faster",
+        "placeholder": true
+      }
+    },
+    {
+      "type": "steps",
+      "title": "Meeting ES6 Features",
+      "items": [
+        "Use const and let instead of the old var.",
+        "Write short functions as arrow functions.",
+        "Build text with template strings instead of joining pieces.",
+        "Pull values out of arrays and objects in one clean line.",
+        "Recognize these patterns when reading modern code."
+      ]
+    },
+    {
+      "type": "fun-fact",
+      "text": "ES6 is also called ES2015, after the year it arrived. Since then, JavaScript has added new features every single year, which is why people say modern JavaScript."
+    },
+    {
+      "type": "key-terms",
+      "title": "Words to Remember",
+      "terms": [
+        {
+          "word": "ES6",
+          "definition": "A big 2015 update to JavaScript, also called ES2015."
+        },
+        {
+          "word": "Arrow function",
+          "definition": "A shorter way to write a function."
+        },
+        {
+          "word": "Template string",
+          "definition": "Text that lets you drop values right in."
+        },
+        {
+          "word": "let",
+          "definition": "A modern way to declare a changeable variable."
+        },
+        {
+          "word": "const",
+          "definition": "A modern way to declare a fixed variable."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What was ES6?",
+      "options": [
+        "A big update to JavaScript in 2015",
+        "A new web browser",
+        "A type of image",
+        "A server"
+      ],
+      "answer": 0,
+      "explanation": "ES6 was a major 2015 update to JavaScript, also called ES2015."
+    },
+    {
+      "id": "q2",
+      "text": "What is an arrow function?",
+      "options": [
+        "A type of loop",
+        "A shorter way to write a function",
+        "A style rule",
+        "A web address"
+      ],
+      "answer": 1,
+      "explanation": "An arrow function is a shorter way to write a function."
+    },
+    {
+      "id": "q3",
+      "text": "Why do ES6 features matter?",
+      "options": [
+        "They are rarely used",
+        "Modern code and frameworks use them everywhere",
+        "They only work on phones",
+        "They slow code down"
+      ],
+      "answer": 1,
+      "explanation": "ES6 features appear throughout modern code and every framework."
+    }
+  ]
+}
